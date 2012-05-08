@@ -1,0 +1,198 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>application</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> application</h1>
+
+<div id="view"><a href="../../FULL/classes/application.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>The Finder</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Finder_Basics">Finder Basics</a></em></li>
+<li><em><a href="../../index.html#suite_Legacy_suite">Legacy suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>clipboard</strong>
+			(r/o)
+			<em>reference</em>
+			 -- (NOT AVAILABLE YET) the Finder’s clipboard window
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>international text</em>
+			 -- the Finder’s name
+		</li>
+<li>
+			<strong>visible</strong>
+			
+			<em>boolean</em>
+			 -- Is the Finder’s layer visible?
+		</li>
+<li>
+			<strong>frontmost</strong>
+			
+			<em>boolean</em>
+			 -- Is the Finder the frontmost process?
+		</li>
+<li>
+			<strong>selection</strong>
+			
+			<em>reference</em>
+			 -- the selection in the frontmost Finder window
+		</li>
+<li>
+			<strong>insertion location</strong>
+			(r/o)
+			<em>reference</em>
+			 -- the container in which a new folder would appear if “New Folder” was selected
+		</li>
+<li>
+			<strong>product version</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- the version of the System software running on this computer
+		</li>
+<li>
+			<strong>version</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- the version of the Finder
+		</li>
+<li>
+			<strong>startup disk</strong>
+			(r/o)
+			<em><a href="../../Containers_and_folders/classes/disk.html">disk</a></em>
+			 -- the startup disk
+		</li>
+<li>
+			<strong>desktop</strong>
+			(r/o)
+			<em><a href="../../Containers_and_folders/classes/desktop-object.html">desktop-object</a></em>
+			 -- the desktop
+		</li>
+<li>
+			<strong>trash</strong>
+			(r/o)
+			<em><a href="../../Containers_and_folders/classes/trash-object.html">trash-object</a></em>
+			 -- the trash
+		</li>
+<li>
+			<strong>home</strong>
+			(r/o)
+			<em><a href="../../Containers_and_folders/classes/folder.html">folder</a></em>
+			 -- the home directory
+		</li>
+<li>
+			<strong>computer container</strong>
+			(r/o)
+			<em><a href="../../Containers_and_folders/classes/computer-object.html">computer-object</a></em>
+			 -- the computer location (as in Go &gt; Computer)
+		</li>
+<li>
+			<strong>Finder preferences</strong>
+			(r/o)
+			<em><a href="../../Type_Definitions/classes/preferences.html">preferences</a></em>
+			 -- Various preferences that apply to the Finder as a whole
+		</li>
+<li>
+			<strong>desktop picture</strong>
+			
+			<em><a href="../../Files/classes/file.html">file</a></em>
+			 -- the desktop picture of the main monitor
+		</li>
+	</ul>
+
+
+
+	<h2>Elements</h2>
+	<ul>
+		<li>
+			<strong><a href="../../Finder_items/classes/item.html">item</a></strong> -- by
+			<em>index, relative, name, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Containers_and_folders/classes/container.html">container</a></strong> -- by
+			<em>index, name</em>
+		</li>
+<li>
+			<strong><a href="../../Containers_and_folders/classes/disk.html">disk</a></strong> -- by
+			<em>index, name, id</em>
+		</li>
+<li>
+			<strong><a href="../../Containers_and_folders/classes/folder.html">folder</a></strong> -- by
+			<em>index, name, id</em>
+		</li>
+<li>
+			<strong><a href="../../Files/classes/file.html">file</a></strong> -- by
+			<em>index, name</em>
+		</li>
+<li>
+			<strong><a href="../../Files/classes/alias_file.html">alias file</a></strong> -- by
+			<em>index, name</em>
+		</li>
+<li>
+			<strong><a href="../../Files/classes/application_file.html">application file</a></strong> -- by
+			<em>index, name, id</em>
+		</li>
+<li>
+			<strong><a href="../../Files/classes/document_file.html">document file</a></strong> -- by
+			<em>index, name</em>
+		</li>
+<li>
+			<strong><a href="../../Files/classes/internet_location_file.html">internet location file</a></strong> -- by
+			<em>index, name</em>
+		</li>
+<li>
+			<strong><a href="../../Files/classes/clipping.html">clipping</a></strong> -- by
+			<em>index, name</em>
+		</li>
+<li>
+			<strong><a href="../../Files/classes/package.html">package</a></strong> -- by
+			<em>index, name</em>
+		</li>
+<li>
+			<strong><a href="../../Window_classes/classes/window.html">window</a></strong> -- by
+			<em>index, name</em>
+		</li>
+<li>
+			<strong><a href="../../Window_classes/classes/Finder_window.html">Finder window</a></strong> -- by
+			<em>index, id</em>
+		</li>
+<li>
+			<strong><a href="../../Window_classes/classes/clipping_window.html">clipping window</a></strong> -- by
+			<em>index, name</em>
+		</li>
+	</ul>
+
+
+
+
+</body>
+</html>

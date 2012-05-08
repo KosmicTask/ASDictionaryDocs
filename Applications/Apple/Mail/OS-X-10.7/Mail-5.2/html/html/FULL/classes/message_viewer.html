@@ -1,0 +1,169 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>message viewer</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> message viewer</h1>
+
+<div id="view"><a href="../../Mail/classes/message_viewer.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Represents the object responsible for managing a viewer window</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>message viewers</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Mail">Mail</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>drafts mailbox</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Drafts mailbox
+		</li>
+<li>
+			<strong>inbox</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/mailbox.html">mailbox</a></em>
+			 -- The top level In mailbox
+		</li>
+<li>
+			<strong>junk mailbox</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Junk mailbox
+		</li>
+<li>
+			<strong>outbox</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Out mailbox
+		</li>
+<li>
+			<strong>sent mailbox</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Sent mailbox
+		</li>
+<li>
+			<strong>trash mailbox</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Trash mailbox
+		</li>
+<li>
+			<strong>sort column</strong>
+			
+			<em>attachments column / buddy availability column / message color / date received column / date sent column / flags column / from column / mailbox column / message status column / number column / size column / subject column / to column / date last saved column</em>
+			 -- The column that is currently sorted in the viewer
+		</li>
+<li>
+			<strong>sorted ascending</strong>
+			
+			<em>boolean</em>
+			 -- Whether the viewer is sorted ascending or not
+		</li>
+<li>
+			<strong>mailbox list visible</strong>
+			
+			<em>boolean</em>
+			 -- Controls whether the list of mailboxes is visible or not
+		</li>
+<li>
+			<strong>preview pane is visible</strong>
+			
+			<em>boolean</em>
+			 -- Controls whether the preview pane of the message viewer window is visible or not
+		</li>
+<li>
+			<strong>visible columns</strong>
+			
+			<em>list of attachments column / buddy availability column / message color / date received column / date sent column / flags column / from column / mailbox column / message status column / number column / size column / subject column / to column / date last saved column</em>
+			 -- List of columns that are visible. The subject column and the message status column will always be visible
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique identifier of the message viewer
+		</li>
+<li>
+			<strong>visible messages</strong>
+			
+			<em>list of <a href="../../FULL/classes/message.html">message</a></em>
+			 -- List of messages currently being displayed in the viewer
+		</li>
+<li>
+			<strong>selected messages</strong>
+			
+			<em>list of <a href="../../FULL/classes/message.html">message</a></em>
+			 -- List of messages currently selected
+		</li>
+<li>
+			<strong>selected mailboxes</strong>
+			
+			<em>list of <a href="../../FULL/classes/mailbox.html">mailbox</a></em>
+			 -- List of mailboxes currently selected in the list of mailboxes
+		</li>
+<li>
+			<strong>window</strong>
+			
+			<em><a href="../../FULL/classes/window.html">window</a></em>
+			 -- The window for the message viewer
+		</li>
+	</ul>
+
+
+
+	<h2>Elements</h2>
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/message.html">message</a></strong> -- by
+			<em>index, relative, range, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Standard_Suite">Standard Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

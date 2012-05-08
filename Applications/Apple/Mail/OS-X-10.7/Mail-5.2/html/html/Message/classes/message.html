@@ -1,0 +1,227 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>message</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> message</h1>
+
+<div id="view"><a href="../../FULL/classes/message.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>An email message</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>messages</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Message">Message</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique identifier of the message.
+		</li>
+<li>
+			<strong>all headers</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- All the headers of the message
+		</li>
+<li>
+			<strong>background color</strong>
+			
+			<em>blue / gray / green / none / orange / other / purple / red / yellow</em>
+			 -- The background color of the message
+		</li>
+<li>
+			<strong>mailbox</strong>
+			
+			<em><a href="../../Message/classes/mailbox.html">mailbox</a></em>
+			 -- The mailbox in which this message is filed
+		</li>
+<li>
+			<strong>content</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- Contents of an email message
+		</li>
+<li>
+			<strong>date received</strong>
+			(r/o)
+			<em>date</em>
+			 -- The date a message was received
+		</li>
+<li>
+			<strong>date sent</strong>
+			(r/o)
+			<em>date</em>
+			 -- The date a message was sent
+		</li>
+<li>
+			<strong>deleted status</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the message is deleted or not
+		</li>
+<li>
+			<strong>flagged status</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the message is flagged or not
+		</li>
+<li>
+			<strong>flag index</strong>
+			
+			<em>integer</em>
+			 -- The flag on the message, or -1 if the message is not flagged
+		</li>
+<li>
+			<strong>junk mail status</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the message has been marked junk or evaluated to be junk by the junk mail filter.
+		</li>
+<li>
+			<strong>read status</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the message is read or not
+		</li>
+<li>
+			<strong>message id</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- The unique message ID string
+		</li>
+<li>
+			<strong>source</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- Raw source of the message
+		</li>
+<li>
+			<strong>reply to</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- The address that replies should be sent to
+		</li>
+<li>
+			<strong>message size</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The size (in bytes) of a message
+		</li>
+<li>
+			<strong>sender</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- The sender of the message
+		</li>
+<li>
+			<strong>subject</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- The subject of the message
+		</li>
+<li>
+			<strong>was forwarded</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Indicates whether the message was forwarded or not
+		</li>
+<li>
+			<strong>was redirected</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Indicates whether the message was redirected or not
+		</li>
+<li>
+			<strong>was replied to</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Indicates whether the message was replied to or not
+		</li>
+	</ul>
+
+
+
+	<h2>Elements</h2>
+	<ul>
+		<li>
+			<strong><a href="../../Message/classes/bcc_recipient.html">bcc recipient</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/cc_recipient.html">cc recipient</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/recipient.html">recipient</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/to_recipient.html">to recipient</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/header.html">header</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/mail_attachment.html">mail attachment</a></strong> -- by
+			<em>name, index, relative, range, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Standard_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Standard_Suite">Standard Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Message/classes/mailbox.html">mailbox</a></strong>
+					(<em><a href="../../index.html#suite_Message">Message</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Mail/classes/message_viewer.html">message viewer</a></strong>
+					(<em><a href="../../index.html#suite_Mail">Mail</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

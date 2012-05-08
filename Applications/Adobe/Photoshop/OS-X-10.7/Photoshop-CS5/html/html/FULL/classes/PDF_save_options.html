@@ -1,0 +1,263 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>PDF save options</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> PDF save options</h1>
+
+<div id="view"><a href="../../Save_Formats_Suite/classes/PDF_save_options.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Settings related to saving a pdf document</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Save_Formats_Suite">Save Formats Suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong><a href="../../FULL/classes/save_options.html">save options</a></strong>
+					(<em><a href="../../index.html#suite_Save_Formats_Suite">Save Formats Suite</a></em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>color conversion</strong>
+			
+			<em>boolean</em>
+			 -- convert the color profile to a destination profile
+		</li>
+<li>
+			<strong>description</strong>
+			
+			<em>Unicode text</em>
+			 -- description of the save options in use
+		</li>
+<li>
+			<strong>destination profile</strong>
+			
+			<em>Unicode text</em>
+			 -- describes the final RGB or CMYK output device, such as your monitor or a certain press standard
+		</li>
+<li>
+			<strong>down sample</strong>
+			
+			<em>none / PDF average / PDF bicubic / PDF subsample</em>
+			 -- down sample method to use
+		</li>
+<li>
+			<strong>down sample limit</strong>
+			
+			<em>real</em>
+			 -- limits downsampleing/subsampling to images that exceed this value (in pixels per inch)
+		</li>
+<li>
+			<strong>down sample size</strong>
+			
+			<em>real</em>
+			 -- down sample images to this size if they exceed limit (in pixels per inch)
+		</li>
+<li>
+			<strong>downgrade color profile</strong>
+			
+			<em>boolean</em>
+			 -- DEPRECATED, no longer used in CS2 ( should the embedded color profile be downgraded to version 2 )
+		</li>
+<li>
+			<strong>eight convert</strong>
+			
+			<em>boolean</em>
+			 -- converts a 16-bit image to 8-bit for better compatibility with other applications
+		</li>
+<li>
+			<strong>embed color profile</strong>
+			
+			<em>boolean</em>
+			 -- embed color profile in document
+		</li>
+<li>
+			<strong>embed fonts</strong>
+			
+			<em>boolean</em>
+			 -- DEPRECATED, no longer used in CS2 ( embed fonts? Only valid if a text layer is included )
+		</li>
+<li>
+			<strong>embed thumbnail</strong>
+			
+			<em>boolean</em>
+			 -- Includes a small preview image in Acrobat
+		</li>
+<li>
+			<strong>encoding</strong>
+			
+			<em>JPEG / JPEG 2000 high / JPEG 2000 lossless / JPEG 2000 low / JPEG 2000 med / JPEG 2000 med high / JPEG 2000 med low / JPEG high / JPEG low / JPEG med / JPEG med high / JPEG med low / none / ZIP / ZIP 4</em>
+			 -- ZIP, JPEG and JPEG2000 encoding and compression options
+		</li>
+<li>
+			<strong>image interpolation</strong>
+			
+			<em>boolean</em>
+			 -- DEPRECATED, no longer used in CS2 ( use image interpolation? )
+		</li>
+<li>
+			<strong>JPEG quality</strong>
+			
+			<em>integer</em>
+			 -- Only valid for JPEG encoding. Use encoding options instead of this property. Quality of produced image. Only valid for JPEG encoded PDF documents ( 0 - 12 )
+		</li>
+<li>
+			<strong>output condition</strong>
+			
+			<em>Unicode text</em>
+			 -- an optional comment field for inserting descriptions of the output condition. The text is stored in the PDF/X file.
+		</li>
+<li>
+			<strong>output condition id</strong>
+			
+			<em>Unicode text</em>
+			 -- identifier for the output condition
+		</li>
+<li>
+			<strong>PDF compatibility</strong>
+			
+			<em>PDF 13 / PDF 14 / PDF 15 / PDF 16 / PDF 17</em>
+			 -- PDF version to be compatible with
+		</li>
+<li>
+			<strong>PDF standard</strong>
+			
+			<em>none / PDFX1a2001 standard / PDFX1a2003 standard / PDFX32002 standard / PDFX32003 standard / PDFX42008 standard</em>
+			 -- PDF Standard to be compatible with
+		</li>
+<li>
+			<strong>preserve editing</strong>
+			
+			<em>boolean</em>
+			 -- Lets you reopen the PDF in Photoshop with native Photoshop data intact
+		</li>
+<li>
+			<strong>presetfile</strong>
+			
+			<em>Unicode text</em>
+			 -- preset file to use for settings, may override 'save as' dialog settings
+		</li>
+<li>
+			<strong>profile inclusion policy</strong>
+			
+			<em>boolean</em>
+			 -- shows which profiles to include
+		</li>
+<li>
+			<strong>registry name</strong>
+			
+			<em>Unicode text</em>
+			 -- URL where the output condition is registered
+		</li>
+<li>
+			<strong>save alpha channels</strong>
+			
+			<em>boolean</em>
+			 -- save alpha channels
+		</li>
+<li>
+			<strong>save annotations</strong>
+			
+			<em>boolean</em>
+			 -- save annotations
+		</li>
+<li>
+			<strong>save layers</strong>
+			
+			<em>boolean</em>
+			 -- save layers
+		</li>
+<li>
+			<strong>save spot colors</strong>
+			
+			<em>boolean</em>
+			 -- save spot colors
+		</li>
+<li>
+			<strong>tile size</strong>
+			
+			<em>integer</em>
+			 -- compression option supported only with JPEG2000 compression
+		</li>
+<li>
+			<strong>transparency</strong>
+			
+			<em>boolean</em>
+			 -- DEPRECATED, no longer used in CS2
+		</li>
+<li>
+			<strong>use outlines for text</strong>
+			
+			<em>boolean</em>
+			 -- DEPRECATED, no longer used in CS2 ( use outlines for text? Only valid if vector data is included )
+		</li>
+<li>
+			<strong>vector data</strong>
+			
+			<em>boolean</em>
+			 -- DEPRECATED, no longer used in CS2 ( include vector data )
+		</li>
+<li>
+			<strong>view</strong>
+			
+			<em>boolean</em>
+			 -- Opens the saved PDF in Acrobat
+		</li>
+<li>
+			<strong>web optimize</strong>
+			
+			<em>boolean</em>
+			 -- Improves performance of PDFs on Web servers
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/presentation_options.html">presentation options</a></strong>
+					(<em><a href="../../index.html#suite_Photoshop_Suite">Photoshop Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

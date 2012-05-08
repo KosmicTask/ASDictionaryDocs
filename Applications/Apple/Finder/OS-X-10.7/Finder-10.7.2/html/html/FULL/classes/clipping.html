@@ -1,0 +1,292 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>clipping</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> clipping</h1>
+
+<div id="view"><a href="../../Files/classes/clipping.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A clipping</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>clippings</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Files">Files</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong><a href="../../FULL/classes/file.html">file</a></strong>
+					(<em><a href="../../index.html#suite_Files">Files</a></em>)
+				 &#8594; 
+					<strong><a href="../../FULL/classes/item.html">item</a></strong>
+					(<em><a href="../../index.html#suite_Finder_items">Finder items</a></em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>name</strong>
+			
+			<em>Unicode text</em>
+			 -- the name of the item
+		</li>
+<li>
+			<strong>displayed name</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- the user-visible name of the item
+		</li>
+<li>
+			<strong>name extension</strong>
+			
+			<em>Unicode text</em>
+			 -- the name extension of the item (such as “txt”)
+		</li>
+<li>
+			<strong>extension hidden</strong>
+			
+			<em>boolean</em>
+			 -- Is the item's extension hidden from the user?
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- the index in the front-to-back ordering within its container
+		</li>
+<li>
+			<strong>container</strong>
+			(r/o)
+			<em>reference</em>
+			 -- the container of the item
+		</li>
+<li>
+			<strong>disk</strong>
+			(r/o)
+			<em>reference</em>
+			 -- the disk on which the item is stored
+		</li>
+<li>
+			<strong>position</strong>
+			
+			<em>point</em>
+			 -- the position of the item within its parent window (can only be set for an item in a window viewed as icons or buttons)
+		</li>
+<li>
+			<strong>desktop position</strong>
+			
+			<em>point</em>
+			 -- the position of the item on the desktop
+		</li>
+<li>
+			<strong>bounds</strong>
+			
+			<em>bounding rectangle</em>
+			 -- the bounding rectangle of the item (can only be set for an item in a window viewed as icons or buttons)
+		</li>
+<li>
+			<strong>label index</strong>
+			
+			<em>integer</em>
+			 -- the label of the item
+		</li>
+<li>
+			<strong>locked</strong>
+			
+			<em>boolean</em>
+			 -- Is the file locked?
+		</li>
+<li>
+			<strong>kind</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- the kind of the item
+		</li>
+<li>
+			<strong>description</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- a description of the item
+		</li>
+<li>
+			<strong>comment</strong>
+			
+			<em>Unicode text</em>
+			 -- the comment of the item, displayed in the “Get Info” window
+		</li>
+<li>
+			<strong>size</strong>
+			(r/o)
+			<em>double integer</em>
+			 -- the logical size of the item
+		</li>
+<li>
+			<strong>physical size</strong>
+			(r/o)
+			<em>double integer</em>
+			 -- the actual space used by the item on disk
+		</li>
+<li>
+			<strong>creation date</strong>
+			(r/o)
+			<em>date</em>
+			 -- the date on which the item was created
+		</li>
+<li>
+			<strong>modification date</strong>
+			
+			<em>date</em>
+			 -- the date on which the item was last modified
+		</li>
+<li>
+			<strong>icon</strong>
+			
+			<em><a href="../../FULL/classes/icon_family.html">icon family</a></em>
+			 -- the icon bitmap of the item
+		</li>
+<li>
+			<strong>URL</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- the URL of the item
+		</li>
+<li>
+			<strong>owner</strong>
+			
+			<em>Unicode text</em>
+			 -- the user that owns the container
+		</li>
+<li>
+			<strong>group</strong>
+			
+			<em>Unicode text</em>
+			 -- the user or group that has special access to the container
+		</li>
+<li>
+			<strong>owner privileges</strong>
+			
+			<em>read only / read write / write only / none</em>
+			
+		</li>
+<li>
+			<strong>group privileges</strong>
+			
+			<em>read only / read write / write only / none</em>
+			
+		</li>
+<li>
+			<strong>everyones privileges</strong>
+			
+			<em>read only / read write / write only / none</em>
+			
+		</li>
+<li>
+			<strong>information window</strong>
+			(r/o)
+			<em>reference</em>
+			 -- the information window for the item
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- every property of an item
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- the class of the item
+		</li>
+<li>
+			<strong>file type</strong>
+			
+			<em>type class</em>
+			 -- the OSType identifying the type of data contained in the item
+		</li>
+<li>
+			<strong>creator type</strong>
+			
+			<em>type class</em>
+			 -- the OSType identifying the application that created the item
+		</li>
+<li>
+			<strong>stationery</strong>
+			
+			<em>boolean</em>
+			 -- Is the file a stationery pad?
+		</li>
+<li>
+			<strong>product version</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- the version of the product (visible at the top of the “Get Info” window)
+		</li>
+<li>
+			<strong>version</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- the version of the file (visible at the bottom of the “Get Info” window)
+		</li>
+<li>
+			<strong>clipping window</strong>
+			(r/o)
+			<em>reference</em>
+			 -- (NOT AVAILABLE YET) the clipping window for this clipping
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Finder_Basics">Finder Basics</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/container.html">container</a></strong>
+					(<em><a href="../../index.html#suite_Containers_and_folders">Containers and folders</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

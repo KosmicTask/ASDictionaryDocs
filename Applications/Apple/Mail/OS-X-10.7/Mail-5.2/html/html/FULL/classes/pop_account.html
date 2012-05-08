@@ -1,0 +1,233 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>pop account</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> pop account</h1>
+
+<div id="view"><a href="../../Message/classes/pop_account.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A POP email account</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>pop accounts</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Message">Message</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong><a href="../../FULL/classes/account.html">account</a></strong>
+					(<em><a href="../../index.html#suite_Message">Message</a></em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>delivery account</strong>
+			
+			<em>smtp server or missing value</em>
+			 -- The delivery account used when sending mail from this account
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em><a href="../../FULL/classes/rich_text.html">rich text</a></em>
+			 -- The name of an account
+		</li>
+<li>
+			<strong>password</strong>
+			
+			<em><a href="../../FULL/classes/rich_text.html">rich text</a></em>
+			 -- Password for this account. Can be set, but not read via scripting
+		</li>
+<li>
+			<strong>authentication</strong>
+			
+			<em>password / apop / kerberos 5 / ntlm / md5 / external / Apple token / none</em>
+			 -- Preferred authentication scheme for account
+		</li>
+<li>
+			<strong>account type</strong>
+			(r/o)
+			<em>pop / smtp / imap / iCloud</em>
+			 -- The type of an account
+		</li>
+<li>
+			<strong>email addresses</strong>
+			
+			<em>list of <a href="../../FULL/classes/rich_text.html">rich text</a></em>
+			 -- The list of email addresses configured for an account
+		</li>
+<li>
+			<strong>full name</strong>
+			
+			<em><a href="../../FULL/classes/rich_text.html">rich text</a></em>
+			 -- The users full name configured for an account
+		</li>
+<li>
+			<strong>empty junk messages frequency</strong>
+			
+			<em>integer</em>
+			 -- Number of days before junk messages are deleted (0 = delete on quit, -1 = never delete)
+		</li>
+<li>
+			<strong>empty sent messages frequency</strong>
+			
+			<em>integer</em>
+			 -- Number of days before archived sent messages are deleted (0 = delete on quit, -1 = never delete)
+		</li>
+<li>
+			<strong>empty trash frequency</strong>
+			
+			<em>integer</em>
+			 -- Number of days before messages in the trash are permanently deleted (0 = delete on quit, -1 = never delete)
+		</li>
+<li>
+			<strong>empty junk messages on quit</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the messages in the junk messages mailboxes will be deleted on quit
+		</li>
+<li>
+			<strong>empty sent messages on quit</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the messages in the sent messages mailboxes will be deleted on quit
+		</li>
+<li>
+			<strong>empty trash on quit</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the messages in deleted messages mailboxes will be permanently deleted on quit
+		</li>
+<li>
+			<strong>enabled</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the account is enabled or not
+		</li>
+<li>
+			<strong>user name</strong>
+			
+			<em><a href="../../FULL/classes/rich_text.html">rich text</a></em>
+			 -- The user name used to connect to an account
+		</li>
+<li>
+			<strong>account directory</strong>
+			(r/o)
+			<em>file</em>
+			 -- The directory where the account stores things on disk
+		</li>
+<li>
+			<strong>port</strong>
+			
+			<em>integer</em>
+			 -- The port used to connect to an account
+		</li>
+<li>
+			<strong>server name</strong>
+			
+			<em><a href="../../FULL/classes/rich_text.html">rich text</a></em>
+			 -- The host name used to connect to an account
+		</li>
+<li>
+			<strong>include when getting new mail</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the account will be included when getting new mail
+		</li>
+<li>
+			<strong>move deleted messages to trash</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether messages that are deleted will be moved to the trash mailbox
+		</li>
+<li>
+			<strong>uses ssl</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether SSL is enabled for this receiving account
+		</li>
+<li>
+			<strong>big message warning size</strong>
+			
+			<em>integer</em>
+			 -- If message size (in bytes) is over this amount, Mail will prompt you asking whether you want to download the message (-1 = do not prompt)
+		</li>
+<li>
+			<strong>delayed message deletion interval</strong>
+			
+			<em>integer</em>
+			 -- Number of days before messages that have been downloaded will be deleted from the server (0 = delete immediately after downloading)
+		</li>
+<li>
+			<strong>delete mail on server</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether POP account deletes messages on the server after downloading
+		</li>
+<li>
+			<strong>delete messages when moved from inbox</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether messages will be deleted from the server when moved from your POP inbox
+		</li>
+	</ul>
+
+
+
+	<h2>Elements</h2>
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/mailbox.html">mailbox</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Standard_Suite">Standard Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

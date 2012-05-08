@@ -1,0 +1,371 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>application</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> application</h1>
+
+<div id="view"><a href="../../FULL/classes/application.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>The application's top-level scripting object.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>applications</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Standard_Suite">Standard Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>name</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- The name of the application.
+		</li>
+<li>
+			<strong>frontmost</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Is this the active application?
+		</li>
+<li>
+			<strong>version</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- The version of the application.
+		</li>
+<li>
+			<strong>always bcc myself</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether you will be included in the Bcc: field of messages which you are composing
+		</li>
+<li>
+			<strong>always cc myself</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether you will be included in the Cc: field of messages which you are composing
+		</li>
+<li>
+			<strong>selection</strong>
+			(r/o)
+			<em>list of <a href="../../Message/classes/message.html">message</a></em>
+			 -- List of messages that the user has selected
+		</li>
+<li>
+			<strong>application version</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- The build number for the Mail application bundle
+		</li>
+<li>
+			<strong>fetch interval</strong>
+			
+			<em>integer</em>
+			 -- The interval (in minutes) between automatic fetches of new mail
+		</li>
+<li>
+			<strong>background activity count</strong>
+			(r/o)
+			<em>integer</em>
+			 -- Number of background activities currently running in Mail, according to the Activity window
+		</li>
+<li>
+			<strong>choose signature when composing</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether user can choose a signature directly in a new compose window
+		</li>
+<li>
+			<strong>color quoted text</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether quoted text should be colored
+		</li>
+<li>
+			<strong>default message format</strong>
+			
+			<em>plain format / rich format</em>
+			 -- Default format for messages being composed or message replies
+		</li>
+<li>
+			<strong>download html attachments</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether images and attachments in HTML messages should be downloaded and displayed
+		</li>
+<li>
+			<strong>drafts mailbox</strong>
+			(r/o)
+			<em><a href="../../Message/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Drafts mailbox
+		</li>
+<li>
+			<strong>expand group addresses</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether group addresses will be expanded when entered into the address fields of a new compose message
+		</li>
+<li>
+			<strong>fixed width font</strong>
+			
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- Font for plain text messages, only used if 'use fixed width font' is set to true
+		</li>
+<li>
+			<strong>fixed width font size</strong>
+			
+			<em>real</em>
+			 -- Font size for plain text messages, only used if 'use fixed width font' is set to true
+		</li>
+<li>
+			<strong>framework version</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- The build number for the Message framework, used by Mail
+		</li>
+<li>
+			<strong>header detail</strong>
+			
+			<em>all / custom / default / no headers</em>
+			 -- The level of detail shown for headers on incoming messages
+		</li>
+<li>
+			<strong>inbox</strong>
+			(r/o)
+			<em><a href="../../Message/classes/mailbox.html">mailbox</a></em>
+			 -- The top level In mailbox
+		</li>
+<li>
+			<strong>include all original message text</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether all of the original message will be quoted or only the text you have selected (if any)
+		</li>
+<li>
+			<strong>quote original message</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether the text of the original message will be included in replies
+		</li>
+<li>
+			<strong>check spelling while typing</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether spelling will be checked automatically in messages being composed
+		</li>
+<li>
+			<strong>junk mailbox</strong>
+			(r/o)
+			<em><a href="../../Message/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Junk mailbox
+		</li>
+<li>
+			<strong>level one quoting color</strong>
+			
+			<em>blue / green / orange / other / purple / red / yellow</em>
+			 -- Color for quoted text with one level of indentation
+		</li>
+<li>
+			<strong>level two quoting color</strong>
+			
+			<em>blue / green / orange / other / purple / red / yellow</em>
+			 -- Color for quoted text with two levels of indentation
+		</li>
+<li>
+			<strong>level three quoting color</strong>
+			
+			<em>blue / green / orange / other / purple / red / yellow</em>
+			 -- Color for quoted text with three levels of indentation
+		</li>
+<li>
+			<strong>message font</strong>
+			
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- Font for messages (proportional font)
+		</li>
+<li>
+			<strong>message font size</strong>
+			
+			<em>real</em>
+			 -- Font size for messages (proportional font)
+		</li>
+<li>
+			<strong>message list font</strong>
+			
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- Font for message list
+		</li>
+<li>
+			<strong>message list font size</strong>
+			
+			<em>real</em>
+			 -- Font size for message list
+		</li>
+<li>
+			<strong>new mail sound</strong>
+			
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- Name of new mail sound or 'None' if no sound is selected
+		</li>
+<li>
+			<strong>outbox</strong>
+			(r/o)
+			<em><a href="../../Message/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Out mailbox
+		</li>
+<li>
+			<strong>should play other mail sounds</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether sounds will be played for various things such as when a messages is sent or if no mail is found when manually checking for new mail or if there is a fetch error
+		</li>
+<li>
+			<strong>same reply format</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether replies will be in the same text format as the message to which you are replying
+		</li>
+<li>
+			<strong>selected signature</strong>
+			
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- Name of current selected signature (or 'randomly', 'sequentially', or 'none')
+		</li>
+<li>
+			<strong>sent mailbox</strong>
+			(r/o)
+			<em><a href="../../Message/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Sent mailbox
+		</li>
+<li>
+			<strong>fetches automatically</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether mail will automatically be fetched at a specific interval
+		</li>
+<li>
+			<strong>highlight selected conversation</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether messages in conversations should be highlighted in the Mail viewer window when not grouped
+		</li>
+<li>
+			<strong>show online buddy status</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether Mail will show online buddy status
+		</li>
+<li>
+			<strong>trash mailbox</strong>
+			(r/o)
+			<em><a href="../../Message/classes/mailbox.html">mailbox</a></em>
+			 -- The top level Trash mailbox
+		</li>
+<li>
+			<strong>use address completion</strong>
+			
+			<em>boolean</em>
+			 -- Indicates whether network directories (LDAP) and Address Book will be used for address completion
+		</li>
+<li>
+			<strong>use fixed width font</strong>
+			
+			<em>boolean</em>
+			 -- Should fixed-width font be used for plain text messages?
+		</li>
+<li>
+			<strong>primary email</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/rich_text.html">rich text</a></em>
+			 -- The user's primary email address
+		</li>
+	</ul>
+
+
+
+	<h2>Elements</h2>
+	<ul>
+		<li>
+			<strong><a href="../../Standard_Suite/classes/document.html">document</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Standard_Suite/classes/window.html">window</a></strong> -- by
+			<em>name, index, relative, range, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/account.html">account</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/pop_account.html">pop account</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/imap_account.html">imap account</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/iCloud_account.html">iCloud account</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/smtp_server.html">smtp server</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Mail/classes/outgoing_message.html">outgoing message</a></strong> -- by
+			<em>index, relative, range, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Mail/classes/ldap_server.html">ldap server</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/mailbox.html">mailbox</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Mail/classes/message_viewer.html">message viewer</a></strong> -- by
+			<em>index, relative, range, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Message/classes/rule.html">rule</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../Mail/classes/signature.html">signature</a></strong> -- by
+			<em>name, index, relative, range, test</em>
+		</li>
+	</ul>
+
+
+
+
+</body>
+</html>
