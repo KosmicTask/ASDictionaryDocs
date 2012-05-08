@@ -8,7 +8,7 @@ The full [ASDictionary][asdictionary] generated documentation set and downloadab
 
 #Adding new ASDictionary AppleScript documentation
 
-To add a new header:
+To add a new AppleScript documentation set:
 
 1. Clone this.
 2. Run the [ASDictionary][asdictionary] tool on the application bundle and generate an HTML AppleScript document set.
