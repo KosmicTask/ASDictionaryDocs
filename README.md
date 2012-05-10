@@ -1,6 +1,6 @@
 #ASDictionaryDocs
 
-An archive of browsable HTML AppleScript documentation for a range of Apple and third party OS X applications.
+An archive of browsable HTML AppleScript documentation for a range of Apple and third party OS X applications (OS X 10.6 and above).
 
 [ASDictionary][asdictionary] is used to generate the html docs from an application bundle. Source is available on [GitHub][github-asdictionary].
 
@@ -12,12 +12,12 @@ To add a new AppleScript documentation set:
 
 1. Clone this.
 2. Run the [ASDictionary][asdictionary] tool on the application bundle and generate an HTML AppleScript document set.
-3. Insert the generated header into the `Applications` folder hierarchy using the template below.
+3. Insert the generated HTML into the `Applications` folder hierarchy using the template below.
 4. Send us a pull.
 
 Folder hierarchy template:
 
-`Applications\<company>\<app>\OS-X-<ver>\<app-ver>\html`
+	Applications\<company>\<appname>\OS-X-<ver>\<appname-ver>\html
 
 #Email submission
 
@@ -25,7 +25,7 @@ ASDictionary generated documentation will also be accepted by email for inclusio
 
 1. Application company name (Apple, Adobe, etc).
 2. Application name and link.
-3. OS X version of machine that generated the header.
+3. OS X version of machine that generated the header (OS X 10.6 and above only please).
 4. Application version as quoted in the About panel.
 5. The html documentation itself, either in the body of the email or as an attachment. Use the [ASDictionary][asdictionary] tool.
 
