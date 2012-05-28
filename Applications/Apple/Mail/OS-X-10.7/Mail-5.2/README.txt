@@ -1,0 +1,1 @@
+TITLE = Mail AppleScript Dictionary : Mail 5.2 on OS-X-10.7APP_COMPANY = AppleAPP_NAME = MailOS_VERSION = OS-X-10.7APP_VERSION = 5.2APP_AS_DOC_PATH = http://www.mugginsoft.com/html/kosmictask/ASDictionaryDocs/Apple/Mail/OS-X-10.7/Mail-5.2/htmlAPP_AS_DOC_ZIP_PATH = http://www.mugginsoft.com/html/kosmictask/ASDictionaryDocs/Apple/Mail/OS-X-10.7/Mail-5.2/html.zip
