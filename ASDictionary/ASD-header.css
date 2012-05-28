@@ -1,0 +1,50 @@
+#titlearea {
+	color:#DDD6B2;
+	background-color:#665540;
+	font-family: Lucida Grande, Verdana, Geneva, Arial, sans-serif; 
+	font-size: 13px;
+	line-height: 1.3;
+	padding: 0px 0px 0px 0px; 
+	margin: 0px 0px 0px 0px;
+}
+
+#projectname {
+	float: left; 
+	font-size: 120%; 
+	color: inherit; 
+	padding: 5px 0px 0px 0px;
+}
+
+#titlearea table {
+	float:left;
+	padding:0px 0px 0px 15px; 
+}
+
+#asd-help {
+	padding: 12px 0px 0px 30px;
+	margin:0px 15px 0px 15px; 
+	text-align:right;
+}
+
+#asd-help a {color: white; text-decoration: none;}
+#asd-help a:hover {color: white; text-decoration: underline;}
+#asd-help span.kosmictask {font-size: 170%;}
+
+#titlearea a {
+	color: white;
+	text-decoration: none;
+}
+#titlearea  a:hover {color: white; text-decoration: underline;}
+
+.kosmictask {
+	font-size:90%;
+}
+
+.kosmictask span.kosmictask {
+	font-size:100%;
+}
+
+#projectname .kosmictask {
+	font-size:80%;
+}
+
