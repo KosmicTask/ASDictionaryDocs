@@ -1,0 +1,225 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>trap preset</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> trap preset</h1>
+
+<div id="view"><a href="../../Color_Suite/classes/trap_preset.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A trap preset.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>trap presets</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Color_Suite">Color Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>black color threshold</strong>
+			
+			<em>fixed</em>
+			 -- The minimum amount (as a percentage) of black ink required before the black width setting is applied. (Range: 0 to 100). Can return: fixed (0 - 100).
+		</li>
+<li>
+			<strong>black density</strong>
+			
+			<em>fixed</em>
+			 -- The neutral density value at or above which an ink is considered black. (Range: .001 to 10). Can return: fixed (0 - 10).
+		</li>
+<li>
+			<strong>black width</strong>
+			
+			<em>number | string</em>
+			 -- The black width. (Range depends on unit. For points: 0.0 to 8.0; picas: 0p0 to 0p8; inches: 0 to 0.1111; mm: 0 to 2.822; cm: 0 to .2822; ciceros: 0c0 to 0c7.507). Can return: number or string (0 - 8 points).
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>color reduction</strong>
+			
+			<em>fixed</em>
+			 -- The degree (as a percentage) to which components from abutting colors are used to reduce the trap color. (Range: 0 to 100) Note: 0% makes a trap whose neutral density is equal to the neutral density of the darker color. Can return: fixed (0 - 100).
+		</li>
+<li>
+			<strong>default trap width</strong>
+			
+			<em>number | string</em>
+			 -- The default width for trapping all colors except those involving solid black. (Range depends on unit. For points: 0.0 to 8.0; picas: 0p0 to 0p8; inches: 0 to 0.1111; mm: 0 to 2.822; cm: 0 to .2822; ciceros: 0c0 to 0c7.507). Can return: number or string...
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the trap preset.
+		</li>
+<li>
+			<strong>image placement</strong>
+			
+			<em>center edges / choke / image neutral density / images over spread</em>
+			 -- The trap placement between vector objects and bitmap images.
+		</li>
+<li>
+			<strong>images to images</strong>
+			
+			<em>boolean</em>
+			 -- If true, turns on trapping along the boundary of overlapping or abutting bitmap images.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the trap preset within its containing object.
+		</li>
+<li>
+			<strong>internal images</strong>
+			
+			<em>boolean</em>
+			 -- If true, turns on trapping among colors within individual bitmap images.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the trap preset.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/trap_preset.html">trap preset</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>objects to images</strong>
+			
+			<em>boolean</em>
+			 -- If true, ensures that vector objects overlap bitmap images.
+		</li>
+<li>
+			<strong>one bit images</strong>
+			
+			<em>boolean</em>
+			 -- If true, ensures that one-bit images trap to abutting objects.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the trap preset (a application or document). Can return: application or document.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>sliding trap threshold</strong>
+			
+			<em>fixed</em>
+			 -- The difference (as a percentage) between the neutral densities of abutting colors at which the trap is moved from the darker side of a color edge toward the centerline. (Range: 0 to 100). Can return: fixed (0 - 100).
+		</li>
+<li>
+			<strong>step threshold</strong>
+			
+			<em>fixed</em>
+			 -- The amount (as a percentage) that components of abutting colors must vary before a trap is created. (Range: 1 to 100). Can return: fixed (1 - 100).
+		</li>
+<li>
+			<strong>trap end</strong>
+			
+			<em>miter trap ends / overlap trap ends</em>
+			 -- The shape to use at the intersection of three-way traps.
+		</li>
+<li>
+			<strong>trap join</strong>
+			
+			<em>miter end join / round end join / bevel end join</em>
+			 -- The join type of the trap preset.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page.html">page</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/trap_preset.html">trap preset</a></strong>
+					(<em><a href="../../index.html#suite_Color_Suite">Color Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

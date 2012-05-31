@@ -1,0 +1,237 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>layout window</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> layout window</h1>
+
+<div id="view"><a href="../../FULL/classes/layout_window.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A layout window.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>layout windows</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong><a href="../../Basics_Suite/classes/window.html">window</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>active layer</strong>
+			
+			<em><a href="../../Layout_Suite/classes/layer.html">layer</a></em>
+			 -- The active layer. Can also accept: string.
+		</li>
+<li>
+			<strong>active page</strong>
+			
+			<em><a href="../../Layout_Suite/classes/page.html">page</a></em>
+			 -- The front-most page.
+		</li>
+<li>
+			<strong>active spread</strong>
+			
+			<em>reference</em>
+			 -- The front-most spread. Can return: spread or master spread.
+		</li>
+<li>
+			<strong>bounds</strong>
+			
+			<em>list of integer</em>
+			 -- The bounds of the window (specified in pixels) in the form [top, left, bottom, right].
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the layout window within its containing object.
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the layout window.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Basics_Suite/classes/layout_window.html">layout window</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>overprint preview</strong>
+			
+			<em>boolean</em>
+			 -- If true, display a simulation of overprinting.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em><a href="../../Basics_Suite/classes/document.html">document</a></em>
+			 -- The parent of the layout window (a document).
+		</li>
+<li>
+			<strong>preserve color numbers</strong>
+			
+			<em>boolean</em>
+			 -- If true, leaves color values unchanged for CMYK objects without embedded profiles and native objects such as line art or type. Note: Converts images whose profiles differ from the profile of the simulated device. Valid only when proofing type is custom.
+		</li>
+<li>
+			<strong>proofing profile</strong>
+			
+			<em>string</em>
+			 -- The profile used for proofing colors.
+		</li>
+<li>
+			<strong>proofing type</strong>
+			
+			<em>proof off / document CMYK / working CMYK / custom</em>
+			 -- The method of proofing colors.
+		</li>
+<li>
+			<strong>screen mode</strong>
+			
+			<em>preview off / preview to page / preview to bleed / preview to slug / presentation preview</em>
+			 -- The screen mode for layout view.
+		</li>
+<li>
+			<strong>selection</strong>
+			
+			<em>list of reference</em>
+			 -- The selected object(s). Can also accept: object or nothing.
+		</li>
+<li>
+			<strong>simulate ink black</strong>
+			
+			<em>boolean</em>
+			 -- If true, simulates the dark gray produced by many printers in place of solid black, according to the proofing profile. Note: Valid only when proofing type is custom.
+		</li>
+<li>
+			<strong>simulate paper white</strong>
+			
+			<em>boolean</em>
+			 -- If true, simulates the dingy white of real paper, according to the proofing profile. Note: Valid only when proofing type is custom.
+		</li>
+<li>
+			<strong>transform reference point</strong>
+			
+			<em>anything</em>
+			 -- The default anchor point around which to transform objects. Can return: top left anchor/top center anchor/top right anchor/left center anchor/center anchor/right center anchor/bottom left anchor/bottom center anchor/bottom right anchor or list of 2 num...
+		</li>
+<li>
+			<strong>view display setting</strong>
+			
+			<em>high quality / typical / optimized</em>
+			 -- The display performance preferences override for the view.
+		</li>
+<li>
+			<strong>zoom percentage</strong>
+			
+			<em>fixed</em>
+			 -- The size (as a percentage) to which to enlarge or reduce the view of the document. (Range: 5 to 4000). Can return: fixed (5 - 4000).
+		</li>
+<li>
+			<strong>after activate</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after the layout window becomes active. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after attribute changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched when the value of a property changes on this layout window. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after close</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched when a layout window is closing. Since the close has been committed, it can no longer be canceled. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after open</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a layout window is opened. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before close</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a layout window is closed. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before deactivate</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before the layout window becomes inactive. This event bubbles. This event is not cancelable.
+		</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Basics_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/layout_window.html">layout window</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

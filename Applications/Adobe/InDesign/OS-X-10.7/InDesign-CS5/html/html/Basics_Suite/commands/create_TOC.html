@@ -1,0 +1,81 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>create TOC</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Command</sup> create TOC</h1>
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Creates a table of contents.</p>
+
+<ul class="desc">
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<h2>Parameters</h2>
+<ul>
+	<li>
+		<em><a href="../../Basics_Suite/classes/document.html">document</a></em>
+		
+	</li>
+	<li>
+		<strong>using</strong> <em><a href="../../Table_Of_Contents_Suite/classes/TOC_style.html">TOC style</a></em>
+		 -- The TOC style to use to define the content, title, and format of the table of contents.
+	</li>
+<li>
+		[<strong>replacing</strong> <em>boolean</em>]
+		 -- If true, replaces the existing TOC. Can accept: boolean (Default: FALSE).
+	</li>
+<li>
+		[<strong>from book</strong> <em><a href="../../Book_Suite/classes/book.html">book</a></em>]
+		 -- The book whose documents to include in the TOC.
+	</li>
+<li>
+		[<strong>place point</strong> <em>number | string</em>]
+		 -- The point at which to place the TOC story, specified as page coordinates in the format [x, y].
+	</li>
+<li>
+		[<strong>include overset</strong> <em>boolean</em>]
+		 -- If true, includes overset text TOC entries in the TOC. Can accept: boolean (Default: FALSE).
+	</li>
+<li>
+		[<strong>destination layer</strong> <em><a href="../../Layout_Suite/classes/layer.html">layer</a></em>]
+		 -- The layer on which to place the TOC.
+	</li>
+</ul>
+
+
+
+
+	<h2>Result</h2>
+	
+	<ul>
+		<li><em>list of <a href="../../Text_Suite/classes/story.html">story</a></em>
+		 -- The table of contents.
+		</li>
+	</ul>
+
+
+
+</div>
+
+</body>
+</html>

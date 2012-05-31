@@ -1,0 +1,678 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>row</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> row</h1>
+
+<div id="view"><a href="../../FULL/classes/row.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A table row.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>rows</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>auto grow</strong>
+			
+			<em>boolean</em>
+			 -- If true, the height of the cell or the cells in the row can increase or decrease automatically to fit cell content. Note: Allows cells to grow or shrink to the maximum or minimum height, if specified.
+		</li>
+<li>
+			<strong>bottom edge stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the bottom edge border stroke.
+		</li>
+<li>
+			<strong>bottom edge stroke gap color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the bottom edge border stroke. Note: Not valid when bottom edge stroke type is solid.
+		</li>
+<li>
+			<strong>bottom edge stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the bottom edge border stroke will overprint. Note: Not valid when bottom edge stroke type is solid.
+		</li>
+<li>
+			<strong>bottom edge stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the bottom edge border stroke gap color. (Range: 0 to 100) Note: Not valid when bottom edge stroke type is solid.
+		</li>
+<li>
+			<strong>bottom edge stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the bottom edge border stroke will overprint.
+		</li>
+<li>
+			<strong>bottom edge stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the bottom edge border stroke.
+		</li>
+<li>
+			<strong>bottom edge stroke type</strong>
+			
+			<em><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the bottom edge. Can also accept: string.
+		</li>
+<li>
+			<strong>bottom edge stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the bottom edge border stroke.
+		</li>
+<li>
+			<strong>bottom inset</strong>
+			
+			<em>number | string</em>
+			 -- The bottom inset of the cell.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>clip content to cell</strong>
+			
+			<em>boolean</em>
+			 -- If true, clips the cell's content to width and height of the cell.
+		</li>
+<li>
+			<strong>column span</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The number of columns that the object spans.
+		</li>
+<li>
+			<strong>contents</strong>
+			
+			<em>anything</em>
+			 -- The text contents. For rows or columns, when specified as a string, the sting populates each cell in the row or column; when specified as an array, the first value in the array populates the left-most cell in the row or the top-most cell in the column;...
+		</li>
+<li>
+			<strong>diagonal line in front</strong>
+			
+			<em>boolean</em>
+			 -- If true, draws the diagonal line in front of cell contents.
+		</li>
+<li>
+			<strong>diagonal line stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The diagonal line color, specified as a swatch.
+		</li>
+<li>
+			<strong>diagonal line stroke gap color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the diagonal line stroke. Note: Not valid when diagonal line stroke type is solid.
+		</li>
+<li>
+			<strong>diagonal line stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the stroke gap of the diagonal line will overprint. Note: Not valid when diagonal line stroke type is solid.
+		</li>
+<li>
+			<strong>diagonal line stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the diagonal line stroke gap color. Note: Not valid when diagonal line stroke type is solid.
+		</li>
+<li>
+			<strong>diagonal line stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the diagonal line stroke will overprint.
+		</li>
+<li>
+			<strong>diagonal line stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The diagonal line tint (as a percentage). (Range: 0 to 100)
+		</li>
+<li>
+			<strong>diagonal line stroke type</strong>
+			
+			<em><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the diagonal line(s). Can also accept: string.
+		</li>
+<li>
+			<strong>diagonal line stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The diagonal line stroke weight.
+		</li>
+<li>
+			<strong>fill color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the fill of the object. Can also accept: string.
+		</li>
+<li>
+			<strong>fill tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the fill of the object.
+		</li>
+<li>
+			<strong>first baseline offset</strong>
+			
+			<em>ascent offset / cap height / leading offset / embox height / x height / fixed height</em>
+			 -- The distance between the baseline of the text and the top inset of the cell.
+		</li>
+<li>
+			<strong>gradient fill angle</strong>
+			
+			<em>fixed</em>
+			 -- The angle of a linear gradient applied to the fill of the object. (Range: -180 to 180)
+		</li>
+<li>
+			<strong>gradient fill length</strong>
+			
+			<em>fixed</em>
+			 -- The length (of a linear gradient) or radius (of a radial gradient) applied to the fill of the object.
+		</li>
+<li>
+			<strong>gradient fill start</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the fill of the row, in the format [x, y].
+		</li>
+<li>
+			<strong>height</strong>
+			
+			<em>number | string</em>
+			 -- The height of the row. For a table or column, specifies the sum of the row heights.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the row within its containing object.
+		</li>
+<li>
+			<strong>inner column stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The color, specified as a swatch, of the inner column border stroke.
+		</li>
+<li>
+			<strong>inner column stroke gap color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the inner column border stroke. Note: Not valid when inner column stroke type is solid.
+		</li>
+<li>
+			<strong>inner column stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the inner column border stroke will overprint. Note: Not valid when inner column stroke type is solid.
+		</li>
+<li>
+			<strong>inner column stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the inner column border stroke gap color. (Range: 0 to 100) Note: Not valid when inner column stroke type is solid.
+		</li>
+<li>
+			<strong>inner column stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the inner column border stroke will overprint.
+		</li>
+<li>
+			<strong>inner column stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the inner column border stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>inner column stroke type</strong>
+			
+			<em><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the inner column. Can also accept: string.
+		</li>
+<li>
+			<strong>inner column stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the inner column border stroke.
+		</li>
+<li>
+			<strong>inner row stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The color, specified as a swatch, of the inner row border stroke.
+		</li>
+<li>
+			<strong>inner row stroke gap color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the inner row border stroke. Note: Not valid when inner row stroke type is solid.
+		</li>
+<li>
+			<strong>inner row stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the inner row border stroke will overprint. Note: Not valid when inner row stroke type is solid.
+		</li>
+<li>
+			<strong>inner row stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the inner row border stroke. (Range: 0 to 100) Note: Not valid when inner row stroke type is solid.
+		</li>
+<li>
+			<strong>inner row stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the inner row border stroke will overprint.
+		</li>
+<li>
+			<strong>inner row stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the inner row border stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>inner row stroke type</strong>
+			
+			<em><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the inner row. Can also accept: string.
+		</li>
+<li>
+			<strong>inner row stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the inner row border strokes.
+		</li>
+<li>
+			<strong>keep with next row</strong>
+			
+			<em>boolean</em>
+			 -- If true, keeps the row with the next row when the table is split across text frames or pages.
+		</li>
+<li>
+			<strong>left edge stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the left edge border stroke.
+		</li>
+<li>
+			<strong>left edge stroke gap color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the left edge border stroke. Note: Not valid when left edge stroke type is solid.
+		</li>
+<li>
+			<strong>left edge stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the left edge border stroke will overprint. Note: Not valid when left edge stroke type is solid.
+		</li>
+<li>
+			<strong>left edge stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the left edge border stroke gap color. (Range: 0 to 100) Note: Not valid when left edge stroke type is solid.
+		</li>
+<li>
+			<strong>left edge stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the left edge border stroke will overprint.
+		</li>
+<li>
+			<strong>left edge stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the left edge border stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>left edge stroke type</strong>
+			
+			<em><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the left edge. Can also accept: string.
+		</li>
+<li>
+			<strong>left edge stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the left edge border stroke.
+		</li>
+<li>
+			<strong>left inset</strong>
+			
+			<em>number | string</em>
+			 -- The left inset of the cell.
+		</li>
+<li>
+			<strong>maximum height</strong>
+			
+			<em>number | string</em>
+			 -- The maximum height to which cells in the row may grow. Note: The maximum height cannot be exceeded even when auto grow is set to true. Also, the maximum height can affect redistribution.
+		</li>
+<li>
+			<strong>minimum first baseline offset</strong>
+			
+			<em>number | string</em>
+			 -- The space between the baseline of the text and the top inset of the frame or cell. Can return: number or string (0 - 8640 points).
+		</li>
+<li>
+			<strong>minimum height</strong>
+			
+			<em>number | string</em>
+			 -- The minimum height of the cells in the row. Note: When auto grow is true, cells can automatically grow larger than this amount when content is added. Also, the minimum height can affect redistribution.
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the row.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Tables_Suite/classes/row.html">row</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>overflows</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the story has overset text.
+		</li>
+<li>
+			<strong>overprint fill</strong>
+			
+			<em>boolean</em>
+			 -- If true, the fill of the object will overprint.
+		</li>
+<li>
+			<strong>paragraph spacing limit</strong>
+			
+			<em>number | string</em>
+			 -- The maximum space that can be added between paragraphs in a cell. Note: Valid only when vertical justification is justified.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em><a href="../../Tables_Suite/classes/table.html">table</a></em>
+			 -- The parent of the row (a table).
+		</li>
+<li>
+			<strong>parent column</strong>
+			(r/o)
+			<em><a href="../../Tables_Suite/classes/column.html">column</a></em>
+			 -- The parent column of the cell.
+		</li>
+<li>
+			<strong>parent row</strong>
+			(r/o)
+			<em><a href="../../Tables_Suite/classes/row.html">row</a></em>
+			 -- The parent row of the cell.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>right edge stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The color, specified as a swatch, of the right edge border stroke.
+		</li>
+<li>
+			<strong>right edge stroke gap color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the right edge border stroke. Note: Not valid when right edge stroke type is solid.
+		</li>
+<li>
+			<strong>right edge stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the right edge border stroke will overprint. Note: Not valid when right edge stroke type is solid.
+		</li>
+<li>
+			<strong>right edge stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the right edge border stroke gap color. (Range: 0 to 100) Note: Not valid when right edge stroke type is solid.
+		</li>
+<li>
+			<strong>right edge stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the right edge border stroke will overprint.
+		</li>
+<li>
+			<strong>right edge stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the right edge border stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>right edge stroke type</strong>
+			
+			<em><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the right edge. Can also accept: string.
+		</li>
+<li>
+			<strong>right edge stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the right edge border stroke.
+		</li>
+<li>
+			<strong>right inset</strong>
+			
+			<em>number | string</em>
+			 -- The right inset of the cell.
+		</li>
+<li>
+			<strong>rotation angle</strong>
+			
+			<em>fixed</em>
+			 -- The rotation angle (in degrees) of the cell, specified as one of the following values: 0, 90, 180, or 270.
+		</li>
+<li>
+			<strong>row span</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The number of rows that the object spans.
+		</li>
+<li>
+			<strong>row type</strong>
+			
+			<em>body row / header row / footer row / mixed state</em>
+			 -- The row type.
+		</li>
+<li>
+			<strong>start row</strong>
+			
+			<em>anywhere / next column / next frame / next page / next odd page / next even page</em>
+			 -- Indicates where to start the row.
+		</li>
+<li>
+			<strong>top edge stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the top edge border stroke.
+		</li>
+<li>
+			<strong>top edge stroke gap color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the top edge border stroke. Note: Not valid when top edge stroke type is solid.
+		</li>
+<li>
+			<strong>top edge stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the top edge border stroke will overprint. Note: Not valid when top edge stroke type is solid. 
+		</li>
+<li>
+			<strong>top edge stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the top edge border stroke gap color. (Range: 0 to 100) Note: Not valid when top edge stroke type is solid.
+		</li>
+<li>
+			<strong>top edge stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the top edge border stroke will overprint.
+		</li>
+<li>
+			<strong>top edge stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the top edge border stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>top edge stroke type</strong>
+			
+			<em><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the top edge. Can also accept: string.
+		</li>
+<li>
+			<strong>top edge stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the top edge border stroke.
+		</li>
+<li>
+			<strong>top inset</strong>
+			
+			<em>number | string</em>
+			 -- The top inset of the cell.
+		</li>
+<li>
+			<strong>top left diagonal line</strong>
+			
+			<em>boolean</em>
+			 -- If true, draws a diagonal line starting from the top left.
+		</li>
+<li>
+			<strong>top right diagonal line</strong>
+			
+			<em>boolean</em>
+			 -- If true, draws a diagonal line starting from the top right.
+		</li>
+<li>
+			<strong>vertical justification</strong>
+			
+			<em>top align / center align / bottom align / justify align</em>
+			 -- The vertical alignment of cell.
+		</li>
+<li>
+			<strong>width</strong>
+			
+			<em>number | string</em>
+			 -- The width of the row. For a table or row, specifies the sum of the column widths.
+		</li>
+<li>
+			<strong>writing direction</strong>
+			
+			<em>horizontal / vertical</em>
+			 -- The direction of the text in the cell.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Tables_Suite/classes/cell.html">cells</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/column.html">columns</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/row.html">rows</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Tables_Suite/classes/cell.html">cell</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/column.html">column</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/row.html">row</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Tables_Suite/classes/cell.html">cell</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Tables_Suite/classes/column.html">column</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Tables_Suite/classes/row.html">row</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Tables_Suite/classes/table.html">table</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1193 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>event listener</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> event listener</h1>
+
+<div id="view"><a href="../../Basics_Suite/classes/event_listener.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>An event listener.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>event listeners</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>event type</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the event.
+		</li>
+<li>
+			<strong>handler</strong>
+			(r/o)
+			<em>anything</em>
+			 -- The handler to invoke when the event occurs. Can return: alias or string or JavaScript Function.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the event listener.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the event listener within its containing object.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the event listener; this is an alias to the event listener's label property.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/event_listener.html">event listener</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the event listener (a object, UID based object, cell style group, cell style, table style group, condition set, hidden text, condition, Motion Preset, assigned story, assignment, object style group, object style, numbering list, snippet, ...
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/align_distribute_preference.html">align distribute preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/anchored_object_default.html">anchored object default</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/anchored_object_setting.html">anchored object setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/animation_setting.html">animation setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/asset.html">asset</a></strong>
+					(<em><a href="../../index.html#suite_Libraries_Suite">Libraries Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/assigned_story.html">assigned story</a></strong>
+					(<em><a href="../../index.html#suite_Assignment_Suite">Assignment Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/assignment.html">assignment</a></strong>
+					(<em><a href="../../index.html#suite_Assignment_Suite">Assignment Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/auto_correct_preference.html">auto correct preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/auto_correct_table.html">auto correct table</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/background_task.html">background task</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/baseline_frame_grid_option.html">baseline frame grid option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/behavior.html">behavior</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/bevel_and_emboss_setting.html">bevel and emboss setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/blending_setting.html">blending setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/book.html">book</a></strong>
+					(<em><a href="../../index.html#suite_Book_Suite">Book Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/book_content.html">book content</a></strong>
+					(<em><a href="../../index.html#suite_Book_Suite">Book Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/bookmark.html">bookmark</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/building_block.html">building block</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/bullet.html">bullet</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/button_preference.html">button preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/caption_metadata_variable_preference.html">caption metadata variable preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/cell.html">cell</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/cell_style.html">cell style</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/cell_style_group.html">cell style group</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/change.html">change</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/change_glyph_preference.html">change glyph preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/change_grep_preference.html">change grep preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/change_object_preference.html">change object preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/change_text_preference.html">change text preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/change_transliterate_preference.html">change transliterate preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/chapter_number_preference.html">chapter number preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/chapter_number_variable_preference.html">chapter number variable preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/character_style.html">character style</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/character_style_group.html">character style group</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/cjk_grid_preference.html">cjk grid preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/clipboard_preference.html">clipboard preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/clipping_path_settings.html">clipping path settings</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/color_setting.html">color setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/column.html">column</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/composite_font.html">composite font</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/composite_font_entry.html">composite font entry</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/condition.html">condition</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/condition_set.html">condition set</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/conditional_text_preference.html">conditional text preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/content_transparency_setting.html">content transparency setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/contour_option.html">contour option</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/cross_reference.html">cross reference</a></strong>
+					(<em><a href="../../index.html#suite_Indexing_Suite">Indexing Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/cross_reference_format.html">cross reference format</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/custom_text_variable_preference.html">custom text variable preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/data_merge.html">data merge</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/data_merge_field.html">data merge field</a></strong>
+					(<em><a href="../../index.html#suite_Datamerge_Suite">Datamerge Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/data_merge_image_placeholder.html">data merge image placeholder</a></strong>
+					(<em><a href="../../index.html#suite_Datamerge_Suite">Datamerge Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/data_merge_option.html">data merge option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/data_merge_preference.html">data merge preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/data_merge_text_placeholder.html">data merge text placeholder</a></strong>
+					(<em><a href="../../index.html#suite_Datamerge_Suite">Datamerge Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/date_variable_preference.html">date variable preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/dialog.html">dialog</a></strong>
+					(<em><a href="../../index.html#suite_UI_Suite">UI Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/dialog_column.html">dialog column</a></strong>
+					(<em><a href="../../index.html#suite_UI_Suite">UI Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/dialog_row.html">dialog row</a></strong>
+					(<em><a href="../../index.html#suite_UI_Suite">UI Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/dictionary_preference.html">dictionary preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/directional_feather_setting.html">directional feather setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/display_performance_preference.html">display performance preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/display_setting.html">display setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document_preference.html">document preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document_preset.html">document preset</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/drop_shadow_setting.html">drop shadow setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/EPS_export_preference.html">EPS export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/EPS_import_preference.html">EPS import preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/excel_import_preference.html">excel import preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/export_for_web_preference.html">export for web preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/feather_setting.html">feather setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/file_name_variable_preference.html">file name variable preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/fill_transparency_setting.html">fill transparency setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_change_content_transparency_setting.html">find change content transparency setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_change_fill_transparency_setting.html">find change fill transparency setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_change_glyph_option.html">find change glyph option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_change_grep_option.html">find change grep option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_change_object_option.html">find change object option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_change_stroke_transparency_setting.html">find change stroke transparency setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_change_text_option.html">find change text option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_change_transliterate_option.html">find change transliterate option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_change_transparency_setting.html">find change transparency setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_glyph_preference.html">find glyph preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_grep_preference.html">find grep preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_object_preference.html">find object preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_text_preference.html">find text preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/find_transliterate_preference.html">find transliterate preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/flattener_preference.html">flattener preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/flattener_preset.html">flattener preset</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/font.html">font</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/footnote.html">footnote</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/footnote_option.html">footnote option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/frame_fitting_option.html">frame fitting option</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/galley_preference.html">galley preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/general_preference.html">general preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/grabber_preference.html">grabber preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/gradient_feather_setting.html">gradient feather setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/gradient_stop.html">gradient stop</a></strong>
+					(<em><a href="../../index.html#suite_Color_Suite">Color Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/graphic_layer.html">graphic layer</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/graphic_layer_option.html">graphic layer option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/grid_data_information.html">grid data information</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/grid_preference.html">grid preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/grid_printing_preference.html">grid printing preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/guide.html">guide</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/guide_preference.html">guide preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hidden_text.html">hidden text</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hyperlink.html">hyperlink</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hyperlink_external_page_destination.html">hyperlink external page destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hyperlink_page_destination.html">hyperlink page destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hyperlink_page_item_source.html">hyperlink page item source</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hyperlink_text_destination.html">hyperlink text destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hyperlink_text_source.html">hyperlink text source</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hyperlink_URL_destination.html">hyperlink URL destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hyphenation_exception.html">hyphenation exception</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/idle_task.html">idle task</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/image_IO_preference.html">image IO preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/image_preference.html">image preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/IME_preference.html">IME preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/imported_page_attribute.html">imported page attribute</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/InCopy_export_option.html">InCopy export option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/index.html">index</a></strong>
+					(<em><a href="../../index.html#suite_Indexing_Suite">Indexing Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/index_options.html">index options</a></strong>
+					(<em><a href="../../index.html#suite_Indexing_Suite">Indexing Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/index_section.html">index section</a></strong>
+					(<em><a href="../../index.html#suite_Indexing_Suite">Indexing Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/indexing_sort_option.html">indexing sort option</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/ink.html">ink</a></strong>
+					(<em><a href="../../index.html#suite_Color_Suite">Color Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/inner_glow_setting.html">inner glow setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/inner_shadow_setting.html">inner shadow setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/interactive_PDF_export_preference.html">interactive PDF export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/JPEG_export_preference.html">JPEG export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/kinsoku_table.html">kinsoku table</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/language.html">language</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/language_with_vendors.html">language with vendors</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/layer.html">layer</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/layout_adjustment_preference.html">layout adjustment preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/layout_grid_data_information.html">layout grid data information</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/library.html">library</a></strong>
+					(<em><a href="../../index.html#suite_Libraries_Suite">Libraries Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/link.html">link</a></strong>
+					(<em><a href="../../index.html#suite_Links_Suite">Links Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/link_metadata.html">link metadata</a></strong>
+					(<em><a href="../../index.html#suite_Links_Suite">Links Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/linking_preference.html">linking preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/margin_preference.html">margin preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/master_spread.html">master spread</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/match_character_style_preference.html">match character style preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/match_paragraph_style_preference.html">match paragraph style preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/menu.html">menu</a></strong>
+					(<em><a href="../../index.html#suite_UI_Suite">UI Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/menu_action.html">menu action</a></strong>
+					(<em><a href="../../index.html#suite_UI_Suite">UI Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/menu_element.html">menu element</a></strong>
+					(<em><a href="../../index.html#suite_UI_Suite">UI Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/metadata_preference.html">metadata preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/mojikumi_table.html">mojikumi table</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/mojikumi_ui_preference.html">mojikumi ui preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/Motion_Preset.html">Motion Preset</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/named_grid.html">named grid</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/navigation_point.html">navigation point</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/nested_grep_style.html">nested grep style</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/nested_line_style.html">nested line style</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/nested_style.html">nested style</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/note.html">note</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/note_preference.html">note preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/numbering_list.html">numbering list</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/numbering_restart_policy.html">numbering restart policy</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/object_style.html">object style</a></strong>
+					(<em><a href="../../index.html#suite_Object_Styles_Suite">Object Styles Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/object_style_content_effects_category_settings.html">object style content effects category settings</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/object_style_fill_effects_category_settings.html">object style fill effects category settings</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/object_style_group.html">object style group</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/object_style_object_effects_category_settings.html">object style object effects category settings</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/object_style_stroke_effects_category_settings.html">object style stroke effects category settings</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/opacity_gradient_stop.html">opacity gradient stop</a></strong>
+					(<em><a href="../../index.html#suite_Color_Suite">Color Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/outer_glow_setting.html">outer glow setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page.html">page</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page_item.html">page item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page_item_default.html">page item default</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page_number_variable_preference.html">page number variable preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page_reference.html">page reference</a></strong>
+					(<em><a href="../../index.html#suite_Indexing_Suite">Indexing Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/panel.html">panel</a></strong>
+					(<em><a href="../../index.html#suite_UI_Suite">UI Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/paragraph_style.html">paragraph style</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/paragraph_style_group.html">paragraph style group</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/pasteboard_preference.html">pasteboard preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/path.html">path</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/path_point.html">path point</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/PDF_attribute.html">PDF attribute</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/PDF_export_preference.html">PDF export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/PDF_export_preset.html">PDF export preset</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/PDF_place_preference.html">PDF place preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/place_gun.html">place gun</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/polygon_preference.html">polygon preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/preference.html">preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/preflight_book_option.html">preflight book option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/preflight_option.html">preflight option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/preflight_process.html">preflight process</a></strong>
+					(<em><a href="../../index.html#suite_Preflight_Suite">Preflight Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/preflight_profile.html">preflight profile</a></strong>
+					(<em><a href="../../index.html#suite_Preflight_Suite">Preflight Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/preflight_profile_rule.html">preflight profile rule</a></strong>
+					(<em><a href="../../index.html#suite_Preflight_Suite">Preflight Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/preflight_rule.html">preflight rule</a></strong>
+					(<em><a href="../../index.html#suite_Preflight_Suite">Preflight Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/print_booklet_option.html">print booklet option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/print_booklet_print_preference.html">print booklet print preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/print_preference.html">print preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/printer_preset.html">printer preset</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/row.html">row</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/rule_data_object.html">rule data object</a></strong>
+					(<em><a href="../../index.html#suite_Preflight_Suite">Preflight Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/satin_setting.html">satin setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/script_arg.html">script arg</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/script_preference.html">script preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/section.html">section</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/smart_guide_preference.html">smart guide preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/snippet.html">snippet</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/spell_preference.html">spell preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/spread.html">spread</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/state.html">state</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/story.html">story</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/story_grid_data_information.html">story grid data information</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/story_preference.html">story preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/stroke_fill_proxy_setting.html">stroke fill proxy setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/stroke_style.html">stroke style</a></strong>
+					(<em><a href="../../index.html#suite_Stroke_Styles_Suite">Stroke Styles Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/stroke_transparency_setting.html">stroke transparency setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/swatch.html">swatch</a></strong>
+					(<em><a href="../../index.html#suite_Color_Suite">Color Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/SWF_export_preference.html">SWF export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/tab_stop.html">tab stop</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/table.html">table</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/table_style.html">table style</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/table_style_group.html">table style group</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/tagged_text_export_preference.html">tagged text export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/tagged_text_import_preference.html">tagged text import preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text.html">text</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_default.html">text default</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_editing_preference.html">text editing preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_export_preference.html">text export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_frame_preference.html">text frame preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_import_preference.html">text import preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_path.html">text path</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_preference.html">text preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_variable.html">text variable</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_variable_instance.html">text variable instance</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_wrap_preference.html">text wrap preference</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/timing_group.html">timing group</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/timing_list.html">timing list</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/timing_setting.html">timing setting</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/timing_target.html">timing target</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/TOC_style.html">TOC style</a></strong>
+					(<em><a href="../../index.html#suite_Table_Of_Contents_Suite">Table Of Contents Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/TOC_style_entry.html">TOC style entry</a></strong>
+					(<em><a href="../../index.html#suite_Table_Of_Contents_Suite">Table Of Contents Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/tool_box.html">tool box</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/topic.html">topic</a></strong>
+					(<em><a href="../../index.html#suite_Indexing_Suite">Indexing Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/track_changes_preference.html">track changes preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/transform_preference.html">transform preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/transformation_matrix.html">transformation matrix</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/transparency_preference.html">transparency preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/transparency_setting.html">transparency setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/trap_preset.html">trap preset</a></strong>
+					(<em><a href="../../index.html#suite_Color_Suite">Color Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/user_dictionary.html">user dictionary</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/validation_error.html">validation error</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/view_preference.html">view preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/watermark_preference.html">watermark preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/widget.html">widget</a></strong>
+					(<em><a href="../../index.html#suite_UI_Suite">UI Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/window.html">window</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/word_RTF_import_preference.html">word RTF import preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XFL_export_preference.html">XFL export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_attribute.html">XML attribute</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_export_map.html">XML export map</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_export_preference.html">XML export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_import_map.html">XML import map</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_import_preference.html">XML import preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_item.html">XML item</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_preference.html">XML preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_rule_match_data.html">XML rule match data</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_rule_processor.html">XML rule processor</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_tag.html">XML tag</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_view_preference.html">XML view preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

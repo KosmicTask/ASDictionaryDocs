@@ -1,0 +1,194 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>clipping path settings</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> clipping path settings</h1>
+
+<div id="view"><a href="../../Preferences_Suite/classes/clipping_path_settings.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Clipping path settings.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>alpha channel path names</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- A list of the alpha channels stored in the graphic. 
+		</li>
+<li>
+			<strong>applied path name</strong>
+			
+			<em>string</em>
+			 -- The name of the Photoshop path or alpha channel to use as a clipping path.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>clipping type</strong>
+			
+			<em>none / detect edges / alpha channel / photoshop path / user modified path</em>
+			 -- The clipping path type.
+		</li>
+<li>
+			<strong>include inside edges</strong>
+			
+			<em>boolean</em>
+			 -- If true, creates interior clipping paths within the surrounding clipping path. Note: Valid only when clipping type is alpha channel or detect edges. 
+		</li>
+<li>
+			<strong>inset frame</strong>
+			
+			<em>number | string</em>
+			 -- Shrinks the area enclosed by the clipping path by the specified amount. (Range depends on the unit. For points: -10000 to 10000; picas: -833p4 to 833p4; inches: -138.8889 to 138.8889; mm: -3527.778 to 3527.778; cm: -352.7778 to 352.7778; ciceros: -781c...
+		</li>
+<li>
+			<strong>invert path</strong>
+			
+			<em>boolean</em>
+			 -- If true, inverts the clipping path.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/clipping_path_settings.html">clipping path settings</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the clipping path settings (a image, EPS, WMF, PICT, PDF or imported page). Can return: image, EPS, WMF, PICT, PDF or imported page.
+		</li>
+<li>
+			<strong>photoshop path names</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- A list of the clipping paths stored in the graphic.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>restrict to frame</strong>
+			
+			<em>boolean</em>
+			 -- If true, truncates the clipping path at the edge of the frame containing the graphic. Note: Valid only when clipping type is alpha channel or detect edges.
+		</li>
+<li>
+			<strong>threshold</strong>
+			
+			<em>integer</em>
+			 -- The lowest value (darkest) pixel to allow in the image. All pixels in the image whose values are greater than (lighter than) the threshold value are clipped (obscured). (Range: 0 to 255) Note: Valid only when clipping type is detect edges or alpha chan...
+		</li>
+<li>
+			<strong>tolerance</strong>
+			
+			<em>fixed</em>
+			 -- Specifies how similar a pixel's intensity value can be to the threshold value before the pixel is obscured by the clipping path. (Range: 0 to 10) Note: Valid only when clipping type is detect edges or alpha channel. Can return: fixed (0 - 10).
+		</li>
+<li>
+			<strong>use high resolution image</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses the high-resolution version of the graphic to create the clipping path. If false, calculates the clipping path based on screen-display resolution. Note: Valid only when clipping type is detect edges.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../FULL/classes/path.html">paths</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/path.html">path</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/clipping_path_settings.html">clipping path settings</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/EPS.html">EPS</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/image.html">image</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/imported_page.html">imported page</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/PDF.html">PDF</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/PICT.html">PICT</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/WMF.html">WMF</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

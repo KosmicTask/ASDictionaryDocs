@@ -1,0 +1,239 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>word</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> word</h1>
+
+<div id="view"><a href="../../FULL/classes/word.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A word.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>words</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong><a href="../../Text_Suite/classes/text.html">text</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>all graphics</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/graphic.html">graphic</a></em>
+			 -- Lists all graphics contained by the word.
+		</li>
+<li>
+			<strong>all page items</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/page_item.html">page item</a></em>
+			 -- Lists all page items contained by the word.
+		</li>
+<li>
+			<strong>applied conditions</strong>
+			
+			<em>list of <a href="../../Text_Suite/classes/condition.html">condition</a></em>
+			 -- The applied conditions.
+		</li>
+<li>
+			<strong>applied font</strong>
+			
+			<em>anything</em>
+			 -- The font applied to the word, specified as either a font object or the name of font family. Can return: font or string.
+		</li>
+<li>
+			<strong>applied nested styles</strong>
+			(r/o)
+			<em>list of <a href="../../Text_Suite/classes/character_style.html">character style</a></em>
+			 -- The applied character styles dictated by nested styles.
+		</li>
+<li>
+			<strong>associated XML elements</strong>
+			(r/o)
+			<em>list of <a href="../../XML_Suite/classes/XML_item.html">XML item</a></em>
+			 -- The XML elements associated with the word.
+		</li>
+<li>
+			<strong>fill color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the fill of the word. . Can also accept: string.
+		</li>
+<li>
+			<strong>fill tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the fill color of the word. (To specify a tint percentage, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)
+		</li>
+<li>
+			<strong>gradient fill start</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the fill of the text, in the format [x, y].
+		</li>
+<li>
+			<strong>gradient stroke start</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the stroke of the text, in the format [x, y].
+		</li>
+<li>
+			<strong>horizontal scale</strong>
+			
+			<em>fixed</em>
+			 -- The horizontal scaling applied to the word.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/word.html">word</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>OpenType features</strong>
+			
+			<em>list of anything</em>
+			 -- OpenType features. Can return: list of list of 2 strings or integers.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the word (a xml story, text path, text frame, text, insertion point, text style range, paragraph, text column, line, word, character, story, cell, XML element, footnote, note, change or hidden text). Can return: xml story, text path, text...
+		</li>
+<li>
+			<strong>parent text frames</strong>
+			(r/o)
+			<em>list of reference</em>
+			 -- An array of the text frames that contain the text. Can return: list of text frames or text paths.
+		</li>
+<li>
+			<strong>skew</strong>
+			
+			<em>fixed</em>
+			 -- The skew angle of the word.
+		</li>
+<li>
+			<strong>stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke of the word. Can also accept: string.
+		</li>
+<li>
+			<strong>stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the stroke color of the word. (To specify a tint percentage, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)
+		</li>
+<li>
+			<strong>tab list</strong>
+			
+			<em>list of anything</em>
+			 -- A list of the tab stops in the paragraph. Can return: list of record.
+		</li>
+<li>
+			<strong>vertical scale</strong>
+			
+			<em>fixed</em>
+			 -- The vertical scaling applied to the word.
+		</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Tables_Suite/classes/cell.html">cell</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/change.html">change</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/footnote.html">footnote</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/hidden_text.html">hidden text</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/note.html">note</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/story.html">story</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text.html">text</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text_frame.html">text frame</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text_path.html">text path</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/word.html">word</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../XML_Suite/classes/XML_element.html">XML element</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

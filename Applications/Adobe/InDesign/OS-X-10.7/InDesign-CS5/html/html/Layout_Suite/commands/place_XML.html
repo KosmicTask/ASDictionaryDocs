@@ -1,0 +1,69 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>place XML</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Command</sup> place XML</h1>
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Places the XML element onto a page. If the place point is above an existing page item, place the XML element into the page item.</p>
+
+<ul class="desc">
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<h2>Parameters</h2>
+<ul>
+	<li>
+		<em>reference</em>
+		 -- Supported by the following objects: spread, page, page item, oval, rectangle, graphic line, polygon, group, image, EPS, PDF, WMF, PICT, graphic, spline item, EPSText, imported page, media item.
+	</li>
+	<li>
+		<strong>using</strong> <em><a href="../../XML_Suite/classes/XML_element.html">XML element</a></em>
+		 -- The XML element to place.
+	</li>
+<li>
+		<strong>place point</strong> <em>number | string</em>
+		 -- The point at which to place the object, specified in the format [x, y].
+	</li>
+<li>
+		[<strong>autoflowing</strong> <em>boolean</em>]
+		 -- If true, autoflows placed text. Can accept: boolean (Default: FALSE).
+	</li>
+</ul>
+
+
+
+
+	<h2>Result</h2>
+	
+	<ul>
+		<li><em><a href="../../Layout_Suite/classes/page_item.html">page item</a></em>
+		 -- The new page item
+		</li>
+	</ul>
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>grid preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> grid preference</h1>
+
+<div id="view"><a href="../../Preferences_Suite/classes/grid_preference.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Grid preferences.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>baseline color</strong>
+			
+			<em>anything</em>
+			 -- The color of the baseline grid, specified either as an array of three doubles, each in the range 0 to 255, representing R, G, and B values, or as a UI color. . Can return: list of 3 fixed (0 - 255) or light blue/red/green/blue/yellow/magenta/cyan/gray/...
+		</li>
+<li>
+			<strong>baseline division</strong>
+			
+			<em>number | string</em>
+			 -- The amount of space between baseline grid lines. . Can return: number or string (1 - 8640 points).
+		</li>
+<li>
+			<strong>baseline grid relative option</strong>
+			
+			<em>top of page of baseline grid relative option / top of margin of baseline grid relative option</em>
+			 -- The zero point for the baseline grid offset.
+		</li>
+<li>
+			<strong>baseline grid shown</strong>
+			
+			<em>boolean</em>
+			 -- If true, displays the baseline grid.
+		</li>
+<li>
+			<strong>baseline start</strong>
+			
+			<em>number | string</em>
+			 -- The amount to offset the baseline grid from the zero point. . Can return: number or string (0 - 1000 points).
+		</li>
+<li>
+			<strong>baseline view threshold</strong>
+			
+			<em>fixed</em>
+			 -- The magnification (as a percentage) less than which ruler guides do not appear. (Range: 5 to 4000). Can return: fixed (5 - 4000).
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>document grid shown</strong>
+			
+			<em>boolean</em>
+			 -- If true, displays the document grid.
+		</li>
+<li>
+			<strong>document grid snapto</strong>
+			
+			<em>boolean</em>
+			 -- If true, an object snaps to the nearest grid line when the object is created, moved, or resized.
+		</li>
+<li>
+			<strong>grid color</strong>
+			
+			<em>anything</em>
+			 -- The color of the document grid, specified either as an array of three doubles, each in the range 0 to 255, representing R, G, and B values, or as a UI color. Can return: list of 3 fixed (0 - 255) or light blue/red/green/blue/yellow/magenta/cyan/gray/bl...
+		</li>
+<li>
+			<strong>grids in back</strong>
+			
+			<em>boolean</em>
+			 -- If true, places grids behind all other objects on the spread.
+		</li>
+<li>
+			<strong>horizontal grid subdivision</strong>
+			
+			<em>integer</em>
+			 -- The number of rows into which to subdivide the space between horizontal document grid lines. Can return: integer (1 - 1000).
+		</li>
+<li>
+			<strong>horizontal gridline division</strong>
+			
+			<em>number | string</em>
+			 -- The amount of space between major horizontal lines in the document grid. . Can return: number or string (0.01 - 1000 points).
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/grid_preference.html">grid preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the grid preference (a application or document). Can return: application or document.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>vertical grid subdivision</strong>
+			
+			<em>integer</em>
+			 -- The number of columns into which to subdivide the space between vertical document grid lines. Can return: integer (1 - 1000).
+		</li>
+<li>
+			<strong>vertical gridline division</strong>
+			
+			<em>number | string</em>
+			 -- The amount of space between major vertical lines in the document grid. . Can return: number or string (0.01 - 1000 points).
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/grid_preference.html">grid preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

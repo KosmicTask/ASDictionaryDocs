@@ -1,0 +1,73 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>do script</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Command</sup> do script</h1>
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Executes the script in the specified language as a single transaction.</p>
+
+<ul class="desc">
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<h2>Parameters</h2>
+<ul>
+	<li>
+		<em>anything</em>
+		 -- The script to execute. 
+	</li>
+	<li>
+		[<strong>language</strong> <em>unknown / javascript / applescript language</em>]
+		 -- The language of the script to execute. If not specified, uses the language used to call this method. Can accept: unknown/javascript/applescript language (Default: unknown).
+	</li>
+<li>
+		[<strong>with arguments</strong> <em>anything</em>]
+		 -- An array of arguments passed to the script.
+	</li>
+<li>
+		[<strong>undo mode</strong> <em>script request / entire script / auto undo / fast entire script</em>]
+		 -- How to undo this script. Can accept: script request/entire script/auto undo/fast entire script (Default: script request).
+	</li>
+<li>
+		[<strong>undo name</strong> <em>string</em>]
+		 -- The name of the undo step for entire script undo mode. Can accept: string (Default: &quot;Script&quot;).
+	</li>
+</ul>
+
+
+
+
+	<h2>Result</h2>
+	
+	<ul>
+		<li><em>anything</em>
+		 -- The return value of the script.
+		</li>
+	</ul>
+
+
+
+</div>
+
+</body>
+</html>

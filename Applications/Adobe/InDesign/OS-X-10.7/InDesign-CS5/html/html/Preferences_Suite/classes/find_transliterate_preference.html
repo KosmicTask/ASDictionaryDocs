@@ -1,0 +1,1242 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>find transliterate preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> find transliterate preference</h1>
+
+<div id="view"><a href="../../FULL/classes/find_transliterate_preference.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Find transliterate preferences.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>allow arbitrary hyphenation</strong>
+			
+			<em>anything</em>
+			 -- If true, words unassociated with a hyphenation dictionary can break to the next line on any character. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>applied character style</strong>
+			
+			<em>anything</em>
+			 -- The character style to search for or change to. Can return: string or nothing. Can also accept: character style.
+		</li>
+<li>
+			<strong>applied font</strong>
+			
+			<em>anything</em>
+			 -- The font applied to the find transliterate preference, specified as either a font object or the name of font family. Can return: font, string or nothing.
+		</li>
+<li>
+			<strong>applied language</strong>
+			
+			<em>anything</em>
+			 -- The language to search for or change to. Can return: string or nothing. Can also accept: language or language with vendors.
+		</li>
+<li>
+			<strong>applied numbering list</strong>
+			
+			<em>anything</em>
+			 -- The list to be part of. Can return: numbering list, string or nothing.
+		</li>
+<li>
+			<strong>applied paragraph style</strong>
+			
+			<em>anything</em>
+			 -- The paragraph style to search for or change to. Can return: string or nothing. Can also accept: paragraph style.
+		</li>
+<li>
+			<strong>auto leading</strong>
+			
+			<em>anything</em>
+			 -- The percent of the type size to use for auto leading. (Range: 0 to 500). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>auto tcy</strong>
+			
+			<em>anything</em>
+			 -- The number of half-width characters at or below which the characters automatically run horizontally in vertical text. Can return: small integer or nothing.
+		</li>
+<li>
+			<strong>auto tcy include roman</strong>
+			
+			<em>anything</em>
+			 -- If true, auto tcy includes Roman characters. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>balance ragged lines</strong>
+			
+			<em>anything</em>
+			 -- If true or set to an enumeration value, balances ragged lines. Note: Not valid with a single-line text composer. Can return: boolean, no balancing/vee shape/fully balanced/pyramid shape or nothing.
+		</li>
+<li>
+			<strong>baseline shift</strong>
+			
+			<em>anything</em>
+			 -- The baseline shift applied to the text. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>bullet char</strong>
+			(r/o)
+			<em>anything</em>
+			 -- Bullet character. Can return: bullet or nothing.
+		</li>
+<li>
+			<strong>bullets alignment</strong>
+			
+			<em>anything</em>
+			 -- The alignment of the bullet character. Can return: left align/center align/right align or nothing.
+		</li>
+<li>
+			<strong>bullets and numbering list type</strong>
+			
+			<em>anything</em>
+			 -- List type for bullets and numbering. Can return: no list/bullet list/numbered list or nothing.
+		</li>
+<li>
+			<strong>bullets character style</strong>
+			
+			<em>anything</em>
+			 -- The character style to be used for the text after string. Can return: character style, string or nothing.
+		</li>
+<li>
+			<strong>bullets text after</strong>
+			
+			<em>anything</em>
+			 -- The text after string expression for bullets. Can return: string or nothing.
+		</li>
+<li>
+			<strong>bunri kinshi</strong>
+			
+			<em>anything</em>
+			 -- If true, adds the double period (..), ellipse (...), and double hyphen (--) to the selected kinsoku set. Note: Valid only when a kinsoku set is in effect. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>capitalization</strong>
+			
+			<em>anything</em>
+			 -- The capitalization scheme. Can return: normal/small caps/all caps/cap to small cap or nothing.
+		</li>
+<li>
+			<strong>character alignment</strong>
+			
+			<em>anything</em>
+			 -- The alignment of small characters to the largest character in the line. Can return: align baseline/align em top/align em center/align em bottom/align ICF top/align ICF bottom or nothing.
+		</li>
+<li>
+			<strong>character rotation</strong>
+			
+			<em>anything</em>
+			 -- The rotation angle (in degrees) of individual characters. Note: The rotation is counterclockwise. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>cjk grid tracking</strong>
+			
+			<em>anything</em>
+			 -- If true, uses grid tracking to track non-Roman characters in CJK grids. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>composer</strong>
+			
+			<em>anything</em>
+			 -- The text composer to use to compose the text. Can return: string or nothing.
+		</li>
+<li>
+			<strong>drop cap characters</strong>
+			
+			<em>anything</em>
+			 -- The number of characters to drop cap. Can return: small integer (0 - 150) or nothing.
+		</li>
+<li>
+			<strong>drop cap lines</strong>
+			
+			<em>anything</em>
+			 -- The number of lines to drop cap. Can return: small integer (0 - 25) or nothing.
+		</li>
+<li>
+			<strong>dropcap detail</strong>
+			
+			<em>anything</em>
+			 -- Details about the drop cap based on the glyph outlines. 1 = left side bearing. 2 = descenders. 0x100,0x200,0x400 are used for Japanese frame grid. Can return: integer or nothing.
+		</li>
+<li>
+			<strong>fill color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink), applied as a fill color, to search for or change to. Can return: string or nothing. Can also accept: swatch.
+		</li>
+<li>
+			<strong>fill tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the fill color of the find transliterate preference. (To specify a tint percentage, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>find character type</strong>
+			
+			<em>anything</em>
+			 -- The character type to find. Can return: half width katakana/half width roman symbols/full width hiragana/full width katakana/full width roman symbols or nothing.
+		</li>
+<li>
+			<strong>first line indent</strong>
+			
+			<em>anything</em>
+			 -- The amount to indent the first line. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>font style</strong>
+			
+			<em>anything</em>
+			 -- The name of the font style. Can return: string or nothing.
+		</li>
+<li>
+			<strong>glyph form</strong>
+			
+			<em>anything</em>
+			 -- The glyph variant to substitute for standard glyphs. Can return: none/traditional form/expert form/JIS78 form/JIS83 form/monospaced half width form/third width form/quarter width form/NLC form/proportional width form/full width form/JIS04 form/JIS90 fo...
+		</li>
+<li>
+			<strong>gradient fill angle</strong>
+			
+			<em>anything</em>
+			 -- The angle of a linear gradient applied to the fill of the text. (Range: -180 to 180). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>gradient fill length</strong>
+			
+			<em>anything</em>
+			 -- The length (for a linear gradient) or radius (for a radial gradient) applied to the fill of the text. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>gradient fill start</strong>
+			
+			<em>anything</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the fill of the text, in the format [x, y]. Can return: list of 2 numbers or strings or nothing.
+		</li>
+<li>
+			<strong>gradient stroke angle</strong>
+			
+			<em>anything</em>
+			 -- The angle of a linear gradient applied to the stroke of the text. (Range: -180 to 180). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>gradient stroke length</strong>
+			
+			<em>anything</em>
+			 -- The length (for a linear gradient) or radius (for a radial gradient) applied to the stroke of the text. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>gradient stroke start</strong>
+			
+			<em>anything</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the stroke of the text, in the format [x, y]. Can return: list of 2 numbers or strings or nothing.
+		</li>
+<li>
+			<strong>grid alignment</strong>
+			
+			<em>anything</em>
+			 -- The alignment to the frame grid or baseline grid. Can return: none/align baseline/align em top/align em center/align em bottom/align ICF top/align ICF bottom or nothing.
+		</li>
+<li>
+			<strong>grid gyoudori</strong>
+			
+			<em>anything</em>
+			 -- The manual gyoudori setting. Can return: small integer or nothing.
+		</li>
+<li>
+			<strong>horizontal scale</strong>
+			
+			<em>anything</em>
+			 -- The horizontal scaling applied to the find transliterate preference. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>hyphenate across columns</strong>
+			
+			<em>anything</em>
+			 -- If true, allows the last word in a text column to be hyphenated. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>hyphenate last word</strong>
+			
+			<em>anything</em>
+			 -- If true, allows hyphenation in the last word in a paragraph. Note: Valid only when hyphenation is true. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>ignore edge alignment</strong>
+			
+			<em>anything</em>
+			 -- If true, ignores optical edge alignment for the paragraph. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>jidori</strong>
+			
+			<em>anything</em>
+			 -- The number of grid squares in which to arrange the text. . Can return: small integer or nothing.
+		</li>
+<li>
+			<strong>justification</strong>
+			
+			<em>anything</em>
+			 -- The paragraph alignment. Can return: left align/center align/right align/left justified/right justified/center justified/fully justified/to binding side/away from binding side or nothing.
+		</li>
+<li>
+			<strong>keep all lines together</strong>
+			
+			<em>anything</em>
+			 -- If true, keeps all lines of the paragraph together. If false, allows paragraphs to break across pages or columns. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>keep first lines</strong>
+			
+			<em>anything</em>
+			 -- The minimum number of lines to keep together in a paragraph before allowing a page break. Can return: small integer (1 - 50) or nothing.
+		</li>
+<li>
+			<strong>keep last lines</strong>
+			
+			<em>anything</em>
+			 -- The minimum number of lines to keep together in a paragraph after a page break. Can return: small integer (1 - 50) or nothing.
+		</li>
+<li>
+			<strong>keep lines together</strong>
+			
+			<em>anything</em>
+			 -- If true, keeps a specified number of lines together when the paragraph breaks across columns or text frames. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>keep rule above in frame</strong>
+			
+			<em>anything</em>
+			 -- If true, forces the rule above the paragraph to remain in the frame bounds. Note: Valid only when rule above is true. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>keep with next</strong>
+			
+			<em>anything</em>
+			 -- The minimum number of lines to keep with the next paragraph. Can return: small integer (0 - 5) or nothing.
+		</li>
+<li>
+			<strong>kenten alignment</strong>
+			
+			<em>anything</em>
+			 -- The alignment of kenten characters relative to the parent characters. . Can return: align kenten left/align kenten center or nothing.
+		</li>
+<li>
+			<strong>kenten character set</strong>
+			
+			<em>anything</em>
+			 -- The character set used for the custom kenten character. Note: Valid only when kenten kind is custom. . Can return: character input/shift JIS/JIS/kuten/unicode or nothing.
+		</li>
+<li>
+			<strong>kenten custom character</strong>
+			
+			<em>anything</em>
+			 -- The character used for kenten. Note: Valid only when kenten kind is custom. Can return: string or nothing.
+		</li>
+<li>
+			<strong>kenten fill color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the fill of kenten characters. Can return: swatch, string or nothing.
+		</li>
+<li>
+			<strong>kenten font</strong>
+			
+			<em>anything</em>
+			 -- The font to use for kenten characters. Can return: font, string or nothing.
+		</li>
+<li>
+			<strong>kenten font size</strong>
+			
+			<em>anything</em>
+			 -- The size (in points) of kenten characters. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>kenten font style</strong>
+			
+			<em>anything</em>
+			 -- The font style of kenten characters. Can return: string or nothing.
+		</li>
+<li>
+			<strong>kenten kind</strong>
+			
+			<em>anything</em>
+			 -- The style of kenten characters. Can return: none/kenten sesame dot/kenten white sesame dot/kenten black circle/kenten white circle/kenten black triangle/kenten white triangle/kenten bullseye/kenten fisheye/kenten small black circle/kenten small white c...
+		</li>
+<li>
+			<strong>kenten overprint fill</strong>
+			
+			<em>anything</em>
+			 -- The method of overprinting the kenten fill. Can return: auto/overprint on/overprint off or nothing.
+		</li>
+<li>
+			<strong>kenten overprint stroke</strong>
+			
+			<em>anything</em>
+			 -- The method of overprinting the kenten stroke. Can return: auto/overprint on/overprint off or nothing.
+		</li>
+<li>
+			<strong>kenten placement</strong>
+			
+			<em>anything</em>
+			 -- The distance between kenten characters and their parent characters. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>kenten position</strong>
+			
+			<em>anything</em>
+			 -- The kenten position relative to the parent character. Can return: above right/below left or nothing.
+		</li>
+<li>
+			<strong>kenten stroke color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke of kenten characters. Can return: swatch, string or nothing.
+		</li>
+<li>
+			<strong>kenten stroke tint</strong>
+			
+			<em>anything</em>
+			 -- The stroke tint (as a percentage) of kenten characters. (Range: 0 to 100). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>kenten tint</strong>
+			
+			<em>anything</em>
+			 -- The fill tint (as a percentage) of kenten characters. (Range: 0 to 100). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>kenten weight</strong>
+			
+			<em>anything</em>
+			 -- The stroke weight (in points) of kenten characters. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>kenten X scale</strong>
+			
+			<em>anything</em>
+			 -- The horizontal size of kenten characters as a percent of the original size. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>kenten Y scale</strong>
+			
+			<em>anything</em>
+			 -- The vertical size of kenten charachers as a percent of the original size. . Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>kerning method</strong>
+			
+			<em>anything</em>
+			 -- The type of pair kerning. Can return: string or nothing.
+		</li>
+<li>
+			<strong>kerning value</strong>
+			
+			<em>anything</em>
+			 -- The amount of space to add or remove between characters, specified in thousands of an em. . Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>kinsoku hang type</strong>
+			
+			<em>anything</em>
+			 -- The type of hanging punctuation to allow. Note: Valid only when a kinsoku set is in effect. Can return: none/kinsoku hang regular/kinsoku hang force or nothing.
+		</li>
+<li>
+			<strong>kinsoku set</strong>
+			
+			<em>anything</em>
+			 -- The kinsoku set that determines legitimate line breaks. Can return: kinsoku table, nothing/hard kinsoku/soft kinsoku/korean kinsoku/simplified chinese kinsoku/traditional chinese kinsoku, string or nothing.
+		</li>
+<li>
+			<strong>kinsoku type</strong>
+			
+			<em>anything</em>
+			 -- The type of kinsoku processing for preventing kinsoku characters from beginning or ending a line. Note: Valid only when a kinsoku set is defined. Can return: kinsoku push in first/kinsoku push out first/kinsoku push out only/kinsoku prioritize adjustme...
+		</li>
+<li>
+			<strong>last line indent</strong>
+			
+			<em>anything</em>
+			 -- The amount to indent the last line in the paragraph. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>leading</strong>
+			
+			<em>anything</em>
+			 -- The leading applied to the text. Can return: number or string, auto or nothing.
+		</li>
+<li>
+			<strong>leading aki</strong>
+			
+			<em>anything</em>
+			 -- The amount of space before each character. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>leading model</strong>
+			
+			<em>anything</em>
+			 -- The point from which leading is measured from line to line. Can return: leading model roman/leading model aki below/leading model aki above/leading model center/leading model center down or nothing.
+		</li>
+<li>
+			<strong>left indent</strong>
+			
+			<em>anything</em>
+			 -- The width of the left indent. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>ligatures</strong>
+			
+			<em>anything</em>
+			 -- If true, replaces specific character combinations (e.g., fl, fi) with ligature characters. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>mojikumi</strong>
+			
+			<em>anything</em>
+			 -- The mojikumi table. For information, see mojikumi table defaults. Can return: mojikumi table, string, nothing/line end all one half em enum/one em indent line end uke one half em enum/one or one half em indent line end uke one half em enum/one or one h...
+		</li>
+<li>
+			<strong>no break</strong>
+			
+			<em>anything</em>
+			 -- If true, keeps the text on the same line. . Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>numbering alignment</strong>
+			
+			<em>anything</em>
+			 -- The alignment of the number. Can return: left align/center align/right align or nothing.
+		</li>
+<li>
+			<strong>numbering apply restart policy</strong>
+			
+			<em>anything</em>
+			 -- If true, apply the numbering restart policy. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>numbering character style</strong>
+			
+			<em>anything</em>
+			 -- The character style to be used for the number string. Can return: character style, string or nothing.
+		</li>
+<li>
+			<strong>numbering continue</strong>
+			
+			<em>anything</em>
+			 -- Continue the numbering at this level. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>numbering expression</strong>
+			
+			<em>anything</em>
+			 -- The number string expression for numbering. Can return: string or nothing.
+		</li>
+<li>
+			<strong>numbering format</strong>
+			
+			<em>anything</em>
+			 -- Numbering format options. Can return: upper roman/lower roman/upper letters/lower letters/arabic/kanji/katakana modern/katakana traditional/format none/single leading zeros/arabic alif ba tah/arabic abjad/hebrew biblical/hebrew non standard/double lead...
+		</li>
+<li>
+			<strong>numbering level</strong>
+			
+			<em>anything</em>
+			 -- The level of the paragraph. Can return: integer or nothing.
+		</li>
+<li>
+			<strong>numbering start at</strong>
+			
+			<em>anything</em>
+			 -- Determines starting number in a numbered list. Can return: integer or nothing.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/find_transliterate_preference.html">find transliterate preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>OTF contextual alternate</strong>
+			
+			<em>anything</em>
+			 -- If true, uses contextual alternate forms in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF discretionary ligature</strong>
+			
+			<em>anything</em>
+			 -- If true, uses discretionary ligatures in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF figure style</strong>
+			
+			<em>anything</em>
+			 -- The figure style in OpenType fonts. Can return: tabular lining/proportional oldstyle/proportional lining/tabular oldstyle/default or nothing.
+		</li>
+<li>
+			<strong>OTF fraction</strong>
+			
+			<em>anything</em>
+			 -- If true, uses fractions in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF historical</strong>
+			
+			<em>anything</em>
+			 -- If true, use historical forms in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF HV kana</strong>
+			
+			<em>anything</em>
+			 -- If true, switches hiragana fonts, which have different glyphs for horizontal and vertical. . Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF locale</strong>
+			
+			<em>anything</em>
+			 -- If true, uses localized forms in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF mark</strong>
+			
+			<em>anything</em>
+			 -- If true, uses mark positioning in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF ordinal</strong>
+			
+			<em>anything</em>
+			 -- If true, uses ordinals in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF proportional metrics</strong>
+			
+			<em>anything</em>
+			 -- If true, kerns according to proportional CJK metrics in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF Roman italics</strong>
+			
+			<em>anything</em>
+			 -- If true, applies italics to half-width alphanumerics. . Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF slashed zero</strong>
+			
+			<em>anything</em>
+			 -- If true, use a slashed zeroes in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF stylistic sets</strong>
+			
+			<em>anything</em>
+			 -- The stylistic sets to use in OpenType fonts. Can return: integer or nothing.
+		</li>
+<li>
+			<strong>OTF swash</strong>
+			
+			<em>anything</em>
+			 -- If true, uses swash forms in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>OTF titling</strong>
+			
+			<em>anything</em>
+			 -- If true, uses titling forms in OpenType fonts. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>overprint fill</strong>
+			
+			<em>anything</em>
+			 -- If true, the fill color of the characters will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>overprint stroke</strong>
+			
+			<em>anything</em>
+			 -- If true, the stroke of the characters will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>paragraph gyoudori</strong>
+			
+			<em>anything</em>
+			 -- If true, the gyoudori mode applies to the entire paragraph. If false, the gyoudori mode applies to each line in the paragraph. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the find transliterate preference (a application).
+		</li>
+<li>
+			<strong>point size</strong>
+			
+			<em>anything</em>
+			 -- The text size. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>position</strong>
+			
+			<em>anything</em>
+			 -- The text position relative to the baseline. Can return: normal/superscript/subscript/OT superscript/OT subscript/OT numerator/OT denominator or nothing.
+		</li>
+<li>
+			<strong>positional form</strong>
+			
+			<em>anything</em>
+			 -- The OpenType positional form. Can return: none/calculate/initial/medial/final/isolated or nothing.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>rensuuji</strong>
+			
+			<em>anything</em>
+			 -- If true, disallows line breaks in numbers. If false, lines can break between digits in multi-digit numbers. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>right indent</strong>
+			
+			<em>anything</em>
+			 -- The width of the right indent. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>rotate single byte characters</strong>
+			
+			<em>anything</em>
+			 -- If true, rotates Roman characters in vertical text. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>ruby alignment</strong>
+			
+			<em>anything</em>
+			 -- The ruby alignment. Can return: ruby left/ruby center/ruby right/ruby full justify/ruby JIS/ruby equal aki/ruby 1 aki or nothing.
+		</li>
+<li>
+			<strong>ruby auto align</strong>
+			
+			<em>anything</em>
+			 -- If true, auto aligns ruby. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>ruby auto scaling</strong>
+			
+			<em>anything</em>
+			 -- If true, automatically scales ruby to the specified percent of parent text size. For information on specifying a percent, see ruby parent scaling percent. . Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>ruby auto tcy auto scale</strong>
+			
+			<em>anything</em>
+			 -- If true, automatically scales glyphs in auto tcy (tate-chuu-yoko) in ruby to fit one em. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>ruby auto tcy digits</strong>
+			
+			<em>anything</em>
+			 -- The number of digits included in auto tcy (tate-chuu-yoko) in ruby. Can return: small integer or nothing.
+		</li>
+<li>
+			<strong>ruby auto tcy include roman</strong>
+			
+			<em>anything</em>
+			 -- If true, includes Roman characters in auto tcy (tate-chuu-yoko) in ruby. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>ruby fill</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the fill of ruby characters. Can return: swatch, string or nothing.
+		</li>
+<li>
+			<strong>ruby font</strong>
+			
+			<em>anything</em>
+			 -- The font applied to ruby characters. Can return: font, string or nothing.
+		</li>
+<li>
+			<strong>ruby font size</strong>
+			
+			<em>anything</em>
+			 -- The size (in points) of ruby characters. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>ruby font style</strong>
+			
+			<em>anything</em>
+			 -- The font style of ruby characters. Can return: string or nothing.
+		</li>
+<li>
+			<strong>ruby open type pro</strong>
+			
+			<em>anything</em>
+			 -- If true, uses OpenType Pro fonts for ruby. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>ruby overhang</strong>
+			
+			<em>anything</em>
+			 -- If true, constrains ruby overhang to the specified amount. For information on specifying an amount, see ruby parent overhang amount. . Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>ruby overprint fill</strong>
+			
+			<em>anything</em>
+			 -- The method of overprinting the ruby fill. Can return: auto/overprint on/overprint off or nothing.
+		</li>
+<li>
+			<strong>ruby overprint stroke</strong>
+			
+			<em>anything</em>
+			 -- The method of overprinting the ruby stroke. Can return: auto/overprint on/overprint off or nothing.
+		</li>
+<li>
+			<strong>ruby parent overhang amount</strong>
+			
+			<em>anything</em>
+			 -- The amount by which ruby characters can overhang the parent text. Can return: none/ruby overhang one ruby/ruby overhang half ruby/ruby overhang one char/ruby overhang half char/ruby overhang no limit or nothing.
+		</li>
+<li>
+			<strong>ruby parent scaling percent</strong>
+			
+			<em>anything</em>
+			 -- The amount (as a percentage) to scale the parent text size to determine the ruby text size. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>ruby parent spacing</strong>
+			
+			<em>anything</em>
+			 -- The ruby spacing relative to the parent text. . Can return: ruby parent no adjustment/ruby parent both sides/ruby parent 121 aki/ruby parent equal aki/ruby parent full justify or nothing.
+		</li>
+<li>
+			<strong>ruby position</strong>
+			
+			<em>anything</em>
+			 -- The position of ruby characters relative to the parent text. Can return: above right/below left or nothing.
+		</li>
+<li>
+			<strong>ruby stroke</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke of ruby characters. Can return: swatch, string or nothing.
+		</li>
+<li>
+			<strong>ruby stroke tint</strong>
+			
+			<em>anything</em>
+			 -- The stroke tint (as a percentage) of ruby characters. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>ruby tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the ruby fill color. (Range: 0 to 100). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>ruby type</strong>
+			
+			<em>anything</em>
+			 -- The ruby type. Can return: group ruby/per character ruby or nothing.
+		</li>
+<li>
+			<strong>ruby weight</strong>
+			
+			<em>anything</em>
+			 -- The stroke weight (in points) of ruby characters. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>ruby X offset</strong>
+			
+			<em>anything</em>
+			 -- The amount of horizontal space between ruby and parent characters. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>ruby X scale</strong>
+			
+			<em>anything</em>
+			 -- The horizontal size of ruby characters, specified as a percent of the original size. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>ruby Y offset</strong>
+			
+			<em>anything</em>
+			 -- The amount of vertical space between ruby and parent characters. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>ruby Y scale</strong>
+			
+			<em>anything</em>
+			 -- The vertical size of ruby characters, specified as a percent of the original size. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>scale affects line height</strong>
+			
+			<em>anything</em>
+			 -- If true, the line changes size when characters are scaled. . Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>shatai adjust rotation</strong>
+			
+			<em>anything</em>
+			 -- If true, applies shatai rotation. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>shatai adjust tsume</strong>
+			
+			<em>anything</em>
+			 -- If true, adjusts shatai tsume. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>shatai degree angle</strong>
+			
+			<em>anything</em>
+			 -- The shatai lens angle (in degrees). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>shatai magnification</strong>
+			
+			<em>anything</em>
+			 -- The amount (as a percentage) of shatai obliquing to apply. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>single word justification</strong>
+			
+			<em>anything</em>
+			 -- The alignment to use for lines that contain a single word. Can return: left align/center align/right align/fully justified or nothing.
+		</li>
+<li>
+			<strong>skew</strong>
+			
+			<em>anything</em>
+			 -- The skew angle of the find transliterate preference. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>space after</strong>
+			
+			<em>anything</em>
+			 -- The height of the paragraph space below. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>space before</strong>
+			
+			<em>anything</em>
+			 -- The height of the paragraph space above. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>start paragraph</strong>
+			
+			<em>anything</em>
+			 -- The location at which to start the paragraph. Can return: anywhere/next column/next frame/next page/next odd page/next even page or nothing.
+		</li>
+<li>
+			<strong>strike through color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the strikethrough stroke. Can return: swatch, string or nothing.
+		</li>
+<li>
+			<strong>strike through gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the strikethrough stroke. Can return: swatch, string or nothing.
+		</li>
+<li>
+			<strong>strike through gap overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the gap color of the strikethrough stroke will overprint. Note: Valid when strike through type is not solid. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>strike through gap tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the strikethrough stroke gap color. (Range: 0 to 100) Note: Valid when strike through type is not solid. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>strike through offset</strong>
+			
+			<em>anything</em>
+			 -- The amount by which to offset the strikethrough stroke from the text baseline. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>strike through overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the strikethrough stroke will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>strike through tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the strikethrough stroke. (Range: 0 to 100). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>strike through type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the strikethrough stroke. Can return: stroke style, string or nothing.
+		</li>
+<li>
+			<strong>strike through weight</strong>
+			
+			<em>anything</em>
+			 -- The stroke weight of the strikethrough stroke. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>strike thru</strong>
+			
+			<em>anything</em>
+			 -- If true, draws a strikethrough line through the text. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>stroke color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink), applied as a stroke color, to search for or change to. Can return: string or nothing. Can also accept: swatch.
+		</li>
+<li>
+			<strong>stroke tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the stroke color of the find transliterate preference. (To specify a tint percentage, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>stroke weight</strong>
+			
+			<em>anything</em>
+			 -- The stroke weight applied to the characters of the text. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>tatechuyoko</strong>
+			
+			<em>anything</em>
+			 -- If true, makes the character horizontal in vertical text. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>tatechuyoko X offset</strong>
+			
+			<em>anything</em>
+			 -- The horizontal offset for horizontal characters in vertical text. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>tatechuyoko Y offset</strong>
+			
+			<em>anything</em>
+			 -- The vertical offset for horizontal characters in vertical text. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>tracking</strong>
+			
+			<em>anything</em>
+			 -- The amount by which to loosen or tighten a block of text, specified in thousands of an em. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>trailing aki</strong>
+			
+			<em>anything</em>
+			 -- The amount of space after each character. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>treat ideographic space as space</strong>
+			
+			<em>anything</em>
+			 -- If true, ideographic spaces will not wrap to the next line like text characters. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>tsume</strong>
+			
+			<em>anything</em>
+			 -- The amount of horizontal character compression. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>underline</strong>
+			
+			<em>anything</em>
+			 -- If true, underlines the text. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>underline color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the underline stroke. . Can return: swatch, string or nothing.
+		</li>
+<li>
+			<strong>underline gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the underline stroke. Note: Valid when underline type is not solid. Can return: swatch, string or nothing.
+		</li>
+<li>
+			<strong>underline gap overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the gap color of the underline stroke will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>underline gap tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the gap color of the underline stroke. (Range: 0 to 100) Note: Valid when underline type is not solid. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>underline offset</strong>
+			
+			<em>anything</em>
+			 -- The amount by which to offset the underline from the text baseline. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>underline overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the underline stroke color will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>underline tint</strong>
+			
+			<em>anything</em>
+			 -- The underline stroke tint (as a percentage). (Range: 0 to 100). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>underline type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the underline stroke. Can return: stroke style, string or nothing.
+		</li>
+<li>
+			<strong>underline weight</strong>
+			
+			<em>anything</em>
+			 -- The stroke weight of the underline stroke. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>vertical scale</strong>
+			
+			<em>anything</em>
+			 -- The vertical scaling applied to the find transliterate preference. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>warichu</strong>
+			
+			<em>anything</em>
+			 -- If true, turns on warichu. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>warichu alignment</strong>
+			
+			<em>anything</em>
+			 -- The warichu alignment. Can return: auto/left align/center align/right align/fully justified/left justified/center justified/right justified or nothing.
+		</li>
+<li>
+			<strong>warichu chars after break</strong>
+			
+			<em>anything</em>
+			 -- The minimum number of characters allowed after a line break. . Can return: small integer or nothing.
+		</li>
+<li>
+			<strong>warichu chars before break</strong>
+			
+			<em>anything</em>
+			 -- The minimum number of characters allowed before a line break. Can return: small integer or nothing.
+		</li>
+<li>
+			<strong>warichu line spacing</strong>
+			
+			<em>anything</em>
+			 -- The gap between lines of warichu characters. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>warichu lines</strong>
+			
+			<em>anything</em>
+			 -- The number of lines of warichu within a single normal line. Can return: small integer or nothing.
+		</li>
+<li>
+			<strong>warichu size</strong>
+			
+			<em>anything</em>
+			 -- The amount (as a percentage) to scale parent text size to determine warichu size. Can return: fixed or nothing.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/preference.html">preferences</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/preference.html">preference</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Basics_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/find_transliterate_preference.html">find transliterate preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

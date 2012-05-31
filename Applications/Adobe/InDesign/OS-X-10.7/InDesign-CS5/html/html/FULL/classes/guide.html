@@ -1,0 +1,221 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>guide</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> guide</h1>
+
+<div id="view"><a href="../../Layout_Suite/classes/guide.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A guide.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>guides</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>allow overrides</strong>
+			
+			<em>boolean</em>
+			 -- If true, the master page item can be overridden.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>fit to page</strong>
+			
+			<em>boolean</em>
+			 -- If true, horizontal orientation guides stop at the edges of the specified page. If false, the guides extends across the width of the spread and into the pasteboard area.
+		</li>
+<li>
+			<strong>guide color</strong>
+			
+			<em>anything</em>
+			 -- The color of the guide, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as a UI color. Can return: list of 3 fixed (0 - 255) or light blue/red/green/blue/yellow/magenta/cyan/gray/black/o...
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the guide.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the guide within its containing object.
+		</li>
+<li>
+			<strong>item layer</strong>
+			
+			<em><a href="../../FULL/classes/layer.html">layer</a></em>
+			 -- The layer that the guide is on.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>location</strong>
+			
+			<em>number | string</em>
+			 -- The location at which to place the guide relative to the current ruler zero point.
+		</li>
+<li>
+			<strong>locked</strong>
+			
+			<em>boolean</em>
+			 -- If true, the guide is locked.
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the guide; this is an alias to the guide's label property.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/guide.html">guide</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>orientation</strong>
+			
+			<em>horizontal / vertical</em>
+			 -- The orientation of the guide.
+		</li>
+<li>
+			<strong>overridden</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the object originated on a master spread and was overridden. If false, the object either originated on a master spread and was not overridden, or the object did not originate on a master page.
+		</li>
+<li>
+			<strong>overridden master page item</strong>
+			(r/o)
+			<em>reference</em>
+			 -- An object that originated on a master page and has been overridden. Can return: page item, guide, graphic, movie or sound.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the guide (a spread or master spread). Can return: spread or master spread.
+		</li>
+<li>
+			<strong>parent page</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/page.html">page</a></em>
+			 -- The page on which this page item appears.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>view threshold</strong>
+			
+			<em>fixed</em>
+			 -- The view magnification as a percentage below which guides are no longer displayed. (Range: 5.0 to 4000.0). Can return: fixed (5 - 4000).
+		</li>
+<li>
+			<strong>after place</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a guide is placed. This event bubbles. This event is not cancelable.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/guide.html">guide</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/layer.html">layer</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/master_spread.html">master spread</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page.html">page</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/spread.html">spread</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

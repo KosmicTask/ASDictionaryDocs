@@ -1,0 +1,322 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>layer</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> layer</h1>
+
+<div id="view"><a href="../../FULL/classes/layer.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A layer.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>layers</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>all graphics</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/graphic.html">graphic</a></em>
+			 -- Lists all graphics contained by the layer.
+		</li>
+<li>
+			<strong>all page items</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/page_item.html">page item</a></em>
+			 -- Lists all page items contained by the layer.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the layer.
+		</li>
+<li>
+			<strong>ignore wrap</strong>
+			
+			<em>boolean</em>
+			 -- If true, text wrap settings applied to objects on the layer will not affect text on other layers when the layer is hidden.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the layer within its containing object.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>layer color</strong>
+			
+			<em>anything</em>
+			 -- The color of the layer, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as a UI color. Can return: list of 3 fixed (0 - 255) or light blue/red/green/blue/yellow/magenta/cyan/gray/black/o...
+		</li>
+<li>
+			<strong>lock guides</strong>
+			
+			<em>boolean</em>
+			 -- If true, the guide positions on the layer are locked.
+		</li>
+<li>
+			<strong>locked</strong>
+			
+			<em>boolean</em>
+			 -- If true, the layer is locked.
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the layer.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Layout_Suite/classes/layer.html">layer</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em><a href="../../Basics_Suite/classes/document.html">document</a></em>
+			 -- The parent of the layer (a document).
+		</li>
+<li>
+			<strong>printable</strong>
+			
+			<em>boolean</em>
+			 -- If true, the layer will print.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>show guides</strong>
+			
+			<em>boolean</em>
+			 -- If true, guides are visible on the layer.
+		</li>
+<li>
+			<strong>visible</strong>
+			
+			<em>boolean</em>
+			 -- If true, the layer is visible.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Interactive_Elements_Suite/classes/button.html">buttons</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/EPSText.html">EPSTexts</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../Interactive_Elements_Suite/classes/form_field.html">form fields</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/graphic_line.html">graphic lines</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/group.html">groups</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/guide.html">guides</a></strong></span> , <span> <strong><a href="../../Interactive_Elements_Suite/classes/multi_state_object.html">multi state objects</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/oval.html">ovals</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/page_item.html">page items</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/polygon.html">polygons</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/rectangle.html">rectangles</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/spline_item.html">spline items</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_frame.html">text frames</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Interactive_Elements_Suite/classes/button.html">button</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/EPSText.html">EPSText</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Interactive_Elements_Suite/classes/form_field.html">form field</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/graphic_line.html">graphic line</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/group.html">group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/guide.html">guide</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Interactive_Elements_Suite/classes/multi_state_object.html">multi state object</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/oval.html">oval</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/page_item.html">page item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/polygon.html">polygon</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/rectangle.html">rectangle</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/spline_item.html">spline item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_frame.html">text frame</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/button.html">button</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/EPS.html">EPS</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/EPSText.html">EPSText</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/form_field.html">form field</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/graphic.html">graphic</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/graphic_line.html">graphic line</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/group.html">group</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/guide.html">guide</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/image.html">image</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/imported_page.html">imported page</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/layer.html">layer</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/layout_window.html">layout window</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/media_item.html">media item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/movie.html">movie</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/multi_state_object.html">multi state object</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/oval.html">oval</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/page_item.html">page item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/PDF.html">PDF</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/PICT.html">PICT</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/polygon.html">polygon</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/rectangle.html">rectangle</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/sound.html">sound</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/spline_item.html">spline item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text_frame.html">text frame</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/WMF.html">WMF</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>text preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> text preference</h1>
+
+<div id="view"><a href="../../Preferences_Suite/classes/text_preference.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Text preferences.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>abut text to text wrap</strong>
+			
+			<em>boolean</em>
+			 -- If true, moves wrapped text to the next available leading increment below the text wrap objects (skip by leading).
+		</li>
+<li>
+			<strong>add pages</strong>
+			
+			<em>end of story / end of section / end of document</em>
+			 -- Specifies where to insert new pages in response to overset text.
+		</li>
+<li>
+			<strong>baseline shift key increment</strong>
+			
+			<em>number | string</em>
+			 -- The amount that the baseline shift increases each time the user presses the option/alt-shift-up arrow keys or decreases each time the user presses the option/alt-shift-down arrow keys. (Range: .001 to 100). Can return: number or string (0.001 - 200 poi...
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>delete empty pages</strong>
+			
+			<em>boolean</em>
+			 -- Enable auto-deletion of pages containing empty threaded text frames.
+		</li>
+<li>
+			<strong>enable style preview mode</strong>
+			
+			<em>boolean</em>
+			 -- If true, highlights character and paragraph styles with colored backgrounds.
+		</li>
+<li>
+			<strong>highlight custom spacing</strong>
+			
+			<em>boolean</em>
+			 -- If true, highlights custom kerned or tracked characters.
+		</li>
+<li>
+			<strong>highlight hj violations</strong>
+			
+			<em>boolean</em>
+			 -- If true, highlights hyphenation and justification rule violations in the text.
+		</li>
+<li>
+			<strong>highlight keeps</strong>
+			
+			<em>boolean</em>
+			 -- If true, highlights paragraphs that violate keep options.
+		</li>
+<li>
+			<strong>highlight kinsoku</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses on-screen highlighting to identify kinsoku.
+		</li>
+<li>
+			<strong>highlight substituted fonts</strong>
+			
+			<em>boolean</em>
+			 -- If true, highlights missing fonts.
+		</li>
+<li>
+			<strong>highlight substituted glyphs</strong>
+			
+			<em>boolean</em>
+			 -- If true, highlights substituted glyphs.
+		</li>
+<li>
+			<strong>justify text wraps</strong>
+			
+			<em>boolean</em>
+			 -- If true, justifies text around text wrap objects.
+		</li>
+<li>
+			<strong>kerning key increment</strong>
+			
+			<em>fixed</em>
+			 -- The amount the kerning value per 1000 ems increases each time the user presses of the option/alt-right arrow keys or decreases each time the user presses the option/alt-left arrow keys. (Range: 1 to 100). Can return: fixed (1 - 100).
+		</li>
+<li>
+			<strong>leading key increment</strong>
+			
+			<em>number | string</em>
+			 -- The amount that leading increases each time the user presses the option/alt-up arrow keys or decreases each time the user presses the option/alt-down arrow keys. (Range: .001 to 100). Can return: number or string (0.001 - 200 points).
+		</li>
+<li>
+			<strong>limit to master text frames</strong>
+			
+			<em>boolean</em>
+			 -- Restrict the adding of pages during smart text reflow to overridden master text frames.
+		</li>
+<li>
+			<strong>link text files when importing</strong>
+			
+			<em>boolean</em>
+			 -- If true, links placed text files and spreadsheet files. If false, embeds the files. 
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/text_preference.html">text preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the text preference (a application or document). Can return: application or document.
+		</li>
+<li>
+			<strong>preserve facing page spreads</strong>
+			
+			<em>boolean</em>
+			 -- Preserve left-hand and right-and pages when facing pages are enabled during smart text reflow.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>show invisibles</strong>
+			
+			<em>boolean</em>
+			 -- If true, shows hidden characters.
+		</li>
+<li>
+			<strong>small cap</strong>
+			
+			<em>fixed</em>
+			 -- The size of text formatted as small caps, specified as a percentage of the font size. (Range: 1 to 200). Can return: fixed (1 - 200).
+		</li>
+<li>
+			<strong>smart text reflow</strong>
+			
+			<em>boolean</em>
+			 -- If true, enable automatic adding and deleting of pages in response to text reflow.
+		</li>
+<li>
+			<strong>subscript position</strong>
+			
+			<em>fixed</em>
+			 -- The position of subscript characters, specified as a percentage of the regular leading. (Range: -500 to 500). Can return: fixed (-500 - 500).
+		</li>
+<li>
+			<strong>subscript size</strong>
+			
+			<em>fixed</em>
+			 -- The size of subscript characters, specified as a percentage of the font size. (Range: 0 to 200). Can return: fixed (1 - 200).
+		</li>
+<li>
+			<strong>superscript position</strong>
+			
+			<em>fixed</em>
+			 -- The position of superscript characters, specified as a percentage of the regular leading. (Range: -500 to 500). Can return: fixed (-500 - 500).
+		</li>
+<li>
+			<strong>superscript size</strong>
+			
+			<em>fixed</em>
+			 -- The size of superscript characters, specified as a percentage of the font size. (Range: 0 to 200). Can return: fixed (1 - 200).
+		</li>
+<li>
+			<strong>typographers quotes</strong>
+			
+			<em>boolean</em>
+			 -- If true, converts straight quotes to typographic quotes.
+		</li>
+<li>
+			<strong>use cid mojikumi</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses the glyph CID to get the mojikumi class of the character. 
+		</li>
+<li>
+			<strong>use new vertical scaling</strong>
+			
+			<em>boolean</em>
+			 -- If true, reverses X and Y scaling on Roman characters in vertical text.
+		</li>
+<li>
+			<strong>use optical size</strong>
+			
+			<em>boolean</em>
+			 -- If true, automatically selects the correct optical size.
+		</li>
+<li>
+			<strong>use paragraph leading</strong>
+			
+			<em>boolean</em>
+			 -- If true, applies the leading changes made to a text range to the entire paragraph. If false, applies leading changes only to the text range.
+		</li>
+<li>
+			<strong>z order text wrap</strong>
+			
+			<em>boolean</em>
+			 -- If true, text wrap does not affect text on layers above the layer that contains the text wrap object. If false, text wrap affects text on all visible layers.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_preference.html">text preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

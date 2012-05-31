@@ -1,0 +1,201 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>interactive PDF export preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> interactive PDF export preference</h1>
+
+<div id="view"><a href="../../FULL/classes/interactive_PDF_export_preference.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Interactive PDF export settings for the application object.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>export layers</strong>
+			
+			<em>boolean</em>
+			 -- If true, saves each layer as an Acrobat layer within the PDF document.
+		</li>
+<li>
+			<strong>export reader spreads</strong>
+			
+			<em>boolean</em>
+			 -- If true, each spread in the exported document is combined into a single page that has spread's original width.
+		</li>
+<li>
+			<strong>flip pages</strong>
+			
+			<em>boolean</em>
+			 -- Automatically flip pages in the exported PDF.
+		</li>
+<li>
+			<strong>flip pages speed</strong>
+			
+			<em>integer</em>
+			 -- The speed that the pages flip. Can return: integer (0 - 32767).
+		</li>
+<li>
+			<strong>generate thumbnails</strong>
+			
+			<em>boolean</em>
+			 -- If true, generates thumbnail images for each page or spread.
+		</li>
+<li>
+			<strong>include structure</strong>
+			
+			<em>boolean</em>
+			 -- If true, creates a tagged PDF file. Note: If acrobat compatibility is acrobat 6 or higher, tags are visible only when the PDF is opened in Acrobat 6 or higher.
+		</li>
+<li>
+			<strong>interactive PDF interactive elements option</strong>
+			
+			<em>include all media / appearance only</em>
+			 -- How to draw interactive elements.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/interactive_PDF_export_preference.html">interactive PDF export preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>open in full screen</strong>
+			
+			<em>boolean</em>
+			 -- Open PDF in full screen mode.
+		</li>
+<li>
+			<strong>page range</strong>
+			
+			<em>anything</em>
+			 -- The pages to print, specified either as an enumeration or a string. To specify a range, separate page numbers in the string with a hyphen (-). To specify separate pages, separate page numbers in the string with a comma (,). Can return: all pages/select...
+		</li>
+<li>
+			<strong>page transition override</strong>
+			
+			<em>from document / none / blinds transition / box transition / comb transition / cover transition / dissolve transition / fade transition / page turn transition / push transition / split transition / uncover transition / wipe transition / zoom in transition / zoom out transition</em>
+			 -- The name of the page transition to use for all pages.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the interactive PDF export preference (a application).
+		</li>
+<li>
+			<strong>PDF JPEG quality</strong>
+			
+			<em>minimum / low / medium / high / maximum</em>
+			 -- The PDF JPEG quality options.
+		</li>
+<li>
+			<strong>pdf magnification</strong>
+			
+			<em>default / actual size / fit page / fit width / fit height / fit visible / twenty five percent / fifty percent / seventy five percent / one hundred percent</em>
+			 -- The export PDF magnification options.
+		</li>
+<li>
+			<strong>pdf page layout</strong>
+			
+			<em>default / single page / single page continuous / two up facing / two up facing continuous / two up cover page / two up cover page continuous</em>
+			 -- The export PDF page layout.
+		</li>
+<li>
+			<strong>PDF raster compression</strong>
+			
+			<em>JPEG compression / lossless compression / automatic compression</em>
+			 -- The PDF raster compression options.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>raster resolution</strong>
+			
+			<em>anything</em>
+			 -- The raster resolution. Can return: seventy two ppi/ninety six ppi/one hundred forty four ppi or integer (72 - 300).
+		</li>
+<li>
+			<strong>view PDF</strong>
+			
+			<em>boolean</em>
+			 -- If true, automatically opens the PDF file after exporting.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Basics_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/interactive_PDF_export_preference.html">interactive PDF export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

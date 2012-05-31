@@ -1,0 +1,405 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>document event</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> document event</h1>
+
+<div id="view"><a href="../../Basics_Suite/classes/document_event.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A document event.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong><a href="../../FULL/classes/event.html">event</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>bubbles</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the event supports the bubbling phase of propagation.
+		</li>
+<li>
+			<strong>cancelable</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the default behavior of the event on its target can be canceled.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>current target</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The current propagation target of the event.
+		</li>
+<li>
+			<strong>default prevented</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the default behavior of the event on its target has been canceled.
+		</li>
+<li>
+			<strong>event phase</strong>
+			(r/o)
+			<em>not dispatching / at target / bubbling phase / done</em>
+			 -- The current propagation phase of the event.
+		</li>
+<li>
+			<strong>event type</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the event.
+		</li>
+<li>
+			<strong>propagation stopped</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, propagation of the event beyond the current target has been stopped.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>target</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The target of the event.
+		</li>
+<li>
+			<strong>time stamp</strong>
+			(r/o)
+			<em>date</em>
+			 -- The time the event was initialized.
+		</li>
+<li>
+			<strong>after activate</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after the object becomes active. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after context changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after the active context changes. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after delete</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a object is deleted. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after embed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a object is embedded. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after invoke</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after the object is invoked. This event does not bubble. This event is not cancelable.
+		</li>
+<li>
+			<strong>after links changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after one or more links in the object have been added, deleted, or modified. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after move</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a object is relocated from one object to another. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after place</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a object is placed. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after quit</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched when the object is quitting. Since the quit has been committed, it can not be canceled. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after selection attribute changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after an attribute on the active selection changes. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after selection changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after the active selection changes. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after unembed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a object is unembedded. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after update</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a object is updated. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before deactivate</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before the object becomes inactive. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before delete</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a object is deleted. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before display</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before the object is displayed. This event does not bubble. This event is not cancelable.
+		</li>
+<li>
+			<strong>before embed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a object is embedded. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before invoke</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before the object is invoked. This event does not bubble. This event is cancelable.
+		</li>
+<li>
+			<strong>before move</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a object is relocated from one object to another. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before place</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a object is placed. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before quit</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before the object is quit. Allows the quit to be canceled. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before unembed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a object is unembedded. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before update</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a object is updated. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>on invoke</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched when the object is invoked. This event does not bubble. This event is not cancelable.
+		</li>
+<li>
+			<strong>full name</strong>
+			(r/o)
+			<em>alias | string</em>
+			 -- The full path to the document event, including the name of the document event.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the document event.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the document event within its containing object.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/document_event.html">document event</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the document event (a application or document). Can return: application or document.
+		</li>
+<li>
+			<strong>user interaction level</strong>
+			
+			<em>never interact / interact with all / interact with alerts</em>
+			 -- Controls the display of dialogs and alerts during script processing.
+		</li>
+<li>
+			<strong>after close</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is closed. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after new</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is created. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after open</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is opened. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after revert</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is reverted. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after save</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is saved. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after save a copy</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a copy of a Document is saved. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after save as</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is saved under a new name. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before close</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is closed. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before new</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is created. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before open</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is opened. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before revert</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is reverted. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before save</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is saved. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before save a copy</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a copy of a Document is saved. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before save as</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is saved under a new name. This event bubbles. This event is cancelable.
+		</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/document_event.html">document event</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

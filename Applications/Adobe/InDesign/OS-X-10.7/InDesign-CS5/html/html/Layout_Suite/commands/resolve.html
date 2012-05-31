@@ -1,0 +1,69 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>resolve</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Command</sup> resolve</h1>
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Get the coordinates of the given location in the specified coordinate system.</p>
+
+<ul class="desc">
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<h2>Parameters</h2>
+<ul>
+	<li>
+		<em>reference</em>
+		 -- Supported by the following objects: spread, page, master spread, page item, oval, rectangle, graphic line, polygon, group, image, EPS, PDF, WMF, PICT, graphic, spline item, EPSText, imported page, media item.
+	</li>
+	<li>
+		<strong>location</strong> <em>anything</em>
+		 -- The location requested. Can accept: list of 2 fixed, top left anchor/top center anchor/top right anchor/left center anchor/center anchor/right center anchor/bottom left anchor/bottom center anchor/bottom right anchor or list of lists of 2 fixed, pasteb...
+	</li>
+<li>
+		<strong>in</strong> <em>pasteboard coordinates / parent coordinates / inner coordinates / spread coordinates</em>
+		 -- The coordinate space to use.
+	</li>
+<li>
+		[<strong>considering ruler units</strong> <em>boolean</em>]
+		 -- If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. Can accept: boolean (Default: FALSE).
+	</li>
+</ul>
+
+
+
+
+	<h2>Result</h2>
+	
+	<ul>
+		<li><em>anything</em>
+		 -- The resolved location for each of the targeted page items. Can return: list of 2 fixed or list of lists of 2 fixed.
+		</li>
+	</ul>
+
+
+
+</div>
+
+</body>
+</html>

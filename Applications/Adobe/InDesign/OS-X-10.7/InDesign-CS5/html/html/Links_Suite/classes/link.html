@@ -1,0 +1,303 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>link</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> link</h1>
+
+<div id="view"><a href="../../FULL/classes/link.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A link to a placed file.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>links</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Links_Suite">Links Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>asset ID</strong>
+			(r/o)
+			<em>string</em>
+			 -- The asset ID of the linked object.
+		</li>
+<li>
+			<strong>asset URL</strong>
+			(r/o)
+			<em>string</em>
+			 -- The asset URL of the linked object.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>date</strong>
+			(r/o)
+			<em>date</em>
+			 -- The date and time the link was created.
+		</li>
+<li>
+			<strong>edited</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, indicates the linked object has been edited in the current document but the source file has not been updated.
+		</li>
+<li>
+			<strong>editing state</strong>
+			(r/o)
+			<em>editing unknown / editing nowhere / editing remotely / editing locally / editing locally locked / editing conflict</em>
+			 -- The Version Cue editing state of the file.
+		</li>
+<li>
+			<strong>file path</strong>
+			(r/o)
+			<em>string</em>
+			 -- The file path (colon delimited on the Mac OS). Can also accept: alias or string.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the link.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the link in the links collection.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>link type</strong>
+			(r/o)
+			<em>string</em>
+			 -- The file type of the linked object. 
+		</li>
+<li>
+			<strong>link xmp</strong>
+			(r/o)
+			<em><a href="../../Links_Suite/classes/link_metadata.html">link metadata</a></em>
+			 -- XMP data for the link source file.
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the link.
+		</li>
+<li>
+			<strong>needed</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, indicates a link to a full-resolution version of the source file is needed. If false, indicates the object is embedded.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Links_Suite/classes/link.html">link</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The linked object. Can return: story, graphic, movie or sound.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>size</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The size of the link file.
+		</li>
+<li>
+			<strong>status</strong>
+			(r/o)
+			<em>normal / link out of date / link missing / link embedded / link inaccessible</em>
+			 -- The status of the link.
+		</li>
+<li>
+			<strong>version state</strong>
+			(r/o)
+			<em>version unknown / project file newer / local project match / local newer / version conflict / no resource</em>
+			 -- The Version Cue version state of the file.
+		</li>
+<li>
+			<strong>after attribute changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched when the value of a property changes on this link. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after delete</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a link is deleted. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after embed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a link is embedded. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after move</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a link is relocated from one object to another. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after new</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a link is created. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after unembed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a link is unembedded. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after update</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a link is updated. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before delete</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a link is deleted. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before embed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a link is embedded. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before move</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a link is relocated from one object to another. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before unembed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a link is unembedded. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before update</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a link is updated. This event bubbles. This event is cancelable.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../Links_Suite/classes/link.html">links</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/preference.html">preferences</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Links_Suite/classes/link.html">link</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/preference.html">preference</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Basics_Suite/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/graphic.html">graphic</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Links_Suite/classes/link.html">link</a></strong>
+					(<em><a href="../../index.html#suite_Links_Suite">Links Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Links_Suite/classes/link_metadata.html">link metadata</a></strong>
+					(<em><a href="../../index.html#suite_Links_Suite">Links Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/movie.html">movie</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/sound.html">sound</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/story.html">story</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

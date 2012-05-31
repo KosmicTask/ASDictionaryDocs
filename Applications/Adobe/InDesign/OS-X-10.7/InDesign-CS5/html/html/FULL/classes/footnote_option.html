@@ -1,0 +1,349 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>footnote option</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> footnote option</h1>
+
+<div id="view"><a href="../../Preferences_Suite/classes/footnote_option.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Options for specifying default footnote formatting.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>continuing rule color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the rule above continued footnote text. Note: Valid when continuing rule on is true. Can return: swatch or string.
+		</li>
+<li>
+			<strong>continuing rule gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke gap of the rule above continued footnote text. Note: Valid when continuing rule type is not solid. Can return: swatch or string.
+		</li>
+<li>
+			<strong>continuing rule gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, overprints the gap color of the rule above continued footnote text. Note: Valid when continuing rule type is not solid.
+		</li>
+<li>
+			<strong>continuing rule gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of the rule above continued footnote text. (Range: 0 to 100) Note: Valid when continuing rule type is not solid. Can return: fixed (0 - 100).
+		</li>
+<li>
+			<strong>continuing rule left indent</strong>
+			
+			<em>number | string</em>
+			 -- The amount to left indent the rule above continued footnote text. Note: Valid when continuing rule on is true. Can return: number or string (-103680 - 103680 points).
+		</li>
+<li>
+			<strong>continuing rule line weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the rule above continued footnote text. (Range: 0 to 1000) Note: Valid when continuing rule on is true. Can return: number or string (0 - 1000 points).
+		</li>
+<li>
+			<strong>continuing rule offset</strong>
+			
+			<em>number | string</em>
+			 -- The vertical offset of the rule above continued footnote text. Note: Valid when continuing rule on is true. Can return: number or string (-15552 - 15552 points).
+		</li>
+<li>
+			<strong>continuing rule on</strong>
+			
+			<em>boolean</em>
+			 -- If true, draws a rule above footnote text that continues from a previous column. Note: Valid when no splitting is false or undefined.
+		</li>
+<li>
+			<strong>continuing rule overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, overprints the rule above continued footnote text. Note: Valid when continuing rule on is true.
+		</li>
+<li>
+			<strong>continuing rule tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the rule above continued footnote text. (Range: 0 to 100) Note: Valid when continuing rule type is not solid. . Can return: fixed (0 - 100).
+		</li>
+<li>
+			<strong>continuing rule type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the rule above continued footnote text. Note: Valid when continuing rule on is true. Can return: stroke style or string.
+		</li>
+<li>
+			<strong>continuing rule width</strong>
+			
+			<em>number | string</em>
+			 -- The length of the rule above continued footnote text. Note: Valid when continuing rule on is true. Can return: number or string (0 - 103680 points).
+		</li>
+<li>
+			<strong>eos placement</strong>
+			
+			<em>boolean</em>
+			 -- If true, footnotes at the end of the story are placed just below the text. If false, footnotes at the end of the story are placed at the bottom of the column. 
+		</li>
+<li>
+			<strong>footnote first baseline offset</strong>
+			
+			<em>ascent offset / cap height / leading offset / embox height / x height / fixed height</em>
+			 -- The distance between the top of the footnote container and the footnote text.
+		</li>
+<li>
+			<strong>footnote marker style</strong>
+			
+			<em><a href="../../FULL/classes/character_style.html">character style</a></em>
+			 -- The character style to apply to footnote reference numbers in the main text. 
+		</li>
+<li>
+			<strong>footnote minimum first baseline offset</strong>
+			
+			<em>number | string</em>
+			 -- The minimum distance between the baseline of the text and the top of the footnote container. Can return: number or string (0 - 103680 points).
+		</li>
+<li>
+			<strong>footnote numbering style</strong>
+			
+			<em>anything</em>
+			 -- The footnote numbering style. Can return: upper roman/lower roman/upper letters/lower letters/arabic/symbols/kanji/full width arabic/single leading zeros/double leading zeros/asterisks/arabic alif ba tah/arabic abjad/hebrew biblical/hebrew non standard...
+		</li>
+<li>
+			<strong>footnote text style</strong>
+			
+			<em><a href="../../FULL/classes/paragraph_style.html">paragraph style</a></em>
+			 -- The paragraph style to apply to footnotes. Note: The space before and after the paragraph defined in the paragraph style is ignored for footnotes. To define space above and between footnotes, see spacer and space between. 
+		</li>
+<li>
+			<strong>marker positioning</strong>
+			
+			<em>anything</em>
+			 -- The position of footnote reference numbers in the main text. Can return: normal marker/superscript marker/subscript marker/ruby marker or string.
+		</li>
+<li>
+			<strong>no splitting</strong>
+			
+			<em>boolean</em>
+			 -- If true, footnotes cannot split across columns. If false, footnotes flow into succeeding columns when the footnote text causes the footnote area to expand upward to reach the footnote reference number in the main text.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/footnote_option.html">footnote option</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the footnote option (a application or document). Can return: application or document.
+		</li>
+<li>
+			<strong>prefix</strong>
+			
+			<em>string</em>
+			 -- The prefix text of the footnote. (Limit: 0 to 100 characters)
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>restart numbering</strong>
+			
+			<em>anything</em>
+			 -- The point at which to restart footnote numbering. Can return: dont restart/page restart/spread restart/section restart or string.
+		</li>
+<li>
+			<strong>rule color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke of the rule above the first footnote in the column. Note: Valid when rule on is true. Can return: swatch or string.
+		</li>
+<li>
+			<strong>rule gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke gap of the rule above the first footnote in the column. Note: Valid when rule type is not solid. Can return: swatch or string.
+		</li>
+<li>
+			<strong>rule gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, overprints the gap color of the rule above the first footnote in the column. Note: Valid when rule type is not solid.
+		</li>
+<li>
+			<strong>rule gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of the rule above the first footnote in the column. (Range: 0 to 100) Note: Valid when rule type is not solid. Can return: fixed (0 - 100).
+		</li>
+<li>
+			<strong>rule left indent</strong>
+			
+			<em>number | string</em>
+			 -- The amount to left indent the rule above the first footnote in the column. Note: Valid when rule on is true. Can return: number or string (-103680 - 103680 points).
+		</li>
+<li>
+			<strong>rule line weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the rule above the first footnote in the column. (Range: 0 to 1000) Note: Valid when rule on is true. Can return: number or string (0 - 1000 points).
+		</li>
+<li>
+			<strong>rule offset</strong>
+			
+			<em>number | string</em>
+			 -- The vertical offset of the rule above the first footnote in the column. Note: Valid when rule on is true. Can return: number or string (-15552 - 15552 points).
+		</li>
+<li>
+			<strong>rule on</strong>
+			
+			<em>boolean</em>
+			 -- If true, draws a rule between the text and the first footnote in the column.
+		</li>
+<li>
+			<strong>rule overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, overprints the rule above the first footnote in the column. Note: Valid when rule on is true.
+		</li>
+<li>
+			<strong>rule tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the rule above the first footnote in the column. (Range: 0 to 100) Note: Valid when rule on is true. Can return: fixed (0 - 100).
+		</li>
+<li>
+			<strong>rule type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the rule above the first footnote in a column. Note: Valid when rule on is true. Can return: stroke style or string.
+		</li>
+<li>
+			<strong>rule width</strong>
+			
+			<em>number | string</em>
+			 -- The length of the rule above the first footnote in the column. Note: Valid when rule on is true. Can return: number or string (0 - 103680 points).
+		</li>
+<li>
+			<strong>separator text</strong>
+			
+			<em>string</em>
+			 -- The text to insert between the footnote marker number and the footnote text. (Range: 0 to 100 characters)
+		</li>
+<li>
+			<strong>show prefix suffix</strong>
+			
+			<em>anything</em>
+			 -- The position of the footnote prefix and/or suffix. Can return: no prefix suffix/prefix suffix reference/prefix suffix marker/prefix suffix both or string.
+		</li>
+<li>
+			<strong>space between</strong>
+			
+			<em>number | string</em>
+			 -- The amount of vertical space between footnotes. Note: The space before and space after defined for the paragraph style applied to the footnote is ignored. Can return: number or string (0 - 864 points).
+		</li>
+<li>
+			<strong>spacer</strong>
+			
+			<em>number | string</em>
+			 -- The minimum amount of vertical space between the bottom of the text column and the first footnote. Note: The space before amount defined in the paragraph style applied to the footnote is ignored for the first footnote. Can return: number or string (0 -...
+		</li>
+<li>
+			<strong>start at</strong>
+			
+			<em>integer</em>
+			 -- The number at which to start footnote numbering. Can return: integer (1 - 100000).
+		</li>
+<li>
+			<strong>suffix</strong>
+			
+			<em>string</em>
+			 -- The suffix text of the footnote. (Limit: 0 to 100 characters)
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/footnote_option.html">footnote option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

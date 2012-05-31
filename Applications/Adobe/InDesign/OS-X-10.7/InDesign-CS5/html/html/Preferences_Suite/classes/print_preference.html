@@ -1,0 +1,655 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>print preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> print preference</h1>
+
+<div id="view"><a href="../../FULL/classes/print_preference.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Print preferences.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>active printer preset</strong>
+			
+			<em>anything</em>
+			 -- The current printer preset type. Can return: default/custom or printer preset.
+		</li>
+<li>
+			<strong>all printer marks</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints all printer marks. If false, prints specified printer marks.
+		</li>
+<li>
+			<strong>bitmap printing</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses bitmap printing.
+		</li>
+<li>
+			<strong>bitmap resolution</strong>
+			
+			<em>integer</em>
+			 -- The resolution for bitmap printing. (Range: 72 to 1200) Note: Valid when bitmap printing is true. Can return: integer (72 - 1200).
+		</li>
+<li>
+			<strong>black angle</strong>
+			
+			<em>fixed</em>
+			 -- The angle override for black ink. (Range: 0 to 360)
+		</li>
+<li>
+			<strong>black frequency</strong>
+			
+			<em>fixed</em>
+			 -- The frequency override for black ink. (Range: 1 to 500)
+		</li>
+<li>
+			<strong>bleed bottom</strong>
+			
+			<em>number | string</em>
+			 -- The height of the bleed area at the bottom of the page. Note: Valid only when use document bleed to print is true. Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>bleed chain</strong>
+			
+			<em>boolean</em>
+			 -- If true, forces all bleed area settings to be the same, using the most recent bleed measurement setting. If false, allows bleed top, bleed bottom, bleed inside, and bleed outside to have different measurements. 
+		</li>
+<li>
+			<strong>bleed inside</strong>
+			
+			<em>number | string</em>
+			 -- The width of the bleed area at the inside of the page. Note: Valid only when use document bleed to print is true. Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>bleed marks</strong>
+			
+			<em>boolean</em>
+			 -- If true, print bleed marks.
+		</li>
+<li>
+			<strong>bleed outside</strong>
+			
+			<em>number | string</em>
+			 -- The width of the bleed area at the outside of the page. Note: Valid only when use document bleed to print is true. . Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>bleed top</strong>
+			
+			<em>number | string</em>
+			 -- The height of the bleed area at the top of the page. Note: Valid only when use document bleed to print is true. Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>collating</strong>
+			
+			<em>boolean</em>
+			 -- If true, collate printed copies.
+		</li>
+<li>
+			<strong>color bars</strong>
+			
+			<em>boolean</em>
+			 -- If true, add small squares of color representing the CMYK inks and tints of gray in 10% increments.
+		</li>
+<li>
+			<strong>color output</strong>
+			
+			<em>composite leave unchanged / composite gray / composite RGB / composite CMYK / separations / inRIP separations</em>
+			 -- The color output mode for composites. Note: Not valid when a device-independent PPD is specified.
+		</li>
+<li>
+			<strong>composite angle</strong>
+			
+			<em>fixed</em>
+			 -- The screen angle to use when printing composites. (Range: 0 to 360) Note: Valid only for PostScript or PDF files that use custom screening.
+		</li>
+<li>
+			<strong>composite frequency</strong>
+			
+			<em>fixed</em>
+			 -- The screen frequency to use when printing composites. (Range: 1 to 500) Note: Valid only for PostScript or PDF files that use custom screening.
+		</li>
+<li>
+			<strong>copies</strong>
+			
+			<em>integer</em>
+			 -- The number of copies to print. Note: Not valid when printer is PostScript File.
+		</li>
+<li>
+			<strong>CRD</strong>
+			
+			<em>anything</em>
+			 -- The color-rendering dictionary (CRD), specified as a CRD name or an enumeration value. Note: Valid only when use color management is true. Can return: default/use document/working or string.
+		</li>
+<li>
+			<strong>crop marks</strong>
+			
+			<em>boolean</em>
+			 -- Prints crop marks that define where the page should be trimmed.
+		</li>
+<li>
+			<strong>cyan angle</strong>
+			
+			<em>fixed</em>
+			 -- The angle override for cyan ink. (Range: 0 to 360)
+		</li>
+<li>
+			<strong>cyan frequency</strong>
+			
+			<em>fixed</em>
+			 -- The frequency override for cyan ink. (Range: 1 to 500)
+		</li>
+<li>
+			<strong>data format</strong>
+			
+			<em>ASCII / binary</em>
+			 -- The format in which to send image data to the printer.
+		</li>
+<li>
+			<strong>download PPD fonts</strong>
+			
+			<em>boolean</em>
+			 -- If true, downloads all fonts listed in the selected PPD. Valid only when font downloading is complete or subset.
+		</li>
+<li>
+			<strong>flattener preset name</strong>
+			
+			<em>string</em>
+			 -- The name of the transparency flattener preset.
+		</li>
+<li>
+			<strong>flip</strong>
+			
+			<em>none / horizontal / vertical / horizontal and vertical / both</em>
+			 -- The direction in which to flip the printed image.
+		</li>
+<li>
+			<strong>font downloading</strong>
+			
+			<em>none / complete / subset / subset large</em>
+			 -- Controls how fonts are downloaded to the printer.
+		</li>
+<li>
+			<strong>ignore spread overrides</strong>
+			
+			<em>boolean</em>
+			 -- If true, ignores flattener spread overrides.
+		</li>
+<li>
+			<strong>include slug to print</strong>
+			
+			<em>boolean</em>
+			 -- If true, includes the slug area in the printed document.
+		</li>
+<li>
+			<strong>intent</strong>
+			
+			<em>use color settings / perceptual / saturation / relative colorimetric / absolute colorimetric</em>
+			 -- The rendering intent. Note: Valid only when use color management is true.
+		</li>
+<li>
+			<strong>magenta angle</strong>
+			
+			<em>fixed</em>
+			 -- The angle override for magenta ink. (Range: 0 to 360)
+		</li>
+<li>
+			<strong>magenta frequency</strong>
+			
+			<em>fixed</em>
+			 -- The frequency override for magenta ink. (Range: 1 to 500)
+		</li>
+<li>
+			<strong>mark line weight</strong>
+			
+			<em>p125pt / p25pt / p50pt / p05mm / p07mm / p10mm / p15mm / p20mm / p30mm</em>
+			 -- The stroke weight (in points) for printer marks.
+		</li>
+<li>
+			<strong>mark offset</strong>
+			
+			<em>number | string</em>
+			 -- The distance to offset the page marks from the edge of the page.
+		</li>
+<li>
+			<strong>mark type</strong>
+			
+			<em>anything</em>
+			 -- The type of printer marks, either an enum value or the name of a custom marks file. Can return: default/J mark with circle/J mark without circle or string.
+		</li>
+<li>
+			<strong>negative</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints the document as a negative.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/print_preference.html">print preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>omit bitmaps</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces bitmap images with OPI links.
+		</li>
+<li>
+			<strong>omit EPS</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces EPS images with OPI links.
+		</li>
+<li>
+			<strong>omit PDF</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces PDF images with OPI links.
+		</li>
+<li>
+			<strong>OPI image replacement</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints graphics that are either OPI comments stored in imported EPS files or linked using OPI comments. For information on linking files using OPI comments, see omit EPS, omit PDF, or omit bitmaps.
+		</li>
+<li>
+			<strong>page information marks</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints the filename, page number, current date and time, and color separation name.
+		</li>
+<li>
+			<strong>page position</strong>
+			
+			<em>upper left / center horizontally / center vertically / centered</em>
+			 -- The position of the page on the printing medium. Note: Valid only when tile is false.
+		</li>
+<li>
+			<strong>page range</strong>
+			
+			<em>anything</em>
+			 -- The pages to print, specified either as an enumeration or a string. To specify a range, separate page numbers in the string with a hyphen (-). To specify separate pages, separate page numbers in the string with a comma (,). Can return: all pages/select...
+		</li>
+<li>
+			<strong>paper gap</strong>
+			
+			<em>number | string</em>
+			 -- The space between document pages on the printing medium.
+		</li>
+<li>
+			<strong>paper height</strong>
+			
+			<em>anything</em>
+			 -- The paper height. Note: Valid only when paper size is custom or scale mode is scale width height. Can return: auto or number or string.
+		</li>
+<li>
+			<strong>paper offset</strong>
+			
+			<em>number | string</em>
+			 -- The amount of space to offset the page from the left edge of the imageable area.
+		</li>
+<li>
+			<strong>paper size</strong>
+			
+			<em>anything</em>
+			 -- The paper size, specified as either a string or an enumeration. For information on paper size names, see paper size list. Can return: defined by driver/custom or string.
+		</li>
+<li>
+			<strong>paper size list</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- A list of the available paper sizes.
+		</li>
+<li>
+			<strong>paper transverse</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses transverse orientation.
+		</li>
+<li>
+			<strong>paper width</strong>
+			
+			<em>anything</em>
+			 -- The paper width. Note: Valid only when paper size is custom or scale mode is scale width height. Can return: auto or number or string.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the print preference (a book or document). Can return: book or document.
+		</li>
+<li>
+			<strong>PostScript level</strong>
+			
+			<em>level 2 / level 3</em>
+			 -- The PostScript level of the printer.
+		</li>
+<li>
+			<strong>PPD</strong>
+			
+			<em>anything</em>
+			 -- The PPD, specified as a PPD name or an enumeration. Can return: device independent or string.
+		</li>
+<li>
+			<strong>PPD list</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- Available PPDs.
+		</li>
+<li>
+			<strong>preserve color numbers</strong>
+			
+			<em>boolean</em>
+			 -- If true, preserves uncalibrated color numbers.
+		</li>
+<li>
+			<strong>print black</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints the black ink. Note: Valid only when trapping is off.
+		</li>
+<li>
+			<strong>print blank pages</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints blank pages. Note: Valid only when trapping is off. 
+		</li>
+<li>
+			<strong>print cyan</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints the cyan ink. Note: Valid only when trapping is off. 
+		</li>
+<li>
+			<strong>print file</strong>
+			
+			<em>alias | string</em>
+			 -- The PostScript file to print to. Note: Valid only when the current printer is defined as postscript file.
+		</li>
+<li>
+			<strong>print guides grids</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints visible guides and baseline grids. Note: Valid only when trapping is off.
+		</li>
+<li>
+			<strong>print layers</strong>
+			
+			<em>all layers / visible layers / visible printable layers</em>
+			 -- The layers to print.
+		</li>
+<li>
+			<strong>print magenta</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints the magenta ink. Note: Valid only when trapping is off.
+		</li>
+<li>
+			<strong>print master pages</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints master pages.
+		</li>
+<li>
+			<strong>print nonprinting</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints non-printing objects. Note: Valid only when trapping is off.
+		</li>
+<li>
+			<strong>print page orientation</strong>
+			
+			<em>portrait / landscape / reverse portrait / reverse landscape</em>
+			 -- The orientation of the printed page.
+		</li>
+<li>
+			<strong>print spreads</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints each spread with all spread pages on a single sheet. If false, prints spread pages as separate pages.
+		</li>
+<li>
+			<strong>print yellow</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints the yellow ink. Note: Valid only when trapping is off.
+		</li>
+<li>
+			<strong>printer</strong>
+			
+			<em>anything</em>
+			 -- The current printer. Can return: postscript file or string.
+		</li>
+<li>
+			<strong>printer list</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- Available printers.
+		</li>
+<li>
+			<strong>profile</strong>
+			
+			<em>anything</em>
+			 -- The color profile. Can return: PostScript CMS/use document/working/No CMS or string.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>registration marks</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints small targets outside the page area for aligning color separations.
+		</li>
+<li>
+			<strong>reverse order</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints pages in reverse order.
+		</li>
+<li>
+			<strong>scale height</strong>
+			
+			<em>fixed</em>
+			 -- The amount (as a percentage) that the page height is scaled during printing. (Range: 0 to 1000) Note: Valid only when scale mode is scale width height.
+		</li>
+<li>
+			<strong>scale mode</strong>
+			
+			<em>scale width height / scale to fit</em>
+			 -- The policy for scaling the page. Note: Valid only when printing from Layout view.
+		</li>
+<li>
+			<strong>scale proportional</strong>
+			
+			<em>boolean</em>
+			 -- If true, constrains the proportions of the scaling; uses the most recent value for either scale width or scale height to define both values. Note: Valid only when scale mode is scale width height.
+		</li>
+<li>
+			<strong>scale width</strong>
+			
+			<em>fixed</em>
+			 -- The amount (as a percentage)  that the page width is scaled during printing. (Range: 0 to 1000) Note: Valid only when scale mode is scale width height.
+		</li>
+<li>
+			<strong>screening</strong>
+			
+			<em>anything</em>
+			 -- The ink screening settings for composite gray output in PostScript or PDF format. . Can return: default/custom or string.
+		</li>
+<li>
+			<strong>screening list</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- Lists the ink screenings available in the PPD. Note: Valid only when color output is separations or in rip separations.
+		</li>
+<li>
+			<strong>send image data</strong>
+			
+			<em>all image data / optimized subsampling / proxy image data / none</em>
+			 -- The image data sent to the printer or file.
+		</li>
+<li>
+			<strong>sequence</strong>
+			
+			<em>all / odd / even</em>
+			 -- The sequence of pages to print.
+		</li>
+<li>
+			<strong>simulate overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, simulates the effects of overprinting spot inks with different neutral density values by converting spot colors to process colors for printing. Note: Not valid when the color output mode is defined to leave color profiles unchanged.
+		</li>
+<li>
+			<strong>source space</strong>
+			
+			<em>use document / proof space</em>
+			 -- The source of the color management system. Note: Valid only when use color management is true.
+		</li>
+<li>
+			<strong>text as black</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints all text as black unless text has the color None or Paper or a color value that equals white. If false, prints colored text, such as blue hyperlinks, in halftone patterns. Note: Valid only when trapping is off.
+		</li>
+<li>
+			<strong>thumbnails</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints thumbnails. Note: Valid only when trapping is off and tile is false.
+		</li>
+<li>
+			<strong>thumbnails per page</strong>
+			
+			<em>k1x2 / k2x2 / k3x3 / k4x4 / k5x5 / k6x6 / k7x7</em>
+			 -- The number of thumbnails per page.
+		</li>
+<li>
+			<strong>tile</strong>
+			
+			<em>boolean</em>
+			 -- If true, tiles pages.
+		</li>
+<li>
+			<strong>tiling overlap</strong>
+			
+			<em>fixed</em>
+			 -- The amount of tiling overlap. Note: Valid only when tiling is true and tiling type is not manual.
+		</li>
+<li>
+			<strong>tiling type</strong>
+			
+			<em>auto / auto justified / manual</em>
+			 -- The tiling type. Note: Valid only when tiling is true.
+		</li>
+<li>
+			<strong>trapping</strong>
+			
+			<em>off / application builtin / Adobe inRIP</em>
+			 -- The type of trapping.
+		</li>
+<li>
+			<strong>use document bleed to print</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses the bleed area set for the document.
+		</li>
+<li>
+			<strong>yellow angle</strong>
+			
+			<em>fixed</em>
+			 -- The angle override for yellow ink. (Range: 0 to 360)
+		</li>
+<li>
+			<strong>yellow frequency</strong>
+			
+			<em>fixed</em>
+			 -- The frequency override for yellow ink. (Range: 1 to 500)
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Book_Suite/classes/book.html">book</a></strong>
+					(<em><a href="../../index.html#suite_Book_Suite">Book Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/print_preference.html">print preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

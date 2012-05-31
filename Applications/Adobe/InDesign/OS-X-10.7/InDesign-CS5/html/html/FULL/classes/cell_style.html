@@ -1,0 +1,515 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>cell style</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> cell style</h1>
+
+<div id="view"><a href="../../Tables_Suite/classes/cell_style.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A cell style.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>cell styles</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>applied paragraph style</strong>
+			
+			<em>anything</em>
+			 -- The paragraph style applied to the text. Can return: paragraph style or nothing. Can also accept: string.
+		</li>
+<li>
+			<strong>based on</strong>
+			
+			<em>anything</em>
+			 -- The style that this style is based on. Can return: cell style or string.
+		</li>
+<li>
+			<strong>bottom edge stroke color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the bottom edge border stroke. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>bottom edge stroke gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the bottom edge border stroke. Note: Not valid when bottom edge stroke type is solid. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>bottom edge stroke gap overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the gap color of the bottom edge border stroke will overprint. Note: Not valid when bottom edge stroke type is solid. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>bottom edge stroke gap tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the bottom edge border stroke gap color. (Range: 0 to 100) Note: Not valid when bottom edge stroke type is solid. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>bottom edge stroke overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the bottom edge border stroke will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>bottom edge stroke tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the bottom edge border stroke. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>bottom edge stroke type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the bottom edge. Can return: stroke style or nothing. Can also accept: string.
+		</li>
+<li>
+			<strong>bottom edge stroke weight</strong>
+			
+			<em>anything</em>
+			 -- The stroke weight of the bottom edge border stroke. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>bottom inset</strong>
+			
+			<em>anything</em>
+			 -- The bottom inset of the cell. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>clip content to cell</strong>
+			
+			<em>anything</em>
+			 -- If true, clips the cell's content to width and height of the cell. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>diagonal line in front</strong>
+			
+			<em>anything</em>
+			 -- If true, draws the diagonal line in front of cell contents. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>diagonal line stroke color</strong>
+			
+			<em>anything</em>
+			 -- The diagonal line color, specified as a swatch. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>diagonal line stroke gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the diagonal line stroke. Note: Not valid when diagonal line stroke type is solid. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>diagonal line stroke gap overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the stroke gap of the diagonal line will overprint. Note: Not valid when diagonal line stroke type is solid. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>diagonal line stroke gap tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the diagonal line stroke gap color. Note: Not valid when diagonal line stroke type is solid. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>diagonal line stroke overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the diagonal line stroke will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>diagonal line stroke tint</strong>
+			
+			<em>anything</em>
+			 -- The diagonal line tint (as a percentage). (Range: 0 to 100). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>diagonal line stroke type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the diagonal line(s). Can return: stroke style or nothing. Can also accept: string.
+		</li>
+<li>
+			<strong>diagonal line stroke weight</strong>
+			
+			<em>anything</em>
+			 -- The diagonal line stroke weight. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>fill color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the fill of the object. Can return: swatch or nothing. Can also accept: string.
+		</li>
+<li>
+			<strong>fill tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the fill of the object. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>first baseline offset</strong>
+			
+			<em>anything</em>
+			 -- The distance between the baseline of the text and the top inset of the cell. Can return: ascent offset/cap height/leading offset/embox height/x height/fixed height or nothing.
+		</li>
+<li>
+			<strong>gradient fill angle</strong>
+			
+			<em>anything</em>
+			 -- The angle of a linear gradient applied to the fill of the object. (Range: -180 to 180). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>gradient fill length</strong>
+			
+			<em>anything</em>
+			 -- The length (of a linear gradient) or radius (of a radial gradient) applied to the fill of the object. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>gradient fill start</strong>
+			
+			<em>anything</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the fill of the cell style, in the format [x, y]. Can return: list of 2 numbers or strings or nothing.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the cell style.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the cell style within its containing object.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>left edge stroke color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the left edge border stroke. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>left edge stroke gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the left edge border stroke. Note: Not valid when left edge stroke type is solid. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>left edge stroke gap overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the gap color of the left edge border stroke will overprint. Note: Not valid when left edge stroke type is solid. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>left edge stroke gap tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the left edge border stroke gap color. (Range: 0 to 100) Note: Not valid when left edge stroke type is solid. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>left edge stroke overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the left edge border stroke will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>left edge stroke tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the left edge border stroke. (Range: 0 to 100). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>left edge stroke type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the left edge. Can return: stroke style or nothing. Can also accept: string.
+		</li>
+<li>
+			<strong>left edge stroke weight</strong>
+			
+			<em>anything</em>
+			 -- The stroke weight of the left edge border stroke. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>left inset</strong>
+			
+			<em>anything</em>
+			 -- The left inset of the cell. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>minimum first baseline offset</strong>
+			
+			<em>anything</em>
+			 -- The space between the baseline of the text and the top inset of the frame or cell. Can return: number or string (0 - 8640 points) or nothing.
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the style.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/cell_style.html">cell style</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>overprint fill</strong>
+			
+			<em>anything</em>
+			 -- If true, the fill of the object will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>paragraph spacing limit</strong>
+			
+			<em>anything</em>
+			 -- The maximum space that can be added between paragraphs in a cell. Note: Valid only when vertical justification is justified. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the cell style (a document, application or cell style group). Can return: document, application or cell style group.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>right edge stroke color</strong>
+			
+			<em>anything</em>
+			 -- The color, specified as a swatch, of the right edge border stroke. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>right edge stroke gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the right edge border stroke. Note: Not valid when right edge stroke type is solid. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>right edge stroke gap overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the gap color of the right edge border stroke will overprint. Note: Not valid when right edge stroke type is solid. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>right edge stroke gap tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the right edge border stroke gap color. (Range: 0 to 100) Note: Not valid when right edge stroke type is solid. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>right edge stroke overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the right edge border stroke will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>right edge stroke tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the right edge border stroke. (Range: 0 to 100). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>right edge stroke type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the right edge. Can return: stroke style or nothing. Can also accept: string.
+		</li>
+<li>
+			<strong>right edge stroke weight</strong>
+			
+			<em>anything</em>
+			 -- The stroke weight of the right edge border stroke. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>right inset</strong>
+			
+			<em>anything</em>
+			 -- The right inset of the cell. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>rotation angle</strong>
+			
+			<em>anything</em>
+			 -- The rotation angle (in degrees) of the cell, specified as one of the following values: 0, 90, 180, or 270. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>top edge stroke color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the top edge border stroke. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>top edge stroke gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the top edge border stroke. Note: Not valid when top edge stroke type is solid. Can return: swatch or nothing.
+		</li>
+<li>
+			<strong>top edge stroke gap overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the gap color of the top edge border stroke will overprint. Note: Not valid when top edge stroke type is solid. . Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>top edge stroke gap tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the top edge border stroke gap color. (Range: 0 to 100) Note: Not valid when top edge stroke type is solid. Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>top edge stroke overprint</strong>
+			
+			<em>anything</em>
+			 -- If true, the top edge border stroke will overprint. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>top edge stroke tint</strong>
+			
+			<em>anything</em>
+			 -- The tint (as a percentage) of the top edge border stroke. (Range: 0 to 100). Can return: fixed or nothing.
+		</li>
+<li>
+			<strong>top edge stroke type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the top edge. Can return: stroke style or nothing. Can also accept: string.
+		</li>
+<li>
+			<strong>top edge stroke weight</strong>
+			
+			<em>anything</em>
+			 -- The stroke weight of the top edge border stroke. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>top inset</strong>
+			
+			<em>anything</em>
+			 -- The top inset of the cell. Can return: number or string or nothing.
+		</li>
+<li>
+			<strong>top left diagonal line</strong>
+			
+			<em>anything</em>
+			 -- If true, draws a diagonal line starting from the top left. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>top right diagonal line</strong>
+			
+			<em>anything</em>
+			 -- If true, draws a diagonal line starting from the top right. Can return: boolean or nothing.
+		</li>
+<li>
+			<strong>vertical justification</strong>
+			
+			<em>anything</em>
+			 -- The vertical alignment of cell. Can return: top align/center align/bottom align/justify align or nothing.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/cell.html">cell</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/cell_style.html">cell style</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/cell_style_group.html">cell style group</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/table_style.html">table style</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

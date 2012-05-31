@@ -1,0 +1,243 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>SWF export preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> SWF export preference</h1>
+
+<div id="view"><a href="../../FULL/classes/SWF_export_preference.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>SWF export settings for the application object.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>curve quality</strong>
+			
+			<em>minimum / low / medium / high / maximum</em>
+			 -- The SWF curve quality.
+		</li>
+<li>
+			<strong>dynamic document export reader spreads</strong>
+			
+			<em>boolean</em>
+			 -- If true, each spread in the exported document is combined into a single page that has spread's original width.
+		</li>
+<li>
+			<strong>dynamic media handling</strong>
+			
+			<em>include all media / appearance only</em>
+			 -- The dynamic media handling options.
+		</li>
+<li>
+			<strong>fit method</strong>
+			
+			<em>fit predefined settings / fit given width and height / fit given scale percentage</em>
+			 -- The fitting method to use.
+		</li>
+<li>
+			<strong>fit option</strong>
+			
+			<em>fit1280x800 / fit1240x620 / fit1024x768 / fit984x588 / fit800x600 / fit760x420 / fit640x480 / fit600x300</em>
+			 -- The options for fitting to predefined dimension.
+		</li>
+<li>
+			<strong>fit scale</strong>
+			
+			<em>fixed</em>
+			 -- The size fits to given scale percentage. Can return: fixed (1 - 1000).
+		</li>
+<li>
+			<strong>fit width and height</strong>
+			
+			<em>list of integer</em>
+			 -- The size fits to given width and height.
+		</li>
+<li>
+			<strong>flatten transparency</strong>
+			
+			<em>boolean</em>
+			 -- Flatten transparency when exporting.
+		</li>
+<li>
+			<strong>frame rate</strong>
+			
+			<em>integer</em>
+			 -- The frame rate in frames per second. Can return: integer (1 - 120).
+		</li>
+<li>
+			<strong>generate HTML</strong>
+			
+			<em>boolean</em>
+			 -- Flag indicates whether to generate HTML.
+		</li>
+<li>
+			<strong>include interactive page curl</strong>
+			
+			<em>boolean</em>
+			 -- Flag indicates whether to include interactive page curl when export to SWF.
+		</li>
+<li>
+			<strong>JPEG quality options</strong>
+			
+			<em>minimum / low / medium / high / maximum</em>
+			 -- The JPEG quality options.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/SWF_export_preference.html">SWF export preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>page range</strong>
+			
+			<em>anything</em>
+			 -- The pages to print, specified either as an enumeration or a string. To specify a range, separate page numbers in the string with a hyphen (-). To specify separate pages, separate page numbers in the string with a comma (,). Can return: all pages/select...
+		</li>
+<li>
+			<strong>page transition override</strong>
+			
+			<em>from document / none / blinds transition / box transition / comb transition / cover transition / dissolve transition / fade transition / page turn transition / push transition / split transition / uncover transition / wipe transition / zoom in transition / zoom out transition</em>
+			 -- The name of the page transition to use for all pages.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the SWF export preference (a application).
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>raster compression</strong>
+			
+			<em>JPEG compression / lossless compression / automatic compression</em>
+			 -- The SWF raster compression options.
+		</li>
+<li>
+			<strong>raster resolution</strong>
+			
+			<em>integer</em>
+			 -- The raster resolution. Can return: integer (72 - 2400).
+		</li>
+<li>
+			<strong>rasterize pages</strong>
+			
+			<em>boolean</em>
+			 -- If true, all the pages in the exported document will be rasterized.
+		</li>
+<li>
+			<strong>resampling threshold</strong>
+			
+			<em>integer</em>
+			 -- The resampling threshold.
+		</li>
+<li>
+			<strong>resampling type</strong>
+			
+			<em>none / downsample / subsample / bicubic downsample</em>
+			 -- The resampling type.
+		</li>
+<li>
+			<strong>SWF background</strong>
+			
+			<em>transparent SWF background / paper color</em>
+			 -- SWF background setting
+		</li>
+<li>
+			<strong>text export policy</strong>
+			
+			<em>live / rasterize / vectorize / tlf</em>
+			 -- The text export policy.
+		</li>
+<li>
+			<strong>use network access</strong>
+			
+			<em>boolean</em>
+			 -- Flag indicates whether to allow to use network access when export to SWF.
+		</li>
+<li>
+			<strong>view SWF after exporting</strong>
+			
+			<em>boolean</em>
+			 -- Flag indicates to whether to view the SWF after exporting.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Basics_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/SWF_export_preference.html">SWF export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

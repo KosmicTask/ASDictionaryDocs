@@ -1,0 +1,61 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>wait for process</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Command</sup> wait for process</h1>
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Waits for the process to finish, up to an optional maximum amount of time. No other processes get cycles during this time.</p>
+
+<ul class="desc">
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preflight_Suite">Preflight Suite</a></em></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<h2>Parameters</h2>
+<ul>
+	<li>
+		<em><a href="../../Preflight_Suite/classes/preflight_process.html">preflight process</a></em>
+		
+	</li>
+	<li>
+		[<strong>wait time</strong> <em>fixed</em>]
+		 -- The maximum time to wait, in seconds; if omitted, waits until completion no matter how long it takes.
+	</li>
+</ul>
+
+
+
+
+	<h2>Result</h2>
+	
+	<ul>
+		<li><em>boolean</em>
+		 -- True if the process is finished; false if not. False is only possible when a max time limit is specified.
+		</li>
+	</ul>
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1147 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>document</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> document</h1>
+
+<div id="view"><a href="../../FULL/classes/document.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A document.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>documents</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong>&lt;class ROOT&gt;</strong>
+					(<em>datatype</em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>accurate LAB spots</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses LAB alternates for spot colors when available.
+		</li>
+<li>
+			<strong>active layer</strong>
+			
+			<em><a href="../../Layout_Suite/classes/layer.html">layer</a></em>
+			 -- The active layer. Can also accept: string.
+		</li>
+<li>
+			<strong>active process</strong>
+			(r/o)
+			<em><a href="../../Preflight_Suite/classes/preflight_process.html">preflight process</a></em>
+			 -- The active preflight process for this document.
+		</li>
+<li>
+			<strong>after blending intent</strong>
+			
+			<em>use color settings / perceptual / saturation / relative colorimetric / absolute colorimetric</em>
+			 -- The rendering intent for colors that result from transparency interactions on the page after blending.
+		</li>
+<li>
+			<strong>all cell styles</strong>
+			(r/o)
+			<em>list of <a href="../../Tables_Suite/classes/cell_style.html">cell style</a></em>
+			 -- All Cell styles
+		</li>
+<li>
+			<strong>all character styles</strong>
+			(r/o)
+			<em>list of <a href="../../Text_Suite/classes/character_style.html">character style</a></em>
+			 -- Lists all character styles (regardless of their group).
+		</li>
+<li>
+			<strong>all graphics</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/graphic.html">graphic</a></em>
+			 -- Lists all graphics contained by the document.
+		</li>
+<li>
+			<strong>all object styles</strong>
+			(r/o)
+			<em>list of <a href="../../Object_Styles_Suite/classes/object_style.html">object style</a></em>
+			 -- All object styles contained by the document.
+		</li>
+<li>
+			<strong>all page items</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/page_item.html">page item</a></em>
+			 -- Lists all page items contained by the document.
+		</li>
+<li>
+			<strong>all paragraph styles</strong>
+			(r/o)
+			<em>list of <a href="../../Text_Suite/classes/paragraph_style.html">paragraph style</a></em>
+			 -- Lists all paragraph styles (regardless of their group).
+		</li>
+<li>
+			<strong>all table styles</strong>
+			(r/o)
+			<em>list of <a href="../../Tables_Suite/classes/table_style.html">table style</a></em>
+			 -- All Table styles
+		</li>
+<li>
+			<strong>anchored object defaults</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/anchored_object_default.html">anchored object default</a></em>
+			 -- Anchored object default settings.
+		</li>
+<li>
+			<strong>anchored object settings</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/anchored_object_setting.html">anchored object setting</a></em>
+			 -- Anchored object settings.
+		</li>
+<li>
+			<strong>associated XML element</strong>
+			(r/o)
+			<em><a href="../../XML_Suite/classes/XML_item.html">XML item</a></em>
+			 -- The XML element associated with the document.
+		</li>
+<li>
+			<strong>baseline frame grid options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/baseline_frame_grid_option.html">baseline frame grid option</a></em>
+			 -- Baseline frame grid option settings.
+		</li>
+<li>
+			<strong>button preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/button_preference.html">button preference</a></em>
+			 -- Button preference settings.
+		</li>
+<li>
+			<strong>chapter number preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/chapter_number_preference.html">chapter number preference</a></em>
+			 -- Chapter numbering preferences.
+		</li>
+<li>
+			<strong>CJK grid preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/cjk_grid_preference.html">cjk grid preference</a></em>
+			 -- CJK grid preference settings.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>CMYK policy</strong>
+			
+			<em>color policy off / preserve embedded profiles / convert to working space / combination of preserve and safe cmyk</em>
+			 -- The policy for handling colors in a CMYK color model, including reading and embedding color profiles, mismatches between embedded color profiles and the working space, and moving colors from one document to another.
+		</li>
+<li>
+			<strong>CMYK profile</strong>
+			
+			<em>string</em>
+			 -- The current CMYK profile.
+		</li>
+<li>
+			<strong>CMYK profile list</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- A list of valid CMYK profiles.
+		</li>
+<li>
+			<strong>conditional text preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/conditional_text_preference.html">conditional text preference</a></em>
+			 -- Conditional text preferences.
+		</li>
+<li>
+			<strong>converted</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the document was converted.
+		</li>
+<li>
+			<strong>data merge options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/data_merge_option.html">data merge option</a></em>
+			 -- The data merge option properties that define the data merge.
+		</li>
+<li>
+			<strong>data merge properties</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/data_merge.html">data merge</a></em>
+			 -- Data merge properties that define data merge fields and preferences.
+		</li>
+<li>
+			<strong>default image intent</strong>
+			
+			<em>use color settings / perceptual / saturation / relative colorimetric / absolute colorimetric</em>
+			 -- The rendering intent for bitmap images.
+		</li>
+<li>
+			<strong>dictionary preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/dictionary_preference.html">dictionary preference</a></em>
+			 -- User dictionary preference settings.
+		</li>
+<li>
+			<strong>document preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/document_preference.html">document preference</a></em>
+			 -- Document preference settings.
+		</li>
+<li>
+			<strong>editing state</strong>
+			(r/o)
+			<em>editing unknown / editing nowhere / editing remotely / editing locally / editing locally locked / editing conflict</em>
+			 -- The Version Cue editing state of the file.
+		</li>
+<li>
+			<strong>export for web preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/export_for_web_preference.html">export for web preference</a></em>
+			 -- The default export for web preferences.
+		</li>
+<li>
+			<strong>file path</strong>
+			(r/o)
+			<em>alias | string</em>
+			 -- The full path to the file.
+		</li>
+<li>
+			<strong>footnote options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/footnote_option.html">footnote option</a></em>
+			 -- Footnote option settings.
+		</li>
+<li>
+			<strong>frame fitting options</strong>
+			(r/o)
+			<em><a href="../../Layout_Suite/classes/frame_fitting_option.html">frame fitting option</a></em>
+			 -- The frame fitting option to apply to placed or pasted content. Can be applied to a frame, object style, or document or to the application.
+		</li>
+<li>
+			<strong>full name</strong>
+			(r/o)
+			<em>alias | string</em>
+			 -- The full path to the document, including the name of the document.
+		</li>
+<li>
+			<strong>galley preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/galley_preference.html">galley preference</a></em>
+			 -- Galley preference settings.
+		</li>
+<li>
+			<strong>grid preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/grid_preference.html">grid preference</a></em>
+			 -- Grid preference settings.
+		</li>
+<li>
+			<strong>guide preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/guide_preference.html">guide preference</a></em>
+			 -- Guide preference settings.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the document.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the document within its containing object.
+		</li>
+<li>
+			<strong>index generation options</strong>
+			(r/o)
+			<em><a href="../../Indexing_Suite/classes/index_options.html">index options</a></em>
+			 -- The index options properties that define how an index is formatted. 
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>layout adjustment preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/layout_adjustment_preference.html">layout adjustment preference</a></em>
+			 -- Layout sdjustment preference settings.
+		</li>
+<li>
+			<strong>layout grid data</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/layout_grid_data_information.html">layout grid data information</a></em>
+			 -- Default properties specific to layout grids.
+		</li>
+<li>
+			<strong>margin preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/margin_preference.html">margin preference</a></em>
+			 -- Margin preference settings.
+		</li>
+<li>
+			<strong>metadata preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/metadata_preference.html">metadata preference</a></em>
+			 -- Metadata preference settings.
+		</li>
+<li>
+			<strong>modified</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the document has been modified since it was last saved.
+		</li>
+<li>
+			<strong>mojikumi UI preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/mojikumi_ui_preference.html">mojikumi ui preference</a></em>
+			 -- Mojikumi user interface preference settings.
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the document.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Basics_Suite/classes/document.html">document</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>page item defaults</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/page_item_default.html">page item default</a></em>
+			 -- The default page item formatting for the document.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the document (a application).
+		</li>
+<li>
+			<strong>pasteboard preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/pasteboard_preference.html">pasteboard preference</a></em>
+			 -- Pasteboard preference settings.
+		</li>
+<li>
+			<strong>place guns</strong>
+			(r/o)
+			<em><a href="../../Basics_Suite/classes/place_gun.html">place gun</a></em>
+			 -- The place gun.
+		</li>
+<li>
+			<strong>preflight options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/preflight_option.html">preflight option</a></em>
+			 -- Preflight option settings.
+		</li>
+<li>
+			<strong>print booklet options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/print_booklet_option.html">print booklet option</a></em>
+			 -- Booklet printing options.
+		</li>
+<li>
+			<strong>print booklet print preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/print_booklet_print_preference.html">print booklet print preference</a></em>
+			 -- Print booklet preferences.
+		</li>
+<li>
+			<strong>print preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/print_preference.html">print preference</a></em>
+			 -- Print preference settings.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>read only</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the document is read-only.
+		</li>
+<li>
+			<strong>recovered</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the document was recovered.
+		</li>
+<li>
+			<strong>redo history</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- The names of the items in the redo stack.
+		</li>
+<li>
+			<strong>redo name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the action on the top of the redo stack.
+		</li>
+<li>
+			<strong>RGB policy</strong>
+			
+			<em>color policy off / preserve embedded profiles / convert to working space / combination of preserve and safe cmyk</em>
+			 -- The policy for handling colors in an RGB color model, including reading and embedding color profiles, handling mismatches between embedded color profiles and the working space, and moving colors from one document to another.
+		</li>
+<li>
+			<strong>RGB profile</strong>
+			
+			<em>string</em>
+			 -- The current RGB profile.
+		</li>
+<li>
+			<strong>RGB profile list</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- A list of valid RGB profiles.
+		</li>
+<li>
+			<strong>saved</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the document has been saved since it was created.
+		</li>
+<li>
+			<strong>selection</strong>
+			
+			<em>list of reference</em>
+			 -- The selected object(s). Can also accept: object or nothing.
+		</li>
+<li>
+			<strong>solid color intent</strong>
+			
+			<em>use color settings / perceptual / saturation / relative colorimetric / absolute colorimetric</em>
+			 -- The rendering intent for all vector art (areas of solid color) in native objects.
+		</li>
+<li>
+			<strong>story grid data</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/story_grid_data_information.html">story grid data information</a></em>
+			 -- Default properties specific to frame grids.
+		</li>
+<li>
+			<strong>story preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/story_preference.html">story preference</a></em>
+			 -- Story preference settings.
+		</li>
+<li>
+			<strong>text defaults</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/text_default.html">text default</a></em>
+			 -- Text default settings. 
+		</li>
+<li>
+			<strong>text frame preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/text_frame_preference.html">text frame preference</a></em>
+			 -- Text frame preference settings.
+		</li>
+<li>
+			<strong>text preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/text_preference.html">text preference</a></em>
+			 -- Text preference settings.
+		</li>
+<li>
+			<strong>text wrap preferences</strong>
+			(r/o)
+			<em><a href="../../Layout_Suite/classes/text_wrap_preference.html">text wrap preference</a></em>
+			 -- The text wrap preference properties that define the default formatting for wrapping text around objects.
+		</li>
+<li>
+			<strong>transparency preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/transparency_preference.html">transparency preference</a></em>
+			 -- Transparency preference settings.
+		</li>
+<li>
+			<strong>undo history</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- The names of the items in the undo stack.
+		</li>
+<li>
+			<strong>undo name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the action on the top of the undo stack.
+		</li>
+<li>
+			<strong>unused swatches</strong>
+			(r/o)
+			<em>list of <a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatches that are not being used.
+		</li>
+<li>
+			<strong>version state</strong>
+			(r/o)
+			<em>version unknown / project file newer / local project match / local newer / version conflict / no resource</em>
+			 -- The Version Cue version state of the file.
+		</li>
+<li>
+			<strong>view preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/view_preference.html">view preference</a></em>
+			 -- View preference settings.
+		</li>
+<li>
+			<strong>visible</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the document is visible.
+		</li>
+<li>
+			<strong>watermark preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/watermark_preference.html">watermark preference</a></em>
+			 -- Watermark preferences
+		</li>
+<li>
+			<strong>XML export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/XML_export_preference.html">XML export preference</a></em>
+			 -- XML export preference settings.
+		</li>
+<li>
+			<strong>XML import preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/XML_import_preference.html">XML import preference</a></em>
+			 -- XML import preference settings.
+		</li>
+<li>
+			<strong>XML preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/XML_preference.html">XML preference</a></em>
+			 -- The XML preference settings.
+		</li>
+<li>
+			<strong>XML view preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/XML_view_preference.html">XML view preference</a></em>
+			 -- XML view preference settings.
+		</li>
+<li>
+			<strong>zero point</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The ruler origin, specified as page coordinates in the format [x, y].
+		</li>
+<li>
+			<strong>after activate</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after the document becomes active. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after export</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a document is exported. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after import</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after importing a file into a document. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after links changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after one or more links in the document have been added, deleted, or modified. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after new</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is created. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after open</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is opened. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after print</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a document is printed. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after revert</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is reverted. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after save</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is saved. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after save a copy</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a copy of a Document is saved. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after save as</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is saved under a new name. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before close</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is closed. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before deactivate</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before the document becomes inactive. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before export</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a document is exported. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before import</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before importing a file into a document. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before print</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a document is printed. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before revert</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is reverted. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before save</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is saved. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before save a copy</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a copy of a Document is saved. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before save as</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is saved under a new name. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>failed export</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a document export is canceled or fails. This event bubbles. This event is not cancelable.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Assignment_Suite/classes/assignment.html">assignments</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/bookmark.html">bookmarks</a></strong></span> , <span> <strong><a href="../../Interactive_Elements_Suite/classes/button.html">buttons</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/cell_style.html">cell styles</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/cell_style_group.html">cell style groups</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/character_style.html">character styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/character_style_group.html">character style groups</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/color.html">colors</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/composite_font.html">composite fonts</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/condition.html">conditions</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/condition_set.html">condition sets</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/cross_reference_format.html">cross reference formats</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/cross_reference_source.html">cross reference sources</a></strong></span> , <span> <strong><a href="../../Stroke_Styles_Suite/classes/dashed_stroke_style.html">dashed stroke styles</a></strong></span> , <span> <strong><a href="../../Datamerge_Suite/classes/data_merge_image_placeholder.html">data merge image placeholders</a></strong></span> , <span> <strong><a href="../../Datamerge_Suite/classes/data_merge_text_placeholder.html">data merge text placeholders</a></strong></span> , <span> <strong><a href="../../Stroke_Styles_Suite/classes/dotted_stroke_style.html">dotted stroke styles</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/DTD.html">DTDs</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/EPSText.html">EPSTexts</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/font.html">fonts</a></strong></span> , <span> <strong><a href="../../Interactive_Elements_Suite/classes/form_field.html">form fields</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/gradient.html">gradients</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/graphic_line.html">graphic lines</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/group.html">groups</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/guide.html">guides</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/hyperlink.html">hyperlinks</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/hyperlink_external_page_destination.html">hyperlink external page destinations</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/hyperlink_page_destination.html">hyperlink page destinations</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/hyperlink_page_item_source.html">hyperlink page item sources</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/hyperlink_text_destination.html">hyperlink text destinations</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/hyperlink_text_source.html">hyperlink text sources</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/hyperlink_URL_destination.html">hyperlink URL destinations</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/hyphenation_exception.html">hyphenation exceptions</a></strong></span> , <span> <strong><a href="../../Indexing_Suite/classes/index.html">indexes</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/indexing_sort_option.html">indexing sort options</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/ink.html">inks</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/kinsoku_table.html">kinsoku tables</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/language.html">languages</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/layer.html">layers</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/layout_window.html">layout windows</a></strong></span> , <span> <strong><a href="../../Links_Suite/classes/link.html">links</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/master_spread.html">master spreads</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/mixed_ink.html">mixed inks</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/mixed_ink_group.html">mixed ink groups</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/mojikumi_table.html">mojikumi tables</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/Motion_Preset.html">Motion Presets</a></strong></span> , <span> <strong><a href="../../Interactive_Elements_Suite/classes/multi_state_object.html">multi state objects</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/named_grid.html">named grids</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/numbering_list.html">numbering lists</a></strong></span> , <span> <strong><a href="../../Object_Styles_Suite/classes/object_style.html">object styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/object_style_group.html">object style groups</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/oval.html">ovals</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/page.html">pages</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/page_item.html">page items</a></strong></span> , <span> <strong><a href="../../Hyperlinks_Suite/classes/paragraph_destination.html">paragraph destinations</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/paragraph_style.html">paragraph styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/paragraph_style_group.html">paragraph style groups</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/polygon.html">polygons</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/preference.html">preferences</a></strong></span> , <span> <strong><a href="../../Preflight_Suite/classes/preflight_profile.html">preflight profiles</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/rectangle.html">rectangles</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/section.html">sections</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/spline_item.html">spline items</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/spread.html">spreads</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/story.html">stories</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/story_window.html">story windows</a></strong></span> , <span> <strong><a href="../../Stroke_Styles_Suite/classes/striped_stroke_style.html">striped stroke styles</a></strong></span> , <span> <strong><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke styles</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/swatch.html">swatches</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/table_style.html">table styles</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/table_style_group.html">table style groups</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_frame.html">text frames</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_variable.html">text variables</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/tint.html">tints</a></strong></span> , <span> <strong><a href="../../Table_Of_Contents_Suite/classes/TOC_style.html">TOC styles</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/trap_preset.html">trap presets</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/validation_error.html">validation errors</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/window.html">windows</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_comment.html">XML comments</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_element.html">XML elements</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_export_map.html">XML export maps</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_import_map.html">XML import maps</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_instruction.html">XML instructions</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_item.html">XML Items</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/xml_story.html">xml stories</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_tag.html">XML tags</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Assignment_Suite/classes/assignment.html">assignment</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/bookmark.html">bookmark</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Interactive_Elements_Suite/classes/button.html">button</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/cell_style.html">cell style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/cell_style_group.html">cell style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/character_style.html">character style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/character_style_group.html">character style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/color.html">color</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/composite_font.html">composite font</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/condition.html">condition</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/condition_set.html">condition set</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/cross_reference_format.html">cross reference format</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/cross_reference_source.html">cross reference source</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Stroke_Styles_Suite/classes/dashed_stroke_style.html">dashed stroke style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Datamerge_Suite/classes/data_merge_image_placeholder.html">data merge image placeholder</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Datamerge_Suite/classes/data_merge_text_placeholder.html">data merge text placeholder</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Stroke_Styles_Suite/classes/dotted_stroke_style.html">dotted stroke style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/DTD.html">DTD</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/EPSText.html">EPSText</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/font.html">font</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Interactive_Elements_Suite/classes/form_field.html">form field</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/gradient.html">gradient</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/graphic_line.html">graphic line</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/group.html">group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/guide.html">guide</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/hyperlink.html">hyperlink</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_external_page_destination.html">hyperlink external page destination</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_page_destination.html">hyperlink page destination</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_page_item_source.html">hyperlink page item source</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_text_destination.html">hyperlink text destination</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_text_source.html">hyperlink text source</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_URL_destination.html">hyperlink URL destination</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/hyphenation_exception.html">hyphenation exception</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Indexing_Suite/classes/index.html">index</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/indexing_sort_option.html">indexing sort option</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/ink.html">ink</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/kinsoku_table.html">kinsoku table</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/language.html">language</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/layer.html">layer</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/layout_window.html">layout window</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Links_Suite/classes/link.html">link</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/master_spread.html">master spread</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/mixed_ink.html">mixed ink</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/mixed_ink_group.html">mixed ink group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/mojikumi_table.html">mojikumi table</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/Motion_Preset.html">Motion Preset</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Interactive_Elements_Suite/classes/multi_state_object.html">multi state object</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/named_grid.html">named grid</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/numbering_list.html">numbering list</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Object_Styles_Suite/classes/object_style.html">object style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/object_style_group.html">object style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/oval.html">oval</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/page.html">page</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/page_item.html">page item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Hyperlinks_Suite/classes/paragraph_destination.html">paragraph destination</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/paragraph_style.html">paragraph style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/paragraph_style_group.html">paragraph style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/polygon.html">polygon</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/preference.html">preference</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Preflight_Suite/classes/preflight_profile.html">preflight profile</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/rectangle.html">rectangle</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/section.html">section</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/spline_item.html">spline item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/spread.html">spread</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/story.html">story</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/story_window.html">story window</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Stroke_Styles_Suite/classes/striped_stroke_style.html">striped stroke style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/swatch.html">swatch</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/table_style.html">table style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/table_style_group.html">table style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_frame.html">text frame</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_variable.html">text variable</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/tint.html">tint</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Table_Of_Contents_Suite/classes/TOC_style.html">TOC style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/trap_preset.html">trap preset</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/validation_error.html">validation error</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/window.html">window</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_comment.html">XML comment</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_element.html">XML element</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_export_map.html">XML export map</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_import_map.html">XML import map</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_instruction.html">XML instruction</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_item.html">XML item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/xml_story.html">xml story</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_tag.html">XML tag</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Basics_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Assignment_Suite/classes/assignment.html">assignment</a></strong>
+					(<em><a href="../../index.html#suite_Assignment_Suite">Assignment Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/chapter_number_preference.html">chapter number preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/cross_reference_format.html">cross reference format</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/cross_reference_source.html">cross reference source</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/data_merge.html">data merge</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Datamerge_Suite/classes/data_merge_image_placeholder.html">data merge image placeholder</a></strong>
+					(<em><a href="../../index.html#suite_Datamerge_Suite">Datamerge Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Datamerge_Suite/classes/data_merge_text_placeholder.html">data merge text placeholder</a></strong>
+					(<em><a href="../../index.html#suite_Datamerge_Suite">Datamerge Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../XML_Suite/classes/DTD.html">DTD</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/hyperlink.html">hyperlink</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_external_page_destination.html">hyperlink external page destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_page_destination.html">hyperlink page destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_page_item_source.html">hyperlink page item source</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_text_destination.html">hyperlink text destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_text_source.html">hyperlink text source</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/hyperlink_URL_destination.html">hyperlink URL destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/hyphenation_exception.html">hyphenation exception</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Indexing_Suite/classes/index.html">index</a></strong>
+					(<em><a href="../../index.html#suite_Indexing_Suite">Indexing Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/language.html">language</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/layer.html">layer</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/layout_window.html">layout window</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/master_spread.html">master spread</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/metadata_preference.html">metadata preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Hyperlinks_Suite/classes/paragraph_destination.html">paragraph destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/place_gun.html">place gun</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preflight_Suite/classes/preflight_process.html">preflight process</a></strong>
+					(<em><a href="../../index.html#suite_Preflight_Suite">Preflight Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/print_booklet_option.html">print booklet option</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/print_booklet_print_preference.html">print booklet print preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/print_event.html">print event</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/section.html">section</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/spread.html">spread</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/story_window.html">story window</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Table_Of_Contents_Suite/classes/TOC_style.html">TOC style</a></strong>
+					(<em><a href="../../index.html#suite_Table_Of_Contents_Suite">Table Of Contents Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../XML_Suite/classes/validation_error.html">validation error</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/window.html">window</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../XML_Suite/classes/xml_story.html">xml story</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

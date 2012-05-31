@@ -1,0 +1,213 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>EPS export preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> EPS export preference</h1>
+
+<div id="view"><a href="../../Preferences_Suite/classes/EPS_export_preference.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>EPS export preferences.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>applied flattener preset</strong>
+			
+			<em><a href="../../FULL/classes/flattener_preset.html">flattener preset</a></em>
+			 -- The transparency flattener preset to use.
+		</li>
+<li>
+			<strong>bleed bottom</strong>
+			
+			<em>number | string</em>
+			 -- The height of the bleed area at the bottom of the page. Note: Valid only when use document bleed to print is true. Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>bleed inside</strong>
+			
+			<em>number | string</em>
+			 -- The width of the bleed area at the inside of the page. Note: Valid only when use document bleed to print is true. Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>bleed outside</strong>
+			
+			<em>number | string</em>
+			 -- The width of the bleed area at the outside of the page. Note: Valid only when use document bleed to print is true. . Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>bleed top</strong>
+			
+			<em>number | string</em>
+			 -- The height of the bleed area at the top of the page. Note: Valid only when use document bleed to print is true. Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>data format</strong>
+			
+			<em>ASCII / binary</em>
+			 -- The format in which to send image data to the printer.
+		</li>
+<li>
+			<strong>EPS color</strong>
+			
+			<em>RGB / CMYK / gray / unchanged color space / postscript color management</em>
+			 -- The color space for representing color in the exported EPS.
+		</li>
+<li>
+			<strong>EPS spreads</strong>
+			
+			<em>boolean</em>
+			 -- If true, exports facing pages as a single page that has the width of the spread. If false, exports spread pages as separate pages.
+		</li>
+<li>
+			<strong>font embedding</strong>
+			
+			<em>none / complete / subset</em>
+			 -- Controls how fonts are embedded in the exported EPS.
+		</li>
+<li>
+			<strong>ignore spread overrides</strong>
+			
+			<em>boolean</em>
+			 -- If true, ignores flattener spread overrides.
+		</li>
+<li>
+			<strong>image data</strong>
+			
+			<em>all image data / proxy image data</em>
+			 -- The image data to export to the EPS document.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/EPS_export_preference.html">EPS export preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>omit bitmaps</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces bitmap images with OPI links.
+		</li>
+<li>
+			<strong>omit EPS</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces EPS images with OPI links.
+		</li>
+<li>
+			<strong>omit PDF</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces PDF images with OPI links.
+		</li>
+<li>
+			<strong>OPI image replacement</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints graphics that are either OPI comments stored in imported EPS files or linked using OPI comments. For information on linking files using OPI comments, see omit EPS, omit PDF, or omit bitmaps.
+		</li>
+<li>
+			<strong>page range</strong>
+			
+			<em>anything</em>
+			 -- The pages to print, specified either as an enumeration or a string. To specify a range, separate page numbers in the string with a hyphen (-). To specify separate pages, separate page numbers in the string with a comma (,). Can return: all pages/select...
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the EPS export preference (a application).
+		</li>
+<li>
+			<strong>PostScript level</strong>
+			
+			<em>level 2 / level 3</em>
+			 -- The PostScript level of the printer.
+		</li>
+<li>
+			<strong>preview</strong>
+			
+			<em>none / TIFF preview / PICT preview</em>
+			 -- The file format of the preview image saved with the exported EPS file.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/EPS_export_preference.html">EPS export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>spread</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> spread</h1>
+
+<div id="view"><a href="../../Layout_Suite/classes/spread.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A spread.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>spreads</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>all graphics</strong>
+			(r/o)
+			<em>list of <a href="../../FULL/classes/graphic.html">graphic</a></em>
+			 -- Lists all graphics contained by the spread.
+		</li>
+<li>
+			<strong>all page items</strong>
+			(r/o)
+			<em>list of <a href="../../FULL/classes/page_item.html">page item</a></em>
+			 -- Lists all page items contained by the spread.
+		</li>
+<li>
+			<strong>allow page shuffle</strong>
+			
+			<em>boolean</em>
+			 -- If true, guarantees that when pages are added to a spread it will contain a maximum of two pages. If false, allows pages to be added or moved into existing spreads. For override information, see preserve layout when shuffling.
+		</li>
+<li>
+			<strong>applied master</strong>
+			
+			<em><a href="../../FULL/classes/master_spread.html">master spread</a></em>
+			 -- The master spread applied to the spread. Can also accept: nothing.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>flattener override</strong>
+			
+			<em>default / none / custom</em>
+			 -- The transparency flattener preferences override for the spread.
+		</li>
+<li>
+			<strong>flattener preferences</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/flattener_preference.html">flattener preference</a></em>
+			 -- Flattener preference settings.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the spread.
+		</li>
+<li>
+			<strong>IDML component name</strong>
+			
+			<em>string</em>
+			 -- The IDML component name of the spread.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the spread within its containing object.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the spread; this is an alias to the spread's label property.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/spread.html">spread</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>page transition direction</strong>
+			
+			<em>not applicable / down / right to left / left down / left up / left to right / right down / right up / up / in / out / horizontal / vertical / horizontal in / horizontal out / vertical in / vertical out</em>
+			 -- The direction of the page transition.
+		</li>
+<li>
+			<strong>page transition duration</strong>
+			
+			<em>fast / medium / slow</em>
+			 -- The duration of the page transition.
+		</li>
+<li>
+			<strong>page transition type</strong>
+			
+			<em>none / blinds transition / box transition / comb transition / cover transition / dissolve transition / fade transition / page turn transition / push transition / split transition / uncover transition / wipe transition / zoom in transition / zoom out transition</em>
+			 -- The type of page transition.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/document.html">document</a></em>
+			 -- The parent of the spread (a document).
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>show master items</strong>
+			
+			<em>boolean</em>
+			 -- If true, displays master page items on document pages in the spread.
+		</li>
+<li>
+			<strong>timing settings</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/timing_setting.html">timing setting</a></em>
+			 -- The object timing settings.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/button.html">buttons</a></strong></span> , <span> <strong><a href="../../FULL/classes/EPSText.html">EPSTexts</a></strong></span> , <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../FULL/classes/form_field.html">form fields</a></strong></span> , <span> <strong><a href="../../FULL/classes/graphic_line.html">graphic lines</a></strong></span> , <span> <strong><a href="../../FULL/classes/group.html">groups</a></strong></span> , <span> <strong><a href="../../FULL/classes/guide.html">guides</a></strong></span> , <span> <strong><a href="../../FULL/classes/multi_state_object.html">multi state objects</a></strong></span> , <span> <strong><a href="../../FULL/classes/oval.html">ovals</a></strong></span> , <span> <strong><a href="../../FULL/classes/page.html">pages</a></strong></span> , <span> <strong><a href="../../FULL/classes/page_item.html">page items</a></strong></span> , <span> <strong><a href="../../FULL/classes/polygon.html">polygons</a></strong></span> , <span> <strong><a href="../../FULL/classes/preference.html">preferences</a></strong></span> , <span> <strong><a href="../../FULL/classes/rectangle.html">rectangles</a></strong></span> , <span> <strong><a href="../../FULL/classes/spline_item.html">spline items</a></strong></span> , <span> <strong><a href="../../FULL/classes/text_frame.html">text frames</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/button.html">button</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/EPSText.html">EPSText</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/form_field.html">form field</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/graphic_line.html">graphic line</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/group.html">group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/guide.html">guide</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/multi_state_object.html">multi state object</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/oval.html">oval</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/page.html">page</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/page_item.html">page item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/polygon.html">polygon</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/preference.html">preference</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/rectangle.html">rectangle</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/spline_item.html">spline item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/text_frame.html">text frame</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/flattener_preference.html">flattener preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/spread.html">spread</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

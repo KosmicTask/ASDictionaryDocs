@@ -1,0 +1,205 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>anchored object setting</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> anchored object setting</h1>
+
+<div id="view"><a href="../../FULL/classes/anchored_object_setting.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>The settings for an anchored object.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>anchor point</strong>
+			
+			<em>top left anchor / top center anchor / top right anchor / left center anchor / center anchor / right center anchor / bottom left anchor / bottom center anchor / bottom right anchor</em>
+			 -- The point in the anchored object to position.
+		</li>
+<li>
+			<strong>anchor space above</strong>
+			
+			<em>number | string</em>
+			 -- The space above an above-line anchored object.
+		</li>
+<li>
+			<strong>anchor xoffset</strong>
+			
+			<em>number | string</em>
+			 -- The horizontal (x) offset of the anchored object.
+		</li>
+<li>
+			<strong>anchor yoffset</strong>
+			
+			<em>number | string</em>
+			 -- The vertical (y) offset of the anchored object. Corresponds to the space after property for above line positioning.
+		</li>
+<li>
+			<strong>anchored position</strong>
+			
+			<em>inline position / above line / anchored</em>
+			 -- The position of the anchored object relative to the anchor.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>horizontal alignment</strong>
+			
+			<em>right align / left align / center align / text align</em>
+			 -- When anchored position is above line, the position of the anchored object is relative to the text area. When anchored position is custom, the horizontal alignment of the anchored object is set by the horizontal reference point. Note: Not valid when anc...
+		</li>
+<li>
+			<strong>horizontal reference point</strong>
+			
+			<em>column edge / text frame / page margins / page edge / anchor location</em>
+			 -- The horizontal reference point on the page. Valid only when anchored position is custom.
+		</li>
+<li>
+			<strong>lock position</strong>
+			
+			<em>boolean</em>
+			 -- If true, prevents manual positioning of the anchored object.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/anchored_object_setting.html">anchored object setting</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the anchored object setting (a application, document, EPSText, spline item, polygon, graphic line, rectangle, oval, group, text frame, button, form field, multi state object or object style). Can return: application, document, EPSText, sp...
+		</li>
+<li>
+			<strong>pin position</strong>
+			
+			<em>boolean</em>
+			 -- If true, pins the position of the anchored object within the text frame top and bottom.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>spine relative</strong>
+			
+			<em>boolean</em>
+			 -- If true, the position of the anchored object is relative to the binding spine of the page or spread.
+		</li>
+<li>
+			<strong>vertical alignment</strong>
+			
+			<em>top align / bottom align / center align</em>
+			 -- The vertical alignment of the anchored object reference point with the vertical reference point on the page. Notes: Valid only when anchored position is custom.
+		</li>
+<li>
+			<strong>vertical reference point</strong>
+			
+			<em>column edge / text frame / page margins / page edge / line baseline / line xheight / line ascent / capheight / top of leading / embox top / embox middle / embox bottom</em>
+			 -- The vertical reference point on the page. Valid when anchored position is custom.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Preferences_Suite/classes/anchored_object_setting.html">anchored object setting</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/EPSText.html">EPSText</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/form_field.html">form field</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/group.html">group</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Object_Styles_Suite/classes/object_style.html">object style</a></strong>
+					(<em><a href="../../index.html#suite_Object_Styles_Suite">Object Styles Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/spline_item.html">spline item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text_frame.html">text frame</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

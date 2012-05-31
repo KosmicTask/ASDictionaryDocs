@@ -1,0 +1,1108 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>application</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> application</h1>
+
+<div id="view"><a href="../../FULL/classes/application.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>The application.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong>&lt;class ROOT&gt;</strong>
+					(<em>datatype</em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>active book</strong>
+			
+			<em><a href="../../Book_Suite/classes/book.html">book</a></em>
+			 -- The active book.
+		</li>
+<li>
+			<strong>active document</strong>
+			
+			<em><a href="../../Basics_Suite/classes/document.html">document</a></em>
+			 -- The front-most document.
+		</li>
+<li>
+			<strong>active script</strong>
+			(r/o)
+			<em>alias | string</em>
+			 -- The current script running from the Scripts panel.
+		</li>
+<li>
+			<strong>active script undo mode</strong>
+			(r/o)
+			<em>script request / entire script / auto undo / fast entire script</em>
+			 -- The undo mode for the current script execution.
+		</li>
+<li>
+			<strong>active window</strong>
+			
+			<em>reference</em>
+			 -- The front-most window. Can return: window, layout window or story window.
+		</li>
+<li>
+			<strong>align distribute preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/align_distribute_preference.html">align distribute preference</a></em>
+			 -- Preferences for alignment and distribution.
+		</li>
+<li>
+			<strong>all cell styles</strong>
+			(r/o)
+			<em>list of <a href="../../Tables_Suite/classes/cell_style.html">cell style</a></em>
+			 -- All Cell styles
+		</li>
+<li>
+			<strong>all character styles</strong>
+			(r/o)
+			<em>list of <a href="../../Text_Suite/classes/character_style.html">character style</a></em>
+			 -- Lists all character styles (regardless of their group).
+		</li>
+<li>
+			<strong>all object styles</strong>
+			(r/o)
+			<em>list of <a href="../../Object_Styles_Suite/classes/object_style.html">object style</a></em>
+			 -- All object styles contained by the application.
+		</li>
+<li>
+			<strong>all paragraph styles</strong>
+			(r/o)
+			<em>list of <a href="../../Text_Suite/classes/paragraph_style.html">paragraph style</a></em>
+			 -- Lists all paragraph styles (regardless of their group).
+		</li>
+<li>
+			<strong>all preflight object types</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- The list of all object types (strings) a preflight rule can operate on.
+		</li>
+<li>
+			<strong>all preflight rule categories</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- The list of all categories that have been declared by rules.
+		</li>
+<li>
+			<strong>all preflight rule IDs</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- The list of all known (declared) rule IDs.
+		</li>
+<li>
+			<strong>all table styles</strong>
+			(r/o)
+			<em>list of <a href="../../Tables_Suite/classes/table_style.html">table style</a></em>
+			 -- All Table styles
+		</li>
+<li>
+			<strong>anchored object defaults</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/anchored_object_default.html">anchored object default</a></em>
+			 -- Anchored object default settings.
+		</li>
+<li>
+			<strong>anchored object settings</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/anchored_object_setting.html">anchored object setting</a></em>
+			 -- Anchored object settings.
+		</li>
+<li>
+			<strong>auto correct preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/auto_correct_preference.html">auto correct preference</a></em>
+			 -- Auto-correct preferences.
+		</li>
+<li>
+			<strong>baseline frame grid options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/baseline_frame_grid_option.html">baseline frame grid option</a></em>
+			 -- Baseline frame grid option settings.
+		</li>
+<li>
+			<strong>button preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/button_preference.html">button preference</a></em>
+			 -- Button preference settings.
+		</li>
+<li>
+			<strong>change glyph preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/change_glyph_preference.html">change glyph preference</a></em>
+			 -- Change glyph preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>change grep preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/change_grep_preference.html">change grep preference</a></em>
+			 -- Change grep preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>change object preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/change_object_preference.html">change object preference</a></em>
+			 -- Change object preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>change text preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/change_text_preference.html">change text preference</a></em>
+			 -- Change text preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>change transliterate preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/change_transliterate_preference.html">change transliterate preference</a></em>
+			 -- Change transliterate preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>CJK grid preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/cjk_grid_preference.html">cjk grid preference</a></em>
+			 -- CJK grid preference settings.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>clear overrides when applying style</strong>
+			
+			<em>boolean</em>
+			 -- Clear overrides first before applying object style
+		</li>
+<li>
+			<strong>clipboard preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/clipboard_preference.html">clipboard preference</a></em>
+			 -- Clipboard preference properties that define the way that the application interacts with the system clipboard.
+		</li>
+<li>
+			<strong>color settings</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/color_setting.html">color setting</a></em>
+			 -- Color setting properties that define color management defaults.
+		</li>
+<li>
+			<strong>conditional text preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/conditional_text_preference.html">conditional text preference</a></em>
+			 -- Conditional text preferences.
+		</li>
+<li>
+			<strong>data merge options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/data_merge_option.html">data merge option</a></em>
+			 -- The data merge option properties that define the data merge.
+		</li>
+<li>
+			<strong>dictionary preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/dictionary_preference.html">dictionary preference</a></em>
+			 -- User dictionary preference settings.
+		</li>
+<li>
+			<strong>display performance preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/display_performance_preference.html">display performance preference</a></em>
+			 -- Display performance settings. 
+		</li>
+<li>
+			<strong>document preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/document_preference.html">document preference</a></em>
+			 -- Document preference settings.
+		</li>
+<li>
+			<strong>EPS export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/EPS_export_preference.html">EPS export preference</a></em>
+			 -- EPS export preferences.
+		</li>
+<li>
+			<strong>EPS import preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/EPS_import_preference.html">EPS import preference</a></em>
+			 -- EPS import preferences.
+		</li>
+<li>
+			<strong>excel import preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/excel_import_preference.html">excel import preference</a></em>
+			 -- Excel import preferences.
+		</li>
+<li>
+			<strong>export for web preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/export_for_web_preference.html">export for web preference</a></em>
+			 -- The default export for web preferences.
+		</li>
+<li>
+			<strong>feature set</strong>
+			(r/o)
+			<em>roman / japanese / righttoleft</em>
+			 -- The feature set.
+		</li>
+<li>
+			<strong>file path</strong>
+			(r/o)
+			<em>alias | string</em>
+			 -- The full path to the file.
+		</li>
+<li>
+			<strong>find change glyph options</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_change_glyph_option.html">find change glyph option</a></em>
+			 -- Find/change glyph options. Can also accept: nothing.
+		</li>
+<li>
+			<strong>find change grep options</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_change_grep_option.html">find change grep option</a></em>
+			 -- Find/change grep options. Can also accept: nothing.
+		</li>
+<li>
+			<strong>find change object options</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_change_object_option.html">find change object option</a></em>
+			 -- Find/change object options. Can also accept: nothing.
+		</li>
+<li>
+			<strong>find change text options</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_change_text_option.html">find change text option</a></em>
+			 -- Find/change text options. Can also accept: nothing.
+		</li>
+<li>
+			<strong>find change transliterate options</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_change_transliterate_option.html">find change transliterate option</a></em>
+			 -- Find/change transliterate options. Can also accept: nothing.
+		</li>
+<li>
+			<strong>find glyph preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_glyph_preference.html">find glyph preference</a></em>
+			 -- Find glyph preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>find grep preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_grep_preference.html">find grep preference</a></em>
+			 -- Find grep preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>find object preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_object_preference.html">find object preference</a></em>
+			 -- Find object preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>find text preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_text_preference.html">find text preference</a></em>
+			 -- Find text preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>find transliterate preferences</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/find_transliterate_preference.html">find transliterate preference</a></em>
+			 -- Find transliterate preferences. Can also accept: nothing.
+		</li>
+<li>
+			<strong>footnote options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/footnote_option.html">footnote option</a></em>
+			 -- Footnote option settings.
+		</li>
+<li>
+			<strong>frame fitting options</strong>
+			(r/o)
+			<em><a href="../../Layout_Suite/classes/frame_fitting_option.html">frame fitting option</a></em>
+			 -- The frame fitting option to apply to placed or pasted content. Can be applied to a frame, object style, or document or to the application.
+		</li>
+<li>
+			<strong>full name</strong>
+			(r/o)
+			<em>alias | string</em>
+			 -- The full path to the application, including the name of the application.
+		</li>
+<li>
+			<strong>galley preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/galley_preference.html">galley preference</a></em>
+			 -- Galley preference settings.
+		</li>
+<li>
+			<strong>general preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/general_preference.html">general preference</a></em>
+			 -- General preference settings.
+		</li>
+<li>
+			<strong>grabber preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/grabber_preference.html">grabber preference</a></em>
+			 -- Grabber preference properties that define display performance quality during scrolling.
+		</li>
+<li>
+			<strong>grid preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/grid_preference.html">grid preference</a></em>
+			 -- Grid preference settings.
+		</li>
+<li>
+			<strong>grid printing preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/grid_printing_preference.html">grid printing preference</a></em>
+			 -- Grid printing preference and export settings.
+		</li>
+<li>
+			<strong>guide preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/guide_preference.html">guide preference</a></em>
+			 -- Guide preference settings.
+		</li>
+<li>
+			<strong>image IO preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/image_IO_preference.html">image IO preference</a></em>
+			 -- The image I/O preference properties that define preferences for importing images. 
+		</li>
+<li>
+			<strong>image preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/image_preference.html">image preference</a></em>
+			 -- Image preferences.
+		</li>
+<li>
+			<strong>IME preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/IME_preference.html">IME preference</a></em>
+			 -- IME preference settings. 
+		</li>
+<li>
+			<strong>imported page attributes</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/imported_page_attribute.html">imported page attribute</a></em>
+			 -- Placed InDesign page attributes.
+		</li>
+<li>
+			<strong>InCopy export options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/InCopy_export_option.html">InCopy export option</a></em>
+			 -- Export options for InCopy INCX document format.
+		</li>
+<li>
+			<strong>index generation options</strong>
+			(r/o)
+			<em><a href="../../Indexing_Suite/classes/index_options.html">index options</a></em>
+			 -- The index options properties that define how an index is formatted. 
+		</li>
+<li>
+			<strong>interactive PDF export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/interactive_PDF_export_preference.html">interactive PDF export preference</a></em>
+			 -- Interactive PDF export preferences.
+		</li>
+<li>
+			<strong>JPEG export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/JPEG_export_preference.html">JPEG export preference</a></em>
+			 -- JPEG export preferences.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>layout adjustment preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/layout_adjustment_preference.html">layout adjustment preference</a></em>
+			 -- Layout sdjustment preference settings.
+		</li>
+<li>
+			<strong>layout grid data</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/layout_grid_data_information.html">layout grid data information</a></em>
+			 -- Default properties specific to layout grids.
+		</li>
+<li>
+			<strong>linking preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/linking_preference.html">linking preference</a></em>
+			 -- The links preference properties that define preferences for links. 
+		</li>
+<li>
+			<strong>live screen drawing</strong>
+			
+			<em>never / immediately / delayed</em>
+			 -- Delay before mouse operations trigger live screen drawing of page items.
+		</li>
+<li>
+			<strong>locale</strong>
+			(r/o)
+			<em>danish locale / english locale / international english locale / finnish locale / french locale / german locale / italian locale / portuguese locale / spanish locale / swedish locale / japanese locale / arabic locale / czech locale / greek locale / hebrew locale / hungarian locale / polish locale / romanian locale / russian locale / turkish locale / ukrainian locale / korean locale / simplified chinese locale / traditional chinese locale</em>
+			 -- The locale of the application.
+		</li>
+<li>
+			<strong>margin preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/margin_preference.html">margin preference</a></em>
+			 -- Margin preference settings.
+		</li>
+<li>
+			<strong>modal state</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, a modal dialog or alert is active.
+		</li>
+<li>
+			<strong>mojikumi UI preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/mojikumi_ui_preference.html">mojikumi ui preference</a></em>
+			 -- Mojikumi user interface preference settings.
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the application.
+		</li>
+<li>
+			<strong>note preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/note_preference.html">note preference</a></em>
+			 -- Note preference settings.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em>reference</em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>page item defaults</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/page_item_default.html">page item default</a></em>
+			 -- The default page item formatting for the application.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the application (a application).
+		</li>
+<li>
+			<strong>pasteboard preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/pasteboard_preference.html">pasteboard preference</a></em>
+			 -- Pasteboard preference settings.
+		</li>
+<li>
+			<strong>PDF export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/PDF_export_preference.html">PDF export preference</a></em>
+			 -- A collection of PDF export preferences. 
+		</li>
+<li>
+			<strong>PDF place preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/PDF_place_preference.html">PDF place preference</a></em>
+			 -- The PDF place preference properties that define how PDF files are placed in the current document.
+		</li>
+<li>
+			<strong>performance metrics</strong>
+			(r/o)
+			<em>list of integer</em>
+			 -- The available performance metrics.
+		</li>
+<li>
+			<strong>placeable file extensions</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- Lists the extensions of file types that can be placed.
+		</li>
+<li>
+			<strong>placeable file types</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- Lists the types of files that can be placed. 
+		</li>
+<li>
+			<strong>polygon preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/polygon_preference.html">polygon preference</a></em>
+			 -- Polygon preference properties to use to define default settings for creating a polygon.
+		</li>
+<li>
+			<strong>preflight book options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/preflight_book_option.html">preflight book option</a></em>
+			 -- Preflight book option settings.
+		</li>
+<li>
+			<strong>preflight options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/preflight_option.html">preflight option</a></em>
+			 -- Preflight option settings.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>redo history</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- The names of the items in the redo stack.
+		</li>
+<li>
+			<strong>redo name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the action on the top of the redo stack.
+		</li>
+<li>
+			<strong>script args</strong>
+			(r/o)
+			<em><a href="../../Basics_Suite/classes/script_arg.html">script arg</a></em>
+			 -- Arguments to pass to a script.
+		</li>
+<li>
+			<strong>script preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/script_preference.html">script preference</a></em>
+			 -- Script preferences.
+		</li>
+<li>
+			<strong>selection</strong>
+			
+			<em>list of reference</em>
+			 -- The selected object(s). Can also accept: object or nothing.
+		</li>
+<li>
+			<strong>serial number</strong>
+			(r/o)
+			<em>string</em>
+			 -- The user's serial number.
+		</li>
+<li>
+			<strong>smart guide preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/smart_guide_preference.html">smart guide preference</a></em>
+			 -- Smart Guide preference properties.
+		</li>
+<li>
+			<strong>spell preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/spell_preference.html">spell preference</a></em>
+			 -- Spell-check preferences.
+		</li>
+<li>
+			<strong>story grid data</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/story_grid_data_information.html">story grid data information</a></em>
+			 -- Default properties specific to frame grids.
+		</li>
+<li>
+			<strong>story preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/story_preference.html">story preference</a></em>
+			 -- Story preference settings.
+		</li>
+<li>
+			<strong>stroke fill proxy settings</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/stroke_fill_proxy_setting.html">stroke fill proxy setting</a></em>
+			 -- Stroke/fill proxy settings.
+		</li>
+<li>
+			<strong>SWF export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/SWF_export_preference.html">SWF export preference</a></em>
+			 -- SWF export preferences.
+		</li>
+<li>
+			<strong>tagged text export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/tagged_text_export_preference.html">tagged text export preference</a></em>
+			 -- Tagged text export preferences.
+		</li>
+<li>
+			<strong>tagged text import preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/tagged_text_import_preference.html">tagged text import preference</a></em>
+			 -- Tagged text import preferences.
+		</li>
+<li>
+			<strong>text defaults</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/text_default.html">text default</a></em>
+			 -- Text default settings. 
+		</li>
+<li>
+			<strong>text editing preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/text_editing_preference.html">text editing preference</a></em>
+			 -- Text editing preference settings.
+		</li>
+<li>
+			<strong>text export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/text_export_preference.html">text export preference</a></em>
+			 -- Text export preferences.
+		</li>
+<li>
+			<strong>text frame preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/text_frame_preference.html">text frame preference</a></em>
+			 -- Text frame preference settings.
+		</li>
+<li>
+			<strong>text import preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/text_import_preference.html">text import preference</a></em>
+			 -- Text import preferences.
+		</li>
+<li>
+			<strong>text preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/text_preference.html">text preference</a></em>
+			 -- Text preference settings.
+		</li>
+<li>
+			<strong>text wrap preferences</strong>
+			(r/o)
+			<em><a href="../../Layout_Suite/classes/text_wrap_preference.html">text wrap preference</a></em>
+			 -- The text wrap preference properties that define the default formatting for wrapping text around objects.
+		</li>
+<li>
+			<strong>tool box tools</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/tool_box.html">tool box</a></em>
+			 -- The current tool box states
+		</li>
+<li>
+			<strong>track changes preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/track_changes_preference.html">track changes preference</a></em>
+			 -- Track changes preference settings.
+		</li>
+<li>
+			<strong>transform preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/transform_preference.html">transform preference</a></em>
+			 -- Transform preference properties that define default behaviors when transforming objects. Note: Transforming includes rotation, scaling, flipping, and shearing.
+		</li>
+<li>
+			<strong>transparency preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/transparency_preference.html">transparency preference</a></em>
+			 -- Transparency preference settings.
+		</li>
+<li>
+			<strong>undo history</strong>
+			(r/o)
+			<em>list of string</em>
+			 -- The names of the items in the undo stack.
+		</li>
+<li>
+			<strong>undo name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the action on the top of the undo stack.
+		</li>
+<li>
+			<strong>unused swatches</strong>
+			(r/o)
+			<em>list of <a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatches that are not being used.
+		</li>
+<li>
+			<strong>user color</strong>
+			
+			<em>anything</em>
+			 -- The color assigned to the tracked changes and notes created by the user, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as an InCopy UI color. Can return: list of 3 fixed (0 - 255) or c...
+		</li>
+<li>
+			<strong>user name</strong>
+			
+			<em>string</em>
+			 -- The user associated with the tracked changes and notes.
+		</li>
+<li>
+			<strong>version</strong>
+			(r/o)
+			<em>string</em>
+			 -- The application version.
+		</li>
+<li>
+			<strong>view preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/view_preference.html">view preference</a></em>
+			 -- View preference settings.
+		</li>
+<li>
+			<strong>visible</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the application is visible.
+		</li>
+<li>
+			<strong>watermark preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/watermark_preference.html">watermark preference</a></em>
+			 -- Watermark preferences
+		</li>
+<li>
+			<strong>word RTF import preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/word_RTF_import_preference.html">word RTF import preference</a></em>
+			 -- Word and RTF import preferences.
+		</li>
+<li>
+			<strong>XFL export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/XFL_export_preference.html">XFL export preference</a></em>
+			 -- XFL export preferences.
+		</li>
+<li>
+			<strong>XML export preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/XML_export_preference.html">XML export preference</a></em>
+			 -- XML export preference settings.
+		</li>
+<li>
+			<strong>XML import preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/XML_import_preference.html">XML import preference</a></em>
+			 -- XML import preference settings.
+		</li>
+<li>
+			<strong>XML preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/XML_preference.html">XML preference</a></em>
+			 -- The XML preference settings.
+		</li>
+<li>
+			<strong>XML view preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/XML_view_preference.html">XML view preference</a></em>
+			 -- XML view preference settings.
+		</li>
+<li>
+			<strong>after activate</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after the application becomes active. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after close</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a Document is closed. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after context changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after the active context changes. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after quit</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched when the application is quitting. Since the quit has been committed, it can not be canceled. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after selection attribute changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after an attribute on the active selection changes. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after selection changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after the active selection changes. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before deactivate</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before the application becomes inactive. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before new</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is created. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before open</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a Document is opened. This event bubbles. This event is cancelable.
+		</li>
+<li>
+			<strong>before quit</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before the application is quit. Allows the quit to be canceled. This event bubbles. This event is cancelable.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Text_Suite/classes/auto_correct_table.html">auto correct tables</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/background_task.html">background tasks</a></strong></span> , <span> <strong><a href="../../Book_Suite/classes/book.html">books</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/cell_style.html">cell styles</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/cell_style_group.html">cell style groups</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/character_style.html">character styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/character_style_group.html">character style groups</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/color.html">colors</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/composite_font.html">composite fonts</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/condition.html">conditions</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/condition_set.html">condition sets</a></strong></span> , <span> <strong><a href="../../Stroke_Styles_Suite/classes/dashed_stroke_style.html">dashed stroke styles</a></strong></span> , <span> <strong><a href="../../UI_Suite/classes/dialog.html">dialogs</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/display_setting.html">display settings</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/document.html">documents</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/document_preset.html">document presets</a></strong></span> , <span> <strong><a href="../../Stroke_Styles_Suite/classes/dotted_stroke_style.html">dotted stroke styles</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/flattener_preset.html">flattener presets</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/font.html">fonts</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/gradient.html">gradients</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/idle_task.html">idle tasks</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/indexing_sort_option.html">indexing sort options</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/ink.html">inks</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/kinsoku_table.html">kinsoku tables</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/language_with_vendors.html">languages with vendors</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/layout_window.html">layout windows</a></strong></span> , <span> <strong><a href="../../Libraries_Suite/classes/library.html">libraries</a></strong></span> , <span> <strong><a href="../../UI_Suite/classes/menu.html">menus</a></strong></span> , <span> <strong><a href="../../UI_Suite/classes/menu_action.html">menu actions</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/mixed_ink.html">mixed inks</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/mixed_ink_group.html">mixed ink groups</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/mojikumi_table.html">mojikumi tables</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/Motion_Preset.html">Motion Presets</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/named_grid.html">named grids</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/numbering_list.html">numbering lists</a></strong></span> , <span> <strong><a href="../../Object_Styles_Suite/classes/object_style.html">object styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/object_style_group.html">object style groups</a></strong></span> , <span> <strong><a href="../../UI_Suite/classes/panel.html">panels</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/paragraph_style.html">paragraph styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/paragraph_style_group.html">paragraph style groups</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/PDF_export_preset.html">PDF export presets</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/preference.html">preferences</a></strong></span> , <span> <strong><a href="../../Preflight_Suite/classes/preflight_process.html">preflight processes</a></strong></span> , <span> <strong><a href="../../Preflight_Suite/classes/preflight_profile.html">preflight profiles</a></strong></span> , <span> <strong><a href="../../Preflight_Suite/classes/preflight_rule.html">preflight rules</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/printer_preset.html">printer presets</a></strong></span> , <span> <strong><a href="../../UI_Suite/classes/script_menu_action.html">script menu actions</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/story_window.html">story windows</a></strong></span> , <span> <strong><a href="../../Stroke_Styles_Suite/classes/striped_stroke_style.html">striped stroke styles</a></strong></span> , <span> <strong><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke styles</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/swatch.html">swatches</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/table_style.html">table styles</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/table_style_group.html">table style groups</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_variable.html">text variables</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/tint.html">tints</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/transformation_matrix.html">transformation matrices</a></strong></span> , <span> <strong><a href="../../Color_Suite/classes/trap_preset.html">trap presets</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/user_dictionary.html">user dictionaries</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/window.html">windows</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_export_map.html">XML export maps</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_import_map.html">XML import maps</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_rule_processor.html">XML rule processors</a></strong></span> , <span> <strong><a href="../../XML_Suite/classes/XML_tag.html">XML tags</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Text_Suite/classes/auto_correct_table.html">auto correct table</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/background_task.html">background task</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Book_Suite/classes/book.html">book</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/cell_style.html">cell style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/cell_style_group.html">cell style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/character_style.html">character style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/character_style_group.html">character style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/color.html">color</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/composite_font.html">composite font</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/condition.html">condition</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/condition_set.html">condition set</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Stroke_Styles_Suite/classes/dashed_stroke_style.html">dashed stroke style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../UI_Suite/classes/dialog.html">dialog</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/display_setting.html">display setting</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/document.html">document</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/document_preset.html">document preset</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Stroke_Styles_Suite/classes/dotted_stroke_style.html">dotted stroke style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/flattener_preset.html">flattener preset</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/font.html">font</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/gradient.html">gradient</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/idle_task.html">idle task</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/indexing_sort_option.html">indexing sort option</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/ink.html">ink</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/kinsoku_table.html">kinsoku table</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/language_with_vendors.html">language with vendors</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/layout_window.html">layout window</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Libraries_Suite/classes/library.html">library</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../UI_Suite/classes/menu.html">menu</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../UI_Suite/classes/menu_action.html">menu action</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/mixed_ink.html">mixed ink</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/mixed_ink_group.html">mixed ink group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/mojikumi_table.html">mojikumi table</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/Motion_Preset.html">Motion Preset</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/named_grid.html">named grid</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/numbering_list.html">numbering list</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Object_Styles_Suite/classes/object_style.html">object style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/object_style_group.html">object style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../UI_Suite/classes/panel.html">panel</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/paragraph_style.html">paragraph style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/paragraph_style_group.html">paragraph style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/PDF_export_preset.html">PDF export preset</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/preference.html">preference</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Preflight_Suite/classes/preflight_process.html">preflight process</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Preflight_Suite/classes/preflight_profile.html">preflight profile</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preflight_Suite/classes/preflight_rule.html">preflight rule</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/printer_preset.html">printer preset</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../UI_Suite/classes/script_menu_action.html">script menu action</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/story_window.html">story window</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Stroke_Styles_Suite/classes/striped_stroke_style.html">striped stroke style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Stroke_Styles_Suite/classes/stroke_style.html">stroke style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/swatch.html">swatch</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/table_style.html">table style</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/table_style_group.html">table style group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_variable.html">text variable</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/tint.html">tint</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/transformation_matrix.html">transformation matrix</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Color_Suite/classes/trap_preset.html">trap preset</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/user_dictionary.html">user dictionary</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/window.html">window</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_export_map.html">XML export map</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_import_map.html">XML import map</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_rule_processor.html">XML rule processor</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../XML_Suite/classes/XML_tag.html">XML tag</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+
+</body>
+</html>

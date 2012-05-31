@@ -1,0 +1,287 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>page</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> page</h1>
+
+<div id="view"><a href="../../Layout_Suite/classes/page.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A page.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>pages</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>all graphics</strong>
+			(r/o)
+			<em>list of <a href="../../FULL/classes/graphic.html">graphic</a></em>
+			 -- Lists all graphics contained by the page.
+		</li>
+<li>
+			<strong>all page items</strong>
+			(r/o)
+			<em>list of <a href="../../FULL/classes/page_item.html">page item</a></em>
+			 -- Lists all page items contained by the page.
+		</li>
+<li>
+			<strong>applied master</strong>
+			
+			<em><a href="../../FULL/classes/master_spread.html">master spread</a></em>
+			 -- The master spread applied to the page. Can also accept: nothing.
+		</li>
+<li>
+			<strong>applied section</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/section.html">section</a></em>
+			 -- The section to which the page belongs.
+		</li>
+<li>
+			<strong>applied trap preset</strong>
+			
+			<em><a href="../../FULL/classes/trap_preset.html">trap preset</a></em>
+			 -- The trap preset applied to the page. Can also accept: string.
+		</li>
+<li>
+			<strong>bounds</strong>
+			(r/o)
+			<em>list of number | list of string</em>
+			 -- The bounds of the page, in the format [y1, x1, y2, x2].
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>document offset</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The sequential number of the page within the document.
+		</li>
+<li>
+			<strong>grid data</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/grid_data_information.html">grid data information</a></em>
+			 -- Default grid properties. Note: Applies to named, layout, and frame (story) grids.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the page.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the page within its containing object.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>margin preferences</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/margin_preference.html">margin preference</a></em>
+			 -- Margin preference settings.
+		</li>
+<li>
+			<strong>master page items</strong>
+			(r/o)
+			<em>list of reference</em>
+			 -- The items on a specified document page that originated on the applied master page and have not been overridden or detached. Can return: list of page items, guides, graphics, movies or sounds.
+		</li>
+<li>
+			<strong>master page transform</strong>
+			
+			<em><a href="../../FULL/classes/transformation_matrix.html">transformation matrix</a></em>
+			 -- The transform applied to the master page before it is applied to page.
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the page.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/page.html">page</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>page color</strong>
+			
+			<em>anything</em>
+			 -- The color label of the page, specified either as  an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as a UI color. Can return: list of 3 fixed (0 - 255) or light blue/red/green/blue/yellow/magenta/cyan/gray/b...
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the page (a spread or master spread). Can return: spread or master spread.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>side</strong>
+			(r/o)
+			<em>right hand / left hand / single sided</em>
+			 -- The side of the binding spine on which to place the page within the spread.
+		</li>
+<li>
+			<strong>tab order</strong>
+			
+			<em>list of <a href="../../FULL/classes/button.html">button</a></em>
+			 -- The order in which the focus moves to different buttons in the PDF when the tab key is pressed.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/button.html">buttons</a></strong></span> , <span> <strong><a href="../../FULL/classes/EPSText.html">EPSTexts</a></strong></span> , <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../FULL/classes/form_field.html">form fields</a></strong></span> , <span> <strong><a href="../../FULL/classes/graphic_line.html">graphic lines</a></strong></span> , <span> <strong><a href="../../FULL/classes/group.html">groups</a></strong></span> , <span> <strong><a href="../../FULL/classes/guide.html">guides</a></strong></span> , <span> <strong><a href="../../FULL/classes/multi_state_object.html">multi state objects</a></strong></span> , <span> <strong><a href="../../FULL/classes/oval.html">ovals</a></strong></span> , <span> <strong><a href="../../FULL/classes/page_item.html">page items</a></strong></span> , <span> <strong><a href="../../FULL/classes/polygon.html">polygons</a></strong></span> , <span> <strong><a href="../../FULL/classes/preference.html">preferences</a></strong></span> , <span> <strong><a href="../../FULL/classes/rectangle.html">rectangles</a></strong></span> , <span> <strong><a href="../../FULL/classes/spline_item.html">spline items</a></strong></span> , <span> <strong><a href="../../FULL/classes/text_frame.html">text frames</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/button.html">button</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/EPSText.html">EPSText</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/form_field.html">form field</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/graphic_line.html">graphic line</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/group.html">group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/guide.html">guide</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/multi_state_object.html">multi state object</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/oval.html">oval</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/page_item.html">page item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/polygon.html">polygon</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/preference.html">preference</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/rectangle.html">rectangle</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/spline_item.html">spline item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/text_frame.html">text frame</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/guide.html">guide</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/hyperlink_page_destination.html">hyperlink page destination</a></strong>
+					(<em><a href="../../index.html#suite_Hyperlinks_Suite">Hyperlinks Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/layout_window.html">layout window</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/master_spread.html">master spread</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page.html">page</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page_item.html">page item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/section.html">section</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/spread.html">spread</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

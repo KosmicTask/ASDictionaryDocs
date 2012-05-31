@@ -1,0 +1,77 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>generate</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Command</sup> generate</h1>
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Generates a new index story.</p>
+
+<ul class="desc">
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Indexing_Suite">Indexing Suite</a></em></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<h2>Parameters</h2>
+<ul>
+	<li>
+		<em><a href="../../Indexing_Suite/classes/index.html">index</a></em>
+		
+	</li>
+	<li>
+		[<strong>on</strong> <em>reference</em>]
+		 -- The spread or page on which to place the story. Can accept: page, spread or master spread.
+	</li>
+<li>
+		[<strong>place point</strong> <em>number | string</em>]
+		 -- The coordinates of the upper left corner of the story bounding box, in the format [x, y].
+	</li>
+<li>
+		[<strong>destination layer</strong> <em><a href="../../Layout_Suite/classes/layer.html">layer</a></em>]
+		 -- The layer on which to place the story.
+	</li>
+<li>
+		[<strong>autoflowing</strong> <em>boolean</em>]
+		 -- If true, allows the story to flow onto subsequent pages if the story does not fit on the specified page. If no subsequent pages exist in the document, creates the necessary pages. Can accept: boolean (Default: FALSE).
+	</li>
+<li>
+		[<strong>include overset</strong> <em>boolean</em>]
+		 -- If true, includes topics in overset text in the story. . Can accept: boolean (Default: FALSE).
+	</li>
+</ul>
+
+
+
+
+	<h2>Result</h2>
+	
+	<ul>
+		<li><em>list of <a href="../../Text_Suite/classes/story.html">story</a></em>
+		 -- The story containing the generated index.
+		</li>
+	</ul>
+
+
+
+</div>
+
+</body>
+</html>

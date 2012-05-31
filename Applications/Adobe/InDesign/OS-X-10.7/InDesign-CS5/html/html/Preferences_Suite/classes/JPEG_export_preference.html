@@ -1,0 +1,171 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>JPEG export preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> JPEG export preference</h1>
+
+<div id="view"><a href="../../FULL/classes/JPEG_export_preference.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>JPEG export preferences.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>anti alias</strong>
+			
+			<em>boolean</em>
+			 -- If true, use anti-aliasing for text and vectors during export.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>embed color profile</strong>
+			
+			<em>boolean</em>
+			 -- True to embed the color profile, false otherwise.
+		</li>
+<li>
+			<strong>export resolution</strong>
+			
+			<em>fixed</em>
+			 -- The export	resolution expressed as a real number instead of an integer. (Range: 1.0 to 2400.0). Can return: fixed (1 - 2400).
+		</li>
+<li>
+			<strong>Exporting Spread</strong>
+			
+			<em>boolean</em>
+			 -- If true, exports each spread as a single JPEG file. If false, exports facing pages as separate files and appends sequential numbers to each file name.
+		</li>
+<li>
+			<strong>jpeg color space</strong>
+			
+			<em>RGB / CMYK / gray</em>
+			 -- One of RGB, CMYK or Gray
+		</li>
+<li>
+			<strong>JPEG export range</strong>
+			
+			<em>export range / export all</em>
+			 -- The page range to export.
+		</li>
+<li>
+			<strong>JPEG Quality</strong>
+			
+			<em>low / medium / high / maximum</em>
+			 -- The compression quality.
+		</li>
+<li>
+			<strong>JPEG Rendering style</strong>
+			
+			<em>baseline encoding / progressive encoding</em>
+			 -- The rendering style.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/JPEG_export_preference.html">JPEG export preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>Page String</strong>
+			
+			<em>string</em>
+			 -- The page(s) to export, specified as a page number or an array of page numbers. Note: Valid when JPEG export range is not all.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the JPEG export preference (a application).
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>simulate overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, simulates the effects of overprinting spot and process colors in the same way they would occur when printing.
+		</li>
+<li>
+			<strong>use document bleeds</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses the document's bleed settings in the exported JPEG.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Basics_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/JPEG_export_preference.html">JPEG export preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

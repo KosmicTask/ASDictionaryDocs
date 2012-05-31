@@ -1,0 +1,73 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>resize</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Command</sup> resize</h1>
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Resize the page item.</p>
+
+<ul class="desc">
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<h2>Parameters</h2>
+<ul>
+	<li>
+		<em>reference</em>
+		 -- Supported by the following objects: page, page item, oval, rectangle, graphic line, polygon, group, image, EPS, PDF, WMF, PICT, graphic, spline item, EPSText, imported page, media item.
+	</li>
+	<li>
+		<strong>in</strong> <em>anything</em>
+		 -- The bounding box to resize. Can accept: pasteboard coordinates/parent coordinates/inner coordinates/spread coordinates, outer stroke bounds/geometric path bounds or Ordered list containing coordinate space:pasteboard coordinates/parent coordinates/inne...
+	</li>
+<li>
+		<strong>from</strong> <em>anything</em>
+		 -- The transform origin. Legal specifications: relative to bounding box: anchor | {anchor | {x,y}, bounds kind [, coordinate space]}; relative to coordinate space: {x,y} | {{x,y}[, coordinate space]}; relative to layout window ruler: {{x,y}, page index | ...
+	</li>
+<li>
+		<strong>by</strong> <em>adding current dimensions to / multiplying current dimensions by / replacing current dimensions with / reshaping area to ratio / reshaping border to ratio</em>
+		 -- How the current dimensions are affected by the given values
+	</li>
+<li>
+		<strong>values</strong> <em>anything</em>
+		 -- The width and height values. Legal dimensions specifications: {x, y [, coordinate space]}, {x, resize constraint [, coordinate space]}, or {resize constraint, y [, coordinate space]}; where x and y are real numbers and coordinate space is used to deter...
+	</li>
+<li>
+		[<strong>resize individually</strong> <em>boolean</em>]
+		 -- If false and multiple page items are targeted, the new dimensions are attained only by moving the individual items rather than resizing them. Can accept: boolean (Default: TRUE).
+	</li>
+<li>
+		[<strong>considering ruler units</strong> <em>boolean</em>]
+		 -- If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. Can accept: boolean (Default: FALSE).
+	</li>
+</ul>
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

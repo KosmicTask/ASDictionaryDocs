@@ -1,0 +1,910 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>table</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> table</h1>
+
+<div id="view"><a href="../../Tables_Suite/classes/table.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A table.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>tables</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>all graphics</strong>
+			(r/o)
+			<em>list of <a href="../../FULL/classes/graphic.html">graphic</a></em>
+			 -- Lists all graphics contained by the table.
+		</li>
+<li>
+			<strong>all page items</strong>
+			(r/o)
+			<em>list of <a href="../../FULL/classes/page_item.html">page item</a></em>
+			 -- Lists all page items contained by the table.
+		</li>
+<li>
+			<strong>alternating fills</strong>
+			
+			<em>no alternating pattern / alternating rows / alternating columns</em>
+			 -- The pattern for alternating fills.
+		</li>
+<li>
+			<strong>applied table style</strong>
+			
+			<em><a href="../../FULL/classes/table_style.html">table style</a></em>
+			 -- The table style applied to the table. Can also accept: string.
+		</li>
+<li>
+			<strong>associated XML element</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/XML_item.html">XML item</a></em>
+			 -- The XML element associated with the table.
+		</li>
+<li>
+			<strong>body row count</strong>
+			
+			<em>integer</em>
+			 -- The number of body rows. Can return: integer (1 - 10000).
+		</li>
+<li>
+			<strong>bottom border stroke color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The color, specified as a swatch (color, gradient, tint, or mixed ink), of the bottom border stroke.
+		</li>
+<li>
+			<strong>bottom border stroke gap color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The gap color, specified as a swatch (color, gradient, tint, or mixed ink), of the bottom border stroke. Note: Valid only when bottom border stroke type is not solid.
+		</li>
+<li>
+			<strong>bottom border stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap of the bottom border stroke will overprint. Note: Valid only when bottom border stroke type is not solid.
+		</li>
+<li>
+			<strong>bottom border stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of the bottom border stroke. (Range: 0 to 100) Note: Valid only when bottom border stroke type is not solid.
+		</li>
+<li>
+			<strong>bottom border stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the bottom border stroke will overprint.
+		</li>
+<li>
+			<strong>bottom border stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the bottom border stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>bottom border stroke type</strong>
+			
+			<em><a href="../../FULL/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the bottom border. Can also accept: string.
+		</li>
+<li>
+			<strong>bottom border stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the bottom border stroke.
+		</li>
+<li>
+			<strong>break footers</strong>
+			
+			<em>in all text columns / once per text frame / once per page</em>
+			 -- The footer placement.
+		</li>
+<li>
+			<strong>break headers</strong>
+			
+			<em>in all text columns / once per text frame / once per page</em>
+			 -- The header placement.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>column count</strong>
+			
+			<em>integer</em>
+			 -- The number of columns. Can return: integer (1 - 200).
+		</li>
+<li>
+			<strong>column fills priority</strong>
+			
+			<em>boolean</em>
+			 -- If true, hides alternating row fills. If false, hides alternating column fills. 
+		</li>
+<li>
+			<strong>contents</strong>
+			
+			<em>list of anything</em>
+			 -- The contents to place in cells, specified as an array whose first item populates the top left cell and whose second item populates the next cell to the right, and so on until each cell in the top row is populated, at which point the next item populates...
+		</li>
+<li>
+			<strong>display collapsed</strong>
+			
+			<em>boolean</em>
+			 -- If true, then the table will show collapsed in story and galley views.
+		</li>
+<li>
+			<strong>display order</strong>
+			
+			<em>order by rows / order by columns</em>
+			 -- Specifies the order the table cells will display in when viewing in story and galley views.
+		</li>
+<li>
+			<strong>end column fill color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The fill color, specified as a swatch (color, gradient, tint, or mixed ink), of columns in the second alternating fill group. Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>end column fill count</strong>
+			
+			<em>integer</em>
+			 -- The number of columns in the second alternating fills group. Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>end column fill overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the columns in the second alternating fills group will overprint. Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>end column fill tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the columns in the second alternating fills group. (Range: 0 to 100) Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>end column line style</strong>
+			
+			<em><a href="../../FULL/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of columns in the second alternating strokes group. Can also accept: string.
+		</li>
+<li>
+			<strong>end column stroke color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The stroke color, specified as a swatch (color, gradient, tint, or mixed ink), of column borders in the second alternating column strokes group. Note: Valid when end column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>end column stroke count</strong>
+			
+			<em>integer</em>
+			 -- The number of columns in the second alternating column strokes group.
+		</li>
+<li>
+			<strong>end column stroke gap color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The stroke gap color, specified as a swatch (color, gradient, tint, or mixed ink), of column borders in the second alternating column strokes group. Note: Valid when end column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>end column stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap of the column border stroke in the second alternating column strokes group will overprint. Note: Valid when end column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>end column stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of column borders in the second alternating column strokes group. (Range: 0 to 100) Note: Valid when end column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>end column stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the column borders in the second alternating column strokes group will overprint. Note: Valid when end column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>end column stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of column borders in the second alternating column strokes group. (Range: 0 to 100) Note: Valid when end column stroke count is 1 or greater.  
+		</li>
+<li>
+			<strong>end column stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of column borders in the second alternating column strokes group. Note: Valid when end column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>end row fill color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The fill color, specified as a swatch (color, gradient, tint, or mixed ink), of rows in the second alternating fills group. Note: Valid when alternating fills are defined for table rows. 
+		</li>
+<li>
+			<strong>end row fill count</strong>
+			
+			<em>integer</em>
+			 -- The number of rows in the second alternating fills group. Note: Valid when alternating fills are defined for table rows. 
+		</li>
+<li>
+			<strong>end row fill overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the rows in the second alternating fills group will overprint. Note: Valid when alternating fills are defined for table rows. 
+		</li>
+<li>
+			<strong>end row fill tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the rows in the second alternating fills group. (Range: 0 to 100) Note: Valid when alternating fills are defined for table rows. 
+		</li>
+<li>
+			<strong>end row stroke color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The stroke color, specified as a swatch (color, gradient, tint, or mixed ink), of row borders in the second alternating row strokes group. Note: Valid when end row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>end row stroke count</strong>
+			
+			<em>integer</em>
+			 -- The number of rows in the second alternating row strokes group.
+		</li>
+<li>
+			<strong>end row stroke gap color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The gap color, specified as a swatch (color, gradient, tint, or mixed ink), of row borders in the second alternating rows group. Note: Valid when end row stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>end row stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap of the row borders in the second alternating rows group will overprint. Note: Valid when end row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>end row stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of rows in the second alternating strokes group. (Range: 0 to 100) Note: Valid when end row stroke count is 1 or greater and end row stroke type is not solid. 
+		</li>
+<li>
+			<strong>end row stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the rows in the second alternating rows group will overprint. Note: Valid when end row stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>end row stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the row borders in the second alternating strokes group. (Range: 0 to 100) Note: Valid when end row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>end row stroke type</strong>
+			
+			<em><a href="../../FULL/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of rows in the second alternating strokes group. Can also accept: string.
+		</li>
+<li>
+			<strong>end row stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of row borders in the second alternating row strokes group. Note: Valid when end row stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>footer row count</strong>
+			
+			<em>integer</em>
+			 -- The number of footer rows. Can return: integer (0 - 25).
+		</li>
+<li>
+			<strong>header row count</strong>
+			
+			<em>integer</em>
+			 -- The number of header rows. Can return: integer (0 - 25).
+		</li>
+<li>
+			<strong>height</strong>
+			
+			<em>number | string</em>
+			 -- The height of the table. For a table or column, specifies the sum of the row heights.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the table.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the table within its containing object.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>left border stroke color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The color, specified as a swatch (color, gradient, tint, or mixed ink), of the left border stroke.
+		</li>
+<li>
+			<strong>left border stroke gap color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The gap color, specified as a swatch (color, gradient, tint, or mixed ink), of the left border stroke. Note: Valid only when left border stroke type is not solid.
+		</li>
+<li>
+			<strong>left border stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap of the left border stroke will overprint. Note: Valid only when left border stroke type is not solid.
+		</li>
+<li>
+			<strong>left border stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of the left border stroke. (Range: 0 to 100) Note: Valid only when left border stroke type is not solid.
+		</li>
+<li>
+			<strong>left border stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the left border stroke will overprint.
+		</li>
+<li>
+			<strong>left border stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the left border stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>left border stroke type</strong>
+			
+			<em><a href="../../FULL/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the left border. Can also accept: string.
+		</li>
+<li>
+			<strong>left border stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the left border stroke.
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the table; this is an alias to the table's label property.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/table.html">table</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the table (a XML element, xml story, text frame, text, insertion point, text style range, paragraph, text column, line, word, character, story or cell). Can return: XML element, xml story, text frame, text, insertion point, text style ran...
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>right border stroke color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The color, specified as a swatch (color, gradient, tint, or mixed ink), of the right border stroke.
+		</li>
+<li>
+			<strong>right border stroke gap color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The gap color, specified as a swatch (color, gradient, tint, or mixed ink), of the right border stroke. Note: Valid only when right border stroke type is not solid.
+		</li>
+<li>
+			<strong>right border stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the right border stroke will overprint. Note: Valid only when right border stroke type is not solid.
+		</li>
+<li>
+			<strong>right border stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of the right border stroke. (Range: 0 to 100) Note: Valid only when right border stroke type is not solid.
+		</li>
+<li>
+			<strong>right border stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the right border stroke will overprint.
+		</li>
+<li>
+			<strong>right border stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the right border stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>right border stroke type</strong>
+			
+			<em><a href="../../FULL/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the right border. Can also accept: string.
+		</li>
+<li>
+			<strong>right border stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the right border stroke.
+		</li>
+<li>
+			<strong>skip first alternating fill columns</strong>
+			
+			<em>integer</em>
+			 -- The number of columns on the left side of the table to skip before applying the column fill color. Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>skip first alternating fill rows</strong>
+			
+			<em>integer</em>
+			 -- The number of body rows at the beginning of the table to skip before applying the row fill color. Note: Valid when alternating fills are defined for table rows.
+		</li>
+<li>
+			<strong>skip first alternating stroke columns</strong>
+			
+			<em>integer</em>
+			 -- The number of columns on the left of the table in which to skip border stroke formatting. Note: Valid when start column stroke count is 1 or greater and/or end column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>skip first alternating stroke rows</strong>
+			
+			<em>integer</em>
+			 -- The number of body rows at the beginning of the table in which to skip border stroke formatting. Note: Valid when start row stroke count is 1 or greater and/or end row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>skip first header</strong>
+			
+			<em>boolean</em>
+			 -- If true, skips the first occurrence of header rows.
+		</li>
+<li>
+			<strong>skip last alternating fill columns</strong>
+			
+			<em>integer</em>
+			 -- The number columns on the right side of the table in which to not apply the column fill color. Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>skip last alternating fill rows</strong>
+			
+			<em>integer</em>
+			 -- The number of body rows at the end of the table in which to not apply the row fill color. Note: Valid when alternating fills are defined for table rows.
+		</li>
+<li>
+			<strong>skip last alternating stroke columns</strong>
+			
+			<em>integer</em>
+			 -- The number of columns on the right side of the table in which to skip border stroke formatting. Note: Valid when start column stroke count is 1 or greater and/or end column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>skip last alternating stroke rows</strong>
+			
+			<em>integer</em>
+			 -- The number of body rows at the end of the table in which to skip border stroke formatting. Note: Valid when start row stroke count is 1 or greater and/or end row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>skip last footer</strong>
+			
+			<em>boolean</em>
+			 -- If true, skips the last occurrence of footer rows.
+		</li>
+<li>
+			<strong>space after</strong>
+			
+			<em>number | string</em>
+			 -- The space below the table.
+		</li>
+<li>
+			<strong>space before</strong>
+			
+			<em>number | string</em>
+			 -- The space above the table.
+		</li>
+<li>
+			<strong>start column fill color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The fill color, specified as a swatch (color, gradient, tint, or mixed ink), of columns in the first alternating fills group. Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>start column fill count</strong>
+			
+			<em>integer</em>
+			 -- The number of columns in the first alternating fills group. Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>start column fill overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the columns in the first alternating fills group will overprint. Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>start column fill tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the columns in the first alternating fills group. (Range: 0 to 100) Note: Valid when alternating fills are defined for table columns. 
+		</li>
+<li>
+			<strong>start column stroke color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The stroke color, specified as a swatch (color, gradient, tint, or mixed ink), of column borders in the first alternating column strokes group.
+		</li>
+<li>
+			<strong>start column stroke count</strong>
+			
+			<em>integer</em>
+			 -- The number of columns in the first alternating column strokes group.
+		</li>
+<li>
+			<strong>start column stroke gap color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The stroke gap color, specified as a swatch (color, gradient, tint, or mixed ink), of column borders in the first alternating column strokes group. Note: Valid when start column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>start column stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap of the column borders in the first alternating column strokes group will overprint. Note: Valid when start column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>start column stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of column borders in the first alternating column strokes group. (Range: 0 to 100) Note: Valid when start column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>start column stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the column borders in the first alternating column strokes group will overprint. Note: Valid when start column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>start column stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of column borders in the first alternating column strokes group. (Range: 0 to 100) Note: Valid when start column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>start column stroke type</strong>
+			
+			<em><a href="../../FULL/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of columns in the first alternating strokes group. Can also accept: string.
+		</li>
+<li>
+			<strong>start column stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of column borders in the first alternating column strokes group. Note: Valid when start column stroke count is 1 or greater. 
+		</li>
+<li>
+			<strong>start row fill color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The fill color, specified as a swatch (color, gradient, tint, or mixed ink), of rows in the first alternating fills group. Note: Valid when alternating fills are defined for table rows. 
+		</li>
+<li>
+			<strong>start row fill count</strong>
+			
+			<em>integer</em>
+			 -- The number of rows in the first alternating fills group. Note: Valid when alternating fills are defined for table rows.
+		</li>
+<li>
+			<strong>start row fill overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the rows in the first alternating fills group will overprint. Note: Valid when alternating fills are defined for table rows. 
+		</li>
+<li>
+			<strong>start row fill tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the rows in the first alternating fills group. (Range: 0 to 100) Note: Valid when alternating fills are defined for table rows. 
+		</li>
+<li>
+			<strong>start row stroke color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The color, specified as a swatch (color, gradient, tint, or mixed ink), of row borders in the first alternating row strokes group. Note: Valid when start row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>start row stroke count</strong>
+			
+			<em>integer</em>
+			 -- The number of rows in the first alternating row strokes group.
+		</li>
+<li>
+			<strong>start row stroke gap color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The stroke gap color of row borders in the first alternating row strokes group, specified as a swatch (color, gradient, tint, or mixed ink). Note: Valid when start row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>start row stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the row border stroke in the first alternating row strokes group will overprint. Note: Valid when start row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>start row stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of row borders in the first alternating rows group. (Range: 0 to 100) Note: Valid when start row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>start row stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the row borders in the first alternating row strokes group will overprint. Note: Valid when start row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>start row stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the borders in the first alternating row strokes group. (Range: 0 to 100) Note: Valid when start row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>start row stroke type</strong>
+			
+			<em><a href="../../FULL/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of rows in the first alternating strokes group. Can also accept: string.
+		</li>
+<li>
+			<strong>start row stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of row borders in the first alternating row strokes group. Note: Valid when start row stroke count is 1 or greater.
+		</li>
+<li>
+			<strong>story offset</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/insertion_point.html">insertion point</a></em>
+			 -- The insertion point before the table in the story containing the table.
+		</li>
+<li>
+			<strong>stroke order</strong>
+			
+			<em>row on top / column on top / best joins / indesign 2 compatibility</em>
+			 -- The order in which to display row and column strokes at corners.
+		</li>
+<li>
+			<strong>table direction</strong>
+			
+			<em>left to right direction / right to left direction</em>
+			 -- The direction of the the table
+		</li>
+<li>
+			<strong>top border stroke color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The color, specified as a swatch (color, gradient, tint, or mixed ink), of the table's top border stroke.
+		</li>
+<li>
+			<strong>top border stroke gap color</strong>
+			
+			<em><a href="../../FULL/classes/swatch.html">swatch</a></em>
+			 -- The gap color, specified as a swatch (color, gradient, tint, or mixed ink), of the table's top border stroke. Note: Valid only when top border stroke type is not solid.
+		</li>
+<li>
+			<strong>top border stroke gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap of the top border stroke will overprint. Note: Valid only when top border stroke type is not solid.
+		</li>
+<li>
+			<strong>top border stroke gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of the table's top border stroke. (Range: 0 to 100) Note: Valid only when top border stroke type is not solid.
+		</li>
+<li>
+			<strong>top border stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the top border strokes will overprint.
+		</li>
+<li>
+			<strong>top border stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the table's top border stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>top border stroke type</strong>
+			
+			<em><a href="../../FULL/classes/stroke_style.html">stroke style</a></em>
+			 -- The stroke type of the top border. Can also accept: string.
+		</li>
+<li>
+			<strong>top border stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the table's top border stroke.
+		</li>
+<li>
+			<strong>width</strong>
+			
+			<em>number | string</em>
+			 -- The width of the table. For a table or row, specifies the sum of the column widths.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/button.html">buttons</a></strong></span> , <span> <strong><a href="../../FULL/classes/cell.html">cells</a></strong></span> , <span> <strong><a href="../../FULL/classes/change.html">changes</a></strong></span> , <span> <strong><a href="../../FULL/classes/column.html">columns</a></strong></span> , <span> <strong><a href="../../FULL/classes/EPSText.html">EPSTexts</a></strong></span> , <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../FULL/classes/form_field.html">form fields</a></strong></span> , <span> <strong><a href="../../FULL/classes/graphic_line.html">graphic lines</a></strong></span> , <span> <strong><a href="../../FULL/classes/group.html">groups</a></strong></span> , <span> <strong><a href="../../FULL/classes/hidden_text.html">hidden texts</a></strong></span> , <span> <strong><a href="../../FULL/classes/multi_state_object.html">multi state objects</a></strong></span> , <span> <strong><a href="../../FULL/classes/note.html">notes</a></strong></span> , <span> <strong><a href="../../FULL/classes/oval.html">ovals</a></strong></span> , <span> <strong><a href="../../FULL/classes/page_item.html">page items</a></strong></span> , <span> <strong><a href="../../FULL/classes/polygon.html">polygons</a></strong></span> , <span> <strong><a href="../../FULL/classes/rectangle.html">rectangles</a></strong></span> , <span> <strong><a href="../../FULL/classes/row.html">rows</a></strong></span> , <span> <strong><a href="../../FULL/classes/spline_item.html">spline items</a></strong></span> , <span> <strong><a href="../../FULL/classes/text_frame.html">text frames</a></strong></span> , <span> <strong><a href="../../FULL/classes/text_variable_instance.html">text variable instances</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/button.html">button</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/cell.html">cell</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/change.html">change</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/column.html">column</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/EPSText.html">EPSText</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/form_field.html">form field</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/graphic_line.html">graphic line</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/group.html">group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/hidden_text.html">hidden text</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/multi_state_object.html">multi state object</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/note.html">note</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/oval.html">oval</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/page_item.html">page item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/polygon.html">polygon</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/rectangle.html">rectangle</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/row.html">row</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/spline_item.html">spline item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/text_frame.html">text frame</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/text_variable_instance.html">text variable instance</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/cell.html">cell</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/column.html">column</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/row.html">row</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/story.html">story</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/table.html">table</a></strong>
+					(<em><a href="../../index.html#suite_Tables_Suite">Tables Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text.html">text</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_frame.html">text frame</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_element.html">XML element</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

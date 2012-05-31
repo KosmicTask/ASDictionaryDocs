@@ -1,0 +1,511 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>PDF export preset</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> PDF export preset</h1>
+
+<div id="view"><a href="../../FULL/classes/PDF_export_preset.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>PDF export settings for the document object.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>PDF export presets</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>acrobat compatibility</strong>
+			
+			<em>acrobat 4 / acrobat 5 / acrobat 6 / acrobat 7 / acrobat 8</em>
+			 -- The exported PDF document's Acrobat compatibility.
+		</li>
+<li>
+			<strong>applied flattener preset</strong>
+			
+			<em><a href="../../Preferences_Suite/classes/flattener_preset.html">flattener preset</a></em>
+			 -- The transparency flattener preset to use.
+		</li>
+<li>
+			<strong>bleed bottom</strong>
+			
+			<em>number | string</em>
+			 -- The height of the bleed area at the bottom of the page. Note: Valid only when use document bleed to print is true. Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>bleed inside</strong>
+			
+			<em>number | string</em>
+			 -- The width of the bleed area at the inside of the page. Note: Valid only when use document bleed to print is true. Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>bleed marks</strong>
+			
+			<em>boolean</em>
+			 -- If true, print bleed marks.
+		</li>
+<li>
+			<strong>bleed outside</strong>
+			
+			<em>number | string</em>
+			 -- The width of the bleed area at the outside of the page. Note: Valid only when use document bleed to print is true. . Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>bleed top</strong>
+			
+			<em>number | string</em>
+			 -- The height of the bleed area at the top of the page. Note: Valid only when use document bleed to print is true. Can return: number or string (0 - 432 points).
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>color bars</strong>
+			
+			<em>boolean</em>
+			 -- If true, add small squares of color representing the CMYK inks and tints of gray in 10% increments.
+		</li>
+<li>
+			<strong>color bitmap compression</strong>
+			
+			<em>none / auto compression / JPEG / zip / JPEG 2000 / Automatic JPEG 2000</em>
+			 -- The amount of bitmap compression to use.
+		</li>
+<li>
+			<strong>color bitmap quality</strong>
+			
+			<em>minimum / low / medium / high / maximum / four bit / eight bit</em>
+			 -- The compression option to apply to color images.
+		</li>
+<li>
+			<strong>color bitmap sampling</strong>
+			
+			<em>none / downsample / subsample / bicubic downsample</em>
+			 -- The sampling option to apply to color bitmap images in the PDF document.
+		</li>
+<li>
+			<strong>color bitmap sampling DPI</strong>
+			
+			<em>integer</em>
+			 -- The ppi of the resampled image. (Range: 9 to 2400). Can return: integer (9 - 2400).
+		</li>
+<li>
+			<strong>color tile size</strong>
+			
+			<em>integer</em>
+			 -- The tile size for color images. Valid only when color bitmap compression is JPEG 2000. (Range: 128 to 2048). Can return: integer (128 - 2048).
+		</li>
+<li>
+			<strong>compress text and line art</strong>
+			
+			<em>boolean</em>
+			 -- If true, compresses text and line art using ZIP compression.
+		</li>
+<li>
+			<strong>compression type</strong>
+			
+			<em>Compress None / Compress Structure / Compress Objects</em>
+			 -- The objects to compress in the PDF document. 
+		</li>
+<li>
+			<strong>crop images to frames</strong>
+			
+			<em>boolean</em>
+			 -- If true, image data that falls outside the visible portion of an image's frame is not exported to the PDF document.
+		</li>
+<li>
+			<strong>crop marks</strong>
+			
+			<em>boolean</em>
+			 -- Prints crop marks that define where the page should be trimmed.
+		</li>
+<li>
+			<strong>effective OC Registry</strong>
+			(r/o)
+			<em>string</em>
+			 -- Effective PDF/X OC Registry.
+		</li>
+<li>
+			<strong>effective output condition</strong>
+			(r/o)
+			<em>string</em>
+			 -- Effective PDF/X output condition.
+		</li>
+<li>
+			<strong>effective PDF destination profile</strong>
+			(r/o)
+			<em>anything</em>
+			 -- Effective destination color profile. Can return: use no profile/use monitor profile/use document/working or string.
+		</li>
+<li>
+			<strong>effective PDF X profile</strong>
+			(r/o)
+			<em>anything</em>
+			 -- Effective PDF X color profile. Can return: use no profile/use monitor profile/use document/working or string.
+		</li>
+<li>
+			<strong>export guides and grids</strong>
+			
+			<em>boolean</em>
+			 -- If true, includes visible guides and baseline grids in the PDF document.
+		</li>
+<li>
+			<strong>export layers</strong>
+			
+			<em>boolean</em>
+			 -- If true, saves each layer as an Acrobat layer within the PDF document.
+		</li>
+<li>
+			<strong>export nonprinting objects</strong>
+			
+			<em>boolean</em>
+			 -- If true, makes non-printing objects visible in the PDF document.
+		</li>
+<li>
+			<strong>export reader spreads</strong>
+			
+			<em>boolean</em>
+			 -- If true, each spread in the exported document is combined into a single page that has spread's original width.
+		</li>
+<li>
+			<strong>export which layers</strong>
+			
+			<em>export all layers / export visible layers / export visible printable layers</em>
+			 -- Which layers to export.
+		</li>
+<li>
+			<strong>full name</strong>
+			(r/o)
+			<em>alias | string</em>
+			 -- The full path to the PDF export preset, including the name of the PDF export preset.
+		</li>
+<li>
+			<strong>generate thumbnails</strong>
+			
+			<em>boolean</em>
+			 -- If true, generates thumbnail images for each page or spread.
+		</li>
+<li>
+			<strong>Gray tile size</strong>
+			
+			<em>integer</em>
+			 -- The tile size for grayscale images. Valid only when grayscale bitmap compression is JPEG 2000. (Range: 128 to 2048). Can return: integer (128 - 2048).
+		</li>
+<li>
+			<strong>grayscale bitmap compression</strong>
+			
+			<em>none / auto compression / JPEG / zip / JPEG 2000 / Automatic JPEG 2000</em>
+			 -- The bitmap compression option to apply to grayscale bitmap images. 
+		</li>
+<li>
+			<strong>grayscale bitmap quality</strong>
+			
+			<em>minimum / low / medium / high / maximum / four bit / eight bit</em>
+			 -- The compression option to apply to grayscale bitmap images. 
+		</li>
+<li>
+			<strong>grayscale bitmap sampling</strong>
+			
+			<em>none / downsample / subsample / bicubic downsample</em>
+			 -- The sampling option to apply to grayscale bitmap images.
+		</li>
+<li>
+			<strong>grayscale bitmap sampling DPI</strong>
+			
+			<em>integer</em>
+			 -- The ppi of the resampled image. (Range: 9 to 2400). Can return: integer (9 - 2400).
+		</li>
+<li>
+			<strong>ignore spread overrides</strong>
+			
+			<em>boolean</em>
+			 -- If true, ignores flattener spread overrides.
+		</li>
+<li>
+			<strong>include bookmarks</strong>
+			
+			<em>boolean</em>
+			 -- If true, displays bookmarks and table of contents entries as links in the bookmarks pane in the PDF document. If false, no bookmarks are exported.
+		</li>
+<li>
+			<strong>include hyperlinks</strong>
+			
+			<em>boolean</em>
+			 -- If true, includes hyperlinks when exporting the document.
+		</li>
+<li>
+			<strong>include ICC profiles</strong>
+			
+			<em>Include None / Include All / Include Tagged / Include RGB And Tagged</em>
+			 -- The ICC Profiles to include in the exported PDF document. Can also accept: boolean.
+		</li>
+<li>
+			<strong>include slug with PDF</strong>
+			
+			<em>boolean</em>
+			 -- If true, includes the document's slug area in the PDF document.
+		</li>
+<li>
+			<strong>include structure</strong>
+			
+			<em>boolean</em>
+			 -- If true, creates a tagged PDF file. Note: If acrobat compatibility is acrobat 6 or higher, tags are visible only when the PDF is opened in Acrobat 6 or higher.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the PDF export preset within its containing object.
+		</li>
+<li>
+			<strong>interactive elements option</strong>
+			
+			<em>do not include / appearance only</em>
+			 -- How to draw interactive elements.
+		</li>
+<li>
+			<strong>monochrome bitmap compression</strong>
+			
+			<em>none / CCIT3 / CCIT4 / zip / run length</em>
+			 -- The bitmap compression option to apply to monochrome bitmap images. 
+		</li>
+<li>
+			<strong>monochrome bitmap sampling</strong>
+			
+			<em>none / downsample / subsample / bicubic downsample</em>
+			 -- The sampling option to apply to monochrome bitmap images.
+		</li>
+<li>
+			<strong>monochrome bitmap sampling DPI</strong>
+			
+			<em>integer</em>
+			 -- The ppi of the resampled image. (Range: 9 to 2400). Can return: integer (9 - 2400).
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the PDF export preset.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/PDF_export_preset.html">PDF export preset</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>OC Registry</strong>
+			
+			<em>string</em>
+			 -- The web address for the output condition registry. Not valid when PDF/X-3 is the compliance standard or PDF export preset. 
+		</li>
+<li>
+			<strong>omit bitmaps</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces bitmap images with OPI links.
+		</li>
+<li>
+			<strong>omit EPS</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces EPS images with OPI links.
+		</li>
+<li>
+			<strong>omit PDF</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces PDF images with OPI links.
+		</li>
+<li>
+			<strong>optimize PDF</strong>
+			
+			<em>boolean</em>
+			 -- If true, optimizes the exported PDF document for faster viewing in a web browser. Note: Compresses text and line art, regardless of specified compression settings. 
+		</li>
+<li>
+			<strong>output condition</strong>
+			
+			<em>string</em>
+			 -- The name of the intended printing condition. Valid only when a PDF/X compliance standard has been defined for the document. Not valid when PDF/X-3 is the compliance standard or PDF export preset. For information on compliance standards, see standards c...
+		</li>
+<li>
+			<strong>output condition name</strong>
+			
+			<em>string</em>
+			 -- The name of the output condition. Valid only when a PDF/X standard has been defined for the document.
+		</li>
+<li>
+			<strong>page information marks</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints the filename, page number, current date and time, and color separation name.
+		</li>
+<li>
+			<strong>page marks offset</strong>
+			
+			<em>number | string</em>
+			 -- The offset from the edge of the page for page marks. Can return: number or string (0 - 72 points).
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the PDF export preset (a application).
+		</li>
+<li>
+			<strong>PDF color space</strong>
+			
+			<em>RGB / CMYK / unchanged color space / Repurpose RGB / Repurpose CMYK</em>
+			 -- The color space to use to represent color information in the exported PDF document. 
+		</li>
+<li>
+			<strong>PDF destination profile</strong>
+			
+			<em>anything</em>
+			 -- The gamut of the final RGB or CMYK device. Can return: use no profile/use monitor profile/use document/working or string.
+		</li>
+<li>
+			<strong>PDF mark type</strong>
+			
+			<em>anything</em>
+			 -- The type of printer marks, either an enum value or the name of a custom marks file. Can return: default/J mark with circle/J mark without circle or string.
+		</li>
+<li>
+			<strong>PDF X profile</strong>
+			
+			<em>anything</em>
+			 -- The PDF X color profile to use for the PDF document. . Can return: use no profile/use monitor profile/use document/working or string.
+		</li>
+<li>
+			<strong>printer mark weight</strong>
+			
+			<em>p125pt / p25pt / p50pt</em>
+			 -- The stroke weight for printer's marks. 
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>registration marks</strong>
+			
+			<em>boolean</em>
+			 -- If true, prints small targets outside the page area for aligning color separations.
+		</li>
+<li>
+			<strong>simulate overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, simulates the effects of overprinting spot inks with different neutral density values by converting spot colors to process colors for printing. Note: Not valid when the color output mode is defined to leave color profiles unchanged.
+		</li>
+<li>
+			<strong>standards compliance</strong>
+			
+			<em>none / PDFX1a2001 standard / PDFX32002 standard / PDFX1a2003 standard / PDFX32003 standard / PDFX42007 standard</em>
+			 -- The PDF/X standards compliance to test against.
+		</li>
+<li>
+			<strong>subset fonts below</strong>
+			
+			<em>integer</em>
+			 -- Sets the threshold for embedding complete fonts based on how many of the fonts' characters are used in the document. If the percentage of characters used in the document for any given font exceeds the specified value, the font is completely embedded; o...
+		</li>
+<li>
+			<strong>threshold to compress color</strong>
+			
+			<em>integer</em>
+			 -- The minimum dpi at which color compression is applied. (Range: 1 to 10 times the value specified for color bitmap sampling DPI.)
+		</li>
+<li>
+			<strong>threshold to compress gray</strong>
+			
+			<em>integer</em>
+			 -- The minimum dpi at which grayscale compression is applied. (Range: 1 to 10 times the value specified for grayscale bitmap sampling DPI.)
+		</li>
+<li>
+			<strong>threshold to compress monochrome</strong>
+			
+			<em>integer</em>
+			 -- The minimum dpi at which monochrome compression is applied. (Range: 1 to 10 times the value specified for monochrome bitmap sampling DPI.)
+		</li>
+<li>
+			<strong>use document bleed with PDF</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses the document's bleed settings in the PDF document.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Basics_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Preferences_Suite/classes/PDF_export_preset.html">PDF export preset</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

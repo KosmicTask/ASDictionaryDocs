@@ -1,0 +1,1946 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>story</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> story</h1>
+
+<div id="view"><a href="../../FULL/classes/story.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A story.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>stories</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>align to baseline</strong>
+			
+			<em>boolean</em>
+			 -- If true, aligns the baseline of the text to the baseline grid.
+		</li>
+<li>
+			<strong>all graphics</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/graphic.html">graphic</a></em>
+			 -- Lists all graphics contained by the story.
+		</li>
+<li>
+			<strong>all page items</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/page_item.html">page item</a></em>
+			 -- Lists all page items contained by the story.
+		</li>
+<li>
+			<strong>allow arbitrary hyphenation</strong>
+			
+			<em>boolean</em>
+			 -- If true, words unassociated with a hyphenation dictionary can break to the next line on any character.
+		</li>
+<li>
+			<strong>applied character style</strong>
+			
+			<em><a href="../../Text_Suite/classes/character_style.html">character style</a></em>
+			 -- The character style applied to the text. Can also accept: string.
+		</li>
+<li>
+			<strong>applied font</strong>
+			
+			<em>anything</em>
+			 -- The font applied to the story, specified as either a font object or the name of font family. Can return: font or string.
+		</li>
+<li>
+			<strong>applied language</strong>
+			
+			<em>reference</em>
+			 -- The language of the text. Can return: language with vendors or language. Can also accept: string.
+		</li>
+<li>
+			<strong>applied named grid</strong>
+			
+			<em><a href="../../Text_Suite/classes/named_grid.html">named grid</a></em>
+			 -- The named grid in use.
+		</li>
+<li>
+			<strong>applied nested styles</strong>
+			(r/o)
+			<em>list of <a href="../../Text_Suite/classes/character_style.html">character style</a></em>
+			 -- The applied character styles dictated by nested styles.
+		</li>
+<li>
+			<strong>applied numbering list</strong>
+			
+			<em>anything</em>
+			 -- The list to be part of. Can return: numbering list or string.
+		</li>
+<li>
+			<strong>applied paragraph style</strong>
+			
+			<em><a href="../../Text_Suite/classes/paragraph_style.html">paragraph style</a></em>
+			 -- The paragraph style applied to the text. Can also accept: string.
+		</li>
+<li>
+			<strong>associated XML element</strong>
+			(r/o)
+			<em><a href="../../XML_Suite/classes/XML_item.html">XML item</a></em>
+			 -- The XML element associated with the story.
+		</li>
+<li>
+			<strong>auto leading</strong>
+			
+			<em>fixed</em>
+			 -- The percent of the type size to use for auto leading. (Range: 0 to 500).
+		</li>
+<li>
+			<strong>auto tcy</strong>
+			
+			<em>small integer</em>
+			 -- The number of half-width characters at or below which the characters automatically run horizontally in vertical text.
+		</li>
+<li>
+			<strong>auto tcy include roman</strong>
+			
+			<em>boolean</em>
+			 -- If true, auto tcy includes Roman characters.
+		</li>
+<li>
+			<strong>balance ragged lines</strong>
+			
+			<em>anything</em>
+			 -- If true or set to an enumeration value, balances ragged lines. Note: Not valid with a single-line text composer. Can return: boolean or no balancing/vee shape/fully balanced/pyramid shape.
+		</li>
+<li>
+			<strong>baseline shift</strong>
+			
+			<em>number | string</em>
+			 -- The baseline shift applied to the text.
+		</li>
+<li>
+			<strong>bullet char</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/bullet.html">bullet</a></em>
+			 -- Bullet character.
+		</li>
+<li>
+			<strong>bullets alignment</strong>
+			
+			<em>left align / center align / right align</em>
+			 -- The alignment of the bullet character.
+		</li>
+<li>
+			<strong>bullets and numbering list type</strong>
+			
+			<em>no list / bullet list / numbered list</em>
+			 -- List type for bullets and numbering.
+		</li>
+<li>
+			<strong>bullets character style</strong>
+			
+			<em>anything</em>
+			 -- The character style to be used for the text after string. Can return: character style or string.
+		</li>
+<li>
+			<strong>bullets text after</strong>
+			
+			<em>string</em>
+			 -- The text after string expression for bullets.
+		</li>
+<li>
+			<strong>bunri kinshi</strong>
+			
+			<em>boolean</em>
+			 -- If true, adds the double period (..), ellipse (...), and double hyphen (--) to the selected kinsoku set. Note: Valid only when a kinsoku set is in effect.
+		</li>
+<li>
+			<strong>capitalization</strong>
+			
+			<em>normal / small caps / all caps / cap to small cap</em>
+			 -- The capitalization scheme.
+		</li>
+<li>
+			<strong>character alignment</strong>
+			
+			<em>align baseline / align em top / align em center / align em bottom / align ICF top / align ICF bottom</em>
+			 -- The alignment of small characters to the largest character in the line.
+		</li>
+<li>
+			<strong>character direction</strong>
+			
+			<em>default direction / left to right direction / right to left direction</em>
+			 -- The direction of the character.
+		</li>
+<li>
+			<strong>character rotation</strong>
+			
+			<em>fixed</em>
+			 -- The rotation angle (in degrees) of individual characters. Note: The rotation is counterclockwise.
+		</li>
+<li>
+			<strong>cjk grid tracking</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses grid tracking to track non-Roman characters in CJK grids.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>composer</strong>
+			
+			<em>string</em>
+			 -- The text composer to use to compose the text.
+		</li>
+<li>
+			<strong>contents</strong>
+			
+			<em>anything</em>
+			 -- The contents of the text. Can return: string or auto page number/next page number/previous page number/section marker/bullet character/copyright symbol/degree symbol/ellipsis character/forced line break/paragraph symbol/registered trademark/section sym...
+		</li>
+<li>
+			<strong>desired glyph scaling</strong>
+			
+			<em>fixed</em>
+			 -- The desired width (as a percentage) of individual characters. (Range: 50 to 200)
+		</li>
+<li>
+			<strong>desired letter spacing</strong>
+			
+			<em>fixed</em>
+			 -- The desired letter spacing, specified as a percentge of the built-in space between letters in the font. (Range: -100 to 500)
+		</li>
+<li>
+			<strong>desired word spacing</strong>
+			
+			<em>fixed</em>
+			 -- The desired word spacing, specified as a percentage of the font word space value. (Range: 0 to 1000)
+		</li>
+<li>
+			<strong>diacritic position</strong>
+			
+			<em>default position / loose position / medium position / tight position / opentype position</em>
+			 -- Position of diacriticical characters.
+		</li>
+<li>
+			<strong>digits type</strong>
+			
+			<em>default digits / arabic digits / hindi digits / farsi digits / Native digits / full farsi digits / thai digits / lao digits / devanagari digits / bengali digits / gurmukhi digits / gujarati digits / oriya digits / tamil digits / telugu digits / kannada digits / malayalam digits / tibetan digits / khmer digits / burmese digits</em>
+			 -- The digits type.
+		</li>
+<li>
+			<strong>drop cap characters</strong>
+			
+			<em>small integer</em>
+			 -- The number of characters to drop cap. Can return: small integer (0 - 150).
+		</li>
+<li>
+			<strong>drop cap lines</strong>
+			
+			<em>small integer</em>
+			 -- The number of lines to drop cap. Can return: small integer (0 - 25).
+		</li>
+<li>
+			<strong>drop cap style</strong>
+			
+			<em><a href="../../Text_Suite/classes/character_style.html">character style</a></em>
+			 -- The character style to apply to the drop cap. Can also accept: string.
+		</li>
+<li>
+			<strong>dropcap detail</strong>
+			
+			<em>integer</em>
+			 -- Details about the drop cap based on the glyph outlines. 1 = left side bearing. 2 = descenders. 0x100,0x200,0x400 are used for Japanese frame grid.
+		</li>
+<li>
+			<strong>end join</strong>
+			
+			<em>miter end join / round end join / bevel end join</em>
+			 -- The stroke join type applied to the characters of the text.
+		</li>
+<li>
+			<strong>fill color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the fill of the story. . Can also accept: string.
+		</li>
+<li>
+			<strong>fill tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the fill color of the story. (To specify a tint percentage, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)
+		</li>
+<li>
+			<strong>first line indent</strong>
+			
+			<em>number | string</em>
+			 -- The amount to indent the first line.
+		</li>
+<li>
+			<strong>font style</strong>
+			
+			<em>string</em>
+			 -- The name of the font style.
+		</li>
+<li>
+			<strong>glyph form</strong>
+			
+			<em>none / traditional form / expert form / JIS78 form / JIS83 form / monospaced half width form / third width form / quarter width form / NLC form / proportional width form / full width form / JIS04 form / JIS90 form</em>
+			 -- The glyph variant to substitute for standard glyphs.
+		</li>
+<li>
+			<strong>gradient fill angle</strong>
+			
+			<em>fixed</em>
+			 -- The angle of a linear gradient applied to the fill of the text. (Range: -180 to 180)
+		</li>
+<li>
+			<strong>gradient fill length</strong>
+			
+			<em>fixed</em>
+			 -- The length (for a linear gradient) or radius (for a radial gradient) applied to the fill of the text.
+		</li>
+<li>
+			<strong>gradient fill start</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the fill of the text, in the format [x, y].
+		</li>
+<li>
+			<strong>gradient stroke angle</strong>
+			
+			<em>fixed</em>
+			 -- The angle of a linear gradient applied to the stroke of the text. (Range: -180 to 180)
+		</li>
+<li>
+			<strong>gradient stroke length</strong>
+			
+			<em>fixed</em>
+			 -- The length (for a linear gradient) or radius (for a radial gradient) applied to the stroke of the text.
+		</li>
+<li>
+			<strong>gradient stroke start</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the stroke of the text, in the format [x, y].
+		</li>
+<li>
+			<strong>grid align first line only</strong>
+			
+			<em>boolean</em>
+			 -- If true, aligns only the first line to the frame grid or baseline grid. If false, aligns all lines to the grid.
+		</li>
+<li>
+			<strong>grid alignment</strong>
+			
+			<em>none / align baseline / align em top / align em center / align em bottom / align ICF top / align ICF bottom</em>
+			 -- The alignment to the frame grid or baseline grid.
+		</li>
+<li>
+			<strong>grid data</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/grid_data_information.html">grid data information</a></em>
+			 -- Default grid properties. Note: Applies to named, layout, and frame (story) grids.
+		</li>
+<li>
+			<strong>grid gyoudori</strong>
+			
+			<em>small integer</em>
+			 -- The manual gyoudori setting.
+		</li>
+<li>
+			<strong>horizontal scale</strong>
+			
+			<em>fixed</em>
+			 -- The horizontal scaling applied to the story.
+		</li>
+<li>
+			<strong>hyphen weight</strong>
+			
+			<em>small integer</em>
+			 -- The relative desirability of better spacing vs. fewer hyphens. A lower value results in greater use of hyphens. (Range: 0 to 100). Can return: small integer (0 - 10).
+		</li>
+<li>
+			<strong>hyphenate across columns</strong>
+			
+			<em>boolean</em>
+			 -- If true, allows the last word in a text column to be hyphenated.
+		</li>
+<li>
+			<strong>hyphenate after first</strong>
+			
+			<em>small integer</em>
+			 -- The mininum number of letters at the beginning of a word that can be broken by a hyphen. Can return: small integer (1 - 15).
+		</li>
+<li>
+			<strong>hyphenate before last</strong>
+			
+			<em>small integer</em>
+			 -- The minimum number of letters at the end of a word that can be broken by a hyphen. Can return: small integer (1 - 15).
+		</li>
+<li>
+			<strong>hyphenate capitalized words</strong>
+			
+			<em>boolean</em>
+			 -- If true, allows hyphenation of capitalized words.
+		</li>
+<li>
+			<strong>hyphenate ladder limit</strong>
+			
+			<em>small integer</em>
+			 -- The maximum number of hyphens that can appear on consecutive lines. To specify unlimited consecutive lines, use zero. Can return: small integer (0 - 25).
+		</li>
+<li>
+			<strong>hyphenate last word</strong>
+			
+			<em>boolean</em>
+			 -- If true, allows hyphenation in the last word in a paragraph. Note: Valid only when hyphenation is true.
+		</li>
+<li>
+			<strong>hyphenate words longer than</strong>
+			
+			<em>small integer</em>
+			 -- The minimum number of letters a word must have in order to qualify for hyphenation. Can return: small integer (3 - 25).
+		</li>
+<li>
+			<strong>hyphenation</strong>
+			
+			<em>boolean</em>
+			 -- If true, allows hyphenation.
+		</li>
+<li>
+			<strong>hyphenation zone</strong>
+			
+			<em>number | string</em>
+			 -- The amount of white space allowed at the end of a line of non-justified text before hypenation begins. Note: Valid when composer is single-line composer.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the story.
+		</li>
+<li>
+			<strong>IDML component name</strong>
+			
+			<em>string</em>
+			 -- The IDML component name of the story.
+		</li>
+<li>
+			<strong>ignore edge alignment</strong>
+			
+			<em>boolean</em>
+			 -- If true, ignores optical edge alignment for the paragraph.
+		</li>
+<li>
+			<strong>InCopy export options</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/InCopy_export_option.html">InCopy export option</a></em>
+			 -- Export options for InCopy INCX document format.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the story within its containing object.
+		</li>
+<li>
+			<strong>item link</strong>
+			(r/o)
+			<em><a href="../../Links_Suite/classes/link.html">link</a></em>
+			 -- The source file of the link.
+		</li>
+<li>
+			<strong>jidori</strong>
+			
+			<em>small integer</em>
+			 -- The number of grid squares in which to arrange the text. 
+		</li>
+<li>
+			<strong>justification</strong>
+			
+			<em>left align / center align / right align / left justified / right justified / center justified / fully justified / to binding side / away from binding side</em>
+			 -- The paragraph alignment.
+		</li>
+<li>
+			<strong>kashidas</strong>
+			
+			<em>default kashidas / kashidas off</em>
+			 -- Use of Kashidas for justification
+		</li>
+<li>
+			<strong>keep all lines together</strong>
+			
+			<em>boolean</em>
+			 -- If true, keeps all lines of the paragraph together. If false, allows paragraphs to break across pages or columns.
+		</li>
+<li>
+			<strong>keep first lines</strong>
+			
+			<em>small integer</em>
+			 -- The minimum number of lines to keep together in a paragraph before allowing a page break. Can return: small integer (1 - 50).
+		</li>
+<li>
+			<strong>keep last lines</strong>
+			
+			<em>small integer</em>
+			 -- The minimum number of lines to keep together in a paragraph after a page break. Can return: small integer (1 - 50).
+		</li>
+<li>
+			<strong>keep lines together</strong>
+			
+			<em>boolean</em>
+			 -- If true, keeps a specified number of lines together when the paragraph breaks across columns or text frames.
+		</li>
+<li>
+			<strong>keep rule above in frame</strong>
+			
+			<em>boolean</em>
+			 -- If true, forces the rule above the paragraph to remain in the frame bounds. Note: Valid only when rule above is true.
+		</li>
+<li>
+			<strong>keep with next</strong>
+			
+			<em>small integer</em>
+			 -- The minimum number of lines to keep with the next paragraph. Can return: small integer (0 - 5).
+		</li>
+<li>
+			<strong>keep with previous</strong>
+			
+			<em>boolean</em>
+			 -- If the first line in the paragraph should be kept with the last line of previous paragraph.
+		</li>
+<li>
+			<strong>kenten alignment</strong>
+			
+			<em>align kenten left / align kenten center</em>
+			 -- The alignment of kenten characters relative to the parent characters. 
+		</li>
+<li>
+			<strong>kenten character set</strong>
+			
+			<em>character input / shift JIS / JIS / kuten / unicode</em>
+			 -- The character set used for the custom kenten character. Note: Valid only when kenten kind is custom. 
+		</li>
+<li>
+			<strong>kenten custom character</strong>
+			
+			<em>string</em>
+			 -- The character used for kenten. Note: Valid only when kenten kind is custom.
+		</li>
+<li>
+			<strong>kenten fill color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the fill of kenten characters. Can return: swatch or string.
+		</li>
+<li>
+			<strong>kenten font</strong>
+			
+			<em>anything</em>
+			 -- The font to use for kenten characters. Can return: font or string.
+		</li>
+<li>
+			<strong>kenten font size</strong>
+			
+			<em>fixed</em>
+			 -- The size (in points) of kenten characters.
+		</li>
+<li>
+			<strong>kenten font style</strong>
+			
+			<em>anything</em>
+			 -- The font style of kenten characters. Can return: string or nothing.
+		</li>
+<li>
+			<strong>kenten kind</strong>
+			
+			<em>none / kenten sesame dot / kenten white sesame dot / kenten black circle / kenten white circle / kenten black triangle / kenten white triangle / kenten bullseye / kenten fisheye / kenten small black circle / kenten small white circle / custom</em>
+			 -- The style of kenten characters.
+		</li>
+<li>
+			<strong>kenten overprint fill</strong>
+			
+			<em>auto / overprint on / overprint off</em>
+			 -- The method of overprinting the kenten fill.
+		</li>
+<li>
+			<strong>kenten overprint stroke</strong>
+			
+			<em>auto / overprint on / overprint off</em>
+			 -- The method of overprinting the kenten stroke.
+		</li>
+<li>
+			<strong>kenten placement</strong>
+			
+			<em>fixed</em>
+			 -- The distance between kenten characters and their parent characters.
+		</li>
+<li>
+			<strong>kenten position</strong>
+			
+			<em>above right / below left</em>
+			 -- The kenten position relative to the parent character.
+		</li>
+<li>
+			<strong>kenten stroke color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke of kenten characters. Can return: swatch or string.
+		</li>
+<li>
+			<strong>kenten stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The stroke tint (as a percentage) of kenten characters. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>kenten tint</strong>
+			
+			<em>fixed</em>
+			 -- The fill tint (as a percentage) of kenten characters. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>kenten weight</strong>
+			
+			<em>fixed</em>
+			 -- The stroke weight (in points) of kenten characters.
+		</li>
+<li>
+			<strong>kenten X scale</strong>
+			
+			<em>fixed</em>
+			 -- The horizontal size of kenten characters as a percent of the original size.
+		</li>
+<li>
+			<strong>kenten Y scale</strong>
+			
+			<em>fixed</em>
+			 -- The vertical size of kenten charachers as a percent of the original size. 
+		</li>
+<li>
+			<strong>kerning method</strong>
+			
+			<em>string</em>
+			 -- The type of pair kerning.
+		</li>
+<li>
+			<strong>keyboard direction</strong>
+			
+			<em>default direction / left to right direction / right to left direction</em>
+			 -- The keyboard direction of the character.
+		</li>
+<li>
+			<strong>kinsoku hang type</strong>
+			
+			<em>none / kinsoku hang regular / kinsoku hang force</em>
+			 -- The type of hanging punctuation to allow. Note: Valid only when a kinsoku set is in effect.
+		</li>
+<li>
+			<strong>kinsoku set</strong>
+			
+			<em>anything</em>
+			 -- The kinsoku set that determines legitimate line breaks. Can return: kinsoku table, nothing/hard kinsoku/soft kinsoku/korean kinsoku/simplified chinese kinsoku/traditional chinese kinsoku or string.
+		</li>
+<li>
+			<strong>kinsoku type</strong>
+			
+			<em>kinsoku push in first / kinsoku push out first / kinsoku push out only / kinsoku prioritize adjustment amount</em>
+			 -- The type of kinsoku processing for preventing kinsoku characters from beginning or ending a line. Note: Valid only when a kinsoku set is defined.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>last line indent</strong>
+			
+			<em>number | string</em>
+			 -- The amount to indent the last line in the paragraph.
+		</li>
+<li>
+			<strong>leading</strong>
+			
+			<em>anything</em>
+			 -- The leading applied to the text. Can return: number or string or auto.
+		</li>
+<li>
+			<strong>leading aki</strong>
+			
+			<em>fixed</em>
+			 -- The amount of space before each character.
+		</li>
+<li>
+			<strong>leading model</strong>
+			
+			<em>leading model roman / leading model aki below / leading model aki above / leading model center / leading model center down</em>
+			 -- The point from which leading is measured from line to line.
+		</li>
+<li>
+			<strong>left indent</strong>
+			
+			<em>number | string</em>
+			 -- The width of the left indent.
+		</li>
+<li>
+			<strong>length</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The number of objects in the collection.
+		</li>
+<li>
+			<strong>ligatures</strong>
+			
+			<em>boolean</em>
+			 -- If true, replaces specific character combinations (e.g., fl, fi) with ligature characters.
+		</li>
+<li>
+			<strong>lock state</strong>
+			(r/o)
+			<em>none / unmanaged story / checked in story / checked out story / locked story / embedded story / missing lock state / mixed lock state</em>
+			 -- The lock state.
+		</li>
+<li>
+			<strong>maximum glyph scaling</strong>
+			
+			<em>fixed</em>
+			 -- The maximum width (as a percentage) of individual characters. (Range: 50 to 200)
+		</li>
+<li>
+			<strong>maximum letter spacing</strong>
+			
+			<em>fixed</em>
+			 -- The maximum letter spacing, specified as a percentge of the built-in space between letters in the font. (Range: -100 to 500) Note: Valid only when text is justified.
+		</li>
+<li>
+			<strong>maximum word spacing</strong>
+			
+			<em>fixed</em>
+			 -- The maximum word spacing, specified as a percentage of the font word space value. Note: Valid only when text is justified. (Range: 0 to 1000)
+		</li>
+<li>
+			<strong>minimum glyph scaling</strong>
+			
+			<em>fixed</em>
+			 -- The minimum width (as a percentage) of individual characters. (Range: 50 to 200)
+		</li>
+<li>
+			<strong>minimum letter spacing</strong>
+			
+			<em>fixed</em>
+			 -- The minimum letter spacing, specified as a percentge of the built-in space between letters in the font. (Range: -100 to 500) Note: Valid only when text is justified.
+		</li>
+<li>
+			<strong>minimum word spacing</strong>
+			
+			<em>fixed</em>
+			 -- The minimum word spacing, specified as a percentage of the font word space value. Note: Valid only when text is justified. (Range: 0 to 1000)
+		</li>
+<li>
+			<strong>miter limit</strong>
+			
+			<em>fixed</em>
+			 -- The limit of the ratio of stroke width to miter length before a miter (pointed) join becomes a bevel (squared-off) join. Can return: fixed (0 - 1000).
+		</li>
+<li>
+			<strong>mojikumi</strong>
+			
+			<em>anything</em>
+			 -- The mojikumi table. For information, see mojikumi table defaults. Can return: mojikumi table, string or nothing/line end all one half em enum/one em indent line end uke one half em enum/one or one half em indent line end uke one half em enum/one or one...
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the story; this is an alias to the story's label property.
+		</li>
+<li>
+			<strong>no break</strong>
+			
+			<em>boolean</em>
+			 -- If true, keeps the text on the same line. 
+		</li>
+<li>
+			<strong>numbering alignment</strong>
+			
+			<em>left align / center align / right align</em>
+			 -- The alignment of the number.
+		</li>
+<li>
+			<strong>numbering apply restart policy</strong>
+			
+			<em>boolean</em>
+			 -- If true, apply the numbering restart policy.
+		</li>
+<li>
+			<strong>numbering character style</strong>
+			
+			<em>anything</em>
+			 -- The character style to be used for the number string. Can return: character style or string.
+		</li>
+<li>
+			<strong>numbering continue</strong>
+			
+			<em>boolean</em>
+			 -- Continue the numbering at this level.
+		</li>
+<li>
+			<strong>numbering expression</strong>
+			
+			<em>string</em>
+			 -- The number string expression for numbering.
+		</li>
+<li>
+			<strong>numbering format</strong>
+			
+			<em>anything</em>
+			 -- Numbering format options. Can return: upper roman/lower roman/upper letters/lower letters/arabic/kanji/katakana modern/katakana traditional/format none/single leading zeros/arabic alif ba tah/arabic abjad/hebrew biblical/hebrew non standard/double lead...
+		</li>
+<li>
+			<strong>numbering level</strong>
+			
+			<em>integer</em>
+			 -- The level of the paragraph.
+		</li>
+<li>
+			<strong>numbering restart policies</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/numbering_restart_policy.html">numbering restart policy</a></em>
+			 -- Numbering restart policies.
+		</li>
+<li>
+			<strong>numbering start at</strong>
+			
+			<em>integer</em>
+			 -- Determines starting number in a numbered list.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/story.html">story</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>OpenType features</strong>
+			
+			<em>list of anything</em>
+			 -- OpenType features. Can return: list of list of 2 strings or integers.
+		</li>
+<li>
+			<strong>OTF contextual alternate</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses contextual alternate forms in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF discretionary ligature</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses discretionary ligatures in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF figure style</strong>
+			
+			<em>tabular lining / proportional oldstyle / proportional lining / tabular oldstyle / default</em>
+			 -- The figure style in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF fraction</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses fractions in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF historical</strong>
+			
+			<em>boolean</em>
+			 -- If true, use historical forms in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF HV kana</strong>
+			
+			<em>boolean</em>
+			 -- If true, switches hiragana fonts, which have different glyphs for horizontal and vertical. 
+		</li>
+<li>
+			<strong>OTF justification alternate</strong>
+			
+			<em>boolean</em>
+			 -- If true, use alternate justification forms in OpenType fonts
+		</li>
+<li>
+			<strong>OTF locale</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses localized forms in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF mark</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses mark positioning in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF ordinal</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses ordinals in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF overlap swash</strong>
+			
+			<em>boolean</em>
+			 -- If true, use overlapping swash forms in OpenType fonts
+		</li>
+<li>
+			<strong>OTF proportional metrics</strong>
+			
+			<em>boolean</em>
+			 -- If true, kerns according to proportional CJK metrics in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF Roman italics</strong>
+			
+			<em>boolean</em>
+			 -- If true, applies italics to half-width alphanumerics. 
+		</li>
+<li>
+			<strong>OTF slashed zero</strong>
+			
+			<em>boolean</em>
+			 -- If true, use a slashed zeroes in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF stretched alternate</strong>
+			
+			<em>boolean</em>
+			 -- If true, use stretched alternate forms in OpenType fonts
+		</li>
+<li>
+			<strong>OTF stylistic alternate</strong>
+			
+			<em>boolean</em>
+			 -- If true, use stylistic alternate forms in OpenType fonts
+		</li>
+<li>
+			<strong>OTF stylistic sets</strong>
+			
+			<em>integer</em>
+			 -- The stylistic sets to use in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF swash</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses swash forms in OpenType fonts.
+		</li>
+<li>
+			<strong>OTF titling</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses titling forms in OpenType fonts.
+		</li>
+<li>
+			<strong>overflows</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the story has overset text.
+		</li>
+<li>
+			<strong>overprint fill</strong>
+			
+			<em>boolean</em>
+			 -- If true, the fill color of the characters will overprint.
+		</li>
+<li>
+			<strong>overprint stroke</strong>
+			
+			<em>boolean</em>
+			 -- If true, the stroke of the characters will overprint.
+		</li>
+<li>
+			<strong>paragraph direction</strong>
+			
+			<em>left to right direction / right to left direction</em>
+			 -- Paragraph direction.
+		</li>
+<li>
+			<strong>paragraph gyoudori</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gyoudori mode applies to the entire paragraph. If false, the gyoudori mode applies to each line in the paragraph.
+		</li>
+<li>
+			<strong>paragraph justification</strong>
+			
+			<em>default justification / arabic justification / naskh justification</em>
+			 -- Paragraph justification.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the story (a XML element or document). Can return: XML element or document.
+		</li>
+<li>
+			<strong>point size</strong>
+			
+			<em>number | string</em>
+			 -- The text size.
+		</li>
+<li>
+			<strong>position</strong>
+			
+			<em>normal / superscript / subscript / OT superscript / OT subscript / OT numerator / OT denominator</em>
+			 -- The text position relative to the baseline.
+		</li>
+<li>
+			<strong>positional form</strong>
+			
+			<em>none / calculate / initial / medial / final / isolated</em>
+			 -- The OpenType positional form.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>rensuuji</strong>
+			
+			<em>boolean</em>
+			 -- If true, disallows line breaks in numbers. If false, lines can break between digits in multi-digit numbers.
+		</li>
+<li>
+			<strong>right indent</strong>
+			
+			<em>number | string</em>
+			 -- The width of the right indent.
+		</li>
+<li>
+			<strong>rotate single byte characters</strong>
+			
+			<em>boolean</em>
+			 -- If true, rotates Roman characters in vertical text.
+		</li>
+<li>
+			<strong>ruby alignment</strong>
+			
+			<em>ruby left / ruby center / ruby right / ruby full justify / ruby JIS / ruby equal aki / ruby 1 aki</em>
+			 -- The ruby alignment.
+		</li>
+<li>
+			<strong>ruby auto align</strong>
+			
+			<em>boolean</em>
+			 -- If true, auto aligns ruby.
+		</li>
+<li>
+			<strong>ruby auto scaling</strong>
+			
+			<em>boolean</em>
+			 -- If true, automatically scales ruby to the specified percent of parent text size. For information on specifying a percent, see ruby parent scaling percent. 
+		</li>
+<li>
+			<strong>ruby auto tcy auto scale</strong>
+			
+			<em>boolean</em>
+			 -- If true, automatically scales glyphs in auto tcy (tate-chuu-yoko) in ruby to fit one em.
+		</li>
+<li>
+			<strong>ruby auto tcy digits</strong>
+			
+			<em>small integer</em>
+			 -- The number of digits included in auto tcy (tate-chuu-yoko) in ruby.
+		</li>
+<li>
+			<strong>ruby auto tcy include roman</strong>
+			
+			<em>boolean</em>
+			 -- If true, includes Roman characters in auto tcy (tate-chuu-yoko) in ruby.
+		</li>
+<li>
+			<strong>ruby fill</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the fill of ruby characters. Can return: swatch or string.
+		</li>
+<li>
+			<strong>ruby flag</strong>
+			
+			<em>boolean</em>
+			 -- If true, ruby is on. 
+		</li>
+<li>
+			<strong>ruby font</strong>
+			
+			<em>anything</em>
+			 -- The font applied to ruby characters. Can return: font or string.
+		</li>
+<li>
+			<strong>ruby font size</strong>
+			
+			<em>fixed</em>
+			 -- The size (in points) of ruby characters.
+		</li>
+<li>
+			<strong>ruby font style</strong>
+			
+			<em>anything</em>
+			 -- The font style of ruby characters. Can return: string or nothing.
+		</li>
+<li>
+			<strong>ruby open type pro</strong>
+			
+			<em>boolean</em>
+			 -- If true, uses OpenType Pro fonts for ruby.
+		</li>
+<li>
+			<strong>ruby overhang</strong>
+			
+			<em>boolean</em>
+			 -- If true, constrains ruby overhang to the specified amount. For information on specifying an amount, see ruby parent overhang amount. 
+		</li>
+<li>
+			<strong>ruby overprint fill</strong>
+			
+			<em>auto / overprint on / overprint off</em>
+			 -- The method of overprinting the ruby fill.
+		</li>
+<li>
+			<strong>ruby overprint stroke</strong>
+			
+			<em>auto / overprint on / overprint off</em>
+			 -- The method of overprinting the ruby stroke.
+		</li>
+<li>
+			<strong>ruby parent overhang amount</strong>
+			
+			<em>none / ruby overhang one ruby / ruby overhang half ruby / ruby overhang one char / ruby overhang half char / ruby overhang no limit</em>
+			 -- The amount by which ruby characters can overhang the parent text.
+		</li>
+<li>
+			<strong>ruby parent scaling percent</strong>
+			
+			<em>fixed</em>
+			 -- The amount (as a percentage) to scale the parent text size to determine the ruby text size.
+		</li>
+<li>
+			<strong>ruby parent spacing</strong>
+			
+			<em>ruby parent no adjustment / ruby parent both sides / ruby parent 121 aki / ruby parent equal aki / ruby parent full justify</em>
+			 -- The ruby spacing relative to the parent text. 
+		</li>
+<li>
+			<strong>ruby position</strong>
+			
+			<em>above right / below left</em>
+			 -- The position of ruby characters relative to the parent text.
+		</li>
+<li>
+			<strong>ruby string</strong>
+			
+			<em>string</em>
+			 -- The ruby string contents.
+		</li>
+<li>
+			<strong>ruby stroke</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke of ruby characters. Can return: swatch or string.
+		</li>
+<li>
+			<strong>ruby stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The stroke tint (as a percentage) of ruby characters.
+		</li>
+<li>
+			<strong>ruby tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the ruby fill color. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>ruby type</strong>
+			
+			<em>group ruby / per character ruby</em>
+			 -- The ruby type.
+		</li>
+<li>
+			<strong>ruby weight</strong>
+			
+			<em>fixed</em>
+			 -- The stroke weight (in points) of ruby characters.
+		</li>
+<li>
+			<strong>ruby X offset</strong>
+			
+			<em>fixed</em>
+			 -- The amount of horizontal space between ruby and parent characters.
+		</li>
+<li>
+			<strong>ruby X scale</strong>
+			
+			<em>fixed</em>
+			 -- The horizontal size of ruby characters, specified as a percent of the original size.
+		</li>
+<li>
+			<strong>ruby Y offset</strong>
+			
+			<em>fixed</em>
+			 -- The amount of vertical space between ruby and parent characters.
+		</li>
+<li>
+			<strong>ruby Y scale</strong>
+			
+			<em>fixed</em>
+			 -- The vertical size of ruby characters, specified as a percent of the original size.
+		</li>
+<li>
+			<strong>rule above</strong>
+			
+			<em>boolean</em>
+			 -- If true, places a rule above the paragraph.
+		</li>
+<li>
+			<strong>rule above color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the paragraph rule above. Can return: swatch or string.
+		</li>
+<li>
+			<strong>rule above gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke gap of the paragraph rule above. Note: Valid only when the paragraph rule above type is not solid. Can return: swatch or string.
+		</li>
+<li>
+			<strong>rule above gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the stroke gap of the paragraph rule above will overprint. Note: Valid only the rule above type is not solid.
+		</li>
+<li>
+			<strong>rule above gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the stroke gap color of the paragraph rule. (Range: 0 to 100) Note: Valid only when the rule above type is not solid.
+		</li>
+<li>
+			<strong>rule above left indent</strong>
+			
+			<em>number | string</em>
+			 -- The distance to indent the left edge of the paragraph rule above (based on either the text width or the column width of the first line in the paragraph.
+		</li>
+<li>
+			<strong>rule above line weight</strong>
+			
+			<em>number | string</em>
+			 -- The line weight of the rule above.
+		</li>
+<li>
+			<strong>rule above offset</strong>
+			
+			<em>number | string</em>
+			 -- The amount to offset the paragraph rule above from the baseline of the first line the paragraph.
+		</li>
+<li>
+			<strong>rule above overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the paragraph rule above will overprint.
+		</li>
+<li>
+			<strong>rule above right indent</strong>
+			
+			<em>number | string</em>
+			 -- The distance to indent the right edge of the paragraph rule above (based on either the text width or the column width of the first line in the paragraph.
+		</li>
+<li>
+			<strong>rule above tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the paragraph rule above. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>rule above type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the rule above the paragraph. Can return: stroke style or string.
+		</li>
+<li>
+			<strong>rule above width</strong>
+			
+			<em>text width / column width</em>
+			 -- The basis (text width or column width) used to calculate the width of the paragraph rule above.
+		</li>
+<li>
+			<strong>rule below</strong>
+			
+			<em>boolean</em>
+			 -- If true, applies a paragraph rule below.
+		</li>
+<li>
+			<strong>rule below color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the paragraph rule below. Can return: swatch or string.
+		</li>
+<li>
+			<strong>rule below gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke gap of the paragraph rule below. Note: Valid only when the paragraph rule below type is not solid. Can return: swatch or string.
+		</li>
+<li>
+			<strong>rule below gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the rule below will overprint.
+		</li>
+<li>
+			<strong>rule below gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the stroke gap color of the paragraph rule below. (Range: 0 to 100) Note: Valid only when the paragraph rule below type is not solid.
+		</li>
+<li>
+			<strong>rule below left indent</strong>
+			
+			<em>number | string</em>
+			 -- The distance to indent the left edge of the paragraph rule below (based on either the text width or the column width of the last line in the paragraph.
+		</li>
+<li>
+			<strong>rule below line weight</strong>
+			
+			<em>number | string</em>
+			 -- The line weight of the rule below.
+		</li>
+<li>
+			<strong>rule below offset</strong>
+			
+			<em>number | string</em>
+			 -- The amount to offset the the paragraph rule below from the baseline of the last line of the paragraph.
+		</li>
+<li>
+			<strong>rule below overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the rule below will overprint.
+		</li>
+<li>
+			<strong>rule below right indent</strong>
+			
+			<em>number | string</em>
+			 -- The distance to indent the right edge of the paragraph rule below (based on either the text width or the column width of the last line in the paragraph.
+		</li>
+<li>
+			<strong>rule below tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the paragraph rule below. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>rule below type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the rule below the paragraph. Can return: stroke style or string.
+		</li>
+<li>
+			<strong>rule below width</strong>
+			
+			<em>text width / column width</em>
+			 -- The basis (text width or column width) used to calculate the width of the paragraph rule below.
+		</li>
+<li>
+			<strong>scale affects line height</strong>
+			
+			<em>boolean</em>
+			 -- If true, the line changes size when characters are scaled. 
+		</li>
+<li>
+			<strong>shatai adjust rotation</strong>
+			
+			<em>boolean</em>
+			 -- If true, applies shatai rotation.
+		</li>
+<li>
+			<strong>shatai adjust tsume</strong>
+			
+			<em>boolean</em>
+			 -- If true, adjusts shatai tsume.
+		</li>
+<li>
+			<strong>shatai degree angle</strong>
+			
+			<em>fixed</em>
+			 -- The shatai lens angle (in degrees).
+		</li>
+<li>
+			<strong>shatai magnification</strong>
+			
+			<em>fixed</em>
+			 -- The amount (as a percentage) of shatai obliquing to apply.
+		</li>
+<li>
+			<strong>single word justification</strong>
+			
+			<em>left align / center align / right align / fully justified</em>
+			 -- The alignment to use for lines that contain a single word.
+		</li>
+<li>
+			<strong>skew</strong>
+			
+			<em>fixed</em>
+			 -- The skew angle of the story.
+		</li>
+<li>
+			<strong>space after</strong>
+			
+			<em>number | string</em>
+			 -- The height of the paragraph space below.
+		</li>
+<li>
+			<strong>space before</strong>
+			
+			<em>number | string</em>
+			 -- The height of the paragraph space above.
+		</li>
+<li>
+			<strong>span column min space after</strong>
+			
+			<em>number | string</em>
+			 -- The minimum space after a span or a split column
+		</li>
+<li>
+			<strong>span column min space before</strong>
+			
+			<em>number | string</em>
+			 -- The minimum space before a span or a split column
+		</li>
+<li>
+			<strong>span column type</strong>
+			
+			<em>single column / span columns / split columns</em>
+			 -- Whether a paragraph should be a single column, span columns or split columns
+		</li>
+<li>
+			<strong>span split column count</strong>
+			
+			<em>anything</em>
+			 -- The number of columns a paragraph spans or the number of split columns. Can return: small integer (1 - 40) or all.
+		</li>
+<li>
+			<strong>split column inside gutter</strong>
+			
+			<em>number | string</em>
+			 -- The inside gutter if the paragraph splits columns
+		</li>
+<li>
+			<strong>split column outside gutter</strong>
+			
+			<em>number | string</em>
+			 -- The outside gutter if the paragraph splits columns
+		</li>
+<li>
+			<strong>start paragraph</strong>
+			
+			<em>anywhere / next column / next frame / next page / next odd page / next even page</em>
+			 -- The location at which to start the paragraph.
+		</li>
+<li>
+			<strong>story preferences</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/story_preference.html">story preference</a></em>
+			 -- Story preference settings.
+		</li>
+<li>
+			<strong>story title</strong>
+			
+			<em>string</em>
+			 -- Title for this InCopy story.
+		</li>
+<li>
+			<strong>story type</strong>
+			(r/o)
+			<em>regular story / toc story / indexing story</em>
+			 -- The type of story.
+		</li>
+<li>
+			<strong>strike through color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the strikethrough stroke. Can return: swatch or string.
+		</li>
+<li>
+			<strong>strike through gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the strikethrough stroke. Can return: swatch or string.
+		</li>
+<li>
+			<strong>strike through gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the strikethrough stroke will overprint. Note: Valid when strike through type is not solid.
+		</li>
+<li>
+			<strong>strike through gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the strikethrough stroke gap color. (Range: 0 to 100) Note: Valid when strike through type is not solid.
+		</li>
+<li>
+			<strong>strike through offset</strong>
+			
+			<em>number | string</em>
+			 -- The amount by which to offset the strikethrough stroke from the text baseline.
+		</li>
+<li>
+			<strong>strike through overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the strikethrough stroke will overprint.
+		</li>
+<li>
+			<strong>strike through tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the strikethrough stroke. (Range: 0 to 100)
+		</li>
+<li>
+			<strong>strike through type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the strikethrough stroke. Can return: stroke style or string.
+		</li>
+<li>
+			<strong>strike through weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the strikethrough stroke.
+		</li>
+<li>
+			<strong>strike thru</strong>
+			
+			<em>boolean</em>
+			 -- If true, draws a strikethrough line through the text.
+		</li>
+<li>
+			<strong>stroke alignment</strong>
+			
+			<em>center alignment / outside alignment</em>
+			 -- The stroke alignment applied to the text.
+		</li>
+<li>
+			<strong>stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke of the story. Can also accept: string.
+		</li>
+<li>
+			<strong>stroke tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the stroke color of the story. (To specify a tint percentage, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)
+		</li>
+<li>
+			<strong>stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight applied to the characters of the text.
+		</li>
+<li>
+			<strong>style overridden</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the applied style has been overridden with additional attributes.
+		</li>
+<li>
+			<strong>tab list</strong>
+			
+			<em>list of anything</em>
+			 -- A list of the tab stops in the paragraph. Can return: list of record.
+		</li>
+<li>
+			<strong>tatechuyoko</strong>
+			
+			<em>boolean</em>
+			 -- If true, makes the character horizontal in vertical text.
+		</li>
+<li>
+			<strong>tatechuyoko X offset</strong>
+			
+			<em>fixed</em>
+			 -- The horizontal offset for horizontal characters in vertical text.
+		</li>
+<li>
+			<strong>tatechuyoko Y offset</strong>
+			
+			<em>fixed</em>
+			 -- The vertical offset for horizontal characters in vertical text.
+		</li>
+<li>
+			<strong>text containers</strong>
+			(r/o)
+			<em>list of reference</em>
+			 -- Array of text frames or text paths. Can return: list of text frames or text paths.
+		</li>
+<li>
+			<strong>track changes</strong>
+			
+			<em>boolean</em>
+			 -- If true, track changes is turned on.
+		</li>
+<li>
+			<strong>tracking</strong>
+			
+			<em>fixed</em>
+			 -- The amount by which to loosen or tighten a block of text, specified in thousands of an em.
+		</li>
+<li>
+			<strong>trailing aki</strong>
+			
+			<em>fixed</em>
+			 -- The amount of space after each character.
+		</li>
+<li>
+			<strong>treat ideographic space as space</strong>
+			
+			<em>boolean</em>
+			 -- If true, ideographic spaces will not wrap to the next line like text characters.
+		</li>
+<li>
+			<strong>tsume</strong>
+			
+			<em>fixed</em>
+			 -- The amount of horizontal character compression.
+		</li>
+<li>
+			<strong>underline</strong>
+			
+			<em>boolean</em>
+			 -- If true, underlines the text.
+		</li>
+<li>
+			<strong>underline color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the underline stroke. . Can return: swatch or string.
+		</li>
+<li>
+			<strong>underline gap color</strong>
+			
+			<em>anything</em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the gap of the underline stroke. Note: Valid when underline type is not solid. Can return: swatch or string.
+		</li>
+<li>
+			<strong>underline gap overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the gap color of the underline stroke will overprint.
+		</li>
+<li>
+			<strong>underline gap tint</strong>
+			
+			<em>fixed</em>
+			 -- The tint (as a percentage) of the gap color of the underline stroke. (Range: 0 to 100) Note: Valid when underline type is not solid.
+		</li>
+<li>
+			<strong>underline offset</strong>
+			
+			<em>number | string</em>
+			 -- The amount by which to offset the underline from the text baseline.
+		</li>
+<li>
+			<strong>underline overprint</strong>
+			
+			<em>boolean</em>
+			 -- If true, the underline stroke color will overprint.
+		</li>
+<li>
+			<strong>underline tint</strong>
+			
+			<em>fixed</em>
+			 -- The underline stroke tint (as a percentage). (Range: 0 to 100)
+		</li>
+<li>
+			<strong>underline type</strong>
+			
+			<em>anything</em>
+			 -- The stroke type of the underline stroke. Can return: stroke style or string.
+		</li>
+<li>
+			<strong>underline weight</strong>
+			
+			<em>number | string</em>
+			 -- The stroke weight of the underline stroke.
+		</li>
+<li>
+			<strong>vertical scale</strong>
+			
+			<em>fixed</em>
+			 -- The vertical scaling applied to the story.
+		</li>
+<li>
+			<strong>warichu</strong>
+			
+			<em>boolean</em>
+			 -- If true, turns on warichu.
+		</li>
+<li>
+			<strong>warichu alignment</strong>
+			
+			<em>auto / left align / center align / right align / fully justified / left justified / center justified / right justified</em>
+			 -- The warichu alignment.
+		</li>
+<li>
+			<strong>warichu chars after break</strong>
+			
+			<em>small integer</em>
+			 -- The minimum number of characters allowed after a line break. 
+		</li>
+<li>
+			<strong>warichu chars before break</strong>
+			
+			<em>small integer</em>
+			 -- The minimum number of characters allowed before a line break.
+		</li>
+<li>
+			<strong>warichu line spacing</strong>
+			
+			<em>fixed</em>
+			 -- The gap between lines of warichu characters.
+		</li>
+<li>
+			<strong>warichu lines</strong>
+			
+			<em>small integer</em>
+			 -- The number of lines of warichu within a single normal line.
+		</li>
+<li>
+			<strong>warichu size</strong>
+			
+			<em>fixed</em>
+			 -- The amount (as a percentage) to scale parent text size to determine warichu size.
+		</li>
+<li>
+			<strong>x offset diacritic</strong>
+			
+			<em>fixed</em>
+			 -- The x (horizontal) offset for diacritic adjustment.
+		</li>
+<li>
+			<strong>y offset diacritic</strong>
+			
+			<em>fixed</em>
+			 -- The y (vertical) offset for diacritic adjustment.
+		</li>
+<li>
+			<strong>after place</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a story is placed. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before place</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a story is placed. This event bubbles. This event is cancelable.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Interactive_Elements_Suite/classes/button.html">buttons</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/change.html">changes</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/character.html">characters</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/EPSText.html">EPSTexts</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/footnote.html">footnotes</a></strong></span> , <span> <strong><a href="../../Interactive_Elements_Suite/classes/form_field.html">form fields</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/graphic_line.html">graphic lines</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/group.html">groups</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/hidden_text.html">hidden texts</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/insertion_point.html">insertion points</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/line.html">lines</a></strong></span> , <span> <strong><a href="../../Interactive_Elements_Suite/classes/multi_state_object.html">multi state objects</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/nested_grep_style.html">nested grep styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/nested_line_style.html">nested line styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/nested_style.html">nested styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/note.html">notes</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/oval.html">ovals</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/page_item.html">page items</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/paragraph.html">paragraphs</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/polygon.html">polygons</a></strong></span> , <span> <strong><a href="../../Preferences_Suite/classes/preference.html">preferences</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/rectangle.html">rectangles</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/spline_item.html">spline items</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/tab_stop.html">tab stops</a></strong></span> , <span> <strong><a href="../../Tables_Suite/classes/table.html">tables</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text.html">text</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_column.html">text columns</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_frame.html">text frames</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_style_range.html">text style ranges</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_variable_instance.html">text variable instances</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/word.html">words</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Interactive_Elements_Suite/classes/button.html">button</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/change.html">change</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/character.html">character</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/EPSText.html">EPSText</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/footnote.html">footnote</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Interactive_Elements_Suite/classes/form_field.html">form field</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/graphic_line.html">graphic line</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/group.html">group</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/hidden_text.html">hidden text</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/insertion_point.html">insertion point</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/line.html">line</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Interactive_Elements_Suite/classes/multi_state_object.html">multi state object</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/nested_grep_style.html">nested grep style</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/nested_line_style.html">nested line style</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/nested_style.html">nested style</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/note.html">note</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/oval.html">oval</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/page_item.html">page item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/paragraph.html">paragraph</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/polygon.html">polygon</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Preferences_Suite/classes/preference.html">preference</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/rectangle.html">rectangle</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/spline_item.html">spline item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/tab_stop.html">tab stop</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Tables_Suite/classes/table.html">table</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text.html">text</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_column.html">text column</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_frame.html">text frame</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_style_range.html">text style range</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_variable_instance.html">text variable instance</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/word.html">word</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Inherited by:
+			<ul>
+				<li>
+					<strong><a href="../../XML_Suite/classes/xml_story.html">xml story</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Datamerge_Suite/classes/data_merge_text_placeholder.html">data merge text placeholder</a></strong>
+					(<em><a href="../../index.html#suite_Datamerge_Suite">Datamerge Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Basics_Suite/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/story.html">story</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text.html">text</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text_frame.html">text frame</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text_path.html">text path</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../XML_Suite/classes/XML_element.html">XML element</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>XML element</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> XML element</h1>
+
+<div id="view"><a href="../../XML_Suite/classes/XML_element.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>An XML element.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>XML elements</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong><a href="../../FULL/classes/XML_item.html">XML item</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>contents</strong>
+			
+			<em>anything</em>
+			 -- The contents of the text. Can return: string or auto page number/next page number/previous page number/section marker/bullet character/copyright symbol/degree symbol/ellipsis character/forced line break/paragraph symbol/registered trademark/section sym...
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the XML element.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the XML element within its containing object.
+		</li>
+<li>
+			<strong>markup tag</strong>
+			
+			<em><a href="../../FULL/classes/XML_tag.html">XML tag</a></em>
+			 -- The XML tag applied to the element. Can also accept: string.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/XML_element.html">XML element</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the XML element (a document or XML element). Can return: document or XML element.
+		</li>
+<li>
+			<strong>parent story</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/story.html">story</a></em>
+			 -- The story that contains the text.
+		</li>
+<li>
+			<strong>story offset</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/insertion_point.html">insertion point</a></em>
+			 -- The insertion point before the table in the story containing the table.
+		</li>
+<li>
+			<strong>XML content</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The text content or page item referred to by the element. Can return: text, story, page item, movie, sound, graphic, table or cell.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../FULL/classes/cell.html">cells</a></strong></span> , <span> <strong><a href="../../FULL/classes/character.html">characters</a></strong></span> , <span> <strong><a href="../../FULL/classes/EPS.html">EPSs</a></strong></span> , <span> <strong><a href="../../FULL/classes/graphic.html">graphics</a></strong></span> , <span> <strong><a href="../../FULL/classes/image.html">images</a></strong></span> , <span> <strong><a href="../../FULL/classes/insertion_point.html">insertion points</a></strong></span> , <span> <strong><a href="../../FULL/classes/line.html">lines</a></strong></span> , <span> <strong><a href="../../FULL/classes/page_item.html">page items</a></strong></span> , <span> <strong><a href="../../FULL/classes/paragraph.html">paragraphs</a></strong></span> , <span> <strong><a href="../../FULL/classes/PDF.html">PDFs</a></strong></span> , <span> <strong><a href="../../FULL/classes/PICT.html">PICTs</a></strong></span> , <span> <strong><a href="../../FULL/classes/story.html">stories</a></strong></span> , <span> <strong><a href="../../FULL/classes/table.html">tables</a></strong></span> , <span> <strong><a href="../../FULL/classes/text.html">text</a></strong></span> , <span> <strong><a href="../../FULL/classes/text_column.html">text columns</a></strong></span> , <span> <strong><a href="../../FULL/classes/text_style_range.html">text style ranges</a></strong></span> , <span> <strong><a href="../../FULL/classes/WMF.html">WMFs</a></strong></span> , <span> <strong><a href="../../FULL/classes/word.html">words</a></strong></span> , <span> <strong><a href="../../FULL/classes/XML_attribute.html">XML attributes</a></strong></span> , <span> <strong><a href="../../FULL/classes/XML_comment.html">XML comments</a></strong></span> , <span> <strong><a href="../../FULL/classes/XML_element.html">XML elements</a></strong></span> , <span> <strong><a href="../../FULL/classes/XML_instruction.html">XML instructions</a></strong></span> , <span> <strong><a href="../../FULL/classes/XML_item.html">XML Items</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/cell.html">cell</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/character.html">character</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/EPS.html">EPS</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/graphic.html">graphic</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/image.html">image</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/insertion_point.html">insertion point</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/line.html">line</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/page_item.html">page item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/paragraph.html">paragraph</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/PDF.html">PDF</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/PICT.html">PICT</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/story.html">story</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/table.html">table</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/text.html">text</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/text_column.html">text column</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/text_style_range.html">text style range</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/WMF.html">WMF</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/word.html">word</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/XML_attribute.html">XML attribute</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/XML_comment.html">XML comment</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/XML_element.html">XML element</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/XML_instruction.html">XML instruction</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/XML_item.html">XML item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/validation_error.html">validation error</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_attribute.html">XML attribute</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_element.html">XML element</a></strong>
+					(<em><a href="../../index.html#suite_XML_Suite">XML Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>XML import preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> XML import preference</h1>
+
+<div id="view"><a href="../../Preferences_Suite/classes/XML_import_preference.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>XML import preferences.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>allow transform</strong>
+			
+			<em>boolean</em>
+			 -- If true, transforms the XML using an XSLT file.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>create link to XML</strong>
+			
+			<em>boolean</em>
+			 -- If true, creates a link to the imported XML file. If false, embeds the file.
+		</li>
+<li>
+			<strong>ignore unmatched incoming</strong>
+			
+			<em>boolean</em>
+			 -- If true, ignores elements that do not match the existing structure. Note: Valid only when import style is merge.
+		</li>
+<li>
+			<strong>ignore whitespace</strong>
+			
+			<em>boolean</em>
+			 -- If true, leaves existing content in place if the matching XML content contains only whitespace characters such as a carriage return or a tab character. Note: Valid only when import style is merge. 
+		</li>
+<li>
+			<strong>import CALS tables</strong>
+			
+			<em>boolean</em>
+			 -- If true, imports CALS tables as InDesign tables.
+		</li>
+<li>
+			<strong>import style</strong>
+			
+			<em>append import / merge import</em>
+			 -- The style of incorporating imported XML content into the document.
+		</li>
+<li>
+			<strong>import text into tables</strong>
+			
+			<em>boolean</em>
+			 -- If true, imports text into tables if tags match placeholder tables and their cells. Note: Valid only when import style is merge.
+		</li>
+<li>
+			<strong>import to selected</strong>
+			
+			<em>boolean</em>
+			 -- If true, imports into the selected XML element. If false, imports at the root element.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/XML_import_preference.html">XML import preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the XML import preference (a application or document). Can return: application or document.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>remove unmatched existing</strong>
+			
+			<em>boolean</em>
+			 -- If true, deletes existing elements or placeholders in the document that do not have matches in the XML file. Note: Valid only when import style is merge.
+		</li>
+<li>
+			<strong>repeat text elements</strong>
+			
+			<em>boolean</em>
+			 -- If true, repeating text elements inherit the formatting applied to placeholder text. Note: Valid only when import style is merge.
+		</li>
+<li>
+			<strong>transform filename</strong>
+			
+			<em>anything</em>
+			 -- The name of the XSLT file. Note: Valid when allow transform is true. Can return: alias or string or stylesheet in XML.
+		</li>
+<li>
+			<strong>transform parameters</strong>
+			
+			<em>list of anything</em>
+			 -- Stylesheet parameters as a list of name/value pairs in the format [[name, value], [name, value], ...]. Can return: Ordered list containing name:string, value:string.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/XML_import_preference.html">XML import preference</a></strong>
+					(<em><a href="../../index.html#suite_Preferences_Suite">Preferences Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>text wrap preference</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> text wrap preference</h1>
+
+<div id="view"><a href="../../Layout_Suite/classes/text_wrap_preference.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Text wrap preferences.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>apply to master page only</strong>
+			
+			<em>boolean</em>
+			 -- If true, text wraps on the master spread apply to that spread only, and not to any pages the master spread has been applied to.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>contour options</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/contour_option.html">contour option</a></em>
+			 -- The contour of the text wrap. Valid only when when text wrap type is contour.
+		</li>
+<li>
+			<strong>inverse</strong>
+			
+			<em>boolean</em>
+			 -- If true, inverts the text wrap.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/text_wrap_preference.html">text wrap preference</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the text wrap preference (a page item, form field, multi state object, button, media item, sound, movie, EPSText, spline item, polygon, graphic line, rectangle, oval, graphic, imported page, PICT, WMF, PDF, EPS, image, group, text frame, ...
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>text wrap mode</strong>
+			
+			<em>none / jump object text wrap / next column text wrap / bounding box text wrap / contour</em>
+			 -- The text wrap mode. 
+		</li>
+<li>
+			<strong>text wrap offset</strong>
+			
+			<em>anything</em>
+			 -- The minimum space between text and the edges of the wrapped object. The format for defining text wrap offset values depends on the text wrap type. If text wrap type is jump object text wrap, specify 2 values in the format [top, bottom]. If text wrap ty...
+		</li>
+<li>
+			<strong>text wrap side</strong>
+			
+			<em>both sides / left side / right side / side towards spine / side away from spine / largest area</em>
+			 -- Text wrap side options.
+		</li>
+<li>
+			<strong>user modified wrap</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the text wrap path has been explicitly modified by the user.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../FULL/classes/path.html">paths</a></strong></span> , <span> <strong><a href="../../FULL/classes/preference.html">preferences</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/path.html">path</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/preference.html">preference</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/contour_option.html">contour option</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/document.html">document</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/object_style.html">object style</a></strong>
+					(<em><a href="../../index.html#suite_Object_Styles_Suite">Object Styles Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/page_item.html">page item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/text_wrap_preference.html">text wrap preference</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

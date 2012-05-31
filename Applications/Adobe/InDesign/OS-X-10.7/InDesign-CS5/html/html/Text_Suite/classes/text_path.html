@@ -1,0 +1,273 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>text path</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> text path</h1>
+
+<div id="view"><a href="../../FULL/classes/text_path.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A text object that is on a path.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>text paths</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>center bracket</strong>
+			(r/o)
+			<em>fixed</em>
+			 -- The halfway point between the start bracket and the end bracket.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>contents</strong>
+			
+			<em>anything</em>
+			 -- The contents of the text frame. Can return: string, placeholder text or auto page number/next page number/previous page number/section marker/bullet character/copyright symbol/degree symbol/ellipsis character/forced line break/paragraph symbol/register...
+		</li>
+<li>
+			<strong>end bracket</strong>
+			
+			<em>fixed</em>
+			 -- The end of the type on a path. Note: Additional text becomes overset text unless the text is linked to another path or text frame.
+		</li>
+<li>
+			<strong>end text frame</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The last text frame in the thread. Can return: text frame or text path.
+		</li>
+<li>
+			<strong>flip path effect</strong>
+			
+			<em>not flipped / flipped / undefined flip value</em>
+			 -- The flip effect applied to the type on a path.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the text path.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the text path within its containing object.
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the text path; this is an alias to the text path's label property.
+		</li>
+<li>
+			<strong>next text frame</strong>
+			
+			<em>reference</em>
+			 -- The next text frame in the thread. Can return: text frame or text path. Can also accept: nothing.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/text_path.html">text path</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>overflows</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the story has overset text.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the text path (a spline item, polygon, graphic line, rectangle, oval, text frame or EPSText). Can return: spline item, polygon, graphic line, rectangle, oval, text frame or EPSText.
+		</li>
+<li>
+			<strong>parent story</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/story.html">story</a></em>
+			 -- The story that contains the text.
+		</li>
+<li>
+			<strong>path alignment</strong>
+			
+			<em>top path alignment / bottom path alignment / center path alignment</em>
+			 -- The alignment of the type on a path.
+		</li>
+<li>
+			<strong>path effect</strong>
+			
+			<em>rainbow path effect / skew path effect / ribbon path effect / stair step path effect / gravity path effect</em>
+			 -- The effect applied to the type on a path.
+		</li>
+<li>
+			<strong>path spacing</strong>
+			
+			<em>integer</em>
+			 -- The spacing applied to the type on a path.
+		</li>
+<li>
+			<strong>previous text frame</strong>
+			
+			<em>reference</em>
+			 -- The previous text frame in the thread. Can return: text frame or text path. Can also accept: nothing.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>start bracket</strong>
+			
+			<em>fixed</em>
+			 -- The location of the start of the type on the path, expressed in points. Note: 0 is the first point on the path.
+		</li>
+<li>
+			<strong>start text frame</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The first text frame in the thread. Can return: text frame or text path.
+		</li>
+<li>
+			<strong>text alignment</strong>
+			
+			<em>ascender text alignment / descender text alignment / center text alignment / baseline text alignment / above right em box text alignment / below left em box text alignment / above right icf box text alignment / below left icf box text alignment</em>
+			 -- The alignment applied to the type on a path.
+		</li>
+<li>
+			<strong>text frame index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the text frame within the story.
+		</li>
+<li>
+			<strong>after place</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a text path is placed. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before place</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a text path is placed. This event bubbles. This event is cancelable.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Text_Suite/classes/character.html">characters</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../Basics_Suite/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/insertion_point.html">insertion points</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/line.html">lines</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/paragraph.html">paragraphs</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text.html">text</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_column.html">text columns</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text_style_range.html">text style ranges</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/word.html">words</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Text_Suite/classes/character.html">character</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Basics_Suite/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/insertion_point.html">insertion point</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/line.html">line</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/paragraph.html">paragraph</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text.html">text</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_column.html">text column</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text_style_range.html">text style range</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/word.html">word</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Layout_Suite/classes/EPSText.html">EPSText</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/spline_item.html">spline item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text_frame.html">text frame</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text_path.html">text path</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

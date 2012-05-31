@@ -1,0 +1,81 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>place</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Command</sup> place</h1>
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Places the file.</p>
+
+<ul class="desc">
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<h2>Parameters</h2>
+<ul>
+	<li>
+		<em>alias | string</em>
+		 -- The file to place. Supported by the following objects: movie, sound.
+	</li>
+	<li>
+		[<strong>on</strong> <em>reference</em>]
+		 -- Where to place the file. Can accept: spread, page, master spread, page item or graphic.
+	</li>
+<li>
+		[<strong>place point</strong> <em>number | string</em>]
+		 -- The point at which to place (only applicable if you are telling a page or spread to place)
+	</li>
+<li>
+		[<strong>destination layer</strong> <em><a href="../../Layout_Suite/classes/layer.html">layer</a></em>]
+		 -- The layer on which to place (only applicable if you are telling a page or spread to place)
+	</li>
+<li>
+		[<strong>showing options</strong> <em>boolean</em>]
+		 -- Whether to display the import options dialog. Can accept: boolean (Default: FALSE).
+	</li>
+<li>
+		[<strong>autoflowing</strong> <em>boolean</em>]
+		 -- Whether to autoflow placed text. Can accept: boolean (Default: FALSE).
+	</li>
+<li>
+		[<strong>with properties</strong> <em>record</em>]
+		 -- Initial values for properties of the placed object(s)
+	</li>
+</ul>
+
+
+
+
+	<h2>Result</h2>
+	
+	<ul>
+		<li><em>list of reference</em>
+		 -- The placed file. Can return: list of page items, graphics, movies, sounds, stories or texts.
+		</li>
+	</ul>
+
+
+
+</div>
+
+</body>
+</html>

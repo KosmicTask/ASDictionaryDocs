@@ -1,0 +1,441 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>sound</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> sound</h1>
+
+<div id="view"><a href="../../FULL/classes/sound.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A sound clip.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>sounds</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong><a href="../../Layout_Suite/classes/media_item.html">media item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				 &#8594; 
+					<strong><a href="../../Layout_Suite/classes/page_item.html">page item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>absolute flip</strong>
+			
+			<em>none / horizontal / vertical / horizontal and vertical / both</em>
+			 -- Indicates whether the sound has been flipped independently of its parent object and, if yes, the direction in which the sound was flipped.
+		</li>
+<li>
+			<strong>absolute horizontal scale</strong>
+			
+			<em>fixed</em>
+			 -- The horizontal scale of the sound relative to its containing object.
+		</li>
+<li>
+			<strong>absolute rotation angle</strong>
+			
+			<em>fixed</em>
+			 -- The rotation angle of the sound relative to its containing object. (Range: -360 to 360)
+		</li>
+<li>
+			<strong>absolute shear angle</strong>
+			
+			<em>fixed</em>
+			 -- The skewing angle of the sound relative to its containing object. (Range: -360 to 360)
+		</li>
+<li>
+			<strong>absolute vertical scale</strong>
+			
+			<em>fixed</em>
+			 -- The vertical scale of the sound relative to its containing object.
+		</li>
+<li>
+			<strong>all graphics</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/graphic.html">graphic</a></em>
+			 -- Lists all graphics contained by the sound.
+		</li>
+<li>
+			<strong>all page items</strong>
+			(r/o)
+			<em>list of <a href="../../Layout_Suite/classes/page_item.html">page item</a></em>
+			 -- Lists all page items contained by the sound.
+		</li>
+<li>
+			<strong>applied object style</strong>
+			
+			<em><a href="../../Object_Styles_Suite/classes/object_style.html">object style</a></em>
+			 -- The object style applied to the sound.
+		</li>
+<li>
+			<strong>associated XML element</strong>
+			(r/o)
+			<em><a href="../../XML_Suite/classes/XML_item.html">XML item</a></em>
+			 -- The XML element associated with the sound.
+		</li>
+<li>
+			<strong>content transparency settings</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/content_transparency_setting.html">content transparency setting</a></em>
+			 -- Transparency settings for the content of the sound.
+		</li>
+<li>
+			<strong>description</strong>
+			
+			<em>string</em>
+			 -- The description of the sound.
+		</li>
+<li>
+			<strong>do not print poster</strong>
+			
+			<em>boolean</em>
+			 -- If true, the sound poster does not print with the document.
+		</li>
+<li>
+			<strong>embed in PDF</strong>
+			
+			<em>boolean</em>
+			 -- If true, the file is embedded in the PDF. If false, the file is linked to the PDF. Note: To embed movie files, acrobat compatibility must be acrobat 6 or higher.
+		</li>
+<li>
+			<strong>end join</strong>
+			
+			<em>miter end join / round end join / bevel end join</em>
+			 -- The corner join applied to the sound.
+		</li>
+<li>
+			<strong>file path</strong>
+			
+			<em>string</em>
+			 -- The file path (colon delimited on the Mac OS). Can also accept: alias or string.
+		</li>
+<li>
+			<strong>fill color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the fill of the sound. . Can also accept: string.
+		</li>
+<li>
+			<strong>fill tint</strong>
+			
+			<em>fixed</em>
+			 -- The percent of tint to use in the sound's fill color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)
+		</li>
+<li>
+			<strong>fill transparency settings</strong>
+			(r/o)
+			<em><a href="../../Preferences_Suite/classes/fill_transparency_setting.html">fill transparency setting</a></em>
+			 -- Transparency settings for the fill applied to the sound.
+		</li>
+<li>
+			<strong>geometric bounds</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The bounds of the sound excluding the stroke width, in the format [y1, x1, y2, x2], which give the coordinates of the top-left and bottom-right corners of the bounding box.
+		</li>
+<li>
+			<strong>gradient fill angle</strong>
+			
+			<em>fixed</em>
+			 -- The angle of a linear gradient applied to the fill of the sound. (Range: -180 to 180)
+		</li>
+<li>
+			<strong>gradient fill length</strong>
+			
+			<em>number | string</em>
+			 -- The length (for a linear gradient) or radius (for a radial gradient) applied to the fill of the sound.
+		</li>
+<li>
+			<strong>gradient fill start</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the fill of the sound, in the format [x, y].
+		</li>
+<li>
+			<strong>gradient stroke angle</strong>
+			
+			<em>fixed</em>
+			 -- The angle of a linear gradient applied to the stroke of the sound. (Range: -180 to 180)
+		</li>
+<li>
+			<strong>gradient stroke length</strong>
+			
+			<em>number | string</em>
+			 -- The length (for a linear gradient) or radius (for a radial gradient) applied to the stroke of the sound.
+		</li>
+<li>
+			<strong>gradient stroke start</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The starting point (in page coordinates) of a gradient applied to the stroke of the sound, in the format [x, y].
+		</li>
+<li>
+			<strong>horizontal scale</strong>
+			
+			<em>fixed</em>
+			 -- The horizontal scaling applied to the sound.
+		</li>
+<li>
+			<strong>id</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The unique ID of the sound.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the sound within its containing object.
+		</li>
+<li>
+			<strong>item layer</strong>
+			
+			<em><a href="../../Layout_Suite/classes/layer.html">layer</a></em>
+			 -- The layer that the sound is on.
+		</li>
+<li>
+			<strong>item link</strong>
+			(r/o)
+			<em><a href="../../Links_Suite/classes/link.html">link</a></em>
+			 -- The source file of the link.
+		</li>
+<li>
+			<strong>local display setting</strong>
+			
+			<em>high quality / typical / optimized / default</em>
+			 -- Display performance options for the sound.
+		</li>
+<li>
+			<strong>locked</strong>
+			
+			<em>boolean</em>
+			 -- If true, the sound is locked.
+		</li>
+<li>
+			<strong>name</strong>
+			
+			<em>string</em>
+			 -- The name of the sound.
+		</li>
+<li>
+			<strong>nonprinting</strong>
+			
+			<em>boolean</em>
+			 -- If true, the sound does not print.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../Interactive_Elements_Suite/classes/sound.html">sound</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>overprint fill</strong>
+			
+			<em>boolean</em>
+			 -- If true, the sound's fill color overprints any underlying objects. If false, the fill color knocks out the underlying colors.
+		</li>
+<li>
+			<strong>overprint stroke</strong>
+			
+			<em>boolean</em>
+			 -- If true, the sound's stroke color overprints any underlying objects. If false, the stroke color knocks out the  underlying colors.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the sound (a spline item, polygon, graphic line, rectangle or oval). Can return: spline item, polygon, graphic line, rectangle or oval.
+		</li>
+<li>
+			<strong>play on page turn</strong>
+			
+			<em>boolean</em>
+			 -- If true, the movie plays automatically when a user views the page that contains the movie poster in the PDF document.
+		</li>
+<li>
+			<strong>poster file</strong>
+			
+			<em>string</em>
+			 -- The poster file.
+		</li>
+<li>
+			<strong>rotation angle</strong>
+			
+			<em>fixed</em>
+			 -- The rotatation angle of the sound. (Range: -360 to 360) 
+		</li>
+<li>
+			<strong>shear angle</strong>
+			
+			<em>fixed</em>
+			 -- The skewing angle applied to the sound. (Range: -360 to 360)
+		</li>
+<li>
+			<strong>sound loop</strong>
+			
+			<em>boolean</em>
+			 -- If true, sound loops forever (SWF only).
+		</li>
+<li>
+			<strong>sound poster type</strong>
+			
+			<em>none / standard / proxy image</em>
+			 -- The type of sound poster.
+		</li>
+<li>
+			<strong>stop on page turn</strong>
+			
+			<em>boolean</em>
+			 -- If true, sounds stops playing when its page turns.
+		</li>
+<li>
+			<strong>stroke alignment</strong>
+			
+			<em>center alignment / inside alignment / outside alignment</em>
+			 -- The stroke alignment applied to the sound.
+		</li>
+<li>
+			<strong>stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/swatch.html">swatch</a></em>
+			 -- The swatch (color, gradient, tint, or mixed ink) applied to the stroke of the sound. Can also accept: string.
+		</li>
+<li>
+			<strong>stroke corner adjustment</strong>
+			
+			<em>none / dashes / gaps / dashes and gaps</em>
+			 -- The corner adjustment applied to the sound.
+		</li>
+<li>
+			<strong>stroke dash and gap</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The dash and gap measurements that define the pattern of a custom dashed line. Define up to six values (in points) in the format [dash1, gap1, dash2, gap2, dash3, gap3].
+		</li>
+<li>
+			<strong>stroke weight</strong>
+			
+			<em>number | string</em>
+			 -- The weight (in points) to apply to the sound's stroke.
+		</li>
+<li>
+			<strong>vertical scale</strong>
+			
+			<em>fixed</em>
+			 -- The vertical scaling applied to the sound.
+		</li>
+<li>
+			<strong>visible</strong>
+			
+			<em>boolean</em>
+			 -- If true, the sound is visible.
+		</li>
+<li>
+			<strong>visible bounds</strong>
+			
+			<em>list of number | list of string</em>
+			 -- The bounds of the sound including the stroke width, in the format [y1, x1, y2, x2], which give the coordinates of the top-left and bottom-right corners of the bounding box.
+		</li>
+<li>
+			<strong>after attribute changed</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched when the value of a property changes on this sound. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>after place</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched after a sound is placed. This event bubbles. This event is not cancelable.
+		</li>
+<li>
+			<strong>before place</strong>
+			(r/o)
+			<em>string</em>
+			 -- Dispatched before a sound is placed. This event bubbles. This event is cancelable.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Layout_Suite/classes/graphic.html">graphics</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/image.html">images</a></strong></span> , <span> <strong><a href="../../Layout_Suite/classes/page_item.html">page items</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Layout_Suite/classes/graphic.html">graphic</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/image.html">image</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../Layout_Suite/classes/page_item.html">page item</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/sound.html">sound</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Interactive_Elements_Suite/classes/sound_behavior.html">sound behavior</a></strong>
+					(<em><a href="../../index.html#suite_Interactive_Elements_Suite">Interactive Elements Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Layout_Suite/classes/spline_item.html">spline item</a></strong>
+					(<em><a href="../../index.html#suite_Layout_Suite">Layout Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

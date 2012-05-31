@@ -1,0 +1,297 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>book</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> book</h1>
+
+<div id="view"><a href="../../Book_Suite/classes/book.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A book.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>books</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Book_Suite">Book Suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong>&lt;class ROOT&gt;</strong>
+					(<em>datatype</em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>automatic document conversion</strong>
+			
+			<em>boolean</em>
+			 -- If true, automatically converts the book content object during repagination and synchronization.
+		</li>
+<li>
+			<strong>automatic pagination</strong>
+			
+			<em>boolean</em>
+			 -- If true, automatically updates page numbers when pages in book content files are added, deleted, or rearranged.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class descriptor type.
+		</li>
+<li>
+			<strong>file path</strong>
+			(r/o)
+			<em>alias | string</em>
+			 -- The full path to the file.
+		</li>
+<li>
+			<strong>full name</strong>
+			(r/o)
+			<em>alias | string</em>
+			 -- The full path to the book, including the name of the book.
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The index of the book within its containing object.
+		</li>
+<li>
+			<strong>insert blank page</strong>
+			
+			<em>boolean</em>
+			 -- If true, inserts a blank page as necessary to fill in page number gaps caused by the odd or even specification set in the repagination option. 
+		</li>
+<li>
+			<strong>label</strong>
+			
+			<em>string</em>
+			 -- A property that can be set to any string.
+		</li>
+<li>
+			<strong>merge identical layers</strong>
+			
+			<em>boolean</em>
+			 -- If true, merges identically named layers when exporting to PDF.
+		</li>
+<li>
+			<strong>modified</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the book has been modified since it was last saved.
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>string</em>
+			 -- The name of the book.
+		</li>
+<li>
+			<strong>object reference</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/book.html">book</a></em>
+			 -- An object reference for the object.
+		</li>
+<li>
+			<strong>parent</strong>
+			(r/o)
+			<em>reference</em>
+			 -- The parent of the book (a application).
+		</li>
+<li>
+			<strong>preflight book options</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/preflight_book_option.html">preflight book option</a></em>
+			 -- Preflight book option settings.
+		</li>
+<li>
+			<strong>print preferences</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/print_preference.html">print preference</a></em>
+			 -- Print preference settings.
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- A property that allows setting of several properties at the same time.
+		</li>
+<li>
+			<strong>repagination option</strong>
+			
+			<em>next page / next odd page / next even page</em>
+			 -- Page numbering options for book content objects within the book.
+		</li>
+<li>
+			<strong>saved</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- If true, the book has been saved since it was created.
+		</li>
+<li>
+			<strong>smart match style groups</strong>
+			
+			<em>match style path / match style name</em>
+			 -- How to match styles with same name while synchronizing a book.
+		</li>
+<li>
+			<strong>style source document</strong>
+			
+			<em>reference</em>
+			 -- Current style source document. Can return: document or book content.
+		</li>
+<li>
+			<strong>synchronize bullet numbering list</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize bullets and numbering.
+		</li>
+<li>
+			<strong>synchronize cell style</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize cell styles.
+		</li>
+<li>
+			<strong>synchronize character style</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize character styles.
+		</li>
+<li>
+			<strong>synchronize conditional text</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize conditional text.
+		</li>
+<li>
+			<strong>synchronize master page</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize master pages.
+		</li>
+<li>
+			<strong>synchronize object style</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize object styles.
+		</li>
+<li>
+			<strong>synchronize paragraph style</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize paragraph styles.
+		</li>
+<li>
+			<strong>synchronize swatch</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize swatches.
+		</li>
+<li>
+			<strong>synchronize table of content style</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize table of content styles.
+		</li>
+<li>
+			<strong>synchronize table style</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize table styles.
+		</li>
+<li>
+			<strong>synchronize text variable</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize text variables.
+		</li>
+<li>
+			<strong>synchronize trap style</strong>
+			
+			<em>boolean</em>
+			 -- If true, synchronize trap styles.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/book_content.html">book contents</a></strong></span> , <span> <strong><a href="../../FULL/classes/event.html">events</a></strong></span> , <span> <strong><a href="../../FULL/classes/event_listener.html">event listeners</a></strong></span> , <span> <strong><a href="../../FULL/classes/preference.html">preferences</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/book_content.html">book content</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event.html">event</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/event_listener.html">event listener</a></strong> -- by <em>index, name, range, relative, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/preference.html">preference</a></strong> -- by <em>index, name, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Basics_Suite">Basics Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/book.html">book</a></strong>
+					(<em><a href="../../index.html#suite_Book_Suite">Book Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../FULL/classes/book_content.html">book content</a></strong>
+					(<em><a href="../../index.html#suite_Book_Suite">Book Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>
