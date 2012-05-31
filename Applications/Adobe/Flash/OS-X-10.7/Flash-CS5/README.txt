@@ -1,0 +1,1 @@
+TITLE = Flash AppleScript Dictionary : Flash CS5 on OS-X-10.7APP_COMPANY = AdobeAPP_NAME = FlashOS_VERSION = OS-X-10.7APP_VERSION = CS5APP_AS_DOC_PATH = http://www.mugginsoft.com/html/kosmictask/ASDictionaryDocs/Adobe/Flash/OS-X-10.7/Flash-CS5/htmlAPP_AS_DOC_ZIP_PATH = http://www.mugginsoft.com/html/kosmictask/ASDictionaryDocs/Adobe/Flash/OS-X-10.7/Flash-CS5/html.zip
