@@ -1,1 +1,0 @@
-TITLE = iCal AppleScript Dictionary : iCal 5.02 on OS-X-10.7APP_COMPANY = AppleAPP_NAME = iCalOS_VERSION = OS-X-10.7APP_VERSION = 5.02APP_AS_DOC_PATH = http://www.mugginsoft.com/html/kosmictask/ASDictionaryDocs/Apple/iCal/OS-X-10.7/iCal-5.02/htmlAPP_AS_DOC_ZIP_PATH = http://www.mugginsoft.com/html/kosmictask/ASDictionaryDocs/Apple/iCal/OS-X-10.7/iCal-5.02/html.zip
