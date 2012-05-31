@@ -1,0 +1,387 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>PDF save options</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> PDF save options</h1>
+
+<div id="view"><a href="../../Save_Options_Suite/classes/PDF_save_options.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Options which may be supplied when saving a document as a PDF file</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Save_Options_Suite">Save Options Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>acrobat layers</strong>
+			
+			<em>boolean</em>
+			 -- create acrobat layers from top-level layers - acrobat 6 only option ( default: false )
+		</li>
+<li>
+			<strong>allow printing</strong>
+			
+			<em>pdf 128 print high res / pdf 128 print low res / pdf 128 print none / pdf 40 print high res / pdf 40 print none</em>
+			 -- PDF security printing permission ( default: pdf 128 print high res )
+		</li>
+<li>
+			<strong>artboard range</strong>
+			
+			<em>Unicode text</em>
+			 -- Considered for multi-asset extraction which specifies artboard range.Empty string will extracts all the artboards.Default is empty string ( default:  )
+		</li>
+<li>
+			<strong>bleed link</strong>
+			
+			<em>boolean</em>
+			 -- link 4 bleed values ( default: true )
+		</li>
+<li>
+			<strong>bleed offset</strong>
+			
+			<em>list</em>
+			 -- the bleed offset rect
+		</li>
+<li>
+			<strong>changes allowed</strong>
+			
+			<em>pdf 128 any changes / pdf 128 commenting allowed / pdf 128 edit page allowed / pdf 128 fill form allowed / pdf 128 no changes / pdf 40 any changes / pdf 40 commenting allowed / pdf 40 no changes / pdf 40 page layout allowed</em>
+			 -- PDF security changes allowed ( default: pdf 128 any changes )
+		</li>
+<li>
+			<strong>color bars</strong>
+			
+			<em>boolean</em>
+			 -- draw color bars ( default: false )
+		</li>
+<li>
+			<strong>color compression</strong>
+			
+			<em>automatic JPEG high / automatic JPEG low / automatic JPEG maximum / automatic JPEG medium / automatic JPEG minimum / automatic JPEG2000 high / automatic JPEG2000 lossless / automatic JPEG2000 low / automatic JPEG2000 maximum / automatic JPEG2000 medium / automatic JPEG2000 minimum / JPEG high / JPEG low / JPEG maximum / JPEG medium / JPEG minimum / JPEG2000 high / JPEG2000 lossless / JPEG2000 low / JPEG2000 maximum / JPEG2000 medium / JPEG2000 minimum / none / ZIP4bit / ZIP8bit</em>
+			 -- how should color bitmap images be compressed ( default: none )
+		</li>
+<li>
+			<strong>color conversion id</strong>
+			
+			<em>color conversion repurpose / color conversion to dest / none</em>
+			 -- PDF color conversion policy. Three choices are available: (1)No Color Conversion (2) Repurpose (3) Convert to Destination ( default: none )
+		</li>
+<li>
+			<strong>color destination id</strong>
+			
+			<em>color dest doc cmyk / color dest doc rgb / color dest profile / color dest working cmyk / color dest working rgb / none</em>
+			 -- When NoColorConversion is specified for Color Conversion, NoColorDestination is set ( default: none )
+		</li>
+<li>
+			<strong>color downsampling</strong>
+			
+			<em>real</em>
+			 -- if zero, no downsampling, otherwise, the resolution to downsample color bitmap images to ( default: 150.0 )
+		</li>
+<li>
+			<strong>color downsampling threshold</strong>
+			
+			<em>real</em>
+			 -- downsample if the image's resolution is above this value ( default: 225.0 )
+		</li>
+<li>
+			<strong>color profile id</strong>
+			
+			<em>include all profiles / include all rgb / include dest profile / leave profile unchanged / none</em>
+			 -- If CMS is off, Don't Include Profiles is set ( default: none )
+		</li>
+<li>
+			<strong>color resample</strong>
+			
+			<em>average downsampling / bicubic downsample / nodownsample / subsampling</em>
+			 -- how should color bitmap images be resampled ( default: nodownsample )
+		</li>
+<li>
+			<strong>color tile size</strong>
+			
+			<em>integer</em>
+			 -- tile size when compressing with JPEG2000 ( default: 256 )
+		</li>
+<li>
+			<strong>compatibility</strong>
+			
+			<em>Acrobat 4 / Acrobat 5 / Acrobat 6 / Acrobat 7 / Acrobat 8</em>
+			 -- the version of the Acrobat file format to create ( default: Acrobat 5 )
+		</li>
+<li>
+			<strong>compress art</strong>
+			
+			<em>boolean</em>
+			 -- should line art and text be compressed? ( default: true )
+		</li>
+<li>
+			<strong>document password</strong>
+			
+			<em>Unicode text</em>
+			 -- a password string to open the document ( default:  )
+		</li>
+<li>
+			<strong>enable access</strong>
+			
+			<em>boolean</em>
+			 -- enable accessing 128-bit ( default: true )
+		</li>
+<li>
+			<strong>enable copy</strong>
+			
+			<em>boolean</em>
+			 -- enable copying of text 128-bit ( default: true )
+		</li>
+<li>
+			<strong>enable copy and access</strong>
+			
+			<em>boolean</em>
+			 -- enable copying and accessing 40-bit ( default: true )
+		</li>
+<li>
+			<strong>enable plaintext</strong>
+			
+			<em>boolean</em>
+			 -- enable plaintext metadata 128-bit - available only for acrobat 6 ( default: false )
+		</li>
+<li>
+			<strong>flattener preset</strong>
+			
+			<em>Unicode text</em>
+			 -- the transparency flattener preset name
+		</li>
+<li>
+			<strong>flattener settings</strong>
+			
+			<em><a href="../../FULL/classes/flattening_options.html">flattening options</a></em>
+			 -- the printing flattener options
+		</li>
+<li>
+			<strong>font subset threshold</strong>
+			
+			<em>real</em>
+			 -- include a subset of fonts when less than this percentage of characters are used ( 0.0 - 100.0; default: 100.0 )
+		</li>
+<li>
+			<strong>generate thumbnails</strong>
+			
+			<em>boolean</em>
+			 -- generate thumbnails for the saved document ( default: true )
+		</li>
+<li>
+			<strong>grayscale compression</strong>
+			
+			<em>automatic JPEG high / automatic JPEG low / automatic JPEG maximum / automatic JPEG medium / automatic JPEG minimum / automatic JPEG2000 high / automatic JPEG2000 lossless / automatic JPEG2000 low / automatic JPEG2000 maximum / automatic JPEG2000 medium / automatic JPEG2000 minimum / JPEG high / JPEG low / JPEG maximum / JPEG medium / JPEG minimum / JPEG2000 high / JPEG2000 lossless / JPEG2000 low / JPEG2000 maximum / JPEG2000 medium / JPEG2000 minimum / none / ZIP4bit / ZIP8bit</em>
+			 -- how should grayscale bitmap images be compressed ( default: none )
+		</li>
+<li>
+			<strong>grayscale downsampling</strong>
+			
+			<em>real</em>
+			 -- if zero, no downsampling, otherwise, the resolution to downsample grayscale images to ( default: 150.0 )
+		</li>
+<li>
+			<strong>grayscale downsampling threshold</strong>
+			
+			<em>real</em>
+			 -- downsample if the image's resolution is above this value ( default: 225.0 )
+		</li>
+<li>
+			<strong>grayscale resample</strong>
+			
+			<em>average downsampling / bicubic downsample / nodownsample / subsampling</em>
+			 -- how should grayscale bitmap images be resampled ( default: nodownsample )
+		</li>
+<li>
+			<strong>grayscale tile size</strong>
+			
+			<em>integer</em>
+			 -- tile size when compressing with JPEG2000 ( default: 256 )
+		</li>
+<li>
+			<strong>monochrome compression</strong>
+			
+			<em>CCIT3 / CCIT4 / none / run length / ZIP</em>
+			 -- how should monochrome bitmap images be compressed ( default: none )
+		</li>
+<li>
+			<strong>monochrome downsampling</strong>
+			
+			<em>real</em>
+			 -- If zero, no downsampling, otherwise, the resolution to downsample images to ( default: 300.0 )
+		</li>
+<li>
+			<strong>monochrome downsampling threshold</strong>
+			
+			<em>real</em>
+			 -- downsample if the image's resolution is above this value ( default: 450.0 )
+		</li>
+<li>
+			<strong>monochrome resample</strong>
+			
+			<em>average downsampling / bicubic downsample / nodownsample / subsampling</em>
+			 -- how should monochrome bitmap images be resampled ( default: nodownsample )
+		</li>
+<li>
+			<strong>offset</strong>
+			
+			<em>real</em>
+			 -- custom offset (in points) for using the custom paper ( default: 0.0 )
+		</li>
+<li>
+			<strong>optimization</strong>
+			
+			<em>boolean</em>
+			 -- should the PDF document be optimized for fast web viewing ( default: false )
+		</li>
+<li>
+			<strong>output condition</strong>
+			
+			<em>Unicode text</em>
+			 -- This is an optional comment which, if present, is added to the PDF file and describes the intended printing condition ( default:  )
+		</li>
+<li>
+			<strong>output condition id</strong>
+			
+			<em>Unicode text</em>
+			 -- If selected for Output Intent Profile Name, you can set the name of a registered printing condition ( default:  )
+		</li>
+<li>
+			<strong>output intent profile</strong>
+			
+			<em>Unicode text</em>
+			 -- When CMS is on, the output intent profile is the same profile selected for Destination in the Color group box ( default:  )
+		</li>
+<li>
+			<strong>page info</strong>
+			
+			<em>boolean</em>
+			 -- draw page information ( default: false )
+		</li>
+<li>
+			<strong>page marks style</strong>
+			
+			<em>Japanese style / Roman</em>
+			 -- the page marks style ( default: Roman )
+		</li>
+<li>
+			<strong>PDF preset</strong>
+			
+			<em>Unicode text</em>
+			 -- The max string length is 255 bytes. Name of PDF preset to use.
+		</li>
+<li>
+			<strong>pdfXstandard</strong>
+			
+			<em>PDFX 1a 2001 / PDFX 1a 2003 / PDFX 3 2001 / PDFX 3 2002 / PDFX 3 2003 / PDFX 4 2007 / PDFX None</em>
+			 -- This control includes the None option for when the user is not complying with any PDF standard ( default: PDFX None )
+		</li>
+<li>
+			<strong>pdfXstandard descripton</strong>
+			
+			<em>Unicode text</em>
+			 -- This displays the description from the selected preset
+		</li>
+<li>
+			<strong>permission password</strong>
+			
+			<em>Unicode text</em>
+			 -- a password string to restrict editing security settings ( default:  )
+		</li>
+<li>
+			<strong>preserve editability</strong>
+			
+			<em>boolean</em>
+			 -- preserve Illustrator editing capabilities when saving the document ( default: true )
+		</li>
+<li>
+			<strong>printer resolution</strong>
+			
+			<em>real</em>
+			 -- flattening printer resolution ( default: 800.0 )
+		</li>
+<li>
+			<strong>registration marks</strong>
+			
+			<em>boolean</em>
+			 -- draw registration marks ( default: false )
+		</li>
+<li>
+			<strong>registry name</strong>
+			
+			<em>Unicode text</em>
+			 -- URL to the site where the specified output condition is registered. No validation is performed on the URL ( default:  )
+		</li>
+<li>
+			<strong>require doc password</strong>
+			
+			<em>boolean</em>
+			 -- require a password to open the document ( default: false )
+		</li>
+<li>
+			<strong>require perm password</strong>
+			
+			<em>boolean</em>
+			 -- use a password to restrict editing security settings ( default: false )
+		</li>
+<li>
+			<strong>trapped</strong>
+			
+			<em>boolean</em>
+			 -- This indicates if manual trapping has been prepared in the document ( default: false )
+		</li>
+<li>
+			<strong>trim mark weight</strong>
+			
+			<em>trimmarkweight0125 / trimmarkweight025 / trimmarkweight05</em>
+			 -- trim mark weight ( default: trimmarkweight0125 )
+		</li>
+<li>
+			<strong>trim marks</strong>
+			
+			<em>boolean</em>
+			 -- draw trim marks ( default: false )
+		</li>
+<li>
+			<strong>view pdf</strong>
+			
+			<em>boolean</em>
+			 -- view PDF after saving ( default: false )
+		</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>document</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> document</h1>
+
+<div id="view"><a href="../../Core_Suite/classes/document.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>A document</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>documents</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Core_Suite">Core Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>best type</strong>
+			(r/o)
+			<em>type class</em>
+			 -- the best type for the object's value
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- the object's class
+		</li>
+<li>
+			<strong>default type</strong>
+			(r/o)
+			<em>type class</em>
+			 -- the default type for the object's value
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- the index of this instance of the object
+		</li>
+<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- all of this object's properties returned in a single record
+		</li>
+<li>
+			<strong>color space</strong>
+			(r/o)
+			<em>CMYK / RGB</em>
+			 -- the color space used for the document
+		</li>
+<li>
+			<strong>crop marks</strong>
+			
+			<em>list</em>
+			
+		</li>
+<li>
+			<strong>crop style</strong>
+			
+			<em>Japanese style / standard</em>
+			
+		</li>
+<li>
+			<strong>current dataset</strong>
+			
+			<em><a href="../../FULL/classes/dataset.html">dataset</a></em>
+			 -- The active data set
+		</li>
+<li>
+			<strong>current layer</strong>
+			
+			<em><a href="../../FULL/classes/layer.html">layer</a></em>
+			 -- The active layer
+		</li>
+<li>
+			<strong>current view</strong>
+			(r/o)
+			<em><a href="../../FULL/classes/view.html">view</a></em>
+			 -- the document's current view
+		</li>
+<li>
+			<strong>default fill color</strong>
+			
+			<em><a href="../../FULL/classes/color_info.html">color info</a></em>
+			 -- default fill color
+		</li>
+<li>
+			<strong>default fill overprint</strong>
+			
+			<em>boolean</em>
+			 -- will art beneath a filled object be overprinted by default?
+		</li>
+<li>
+			<strong>default filled</strong>
+			
+			<em>boolean</em>
+			 -- should a new path be filled?
+		</li>
+<li>
+			<strong>default stroke cap</strong>
+			
+			<em>butted / projecting / rounded</em>
+			 -- default type of line capping
+		</li>
+<li>
+			<strong>default stroke color</strong>
+			
+			<em><a href="../../FULL/classes/color_info.html">color info</a></em>
+			 -- default stroke color
+		</li>
+<li>
+			<strong>default stroke dash offset</strong>
+			
+			<em>real</em>
+			 -- the default distance into the dash pattern at which the pattern should be started
+		</li>
+<li>
+			<strong>default stroke dashes</strong>
+			
+			<em>list of real</em>
+			 -- default dash lengths (set to {} for a solid line)
+		</li>
+<li>
+			<strong>default stroke join</strong>
+			
+			<em>beveled / mitered / rounded</em>
+			 -- default type of joints
+		</li>
+<li>
+			<strong>default stroke miter limit</strong>
+			
+			<em>real</em>
+			 -- specifies whether a join is mitered (pointed) or beveled (squared-off) by default
+		</li>
+<li>
+			<strong>default stroke overprint</strong>
+			
+			<em>boolean</em>
+			 -- will art beneath a stroked object be overprinted by default?
+		</li>
+<li>
+			<strong>default stroke width</strong>
+			
+			<em>real</em>
+			 -- default width of stroke
+		</li>
+<li>
+			<strong>default stroked</strong>
+			
+			<em>boolean</em>
+			 -- should a new path be stroked?
+		</li>
+<li>
+			<strong>file path</strong>
+			(r/o)
+			<em>file specification</em>
+			 -- the file associated with the document
+		</li>
+<li>
+			<strong>geometric bounds</strong>
+			(r/o)
+			<em>list</em>
+			 -- the bounds of the illustration excluding stroke width
+		</li>
+<li>
+			<strong>height</strong>
+			(r/o)
+			<em>real</em>
+			
+		</li>
+<li>
+			<strong>inks</strong>
+			(r/o)
+			<em>list of <a href="../../FULL/classes/ink.html">ink</a></em>
+			 -- the list of inks in this document
+		</li>
+<li>
+			<strong>Kinsoku set</strong>
+			(r/o)
+			<em>list of Unicode text</em>
+			 -- the Kinsoku set
+		</li>
+<li>
+			<strong>modified</strong>
+			
+			<em>boolean</em>
+			 -- Has the document been modified since the last save?
+		</li>
+<li>
+			<strong>Mojikumi set</strong>
+			(r/o)
+			<em>list of Unicode text</em>
+			 -- the Mojikumi set
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- The document's name
+		</li>
+<li>
+			<strong>output resolution</strong>
+			(r/o)
+			<em>real</em>
+			
+		</li>
+<li>
+			<strong>page origin</strong>
+			
+			<em>list</em>
+			
+		</li>
+<li>
+			<strong>print tiles</strong>
+			(r/o)
+			<em>boolean</em>
+			
+		</li>
+<li>
+			<strong>raster effect settings</strong>
+			
+			<em><a href="../../FULL/classes/raster_effect_options.html">raster effect options</a></em>
+			 -- The document raster effects settings
+		</li>
+<li>
+			<strong>ruler origin</strong>
+			
+			<em>list</em>
+			
+		</li>
+<li>
+			<strong>ruler units</strong>
+			(r/o)
+			<em>centimeters / inches / millimeters / picas / pixels / points / qs / unknown</em>
+			
+		</li>
+<li>
+			<strong>selection</strong>
+			
+			<em>anything</em>
+			 -- the selection within the document
+		</li>
+<li>
+			<strong>show placed images</strong>
+			(r/o)
+			<em>boolean</em>
+			
+		</li>
+<li>
+			<strong>split long paths</strong>
+			(r/o)
+			<em>boolean</em>
+			
+		</li>
+<li>
+			<strong>stationery</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Is the file a stationery file?
+		</li>
+<li>
+			<strong>tile full pages</strong>
+			(r/o)
+			<em>boolean</em>
+			
+		</li>
+<li>
+			<strong>use default screen</strong>
+			(r/o)
+			<em>boolean</em>
+			
+		</li>
+<li>
+			<strong>variables locked</strong>
+			
+			<em>boolean</em>
+			 -- The locked variables
+		</li>
+<li>
+			<strong>visible bounds</strong>
+			(r/o)
+			<em>list</em>
+			 -- the visible bounds of the illustration including stroke width
+		</li>
+<li>
+			<strong>width</strong>
+			(r/o)
+			<em>real</em>
+			
+		</li>
+<li>
+			<strong>XMP string</strong>
+			
+			<em>Unicode text</em>
+			 -- The XMP packet string associated with the document
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/artboard.html">artboards</a></strong></span> , <span> <strong><a href="../../FULL/classes/brush.html">brushes</a></strong></span> , <span> <strong><a href="../../FULL/classes/character_style.html">character styles</a></strong></span> , <span> <strong><a href="../../FULL/classes/compound_path_item.html">compound path items</a></strong></span> , <span> <strong><a href="../../FULL/classes/dataset.html">datasets</a></strong></span> , <span> <strong><a href="../../FULL/classes/gradient.html">gradients</a></strong></span> , <span> <strong><a href="../../FULL/classes/graphic_style.html">graphic styles</a></strong></span> , <span> <strong><a href="../../FULL/classes/graph_item.html">graph items</a></strong></span> , <span> <strong><a href="../../FULL/classes/group_item.html">group items</a></strong></span> , <span> <strong><a href="../../FULL/classes/layer.html">layers</a></strong></span> , <span> <strong><a href="../../FULL/classes/legacy_text_item.html">legacy text items</a></strong></span> , <span> <strong><a href="../../FULL/classes/mesh_item.html">mesh items</a></strong></span> , <span> <strong><a href="../../FULL/classes/non_native_item.html">non native items</a></strong></span> , <span> <strong><a href="../../FULL/classes/page_item.html">page items</a></strong></span> , <span> <strong><a href="../../FULL/classes/paragraph_style.html">paragraph styles</a></strong></span> , <span> <strong><a href="../../FULL/classes/path_item.html">path items</a></strong></span> , <span> <strong><a href="../../FULL/classes/pattern.html">patterns</a></strong></span> , <span> <strong><a href="../../FULL/classes/placed_item.html">placed items</a></strong></span> , <span> <strong><a href="../../FULL/classes/plugin_item.html">plugin items</a></strong></span> , <span> <strong><a href="../../FULL/classes/raster_item.html">raster items</a></strong></span> , <span> <strong><a href="../../FULL/classes/spot.html">spots</a></strong></span> , <span> <strong><a href="../../FULL/classes/story.html">stories</a></strong></span> , <span> <strong><a href="../../FULL/classes/swatch.html">swatches</a></strong></span> , <span> <strong><a href="../../FULL/classes/swatchgroup.html">swatchgroups</a></strong></span> , <span> <strong><a href="../../FULL/classes/symbol_item.html">symbol items</a></strong></span> , <span> <strong><a href="../../FULL/classes/symbol.html">symbols</a></strong></span> , <span> <strong><a href="../../FULL/classes/tag.html">tags</a></strong></span> , <span> <strong><a href="../../FULL/classes/text_frame.html">text frames</a></strong></span> , <span> <strong><a href="../../FULL/classes/variable.html">variables</a></strong></span> , <span> <strong><a href="../../FULL/classes/view.html">views</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/artboard.html">artboard</a></strong> -- by <em>index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/brush.html">brush</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/character_style.html">character style</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/compound_path_item.html">compound path item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/dataset.html">dataset</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/gradient.html">gradient</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/graphic_style.html">graphic style</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/graph_item.html">graph item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/group_item.html">group item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/layer.html">layer</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/legacy_text_item.html">legacy text item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/mesh_item.html">mesh item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/non_native_item.html">non native item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/page_item.html">page item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/paragraph_style.html">paragraph style</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/path_item.html">path item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/pattern.html">pattern</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/placed_item.html">placed item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/plugin_item.html">plugin item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/raster_item.html">raster item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/spot.html">spot</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/story.html">story</a></strong> -- by <em>index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/swatch.html">swatch</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/swatchgroup.html">swatchgroup</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/symbol_item.html">symbol item</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/symbol.html">symbol</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/tag.html">tag</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/text_frame.html">text frame</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/variable.html">variable</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/view.html">view</a></strong> -- by <em>index, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../FULL/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Core_Suite">Core Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

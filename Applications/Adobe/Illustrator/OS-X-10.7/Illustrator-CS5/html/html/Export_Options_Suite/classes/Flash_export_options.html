@@ -1,0 +1,201 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Flash export options</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> Flash export options</h1>
+
+<div id="view"><a href="../../FULL/classes/Flash_export_options.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Options which may be supplied when exporting a document as an Flash (.SWF) file</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Export_Options_Suite">Export Options Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>art clipping</strong>
+			
+			<em>output art bounds / output artboard bounds / output croprect bounds</em>
+			 -- how should the arts be clipped during the output ( default: output art bounds )
+		</li>
+<li>
+			<strong>artboard range</strong>
+			
+			<em>Unicode text</em>
+			 -- If SaveMultipleArtboards is true,this will be considered for multi-asset extraction which specifies artboard range.Empty string will extracts all the artboards.Default is empty string ( default:  )
+		</li>
+<li>
+			<strong>background color</strong>
+			
+			<em><a href="../../Color_Suite/classes/RGB_color_info.html">RGB color info</a></em>
+			 -- the background color
+		</li>
+<li>
+			<strong>background layers</strong>
+			
+			<em>list of <a href="../../Adobe_Illustrator_Suite/classes/layer.html">layer</a></em>
+			 -- a list of layers to be included as the static background in all exported Flash frames
+		</li>
+<li>
+			<strong>blend animation</strong>
+			
+			<em>in build / in sequence / none</em>
+			 -- controls how the blend art objects are animated when export to Flash frames ( default: none )
+		</li>
+<li>
+			<strong>compressed</strong>
+			
+			<em>boolean</em>
+			 -- should the exported file be compressed ( default: false )
+		</li>
+<li>
+			<strong>convert text to outlines</strong>
+			
+			<em>boolean</em>
+			 -- should all text be converted to outlines ( default: false )
+		</li>
+<li>
+			<strong>curve quality</strong>
+			
+			<em>integer</em>
+			 -- how much curve information should be preserved ( 0 - 10; default: 7 )
+		</li>
+<li>
+			<strong>export all symbols</strong>
+			
+			<em>boolean</em>
+			 -- should all symbol definitions in the palette be exported to the SWF File ( default: false )
+		</li>
+<li>
+			<strong>export style</strong>
+			
+			<em>Artboards to Files / Flash file / layers to files / layers to frames / layers to symbols</em>
+			 -- how should the Flash file be created ( default: Flash file )
+		</li>
+<li>
+			<strong>export version</strong>
+			
+			<em>SWF version 1 / SWF version 2 / SWF version 3 / SWF version 4 / SWF version 5 / SWF version 6 / SWF version 7 / SWF version 8 / SWF version 9</em>
+			 -- which version of SWF to export ( default: SWF version 9 )
+		</li>
+<li>
+			<strong>Flash Playback Security</strong>
+			
+			<em>flash playback local access / flash playback network access</em>
+			 -- what access should the SWF file have - local or network access ( default: flash playback local access )
+		</li>
+<li>
+			<strong>frame rate</strong>
+			
+			<em>real</em>
+			 -- when exporting layers to Flash frames ( 0.01 - 120.0; default: 12.0 )
+		</li>
+<li>
+			<strong>image format</strong>
+			
+			<em>lossless / lossy</em>
+			 -- how should the images in the exported Flash file be compressed ( default: lossless )
+		</li>
+<li>
+			<strong>include metadata</strong>
+			
+			<em>boolean</em>
+			 -- If true, include minimal XMP metadata in the exported file ( default: false )
+		</li>
+<li>
+			<strong>JPEG method</strong>
+			
+			<em>optimized / standard</em>
+			 -- what method to use ( default: standard )
+		</li>
+<li>
+			<strong>JPEG quality</strong>
+			
+			<em>integer</em>
+			 -- level of compression ( 0 - 10; default: 3 )
+		</li>
+<li>
+			<strong>layer order</strong>
+			
+			<em>bottom up / top down</em>
+			 -- the order in which the layers will be exported to Flash frames ( default: bottom up )
+		</li>
+<li>
+			<strong>looping</strong>
+			
+			<em>boolean</em>
+			 -- should the Flash file be set to loop when run ( default: false )
+		</li>
+<li>
+			<strong>preserve appearance</strong>
+			
+			<em>boolean</em>
+			 -- choose whether to preserve artwork appearance or editability (default) during export ( default: false )
+		</li>
+<li>
+			<strong>read only</strong>
+			
+			<em>boolean</em>
+			 -- prevent the exported file from being imported by other applications ( default: false )
+		</li>
+<li>
+			<strong>replacing</strong>
+			
+			<em>ask / no / yes</em>
+			 -- if a file with the same name already exists, should it be replaced? ( default: ask )
+		</li>
+<li>
+			<strong>resolution</strong>
+			
+			<em>real</em>
+			 -- pixels per inch ( 72.0 - 2400.0; default: 72.0 )
+		</li>
+<li>
+			<strong>save multiple artboards</strong>
+			
+			<em>boolean</em>
+			 -- All the artboards or range of the artboards will be exported ( default: false )
+		</li>
+<li>
+			<strong>textkerning</strong>
+			
+			<em>boolean</em>
+			 -- should the kerning information for text objects be ignored ( default: false )
+		</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

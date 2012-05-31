@@ -1,0 +1,495 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>line</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> line</h1>
+
+<div id="view"><a href="../../FULL/classes/line.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>properties</strong>
+			
+			<em>record</em>
+			 -- all of this object's properties returned in a single record
+		</li>
+<li>
+			<strong>OpenType position</strong>
+			
+			<em>default / denominator / numerator / subscript / superscript</em>
+			 -- the OpenType baseline position
+		</li>
+<li>
+			<strong>TCY horizontal</strong>
+			
+			<em>integer</em>
+			 -- the Tate-Chu-Yoko horizontal adjustment in points
+		</li>
+<li>
+			<strong>TCY vertical</strong>
+			
+			<em>integer</em>
+			 -- the Tate-Chu-Yoko vertical adjustment in points
+		</li>
+<li>
+			<strong>Tsume</strong>
+			
+			<em>real</em>
+			 -- the percentage of space reduction around a Japanese character (100 = 100%)
+		</li>
+<li>
+			<strong>aki left</strong>
+			
+			<em>real</em>
+			 -- the em amount of left aki
+		</li>
+<li>
+			<strong>aki right</strong>
+			
+			<em>real</em>
+			 -- the em amount of right aki amount
+		</li>
+<li>
+			<strong>alignment</strong>
+			
+			<em>bottom / center / icf bottom / icf top / roman baseline / top</em>
+			 -- the character alignment type
+		</li>
+<li>
+			<strong>alternate glyphs</strong>
+			
+			<em>default / expert / full width / half width / jis04 / jis78 / jis83 / jis90 / proportional width / quarter width / third width / traditional</em>
+			 -- the alternate glyphs form
+		</li>
+<li>
+			<strong>auto leading</strong>
+			
+			<em>boolean</em>
+			 -- whether to use automatic leading
+		</li>
+<li>
+			<strong>baseline direction</strong>
+			
+			<em>standard / Tate Chu Yoko / vertical rotated</em>
+			 -- the Japanese text baseline direction
+		</li>
+<li>
+			<strong>baseline position</strong>
+			
+			<em>normal / subscript / superscript</em>
+			 -- the baseline position of text
+		</li>
+<li>
+			<strong>baseline shift</strong>
+			
+			<em>real</em>
+			 -- the amount of shift (in points) of the text baseline
+		</li>
+<li>
+			<strong>best type</strong>
+			(r/o)
+			<em>type class</em>
+			 -- the best type for the object's value
+		</li>
+<li>
+			<strong>capitalization</strong>
+			
+			<em>all caps / all small caps / normal / small caps</em>
+			 -- the case of text
+		</li>
+<li>
+			<strong>character offset</strong>
+			
+			<em>integer</em>
+			 -- offset of the first character of the range from the beginning of the story, in characters.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- the object's class
+		</li>
+<li>
+			<strong>connection forms</strong>
+			
+			<em>boolean</em>
+			 -- whether the OpenType connection forms should be used
+		</li>
+<li>
+			<strong>container</strong>
+			(r/o)
+			<em>reference</em>
+			 -- the object's container
+		</li>
+<li>
+			<strong>contents</strong>
+			
+			<em>Unicode text</em>
+			 -- the text string
+		</li>
+<li>
+			<strong>contextual ligature</strong>
+			
+			<em>boolean</em>
+			 -- whether the contextual ligature should be used
+		</li>
+<li>
+			<strong>default type</strong>
+			(r/o)
+			<em>type class</em>
+			 -- the default type for the object's value
+		</li>
+<li>
+			<strong>discretionary ligature</strong>
+			
+			<em>boolean</em>
+			 -- whether the discretionary ligature should be used
+		</li>
+<li>
+			<strong>figure style</strong>
+			
+			<em>default / proportional / proportional oldstyle / tabular / tabular oldstyle</em>
+			 -- which figure style to use in OpenType font
+		</li>
+<li>
+			<strong>fill color</strong>
+			
+			<em><a href="../../Color_Suite/classes/color_info.html">color info</a></em>
+			 -- the color of the text fill
+		</li>
+<li>
+			<strong>fractions</strong>
+			
+			<em>boolean</em>
+			 -- whether the OpenType fractions should be used
+		</li>
+<li>
+			<strong>horizontal scale</strong>
+			
+			<em>real</em>
+			 -- character horizontal scaling factor expressed as a percentage (100 = 100%)
+		</li>
+<li>
+			<strong>index</strong>
+			(r/o)
+			<em>integer</em>
+			 -- the index of this instance of the object
+		</li>
+<li>
+			<strong>italics</strong>
+			
+			<em>boolean</em>
+			 -- does the Japanese OpenType support italics?
+		</li>
+<li>
+			<strong>kerning</strong>
+			
+			<em>integer</em>
+			 -- controls the spacing between two characters (in milli-ems)
+		</li>
+<li>
+			<strong>kerning method</strong>
+			
+			<em>auto / metricsromanonly / none / optical</em>
+			 -- the automatic kerning method to use
+		</li>
+<li>
+			<strong>language</strong>
+			
+			<em>Bokmal Norwegian / Brazillian Portuguese / Bulgarian / Canadian French / Catalan / Chinese / Czech / Danish / Dutch / Dutch 2005 Reform / English / Finnish / German 2006 Reform / Greek / Hungarian / Icelandic / Italian / Japanese / Nynorsk Norwegian / old German / Polish / Romanian / Russian / Serbian / Spanish / standard French / standard German / standard Portuguese / Swedish / Swiss German / Swiss German 2006 Reform / Turkish / UK English / Ukranian</em>
+			 -- the language of text
+		</li>
+<li>
+			<strong>leading</strong>
+			
+			<em>real</em>
+			 -- the amount of space between two lines of text (in points)
+		</li>
+<li>
+			<strong>length</strong>
+			
+			<em>integer</em>
+			 -- length of text range ( minimum 0 )
+		</li>
+<li>
+			<strong>ligature</strong>
+			
+			<em>boolean</em>
+			 -- whether the ligature should be used
+		</li>
+<li>
+			<strong>no break</strong>
+			
+			<em>boolean</em>
+			 -- whether line breaks are allowed
+		</li>
+<li>
+			<strong>ordinals</strong>
+			
+			<em>boolean</em>
+			 -- whether the OpenType ordinals should be used
+		</li>
+<li>
+			<strong>ornaments</strong>
+			
+			<em>boolean</em>
+			 -- whether the OpenType ornaments should be used
+		</li>
+<li>
+			<strong>overprint fill</strong>
+			
+			<em>boolean</em>
+			 -- whether to overprint the fill of the text
+		</li>
+<li>
+			<strong>overprint stroke</strong>
+			
+			<em>boolean</em>
+			 -- whether to overprint the stroke of the text
+		</li>
+<li>
+			<strong>proportional metrics</strong>
+			
+			<em>boolean</em>
+			 -- does the Japanese OpenType support proportional font?
+		</li>
+<li>
+			<strong>rotation</strong>
+			
+			<em>real</em>
+			 -- the character rotation angle (in degrees)
+		</li>
+<li>
+			<strong>selection</strong>
+			(r/o)
+			<em>list of <a href="../../Text_Suite/classes/text.html">text</a></em>
+			 -- the selected text (ranges) in the text range
+		</li>
+<li>
+			<strong>size</strong>
+			
+			<em>real</em>
+			 -- font size in points
+		</li>
+<li>
+			<strong>story</strong>
+			(r/o)
+			<em><a href="../../Text_Suite/classes/story.html">story</a></em>
+			 -- the story of the text range
+		</li>
+<li>
+			<strong>strike through</strong>
+			
+			<em>boolean</em>
+			 -- whether to draw a strike through line over the text
+		</li>
+<li>
+			<strong>stroke color</strong>
+			
+			<em><a href="../../Color_Suite/classes/color_info.html">color info</a></em>
+			 -- the color of the text stroke
+		</li>
+<li>
+			<strong>stroke weight</strong>
+			
+			<em>real</em>
+			 -- line width of stroke
+		</li>
+<li>
+			<strong>stylistic alternates</strong>
+			
+			<em>boolean</em>
+			 -- whether the OpenType stylistic alternates should be used
+		</li>
+<li>
+			<strong>swash</strong>
+			
+			<em>boolean</em>
+			 -- whether the OpenType swash should be used
+		</li>
+<li>
+			<strong>text font</strong>
+			
+			<em><a href="../../Adobe_Illustrator_Suite/classes/text_font.html">text font</a></em>
+			 -- the text font
+		</li>
+<li>
+			<strong>titling</strong>
+			
+			<em>boolean</em>
+			 -- whether the OpenType titling alternates should be used
+		</li>
+<li>
+			<strong>tracking</strong>
+			
+			<em>integer</em>
+			 -- the tracking or range kerning amount in thousands of an em
+		</li>
+<li>
+			<strong>underline</strong>
+			
+			<em>boolean</em>
+			 -- whether to underline the text
+		</li>
+<li>
+			<strong>vertical scale</strong>
+			
+			<em>real</em>
+			 -- character vertical scaling factor expressed as a percentage (100 = 100%)
+		</li>
+<li>
+			<strong>warichu characters after break</strong>
+			
+			<em>integer</em>
+			
+		</li>
+<li>
+			<strong>warichu characters before break</strong>
+			
+			<em>integer</em>
+			
+		</li>
+<li>
+			<strong>warichu enabled</strong>
+			
+			<em>boolean</em>
+			 -- whether WariChu is enabled
+		</li>
+<li>
+			<strong>warichu gap</strong>
+			
+			<em>integer</em>
+			 -- the Wari-Chu line gap
+		</li>
+<li>
+			<strong>warichu justification</strong>
+			
+			<em>auto justify / center / full justify / full justify last line center / full justify last line left / full justify last line right / left / right</em>
+			
+		</li>
+<li>
+			<strong>warichu lines</strong>
+			
+			<em>integer</em>
+			 -- the number of Wari-Chu (multiple text lines fit into a space meant for one) lines
+		</li>
+<li>
+			<strong>warichu scale</strong>
+			
+			<em>real</em>
+			 -- the Wari-Chu scale
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../Text_Suite/classes/character_style.html">character styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/character.html">character</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/insertion_point.html">insertion points</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/line.html">line</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/paragraph_style.html">paragraph styles</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/paragraph.html">paragraph</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/text.html">text</a></strong></span> , <span> <strong><a href="../../Text_Suite/classes/word.html">word</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../Text_Suite/classes/character_style.html">character style</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/character.html">character</a></strong> -- by <em>index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/insertion_point.html">insertion point</a></strong> -- by <em>index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/line.html">line</a></strong> -- by <em>index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/paragraph_style.html">paragraph style</a></strong> -- by <em>name, index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/paragraph.html">paragraph</a></strong> -- by <em>index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/text.html">text</a></strong> -- by <em>index, range, relative, test</em>
+		</li>
+<li>
+			<strong><a href="../../Text_Suite/classes/word.html">word</a></strong> -- by <em>index, range, relative, test</em>
+		</li>
+	</ul>
+
+
+
+	<h2>Notes</h2>
+	
+	<ul class="desc">
+		<li>Contained by:
+			<ul>
+				<li>
+					<strong><a href="../../Text_Suite/classes/character.html">character</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/insertion_point.html">insertion point</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/line.html">line</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/paragraph.html">paragraph</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/story.html">story</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/text.html">text</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Adobe_Illustrator_Suite/classes/text_frame.html">text frame</a></strong>
+					(<em><a href="../../index.html#suite_Adobe_Illustrator_Suite">Adobe Illustrator Suite</a></em>)
+				</li>
+<li>
+					<strong><a href="../../Text_Suite/classes/word.html">word</a></strong>
+					(<em><a href="../../index.html#suite_Text_Suite">Text Suite</a></em>)
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+</body>
+</html>

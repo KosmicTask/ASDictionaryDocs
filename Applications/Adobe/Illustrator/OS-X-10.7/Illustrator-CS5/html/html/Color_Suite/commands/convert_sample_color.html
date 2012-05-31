@@ -1,0 +1,78 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>convert sample color</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Command</sup> convert sample color</h1>
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>Converts a sample-component color from one color space to another.</p>
+
+<ul class="desc">
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Color_Suite">Color Suite</a></em></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<h2>Parameters</h2>
+<ul>
+	
+	<li>
+		<strong>source color space</strong> <em>CMYK / DeviceN / Gray / Indexed / LAB / RGB / Separation</em>
+		 -- The source color space
+	</li>
+<li>
+		<strong>source color</strong> <em>list of real</em>
+		 -- The color to convert, an array of color components. First location of the array should contain alpha if source-has-alpha is true.
+	</li>
+<li>
+		<strong>destination color space</strong> <em>CMYK / DeviceN / Gray / Indexed / LAB / RGB / Separation</em>
+		 -- The destination color space
+	</li>
+<li>
+		<strong>color conversion purpose</strong> <em>default purpose / dummy purpose option / export purpose / preview purpose</em>
+		 -- The parameter which passes the purpose of conversion
+	</li>
+<li>
+		[<strong>source has alpha</strong> <em>boolean</em>]
+		 -- True if alpha channel is present in source color. ( default: false )
+	</li>
+<li>
+		[<strong>destination has alpha</strong> <em>boolean</em>]
+		 -- True if alpha channel is present in destination color. ( default: false )
+	</li>
+</ul>
+
+
+
+
+	<h2>Result</h2>
+	
+	<ul>
+		<li><em>list of real</em>
+		 -- Converts a sample-component color from one color space to another.
+		</li>
+	</ul>
+
+
+
+</div>
+
+</body>
+</html>
