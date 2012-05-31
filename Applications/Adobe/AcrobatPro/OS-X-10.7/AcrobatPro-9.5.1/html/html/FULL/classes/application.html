@@ -1,0 +1,294 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>application</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> application</h1>
+
+<div id="view"><a href="../../Core_Suite/classes/application.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>The Acrobat application.</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_Core_Suite">Core Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>active doc</strong>
+			
+			<em>reference</em>
+			 -- The active document.
+		</li>
+<li>
+			<strong>active tool</strong>
+			
+			<em>Unicode text</em>
+			 -- The type of the currently active tool.
+		</li>
+<li>
+			<strong>anti_alias text</strong>
+			
+			<em>boolean</em>
+			 -- Whether to anti-alias text and monochrome images.
+		</li>
+<li>
+			<strong>best type</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The best descriptor type.
+		</li>
+<li>
+			<strong>case sensitivity</strong>
+			
+			<em>boolean</em>
+			 -- Whether searches are case sensitive.
+		</li>
+<li>
+			<strong>class</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The class.
+		</li>
+<li>
+			<strong>default type</strong>
+			(r/o)
+			<em>type class</em>
+			 -- The default descriptor type.
+		</li>
+<li>
+			<strong>default zoom factor</strong>
+			
+			<em>small real</em>
+			 -- The default zoom factor at which new documents are displayed.
+		</li>
+<li>
+			<strong>default zoom type</strong>
+			
+			<em>constant</em>
+			 -- The default zoom type when opening a new document.  Valid values are “no vary”, “fit page”, “fit width”, “fit height”, and “fit visible width”.
+		</li>
+<li>
+			<strong>download entire file</strong>
+			
+			<em>boolean</em>
+			 -- Whether to download the entire file.
+		</li>
+<li>
+			<strong>frontmost</strong>
+			
+			<em>boolean</em>
+			 -- Whether Acrobat is the frontmost application.  Value can be set to true only; false not supported.
+		</li>
+<li>
+			<strong>fullscreen transition</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- Default fullscreen transition.
+		</li>
+<li>
+			<strong>fullscreen loop</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Loop after last page in fullscreen mode.
+		</li>
+<li>
+			<strong>fullscreen click advances</strong>
+			
+			<em>boolean</em>
+			 -- Mouse click advances in fullscreen mode.
+		</li>
+<li>
+			<strong>fullscreen escape</strong>
+			
+			<em>boolean</em>
+			 -- Escape key exits fullscreen mode.
+		</li>
+<li>
+			<strong>fullscreen cursor</strong>
+			
+			<em>constant</em>
+			 -- Cursor visibility in fullscreen mode. Valid values are “always visible”, “always hidden” or “hidden after delay”).
+		</li>
+<li>
+			<strong>use fullscreen timer</strong>
+			
+			<em>boolean</em>
+			 -- Whether to use a timer to advance pages in fullscreen mode.
+		</li>
+<li>
+			<strong>fullscreen timer delay</strong>
+			
+			<em>integer</em>
+			 -- The number of seconds to pause before advancing to next page in fullscreen mode.
+		</li>
+<li>
+			<strong>highlight color</strong>
+			
+			<em>&lt;class RGB &gt;</em>
+			 -- Color used to highlight selections.
+		</li>
+<li>
+			<strong>maximum documents</strong>
+			(r/o)
+			<em>integer</em>
+			 -- Maximum number of open documents.
+		</li>
+<li>
+			<strong>name</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- The application’s name.
+		</li>
+<li>
+			<strong>note color</strong>
+			
+			<em>&lt;class RGB &gt;</em>
+			 -- The color of the border around newly created text annotations.
+		</li>
+<li>
+			<strong>open in place</strong>
+			
+			<em>boolean</em>
+			 -- Open cross document links in the same window.
+		</li>
+<li>
+			<strong>page units</strong>
+			
+			<em>Unicode text</em>
+			 -- Default page display units. One of Points, Picas, Inches, Millimeters or Centimeters.
+		</li>
+<li>
+			<strong>page layout</strong>
+			
+			<em>Unicode text</em>
+			 -- Default page layout preference for a document on open. (“Single Page”, “Continuous”, “Continuous - Facing”, “Facing”)
+		</li>
+<li>
+			<strong>save as linearize</strong>
+			
+			<em>boolean</em>
+			 -- Whether to save documents as linearized.  Primarily used to optimize viewing documents in a web browser.
+		</li>
+<li>
+			<strong>show splash at startup</strong>
+			
+			<em>boolean</em>
+			 -- Whether the splash screen is shown at startup.
+		</li>
+<li>
+			<strong>shrink to fit</strong>
+			
+			<em>boolean</em>
+			 -- Obsolete in Acrobat 6.  No longer used.
+		</li>
+<li>
+			<strong>skip warnings</strong>
+			
+			<em>boolean</em>
+			 -- Whether to skip warning dialogs during program execution.
+		</li>
+<li>
+			<strong>text note label</strong>
+			
+			<em>Unicode text</em>
+			 -- The text that will appear in the “title bar” of all newly created text notes.
+		</li>
+<li>
+			<strong>toolbar visibility</strong>
+			
+			<em>boolean</em>
+			 -- Whether the ToolBar is visible.
+		</li>
+<li>
+			<strong>UI language</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- Identifys which language Acrobat’s UI is using.  This is a 3 character language codes (ENU is English, for instance).
+		</li>
+<li>
+			<strong>version</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- The version number of the application.
+		</li>
+<li>
+			<strong>whole word searching</strong>
+			
+			<em>boolean</em>
+			 -- Whether searches are for whole words.
+		</li>
+<li>
+			<strong>note font name</strong>
+			
+			<em>Unicode text</em>
+			 -- Obsolete in Acrobat 6.  No longer used.  (was default note annotation font name).
+		</li>
+<li>
+			<strong>note font size</strong>
+			
+			<em>integer</em>
+			 -- Obsolete in Acrobat 6.  No longer used.  (was default note annotation font size).
+		</li>
+<li>
+			<strong>PS level</strong>
+			
+			<em>integer</em>
+			 -- Obsolete in Acrobat 6.  No longer used.  Please set Postscript Level when using “Save” or “Print pages” commands.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../FULL/classes/document.html">documents</a></strong></span> , <span> <strong><a href="../../FULL/classes/PDF_Window.html">PDF Window</a></strong></span> , <span> <strong><a href="../../FULL/classes/menu.html">menu</a></strong></span> , <span> <strong><a href="../../FULL/classes/menu_item.html">menu item</a></strong></span> , <span> <strong><a href="../../FULL/classes/conversion.html">conversions</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../FULL/classes/document.html">document</a></strong> -- by <em>name, index</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/PDF_Window.html">PDF Window</a></strong> -- by <em>name, index</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/menu.html">menu</a></strong> -- by <em>name, index</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/menu_item.html">menu item</a></strong> -- by <em>name</em>
+		</li>
+<li>
+			<strong><a href="../../FULL/classes/conversion.html">conversion</a></strong> -- by <em>name, index</em>
+		</li>
+	</ul>
+
+
+
+
+</body>
+</html>
