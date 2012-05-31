@@ -1,0 +1,411 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>application</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> application</h1>
+
+<div id="view"><a href="../../DVD_Suite/classes/application.html">reduce</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>DVD Player</p>
+
+<ul class="desc">
+	
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_DVD_Suite">DVD Suite</a></em></li>
+		</ul>
+	</li>
+	
+	
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>version</strong>
+			(r/o)
+			<em>Unicode text</em>
+			 -- The version of the DVD Player
+		</li>
+<li>
+			<strong>app initializing</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Is the app starting up?
+		</li>
+<li>
+			<strong>has multiple playback choice</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Does user have multiple choices to start playback from?
+		</li>
+<li>
+			<strong>interaction override</strong>
+			
+			<em>boolean</em>
+			 -- Turn off interaction with user for last play sheet, etc
+		</li>
+<li>
+			<strong>viewer full screen menu override</strong>
+			
+			<em>boolean</em>
+			 -- Turn off display of menu bar when mouse moves to menu bar area in full screen mode
+		</li>
+<li>
+			<strong>has media</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Is there media in the drive?
+		</li>
+<li>
+			<strong>dvd menu active</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Is playback currently on a dvd menu?
+		</li>
+<li>
+			<strong>active dvd menu</strong>
+			(r/o)
+			<em>none / main / title / subpicture / audio / angle / ptt</em>
+			 -- The current dvd menu
+		</li>
+<li>
+			<strong>dvd state</strong>
+			(r/o)
+			<em>playing / playing still / paused / stopped / scanning / idle</em>
+			 -- The state of playback
+		</li>
+<li>
+			<strong>dvd scan rate</strong>
+			
+			<em>x2 / x4 / x8 / x16 / x32</em>
+			 -- The scan rate for fast forwarding and rewinding
+		</li>
+<li>
+			<strong>controller visibility</strong>
+			
+			<em>boolean</em>
+			 -- To hide or show the controller window
+		</li>
+<li>
+			<strong>controller position</strong>
+			
+			<em>point</em>
+			 -- The position of the controller window in screen coordinates
+		</li>
+<li>
+			<strong>controller bounds</strong>
+			(r/o)
+			<em>bounding rectangle</em>
+			 -- The window bounds in screen coordinates
+		</li>
+<li>
+			<strong>controller screen bounds</strong>
+			(r/o)
+			<em>bounding rectangle</em>
+			 -- The screen bounds the window is on
+		</li>
+<li>
+			<strong>controller orientation</strong>
+			
+			<em>vertical / horizontal</em>
+			 -- The controller orientation - (Not supported in 5.0 and greater)
+		</li>
+<li>
+			<strong>controller drawer</strong>
+			
+			<em>open / closed</em>
+			 -- The state of the controller drawer
+		</li>
+<li>
+			<strong>info visibility</strong>
+			
+			<em>boolean</em>
+			 -- To hide or show the info window - (Not supported in 5.0 and greater)
+		</li>
+<li>
+			<strong>info position</strong>
+			
+			<em>point</em>
+			 -- The position of the info window in screen coordinates - (Not supported in 5.0 and greater)
+		</li>
+<li>
+			<strong>info bounds</strong>
+			
+			<em>bounding rectangle</em>
+			 -- The window bounds in screen coordinates - (Not supported in 5.0 and greater)
+		</li>
+<li>
+			<strong>info screen bounds</strong>
+			(r/o)
+			<em>bounding rectangle</em>
+			 -- The screen bounds the window is on - (Not supported in 5.0 and greater)
+		</li>
+<li>
+			<strong>info type</strong>
+			
+			<em>standard / wide</em>
+			 -- Sets the type of info window being displayed - (Not supported in 5.0 and greater)
+		</li>
+<li>
+			<strong>info text color</strong>
+			
+			<em>RGB color</em>
+			 -- The info text color - (Not supported in 5.0 and greater)
+		</li>
+<li>
+			<strong>viewer visibility</strong>
+			
+			<em>boolean</em>
+			 -- To hide or show the viewer window
+		</li>
+<li>
+			<strong>viewer position</strong>
+			
+			<em>point</em>
+			 -- To set the position of the viewer window in screen coordinates
+		</li>
+<li>
+			<strong>viewer bounds</strong>
+			(r/o)
+			<em>bounding rectangle</em>
+			 -- The window bounds in screen coordinates
+		</li>
+<li>
+			<strong>viewer screen bounds</strong>
+			(r/o)
+			<em>bounding rectangle</em>
+			 -- The screen bounds the window is on
+		</li>
+<li>
+			<strong>viewer size</strong>
+			
+			<em>half / normal / double / max</em>
+			 -- To set the the viewer size
+		</li>
+<li>
+			<strong>viewer full screen</strong>
+			
+			<em>boolean</em>
+			 -- Set to true to enter presentation mode
+		</li>
+<li>
+			<strong>audio muted</strong>
+			
+			<em>boolean</em>
+			 -- To turn the audio on or off
+		</li>
+<li>
+			<strong>audio volume</strong>
+			
+			<em>small integer</em>
+			 -- The DVD audio volume, 0 is silent, 255 is full on
+		</li>
+<li>
+			<strong>elapsed time</strong>
+			
+			<em>integer</em>
+			 -- The elapsed time, in seconds, of the current title
+		</li>
+<li>
+			<strong>elapsed extended time</strong>
+			
+			<em>point</em>
+			 -- The elapsed time, in seconds and frames, of the current title
+		</li>
+<li>
+			<strong>remaining time</strong>
+			
+			<em>integer</em>
+			 -- The remaining time, in seconds, of the current title
+		</li>
+<li>
+			<strong>remaining extended time</strong>
+			
+			<em>point</em>
+			 -- The remaining time, in seconds and frames, of the current title
+		</li>
+<li>
+			<strong>title length</strong>
+			(r/o)
+			<em>integer</em>
+			 -- The length of the title in seconds
+		</li>
+<li>
+			<strong>title extended length</strong>
+			(r/o)
+			<em>point</em>
+			 -- The length of the title in seconds and frames
+		</li>
+<li>
+			<strong>available angles</strong>
+			(r/o)
+			<em>small integer</em>
+			 -- The number of angles available at the current time position
+		</li>
+<li>
+			<strong>available audio tracks</strong>
+			(r/o)
+			<em>small integer</em>
+			 -- The number of audio tracks available at the current time position
+		</li>
+<li>
+			<strong>available chapters</strong>
+			(r/o)
+			<em>small integer</em>
+			 -- The number of chapters available at the current time position
+		</li>
+<li>
+			<strong>available subtitles</strong>
+			(r/o)
+			<em>small integer</em>
+			 -- The number of subtitles available at the current time position
+		</li>
+<li>
+			<strong>available titles</strong>
+			(r/o)
+			<em>small integer</em>
+			 -- The number of titles available at the current time position
+		</li>
+<li>
+			<strong>angle</strong>
+			
+			<em>small integer</em>
+			 -- The current camera angle at the current time position
+		</li>
+<li>
+			<strong>audio track</strong>
+			
+			<em>small integer</em>
+			 -- The current audio track at the current time position
+		</li>
+<li>
+			<strong>chapter</strong>
+			
+			<em>small integer</em>
+			 -- The current chapter at the current time position
+		</li>
+<li>
+			<strong>displaying subtitle</strong>
+			
+			<em>boolean</em>
+			 -- Are we currently displaying subtitles?
+		</li>
+<li>
+			<strong>subtitle</strong>
+			
+			<em>small integer</em>
+			 -- The current subtitle (caption) at the current time position
+		</li>
+<li>
+			<strong>title</strong>
+			
+			<em>small integer</em>
+			 -- The current title at the current time position
+		</li>
+<li>
+			<strong>closed captioning</strong>
+			
+			<em>boolean</em>
+			 -- Turn closed captioning on or off
+		</li>
+<li>
+			<strong>closed captioning display</strong>
+			
+			<em>over video / separate window</em>
+			 -- The display type for closed captioning
+		</li>
+<li>
+			<strong>extended bookmarks</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Supports extended bookmark functionality
+		</li>
+<li>
+			<strong>available bookmarks</strong>
+			(r/o)
+			<em>small integer</em>
+			 -- The number of bookmarks available for the current media
+		</li>
+<li>
+			<strong>bookmark list</strong>
+			(r/o)
+			<em>list of Unicode text</em>
+			 -- The names of the bookmarks for the current media
+		</li>
+<li>
+			<strong>has default bookmark</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Has a default bookmark been set?
+		</li>
+<li>
+			<strong>has last play bookmark</strong>
+			(r/o)
+			<em>&lt;class book&gt;</em>
+			 -- Does the media have a last play bookmark from being previously viewed?
+		</li>
+<li>
+			<strong>extended video clips</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Supports extended video clip functionality
+		</li>
+<li>
+			<strong>available video clips</strong>
+			(r/o)
+			<em>small integer</em>
+			 -- The number of video clips available for the current media
+		</li>
+<li>
+			<strong>video clip list</strong>
+			(r/o)
+			<em>list of Unicode text</em>
+			 -- The names of the video clips for the current media
+		</li>
+<li>
+			<strong>loop video clip</strong>
+			
+			<em>boolean</em>
+			 -- To turn the loop state for video clips on or off
+		</li>
+<li>
+			<strong>clip mode</strong>
+			(r/o)
+			<em>boolean</em>
+			 -- Is video clip being played?
+		</li>
+<li>
+			<strong>disable status window</strong>
+			
+			<em>boolean</em>
+			 -- Disable displaying the status message?
+		</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html 
+	PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>application</title>
+	<style type="text/css" media="all"><!--@import url(../../main.css);--></style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<base target="main" />
+</head>
+<body>
+
+<h1><sup>Class</sup> application</h1>
+
+<div id="view"><a href="../../FULL/classes/application.html">expand</a></div>
+
+
+<div id="content">
+
+<h2>Description</h2>
+
+<p>iPhoto's top level scripting object.</p>
+
+<ul class="desc">
+	<li>Plural name:
+		<ul>
+			<li><strong>applications</strong></li>
+		</ul>
+	</li>
+	<li>Defined in:
+		<ul>
+			<li><em><a href="../../index.html#suite_iPhoto_suite">iPhoto suite</a></em></li>
+		</ul>
+	</li>
+	
+	<li>Inherits from:
+		<ul>
+			<li>
+				
+					<strong><a href="../../Standard_Suite/classes/application.html">application</a></strong>
+					(<em><a href="../../index.html#suite_Standard_Suite">Standard Suite</a></em>)
+				 &#8594; 
+					<strong><a href="../../Standard_Suite/classes/item.html">item</a></strong>
+					(<em><a href="../../index.html#suite_Standard_Suite">Standard Suite</a></em>)
+				
+				
+			</li>
+		</ul>
+	</li>
+</ul>
+
+
+	<h2>Properties</h2>
+	<ul>
+		<li>
+			<strong>current album</strong>
+			
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- The selected album.
+		</li>
+<li>
+			<strong>events album</strong>
+			(r/o)
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- Events album.
+		</li>
+<li>
+			<strong>faces album</strong>
+			(r/o)
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- Faces album.
+		</li>
+<li>
+			<strong>flagged album</strong>
+			(r/o)
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- Flagged photos album.
+		</li>
+<li>
+			<strong>importing</strong>
+			(r/o)
+			<em>integer</em>
+			 -- Returns true if photo importing is in progress.
+		</li>
+<li>
+			<strong>last import album</strong>
+			(r/o)
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- Last import album.
+		</li>
+<li>
+			<strong>last months album</strong>
+			(r/o)
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- The set of N most recently imported month(s) of photos.  N is based on the preference set in iPhoto.
+		</li>
+<li>
+			<strong>last rolls album</strong>
+			(r/o)
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- Now obsolete;  please use last import album.  Old: The set of N most recently imported roll(s) of photos.  N is based on the preference set in iPhoto.
+		</li>
+<li>
+			<strong>local root albums</strong>
+			(r/o)
+			<em>list</em>
+			 -- Returns local albums that are at the root level in the source view.
+		</li>
+<li>
+			<strong>mail address</strong>
+			
+			<em>Unicode text</em>
+			 -- The address for the e-mail.
+		</li>
+<li>
+			<strong>mail recipient</strong>
+			
+			<em>Unicode text</em>
+			 -- The recipient for the e-mail.
+		</li>
+<li>
+			<strong>mail subject</strong>
+			
+			<em>Unicode text</em>
+			 -- The subject for the e-mail.
+		</li>
+<li>
+			<strong>photo library album</strong>
+			(r/o)
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- The photo library.
+		</li>
+<li>
+			<strong>places album</strong>
+			(r/o)
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- Places album.
+		</li>
+<li>
+			<strong>selection</strong>
+			
+			<em>list</em>
+			 -- The current selection.
+		</li>
+<li>
+			<strong>shared library albums</strong>
+			(r/o)
+			<em>list</em>
+			 -- Returns shared libraries from other computers on the network.
+		</li>
+<li>
+			<strong>slideshow running</strong>
+			(r/o)
+			<em>integer</em>
+			 -- Returns true if a slideshow is currently running.
+		</li>
+<li>
+			<strong>trash album</strong>
+			(r/o)
+			<em><a href="../../iPhoto_suite/classes/album.html">album</a></em>
+			 -- The set of deleted photos.
+		</li>
+<li>
+			<strong>view</strong>
+			
+			<em>edit / events / organize</em>
+			 -- The current view in the application.
+		</li>
+	</ul>
+
+
+
+
+
+	<h2>Elements</h2>
+		<p>contains <span> <strong><a href="../../iPhoto_suite/classes/album.html">albums</a></strong></span> , <span> <strong><a href="../../iPhoto_suite/classes/keyword.html">keywords</a></strong></span> , <span> <strong><a href="../../iPhoto_suite/classes/photo.html">photos</a></strong></span></p>
+
+
+
+	<ul>
+		<li>
+			<strong><a href="../../iPhoto_suite/classes/album.html">album</a></strong> -- by <em>name, index, relative, range, test, id</em>
+		</li>
+<li>
+			<strong><a href="../../iPhoto_suite/classes/keyword.html">keyword</a></strong> -- by <em>name, index, relative, range, test</em>
+		</li>
+<li>
+			<strong><a href="../../iPhoto_suite/classes/photo.html">photo</a></strong> -- by <em>name, index, relative, range, test, id</em>
+		</li>
+	</ul>
+
+
+
+
+</body>
+</html>
